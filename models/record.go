@@ -2,7 +2,7 @@ package models
 
 import (
 	"dict/db"
-
+	"strings"
 	"gopkg.in/mgo.v2"
 	"gopkg.in/mgo.v2/bson"
 )
@@ -39,6 +39,11 @@ func (r *Record)FindId(id string) (record Record, err error) {
 }
 
 func (r *Record)FindTitle(title string)(err error) {
-	err = collection.Find(bson.M{"title": title}).One(r)
+	reg := bson.M{"$regex": bson.RegEx{Pattern: "^" + strings.Trim(title, " ") + "$", Options: "i"}}
+	err = collection.Find(bson.M{"title": reg}).One(r)
+	if err != nil {
+		regex := bson.M{"$regex": bson.RegEx{Pattern: strings.Trim(title, " "), Options: "i"}}
+		err = collection.Find(bson.M{"title": regex}).One(r)
+	}
 	return err
 }

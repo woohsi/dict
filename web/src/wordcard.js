@@ -34,7 +34,8 @@ export default function WordCard(props) {
   const defs = record.definitions;
   let preType = null;
   if (defs === undefined) {
-    return <div>Not Found</div>
+    //TODO
+    return <div></div>
   }
   const body = defs.map((def, index) => {
     let badge = null;

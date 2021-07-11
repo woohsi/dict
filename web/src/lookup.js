@@ -85,12 +85,15 @@ class LookupWordComponent extends Component {
     this.setState({ suggestions: [] });
     console.log('searching ', word);
 
-    const request = `http://192.168.31.205:8088/records/${encodeURI(word)}`;
+    const request = `http://woohsi.top/records/${encodeURI(word)}`;
     fetch(request)
       .then((response) => response.json())
         .then((result) => {
           console.log("result: ", result)
-          this.setState({record: result.data})
+          const { data } = result
+          if (data != null) {
+            this.setState({record: data})
+          }
       });
   };
 
