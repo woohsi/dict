@@ -1,0 +1,11 @@
+#suggs {
+  margin-left: 10px;
+}
+
+.sugg {
+  margin: 5px;
+}
+
+.sugg:hover {
+  background-color: rgb(201, 200, 200);
+}
