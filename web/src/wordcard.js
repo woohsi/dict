@@ -18,12 +18,12 @@ const useStyles = makeStyles({
     transform: 'scale(0.8)',
   },
   example: {
-    fontSize: 12,
+    fontSize: 16,
     marginLeft: '10px',
   },
   meaning: {},
   pos: {
-    marginBottom: 12,
+    marginBottom: 16,
   },
 });
 
