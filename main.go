@@ -11,6 +11,7 @@ func main() {
 	router.Group("/api")
 	{
 		router.GET("/records/:title", controllers.FindOne)
+		router.GET("/record/:id", controllers.FindId)
 	}
 	router.Run()
 }

@@ -6,7 +6,7 @@ import (
 )
 
 func RES(c *gin.Context, code int, obj gin.H) {
-	if obj["message"] == "" {
+	if _, ok := obj["message"]; !ok {
 		obj["message"] = GetMessage(code)
 	}
 	obj["timestamp"] = time.Now().Format("2006-01-02 15:04:05")
