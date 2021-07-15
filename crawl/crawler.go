@@ -57,6 +57,28 @@ func Crawl(word string) (record *models.Record){
 			})
 		})
 
+		// 处理没有词性的单词
+		if len(definitions) == 0 {
+			tp := ""
+			// for each definition of the type "tp"
+			h.ForEach("div#content-5", func(i int, h *colly.HTMLElement) {
+				meaning := h.ChildText("h5 > span.mw-headline")
+				examples := make([]string, 0)
+				// for each e.g.
+				h.ForEach("div#content-5 > dl > dd > i", func(i int, h *colly.HTMLElement) {
+					examples = append(examples, strconv.Itoa(i+1) + ". " + h.Text)
+				})
+				definition := models.Definition{
+					Id: i,
+					Type: tp,
+					Meaning: meaning,
+					Examples: examples,
+				}
+				definitions = append(definitions, definition)
+				//fmt.Println("flag2 ", examples)
+			})
+		}
+
 		record = &models.Record{
 			Title: title0,
 			Definitions: definitions,

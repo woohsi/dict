@@ -66,3 +66,326 @@ INFO: 2021/07/15 00:11:28 crawler.go:66: Get Nổi in OnHTML: &{ObjectIdHex("") 
 INFO: 2021/07/15 00:11:28 crawler.go:84: Get Nổi in crawl func: &{ObjectIdHex("") Nổi [{0 Động từ ở trên bề mặt của một chất lỏng [1. bè nứa nổi lềnh bềnh 2. tảng băng nửa chìm nửa nổi 3. đàn cá ăn nổi]} {1 Động từ chuyển từ phía dưới lên phía bề mặt của một chất lỏng [1. tàu ngầm từ từ nổi lên 2. rùa nổi ở Hồ Gươm]} {2 Động từ nhô lên, hiện lên trên bề mặt, dễ nhận thấy [1. sợ nổi gai ốc 2. rễ cây nổi lên trên mặt đất 3. mặt nổi mụn]} {3 Động từ (nước) dâng lên cao do mưa lũ [1. mùa nước nổi 2. ruộng nổi nước trắng xoá]} {4 Động từ phát ra hoặc làm cho phát ra (âm thanh, ánh sáng) ít nhiều mạnh mẽ [1. tiếng trống nổi lên rộn rã 2. trọng tài nổi còi cho bắt đầu trận đấu 3. nổi lửa nấu cơm]} {5 Động từ phát sinh, nảy sinh đột ngột, thường thành đợt, thành cơn và có tác dụng đáng kể [1. trời nổi cơn dông 2. mặt biển nổi sóng 3. nổi cáu 4. nổi cơn ghen]} {6 Động từ vùng lên thành lực lượng đông đảo, gây ra biến động [1. các cuộc khởi nghĩa nổi lên khắp nơi]} {7 Động từ hiện ra rõ rệt, khiến rất dễ nhận thấy giữa những cái khác [1. ca sĩ mới nổi 2. chiếc áo màu đỏ trông rất nổi 3. từ kết quả này thấy nổi lên một số vấn đề]} {8 Động từ (âm thanh, hình ảnh) sống động, tự nhiên, giống như thực [1. âm thanh nổi 2. phim nổi]} {0 Phụ từ từ biểu thị khả năng thực hiện của một việc khó khăn, nặng nề [1. nặng quá không vác nổi 2. không thể tưởng tượng nổi 3. không nén nổi xúc động]}] 2021-07-15 00:11:28.146198 +0800 CST m=+86.636261168 0001-01-01 00:00:00 +0000 UTC}
 INFO: 2021/07/15 00:11:28 crawler.go:85: crawl func finish
 INFO: 2021/07/15 00:11:28 record.go:44: 获取成功：Nổi，准备写入词库
+INFO: 2021/07/15 01:02:16 record.go:54: 60d6ff1f5518ceb668c889c1
+INFO: 2021/07/15 01:02:37 record.go:54: 60d6fd1a5518ceb668c86496
+INFO: 2021/07/15 01:02:48 record.go:54: 60d6fd1a5518ceb668c86496
+INFO: 2021/07/15 01:03:30 record.go:54: 60d6f6825518ceb668c82d8a
+INFO: 2021/07/15 01:03:47 record.go:54: 
+ERROR: 2021/07/15 01:03:47 record.go:36: 词库中暂无此单词：Cố chấp
+INFO: 2021/07/15 01:03:47 record.go:37: 正在从网络获取：Cố chấp
+INFO: 2021/07/15 01:03:47 crawler.go:71: Visiting http://tratu.soha.vn/dict/vn_vn/C%E1%BB%91_ch%E1%BA%A5p
+INFO: 2021/07/15 01:03:52 crawler.go:66: Get Cố chấp in OnHTML: &{ObjectIdHex("") Cố chấp [] 2021-07-15 01:03:52.779940505 +0800 CST m=+208.986037340 0001-01-01 00:00:00 +0000 UTC}
+INFO: 2021/07/15 01:03:52 crawler.go:84: Get Cố chấp in crawl func: &{ObjectIdHex("") Cố chấp [] 2021-07-15 01:03:52.779940505 +0800 CST m=+208.986037340 0001-01-01 00:00:00 +0000 UTC}
+INFO: 2021/07/15 01:03:52 crawler.go:85: crawl func finish
+ERROR: 2021/07/15 01:03:52 record.go:40: 获取失败：Cố chấp
+INFO: 2021/07/15 01:04:00 record.go:54: 60d6fec55518ceb668c88353
+INFO: 2021/07/15 01:04:51 record.go:54: 60d6fde25518ceb668c872fc
+INFO: 2021/07/15 01:06:18 record.go:54: 60d703a35518ceb668c8dcd3
+INFO: 2021/07/15 01:06:46 record.go:54: 60d6f2f25518ceb668c7e8d0
+INFO: 2021/07/15 01:07:10 record.go:54: 
+ERROR: 2021/07/15 01:07:10 record.go:36: 词库中暂无此单词：Thức khuya 
+INFO: 2021/07/15 01:07:10 record.go:37: 正在从网络获取：Thức khuya 
+INFO: 2021/07/15 01:07:10 crawler.go:71: Visiting http://tratu.soha.vn/dict/vn_vn/Th%E1%BB%A9c_khuya
+INFO: 2021/07/15 01:07:11 crawler.go:66: Get Thức khuya in OnHTML: &{ObjectIdHex("") Thức khuya [] 2021-07-15 01:07:11.116827195 +0800 CST m=+407.322924043 0001-01-01 00:00:00 +0000 UTC}
+INFO: 2021/07/15 01:07:11 crawler.go:84: Get Thức khuya in crawl func: &{ObjectIdHex("") Thức khuya [] 2021-07-15 01:07:11.116827195 +0800 CST m=+407.322924043 0001-01-01 00:00:00 +0000 UTC}
+INFO: 2021/07/15 01:07:11 crawler.go:85: crawl func finish
+ERROR: 2021/07/15 01:07:11 record.go:40: 获取失败：Thức khuya 
+INFO: 2021/07/15 01:07:19 record.go:54: 60d6f7715518ceb668c83f82
+INFO: 2021/07/15 01:07:46 record.go:54: 60d6f1745518ceb668c7cc1c
+INFO: 2021/07/15 01:08:49 record.go:54: 60d6f1745518ceb668c7cc1c
+INFO: 2021/07/15 01:08:49 record.go:54: 60d6f1745518ceb668c7cc1c
+INFO: 2021/07/15 01:08:49 record.go:54: 60d6f1745518ceb668c7cc1c
+INFO: 2021/07/15 01:08:50 record.go:54: 60d6f1745518ceb668c7cc1c
+INFO: 2021/07/15 01:09:01 record.go:54: 60d6f6325518ceb668c8277c
+INFO: 2021/07/15 01:09:03 record.go:54: 60d6f6325518ceb668c8277c
+INFO: 2021/07/15 01:09:17 record.go:54: 
+ERROR: 2021/07/15 01:09:17 record.go:36: 词库中暂无此单词：Hay là
+INFO: 2021/07/15 01:09:17 record.go:37: 正在从网络获取：Hay là
+INFO: 2021/07/15 01:09:17 crawler.go:71: Visiting http://tratu.soha.vn/dict/vn_vn/Hay_l%C3%A0
+INFO: 2021/07/15 01:09:18 crawler.go:84: Get Hay là in crawl func: <nil>
+INFO: 2021/07/15 01:09:18 crawler.go:85: crawl func finish
+INFO: 2021/07/15 01:09:36 record.go:54: 
+ERROR: 2021/07/15 01:09:36 record.go:36: 词库中暂无此单词：Hay là
+INFO: 2021/07/15 01:09:36 record.go:37: 正在从网络获取：Hay là
+INFO: 2021/07/15 01:09:36 crawler.go:71: Visiting http://tratu.soha.vn/dict/vn_vn/Hay_l%C3%A0
+INFO: 2021/07/15 01:09:37 crawler.go:66: Get Hay là in OnHTML: &{ObjectIdHex("") Hay là [{0 Kết từ như hay [1. chọn cái này hay là cái kia? 2. đi hay là ở]} {1 Kết từ từ biểu thị điều sắp nêu ra là một khả năng mà người nói thấy chưa thể khẳng định, đang còn hồ nghi [1. không thấy nó đến lớp, hay là nó bị ốm?]} {2 Kết từ từ biểu thị điều sắp nêu ra là một giải pháp người nói thấy là nên thực hiện, nhưng không khẳng định mà muốn được biết ý kiến của người đối thoại [1. hay là để mai hẵng đi? 2. việc khó quá, hay là ta không nhận nữa]}] 2021-07-15 01:09:37.909143154 +0800 CST m=+554.115239992 0001-01-01 00:00:00 +0000 UTC}
+INFO: 2021/07/15 01:09:37 crawler.go:84: Get Hay là in crawl func: &{ObjectIdHex("") Hay là [{0 Kết từ như hay [1. chọn cái này hay là cái kia? 2. đi hay là ở]} {1 Kết từ từ biểu thị điều sắp nêu ra là một khả năng mà người nói thấy chưa thể khẳng định, đang còn hồ nghi [1. không thấy nó đến lớp, hay là nó bị ốm?]} {2 Kết từ từ biểu thị điều sắp nêu ra là một giải pháp người nói thấy là nên thực hiện, nhưng không khẳng định mà muốn được biết ý kiến của người đối thoại [1. hay là để mai hẵng đi? 2. việc khó quá, hay là ta không nhận nữa]}] 2021-07-15 01:09:37.909143154 +0800 CST m=+554.115239992 0001-01-01 00:00:00 +0000 UTC}
+INFO: 2021/07/15 01:09:37 crawler.go:85: crawl func finish
+INFO: 2021/07/15 01:09:37 record.go:44: 获取成功：Hay là，准备写入词库
+INFO: 2021/07/15 01:10:21 record.go:54: 60d6f6325518ceb668c82786
+INFO: 2021/07/15 01:10:30 record.go:54: 60ef1a51bd8844183ea6422e
+INFO: 2021/07/15 01:10:51 record.go:54: 60d6f6825518ceb668c82d8a
+INFO: 2021/07/15 01:11:27 record.go:54: 
+ERROR: 2021/07/15 01:11:27 record.go:36: 词库中暂无此单词：Nói chung
+INFO: 2021/07/15 01:11:27 record.go:37: 正在从网络获取：Nói chung
+INFO: 2021/07/15 01:11:27 crawler.go:71: Visiting http://tratu.soha.vn/dict/vn_vn/N%C3%B3i_chung
+INFO: 2021/07/15 01:11:29 crawler.go:66: Get Nói chung in OnHTML: &{ObjectIdHex("") Nói chung [] 2021-07-15 01:11:29.979590906 +0800 CST m=+666.185687752 0001-01-01 00:00:00 +0000 UTC}
+INFO: 2021/07/15 01:11:29 crawler.go:84: Get Nói chung in crawl func: &{ObjectIdHex("") Nói chung [] 2021-07-15 01:11:29.979590906 +0800 CST m=+666.185687752 0001-01-01 00:00:00 +0000 UTC}
+INFO: 2021/07/15 01:11:29 crawler.go:85: crawl func finish
+ERROR: 2021/07/15 01:11:29 record.go:40: 获取失败：Nói chung
+INFO: 2021/07/15 01:11:40 record.go:54: 
+ERROR: 2021/07/15 01:11:40 record.go:36: 词库中暂无此单词：Nói chung
+INFO: 2021/07/15 01:11:40 record.go:37: 正在从网络获取：Nói chung
+INFO: 2021/07/15 01:11:40 crawler.go:71: Visiting http://tratu.soha.vn/dict/vn_vn/N%C3%B3i_chung
+INFO: 2021/07/15 01:11:41 crawler.go:66: Get Nói chung in OnHTML: &{ObjectIdHex("") Nói chung [] 2021-07-15 01:11:41.373516944 +0800 CST m=+677.579613774 0001-01-01 00:00:00 +0000 UTC}
+INFO: 2021/07/15 01:11:41 crawler.go:84: Get Nói chung in crawl func: &{ObjectIdHex("") Nói chung [] 2021-07-15 01:11:41.373516944 +0800 CST m=+677.579613774 0001-01-01 00:00:00 +0000 UTC}
+INFO: 2021/07/15 01:11:41 crawler.go:85: crawl func finish
+ERROR: 2021/07/15 01:11:41 record.go:40: 获取失败：Nói chung
+INFO: 2021/07/15 01:11:48 record.go:54: 
+ERROR: 2021/07/15 01:11:48 record.go:36: 词库中暂无此单词：Nói chung
+INFO: 2021/07/15 01:11:48 record.go:37: 正在从网络获取：Nói chung
+INFO: 2021/07/15 01:11:48 crawler.go:71: Visiting http://tratu.soha.vn/dict/vn_vn/N%C3%B3i_chung
+INFO: 2021/07/15 01:11:49 crawler.go:66: Get Nói chung in OnHTML: &{ObjectIdHex("") Nói chung [] 2021-07-15 01:11:49.582897349 +0800 CST m=+685.788994179 0001-01-01 00:00:00 +0000 UTC}
+INFO: 2021/07/15 01:11:49 crawler.go:84: Get Nói chung in crawl func: &{ObjectIdHex("") Nói chung [] 2021-07-15 01:11:49.582897349 +0800 CST m=+685.788994179 0001-01-01 00:00:00 +0000 UTC}
+INFO: 2021/07/15 01:11:49 crawler.go:85: crawl func finish
+ERROR: 2021/07/15 01:11:49 record.go:40: 获取失败：Nói chung
+INFO: 2021/07/15 01:11:49 record.go:54: 
+ERROR: 2021/07/15 01:11:49 record.go:36: 词库中暂无此单词：Nói chung
+INFO: 2021/07/15 01:11:49 record.go:37: 正在从网络获取：Nói chung
+INFO: 2021/07/15 01:11:49 crawler.go:71: Visiting http://tratu.soha.vn/dict/vn_vn/N%C3%B3i_chung
+INFO: 2021/07/15 01:11:50 crawler.go:66: Get Nói chung in OnHTML: &{ObjectIdHex("") Nói chung [] 2021-07-15 01:11:50.612124413 +0800 CST m=+686.818221246 0001-01-01 00:00:00 +0000 UTC}
+INFO: 2021/07/15 01:11:50 crawler.go:84: Get Nói chung in crawl func: &{ObjectIdHex("") Nói chung [] 2021-07-15 01:11:50.612124413 +0800 CST m=+686.818221246 0001-01-01 00:00:00 +0000 UTC}
+INFO: 2021/07/15 01:11:50 crawler.go:85: crawl func finish
+ERROR: 2021/07/15 01:11:50 record.go:40: 获取失败：Nói chung
+INFO: 2021/07/15 01:11:53 record.go:54: 
+ERROR: 2021/07/15 01:11:53 record.go:36: 词库中暂无此单词：Nói chung
+INFO: 2021/07/15 01:11:53 record.go:37: 正在从网络获取：Nói chung
+INFO: 2021/07/15 01:11:53 crawler.go:71: Visiting http://tratu.soha.vn/dict/vn_vn/N%C3%B3i_chung
+INFO: 2021/07/15 01:11:54 crawler.go:66: Get Nói chung in OnHTML: &{ObjectIdHex("") Nói chung [] 2021-07-15 01:11:54.203471533 +0800 CST m=+690.409568366 0001-01-01 00:00:00 +0000 UTC}
+INFO: 2021/07/15 01:11:54 crawler.go:84: Get Nói chung in crawl func: &{ObjectIdHex("") Nói chung [] 2021-07-15 01:11:54.203471533 +0800 CST m=+690.409568366 0001-01-01 00:00:00 +0000 UTC}
+INFO: 2021/07/15 01:11:54 crawler.go:85: crawl func finish
+ERROR: 2021/07/15 01:11:54 record.go:40: 获取失败：Nói chung
+INFO: 2021/07/15 09:46:21 record.go:54: 
+ERROR: 2021/07/15 09:46:21 record.go:36: 词库中暂无此单词：Nói chung
+INFO: 2021/07/15 09:46:21 record.go:37: 正在从网络获取：Nói chung
+INFO: 2021/07/15 09:46:21 crawler.go:71: Visiting http://tratu.soha.vn/dict/vn_vn/N%C3%B3i_chung
+INFO: 2021/07/15 09:46:23 crawler.go:66: Get Nói chung in OnHTML: &{ObjectIdHex("") Nói chung [] 2021-07-15 09:46:23.16829564 +0800 CST m=+31559.374392472 0001-01-01 00:00:00 +0000 UTC}
+INFO: 2021/07/15 09:46:23 crawler.go:84: Get Nói chung in crawl func: &{ObjectIdHex("") Nói chung [] 2021-07-15 09:46:23.16829564 +0800 CST m=+31559.374392472 0001-01-01 00:00:00 +0000 UTC}
+INFO: 2021/07/15 09:46:23 crawler.go:85: crawl func finish
+ERROR: 2021/07/15 09:46:23 record.go:40: 获取失败：Nói chung
+INFO: 2021/07/15 09:46:25 record.go:54: 
+ERROR: 2021/07/15 09:46:25 record.go:36: 词库中暂无此单词：Nói chung
+INFO: 2021/07/15 09:46:25 record.go:37: 正在从网络获取：Nói chung
+INFO: 2021/07/15 09:46:25 crawler.go:71: Visiting http://tratu.soha.vn/dict/vn_vn/N%C3%B3i_chung
+INFO: 2021/07/15 09:46:26 crawler.go:66: Get Nói chung in OnHTML: &{ObjectIdHex("") Nói chung [] 2021-07-15 09:46:26.116147492 +0800 CST m=+31562.322244325 0001-01-01 00:00:00 +0000 UTC}
+INFO: 2021/07/15 09:46:26 crawler.go:84: Get Nói chung in crawl func: &{ObjectIdHex("") Nói chung [] 2021-07-15 09:46:26.116147492 +0800 CST m=+31562.322244325 0001-01-01 00:00:00 +0000 UTC}
+INFO: 2021/07/15 09:46:26 crawler.go:85: crawl func finish
+ERROR: 2021/07/15 09:46:26 record.go:40: 获取失败：Nói chung
+INFO: 2021/07/15 09:46:42 record.go:54: 
+ERROR: 2021/07/15 09:46:42 record.go:36: 词库中暂无此单词：Nói chung
+INFO: 2021/07/15 09:46:42 record.go:37: 正在从网络获取：Nói chung
+INFO: 2021/07/15 09:46:42 crawler.go:71: Visiting http://tratu.soha.vn/dict/vn_vn/N%C3%B3i_chung
+INFO: 2021/07/15 09:46:43 crawler.go:66: Get Nói chung in OnHTML: &{ObjectIdHex("") Nói chung [] 2021-07-15 09:46:43.740618094 +0800 CST m=+31579.946714929 0001-01-01 00:00:00 +0000 UTC}
+INFO: 2021/07/15 09:46:43 crawler.go:84: Get Nói chung in crawl func: &{ObjectIdHex("") Nói chung [] 2021-07-15 09:46:43.740618094 +0800 CST m=+31579.946714929 0001-01-01 00:00:00 +0000 UTC}
+INFO: 2021/07/15 09:46:43 crawler.go:85: crawl func finish
+ERROR: 2021/07/15 09:46:43 record.go:40: 获取失败：Nói chung
+INFO: 2021/07/15 09:47:02 record.go:54: 60d6f7935518ceb668c8421d
+INFO: 2021/07/15 09:47:13 record.go:54: 
+ERROR: 2021/07/15 09:47:13 record.go:36: 词库中暂无此单词：Nói chung
+INFO: 2021/07/15 09:47:13 record.go:37: 正在从网络获取：Nói chung
+INFO: 2021/07/15 09:47:13 crawler.go:71: Visiting http://tratu.soha.vn/dict/vn_vn/N%C3%B3i_chung
+INFO: 2021/07/15 09:47:14 crawler.go:66: Get Nói chung in OnHTML: &{ObjectIdHex("") Nói chung [] 2021-07-15 09:47:14.771241167 +0800 CST m=+31610.977338006 0001-01-01 00:00:00 +0000 UTC}
+INFO: 2021/07/15 09:47:14 crawler.go:84: Get Nói chung in crawl func: &{ObjectIdHex("") Nói chung [] 2021-07-15 09:47:14.771241167 +0800 CST m=+31610.977338006 0001-01-01 00:00:00 +0000 UTC}
+INFO: 2021/07/15 09:47:14 crawler.go:85: crawl func finish
+ERROR: 2021/07/15 09:47:14 record.go:40: 获取失败：Nói chung
+INFO: 2021/07/15 09:48:35 record.go:54: 
+ERROR: 2021/07/15 09:48:35 record.go:36: 词库中暂无此单词：Na mô
+INFO: 2021/07/15 09:48:35 record.go:37: 正在从网络获取：Na mô
+INFO: 2021/07/15 09:48:35 crawler.go:71: Visiting http://tratu.soha.vn/dict/vn_vn/Na_m%C3%B4
+INFO: 2021/07/15 09:48:37 crawler.go:66: Get Na mô in OnHTML: &{ObjectIdHex("") Na mô [] 2021-07-15 09:48:37.418469446 +0800 CST m=+31693.624566290 0001-01-01 00:00:00 +0000 UTC}
+INFO: 2021/07/15 09:48:37 crawler.go:84: Get Na mô in crawl func: &{ObjectIdHex("") Na mô [] 2021-07-15 09:48:37.418469446 +0800 CST m=+31693.624566290 0001-01-01 00:00:00 +0000 UTC}
+INFO: 2021/07/15 09:48:37 crawler.go:85: crawl func finish
+ERROR: 2021/07/15 09:48:37 record.go:40: 获取失败：Na mô
+INFO: 2021/07/15 09:48:46 record.go:54: 60d6f8735518ceb668c852fa
+INFO: 2021/07/15 09:48:56 record.go:54: 60d6f5625518ceb668c817d8
+INFO: 2021/07/15 09:49:12 record.go:54: 60d7009c5518ceb668c8a533
+INFO: 2021/07/15 09:49:15 record.go:54: 60d7009c5518ceb668c8a533
+INFO: 2021/07/15 11:07:28 record.go:54: 
+ERROR: 2021/07/15 11:07:28 record.go:36: 词库中暂无此单词：Cố chấp
+INFO: 2021/07/15 11:07:28 record.go:37: 正在从网络获取：Cố chấp
+INFO: 2021/07/15 11:07:28 crawler.go:93: Visiting http://tratu.soha.vn/dict/vn_vn/C%E1%BB%91_ch%E1%BA%A5p
+INFO: 2021/07/15 11:07:31 crawler.go:88: Get Cố chấp in OnHTML: &{ObjectIdHex("") Cố chấp [{0  khăng khăng giữ ý kiến của mình một cách cứng nhắc, không chịu thay đổi [1. một người bảo thủ, cố chấp]} {1  để bụng những sơ suất của người khác đối với mình đến mức có định kiến [1. tính hay cố chấp]}] 2021-07-15 11:07:31.46074941 +0800 CST m=+89.617828264 0001-01-01 00:00:00 +0000 UTC}
+INFO: 2021/07/15 11:07:31 crawler.go:106: Get Cố chấp in crawl func: &{ObjectIdHex("") Cố chấp [{0  khăng khăng giữ ý kiến của mình một cách cứng nhắc, không chịu thay đổi [1. một người bảo thủ, cố chấp]} {1  để bụng những sơ suất của người khác đối với mình đến mức có định kiến [1. tính hay cố chấp]}] 2021-07-15 11:07:31.46074941 +0800 CST m=+89.617828264 0001-01-01 00:00:00 +0000 UTC}
+INFO: 2021/07/15 11:07:31 crawler.go:107: crawl func finish
+INFO: 2021/07/15 11:07:31 record.go:44: 获取成功：Cố chấp，准备写入词库
+INFO: 2021/07/15 11:07:55 record.go:54: 
+ERROR: 2021/07/15 11:07:55 record.go:36: 词库中暂无此单词：Nói chung
+INFO: 2021/07/15 11:07:55 record.go:37: 正在从网络获取：Nói chung
+INFO: 2021/07/15 11:07:55 crawler.go:93: Visiting http://tratu.soha.vn/dict/vn_vn/N%C3%B3i_chung
+INFO: 2021/07/15 11:07:56 crawler.go:88: Get Nói chung in OnHTML: &{ObjectIdHex("") Nói chung [{0  nói một cách bao quát, không tính đến cái có tính chất cá biệt, bộ phận (hàm ý bớt khẳng định) [1. tình hình nói chung là tốt 2. công việc nói chung có tiến triển]}] 2021-07-15 11:07:56.165655744 +0800 CST m=+114.322734611 0001-01-01 00:00:00 +0000 UTC}
+INFO: 2021/07/15 11:07:56 crawler.go:106: Get Nói chung in crawl func: &{ObjectIdHex("") Nói chung [{0  nói một cách bao quát, không tính đến cái có tính chất cá biệt, bộ phận (hàm ý bớt khẳng định) [1. tình hình nói chung là tốt 2. công việc nói chung có tiến triển]}] 2021-07-15 11:07:56.165655744 +0800 CST m=+114.322734611 0001-01-01 00:00:00 +0000 UTC}
+INFO: 2021/07/15 11:07:56 crawler.go:107: crawl func finish
+INFO: 2021/07/15 11:07:56 record.go:44: 获取成功：Nói chung，准备写入词库
+INFO: 2021/07/15 11:19:54 record.go:54: 60d6feda5518ceb668c884c6
+INFO: 2021/07/15 11:20:05 record.go:54: 60d6feda5518ceb668c884c7
+INFO: 2021/07/15 11:26:00 record.go:32: 139.9.118.67 正在获取：Nhập khẩu
+INFO: 2021/07/15 11:26:00 record.go:54: 60d6feda5518ceb668c884cc
+INFO: 2021/07/15 11:27:37 record.go:32: 139.9.118.67 正在获取：Na mô
+INFO: 2021/07/15 11:27:37 record.go:54: 
+ERROR: 2021/07/15 11:27:37 record.go:37: 词库中暂无此单词：Na mô
+INFO: 2021/07/15 11:27:37 record.go:38: 正在从网络获取：Na mô
+INFO: 2021/07/15 11:27:37 crawler.go:93: Visiting http://tratu.soha.vn/dict/vn_vn/Na_m%C3%B4
+INFO: 2021/07/15 11:27:38 crawler.go:88: Get Na mô in OnHTML: &{ObjectIdHex("") Na mô [{0  từ người theo đạo Phật dùng trong lời tụng niệm, có nghĩa tôn kính [1. na mô Phật 2. na mô Quan Thế Âm Bồ Tát]}] 2021-07-15 11:27:38.634306431 +0800 CST m=+133.701509526 0001-01-01 00:00:00 +0000 UTC}
+INFO: 2021/07/15 11:27:38 crawler.go:106: Get Na mô in crawl func: &{ObjectIdHex("") Na mô [{0  từ người theo đạo Phật dùng trong lời tụng niệm, có nghĩa tôn kính [1. na mô Phật 2. na mô Quan Thế Âm Bồ Tát]}] 2021-07-15 11:27:38.634306431 +0800 CST m=+133.701509526 0001-01-01 00:00:00 +0000 UTC}
+INFO: 2021/07/15 11:27:38 crawler.go:107: crawl func finish
+INFO: 2021/07/15 11:27:38 record.go:45: 获取成功：Na mô，准备写入词库
+INFO: 2021/07/15 11:28:29 record.go:32: 139.9.118.67 正在获取：A-mi-nô a-xít
+INFO: 2021/07/15 11:28:29 record.go:54: 
+ERROR: 2021/07/15 11:28:29 record.go:37: 词库中暂无此单词：A-mi-nô a-xít
+INFO: 2021/07/15 11:28:29 record.go:38: 正在从网络获取：A-mi-nô a-xít
+INFO: 2021/07/15 11:28:29 crawler.go:93: Visiting http://tratu.soha.vn/dict/vn_vn/A-mi-n%C3%B4_a-x%C3%ADt
+INFO: 2021/07/15 11:28:30 crawler.go:88: Get A-mi-nô a-xít in OnHTML: &{ObjectIdHex("") A-mi-nô a-xít [{0 Cảm từ (Từ cũ) []}] 2021-07-15 11:28:30.516250371 +0800 CST m=+185.583453466 0001-01-01 00:00:00 +0000 UTC}
+INFO: 2021/07/15 11:28:30 crawler.go:106: Get A-mi-nô a-xít in crawl func: &{ObjectIdHex("") A-mi-nô a-xít [{0 Cảm từ (Từ cũ) []}] 2021-07-15 11:28:30.516250371 +0800 CST m=+185.583453466 0001-01-01 00:00:00 +0000 UTC}
+INFO: 2021/07/15 11:28:30 crawler.go:107: crawl func finish
+INFO: 2021/07/15 11:28:30 record.go:45: 获取成功：A-mi-nô a-xít，准备写入词库
+INFO: 2021/07/15 11:30:08 record.go:32: 139.9.118.67 正在获取：Bên cạnh 
+INFO: 2021/07/15 11:30:08 record.go:54: 
+ERROR: 2021/07/15 11:30:08 record.go:37: 词库中暂无此单词：Bên cạnh 
+INFO: 2021/07/15 11:30:08 record.go:38: 正在从网络获取：Bên cạnh 
+INFO: 2021/07/15 11:30:08 crawler.go:93: Visiting http://tratu.soha.vn/dict/vn_vn/B%C3%AAn_c%E1%BA%A1nh
+INFO: 2021/07/15 11:30:09 crawler.go:88: Get Bên cạnh in OnHTML: &{ObjectIdHex("") Bên cạnh [] 2021-07-15 11:30:09.825836516 +0800 CST m=+284.893039614 0001-01-01 00:00:00 +0000 UTC}
+INFO: 2021/07/15 11:30:09 crawler.go:106: Get Bên cạnh in crawl func: &{ObjectIdHex("") Bên cạnh [] 2021-07-15 11:30:09.825836516 +0800 CST m=+284.893039614 0001-01-01 00:00:00 +0000 UTC}
+INFO: 2021/07/15 11:30:09 crawler.go:107: crawl func finish
+ERROR: 2021/07/15 11:30:09 record.go:41: 获取失败：Bên cạnh 
+INFO: 2021/07/15 11:30:13 record.go:32: 139.9.118.67 正在获取：Bên cạnh
+INFO: 2021/07/15 11:30:13 record.go:54: 
+ERROR: 2021/07/15 11:30:13 record.go:37: 词库中暂无此单词：Bên cạnh
+INFO: 2021/07/15 11:30:13 record.go:38: 正在从网络获取：Bên cạnh
+INFO: 2021/07/15 11:30:13 crawler.go:93: Visiting http://tratu.soha.vn/dict/vn_vn/B%C3%AAn_c%E1%BA%A1nh
+INFO: 2021/07/15 11:30:14 crawler.go:88: Get Bên cạnh in OnHTML: &{ObjectIdHex("") Bên cạnh [] 2021-07-15 11:30:14.487962516 +0800 CST m=+289.555165609 0001-01-01 00:00:00 +0000 UTC}
+INFO: 2021/07/15 11:30:14 crawler.go:106: Get Bên cạnh in crawl func: &{ObjectIdHex("") Bên cạnh [] 2021-07-15 11:30:14.487962516 +0800 CST m=+289.555165609 0001-01-01 00:00:00 +0000 UTC}
+INFO: 2021/07/15 11:30:14 crawler.go:107: crawl func finish
+ERROR: 2021/07/15 11:30:14 record.go:41: 获取失败：Bên cạnh
+INFO: 2021/07/15 11:30:14 record.go:32: 139.9.118.67 正在获取：Bên cạnh
+INFO: 2021/07/15 11:30:14 record.go:54: 
+ERROR: 2021/07/15 11:30:14 record.go:37: 词库中暂无此单词：Bên cạnh
+INFO: 2021/07/15 11:30:14 record.go:38: 正在从网络获取：Bên cạnh
+INFO: 2021/07/15 11:30:14 crawler.go:93: Visiting http://tratu.soha.vn/dict/vn_vn/B%C3%AAn_c%E1%BA%A1nh
+INFO: 2021/07/15 11:30:15 crawler.go:88: Get Bên cạnh in OnHTML: &{ObjectIdHex("") Bên cạnh [] 2021-07-15 11:30:15.759000997 +0800 CST m=+290.826204091 0001-01-01 00:00:00 +0000 UTC}
+INFO: 2021/07/15 11:30:15 crawler.go:106: Get Bên cạnh in crawl func: &{ObjectIdHex("") Bên cạnh [] 2021-07-15 11:30:15.759000997 +0800 CST m=+290.826204091 0001-01-01 00:00:00 +0000 UTC}
+INFO: 2021/07/15 11:30:15 crawler.go:107: crawl func finish
+ERROR: 2021/07/15 11:30:15 record.go:41: 获取失败：Bên cạnh
+INFO: 2021/07/15 11:30:16 record.go:32: 139.9.118.67 正在获取：Bên cạnh
+INFO: 2021/07/15 11:30:16 record.go:54: 
+ERROR: 2021/07/15 11:30:16 record.go:37: 词库中暂无此单词：Bên cạnh
+INFO: 2021/07/15 11:30:16 record.go:38: 正在从网络获取：Bên cạnh
+INFO: 2021/07/15 11:30:16 crawler.go:93: Visiting http://tratu.soha.vn/dict/vn_vn/B%C3%AAn_c%E1%BA%A1nh
+INFO: 2021/07/15 11:30:17 crawler.go:88: Get Bên cạnh in OnHTML: &{ObjectIdHex("") Bên cạnh [] 2021-07-15 11:30:17.749315835 +0800 CST m=+292.816518941 0001-01-01 00:00:00 +0000 UTC}
+INFO: 2021/07/15 11:30:17 crawler.go:106: Get Bên cạnh in crawl func: &{ObjectIdHex("") Bên cạnh [] 2021-07-15 11:30:17.749315835 +0800 CST m=+292.816518941 0001-01-01 00:00:00 +0000 UTC}
+INFO: 2021/07/15 11:30:17 crawler.go:107: crawl func finish
+ERROR: 2021/07/15 11:30:17 record.go:41: 获取失败：Bên cạnh
+INFO: 2021/07/15 11:30:45 record.go:32: 139.9.118.67 正在获取：Ngữ cảm
+INFO: 2021/07/15 11:30:45 record.go:54: 60d6fe895518ceb668c87ef8
+INFO: 2021/07/15 11:30:58 record.go:32: 139.9.118.67 正在获取：Sau lưng 
+INFO: 2021/07/15 11:30:58 record.go:54: 
+ERROR: 2021/07/15 11:30:58 record.go:37: 词库中暂无此单词：Sau lưng 
+INFO: 2021/07/15 11:30:58 record.go:38: 正在从网络获取：Sau lưng 
+INFO: 2021/07/15 11:30:58 crawler.go:93: Visiting http://tratu.soha.vn/dict/vn_vn/Sau_l%C6%B0ng
+INFO: 2021/07/15 11:30:59 crawler.go:88: Get Sau lưng in OnHTML: &{ObjectIdHex("") Sau lưng [] 2021-07-15 11:30:59.817496163 +0800 CST m=+334.884699268 0001-01-01 00:00:00 +0000 UTC}
+INFO: 2021/07/15 11:30:59 crawler.go:106: Get Sau lưng in crawl func: &{ObjectIdHex("") Sau lưng [] 2021-07-15 11:30:59.817496163 +0800 CST m=+334.884699268 0001-01-01 00:00:00 +0000 UTC}
+INFO: 2021/07/15 11:30:59 crawler.go:107: crawl func finish
+ERROR: 2021/07/15 11:30:59 record.go:41: 获取失败：Sau lưng 
+INFO: 2021/07/15 11:31:16 record.go:32: 139.9.118.67 正在获取：Lưng
+INFO: 2021/07/15 11:31:16 record.go:54: 60d6fc7f5518ceb668c85957
+INFO: 2021/07/15 11:31:52 record.go:32: 139.9.118.67 正在获取：Đào tạo 
+INFO: 2021/07/15 11:31:52 record.go:54: 60d705e45518ceb668c9060c
+INFO: 2021/07/15 11:31:54 record.go:32: 139.9.118.67 正在获取：Đào tạo
+INFO: 2021/07/15 11:31:54 record.go:54: 60d705e45518ceb668c9060c
+INFO: 2021/07/15 11:32:35 record.go:32: 139.9.118.67 正在获取：A lô
+INFO: 2021/07/15 11:32:35 record.go:54: 
+ERROR: 2021/07/15 11:32:35 record.go:37: 词库中暂无此单词：A lô
+INFO: 2021/07/15 11:32:35 record.go:38: 正在从网络获取：A lô
+INFO: 2021/07/15 11:32:35 crawler.go:93: Visiting http://tratu.soha.vn/dict/vn_vn/A_l%C3%B4
+INFO: 2021/07/15 11:32:36 crawler.go:88: Get A lô in OnHTML: &{ObjectIdHex("") A lô [{0 Cảm từ tiếng gọi dùng trong điện thoại hoặc khi gọi loa để gợi sự chú ý [1. alô, ai gọi đấy ạ? 2. alô, alô, đồng bào chú ý]}] 2021-07-15 11:32:36.614484647 +0800 CST m=+431.681687743 0001-01-01 00:00:00 +0000 UTC}
+INFO: 2021/07/15 11:32:36 crawler.go:106: Get A lô in crawl func: &{ObjectIdHex("") A lô [{0 Cảm từ tiếng gọi dùng trong điện thoại hoặc khi gọi loa để gợi sự chú ý [1. alô, ai gọi đấy ạ? 2. alô, alô, đồng bào chú ý]}] 2021-07-15 11:32:36.614484647 +0800 CST m=+431.681687743 0001-01-01 00:00:00 +0000 UTC}
+INFO: 2021/07/15 11:32:36 crawler.go:107: crawl func finish
+INFO: 2021/07/15 11:32:36 record.go:45: 获取成功：A lô，准备写入词库
+INFO: 2021/07/15 11:40:34 record.go:32: 139.9.118.67 正在获取：Ô
+INFO: 2021/07/15 11:40:34 record.go:54: 
+ERROR: 2021/07/15 11:40:34 record.go:37: 词库中暂无此单词：Ô
+INFO: 2021/07/15 11:40:34 record.go:38: 正在从网络获取：Ô
+INFO: 2021/07/15 11:40:34 crawler.go:93: Visiting http://tratu.soha.vn/dict/vn_vn/%C3%94
+INFO: 2021/07/15 11:40:36 crawler.go:88: Get Ô in OnHTML: &{ObjectIdHex("") Ô [{0 Danh từ (Từ cũ, Văn chương) kim ô (nói tắt) [1. vừng ô]} {0 Danh từ đồ dùng để che mưa nắng, có cán cầm gắn với khung lợp vải có thể giương ra cụp vào [1. giương ô 2. mang theo ô kẻo nắng]} {1 Danh từ (Khẩu ngữ) kẻ cấp trên có thế lực, có thể che chở, làm chỗ dựa cho kẻ cấp dưới, nói trong quan hệ với kẻ cấp dưới đó [1. cậy mình có ô to]} {0 Danh từ khoảng nhỏ vuông vắn được phân chia ngăn cách ra trên bề mặt của vật [1. ô cửa sổ 2. giấy kẻ ô 3. áo sơ mi kẻ ô]} {0 Danh từ khu vực bên ngoài thành Thăng Long thời xưa [1. năm cửa ô 2. ô Cầu Dền]} {0 Cảm từ như ơ [1. ô, sao lại thế?]} {1 Cảm từ ông (viết tắt). []}] 2021-07-15 11:40:36.325086213 +0800 CST m=+911.392289329 0001-01-01 00:00:00 +0000 UTC}
+INFO: 2021/07/15 11:40:36 crawler.go:106: Get Ô in crawl func: &{ObjectIdHex("") Ô [{0 Danh từ (Từ cũ, Văn chương) kim ô (nói tắt) [1. vừng ô]} {0 Danh từ đồ dùng để che mưa nắng, có cán cầm gắn với khung lợp vải có thể giương ra cụp vào [1. giương ô 2. mang theo ô kẻo nắng]} {1 Danh từ (Khẩu ngữ) kẻ cấp trên có thế lực, có thể che chở, làm chỗ dựa cho kẻ cấp dưới, nói trong quan hệ với kẻ cấp dưới đó [1. cậy mình có ô to]} {0 Danh từ khoảng nhỏ vuông vắn được phân chia ngăn cách ra trên bề mặt của vật [1. ô cửa sổ 2. giấy kẻ ô 3. áo sơ mi kẻ ô]} {0 Danh từ khu vực bên ngoài thành Thăng Long thời xưa [1. năm cửa ô 2. ô Cầu Dền]} {0 Cảm từ như ơ [1. ô, sao lại thế?]} {1 Cảm từ ông (viết tắt). []}] 2021-07-15 11:40:36.325086213 +0800 CST m=+911.392289329 0001-01-01 00:00:00 +0000 UTC}
+INFO: 2021/07/15 11:40:36 crawler.go:107: crawl func finish
+INFO: 2021/07/15 11:40:36 record.go:45: 获取成功：Ô，准备写入词库
+INFO: 2021/07/15 11:41:55 record.go:32: 139.9.118.67 正在获取：Không 
+INFO: 2021/07/15 11:41:55 record.go:54: 60d6f7935518ceb668c8421d
+INFO: 2021/07/15 11:42:24 record.go:32: 139.9.118.67 正在获取：Không biết chừng
+INFO: 2021/07/15 11:42:24 record.go:54: 
+ERROR: 2021/07/15 11:42:24 record.go:37: 词库中暂无此单词：Không biết chừng
+INFO: 2021/07/15 11:42:24 record.go:38: 正在从网络获取：Không biết chừng
+INFO: 2021/07/15 11:42:24 crawler.go:93: Visiting http://tratu.soha.vn/dict/vn_vn/Kh%C3%B4ng_bi%E1%BA%BFt_ch%E1%BB%ABng
+INFO: 2021/07/15 11:42:25 crawler.go:88: Get Không biết chừng in OnHTML: &{ObjectIdHex("") Không biết chừng [{0  (Khẩu ngữ) tổ hợp biểu thị ý phỏng đoán một cách dè dặt, chưa dám khẳng định dứt khoát [1. có thể chiều nay nó về cũng không biết chừng]}] 2021-07-15 11:42:25.209044135 +0800 CST m=+1020.276247229 0001-01-01 00:00:00 +0000 UTC}
+INFO: 2021/07/15 11:42:25 crawler.go:106: Get Không biết chừng in crawl func: &{ObjectIdHex("") Không biết chừng [{0  (Khẩu ngữ) tổ hợp biểu thị ý phỏng đoán một cách dè dặt, chưa dám khẳng định dứt khoát [1. có thể chiều nay nó về cũng không biết chừng]}] 2021-07-15 11:42:25.209044135 +0800 CST m=+1020.276247229 0001-01-01 00:00:00 +0000 UTC}
+INFO: 2021/07/15 11:42:25 crawler.go:107: crawl func finish
+INFO: 2021/07/15 11:42:25 record.go:45: 获取成功：Không biết chừng，准备写入词库
+INFO: 2021/07/15 11:43:16 record.go:32: 139.9.118.67 正在获取：Không biết chừng
+INFO: 2021/07/15 11:43:16 record.go:54: 60efaea1bd8844183ea6540a
+INFO: 2021/07/15 12:26:48 record.go:32: 139.9.118.67 正在获取：Không bào
+INFO: 2021/07/15 12:26:48 record.go:54: 
+ERROR: 2021/07/15 12:26:48 record.go:37: 词库中暂无此单词：Không bào
+INFO: 2021/07/15 12:26:48 record.go:38: 正在从网络获取：Không bào
+INFO: 2021/07/15 12:26:48 crawler.go:93: Visiting http://tratu.soha.vn/dict/vn_vn/Kh%C3%B4ng_b%C3%A0o
+INFO: 2021/07/15 12:26:53 crawler.go:88: Get Không bào in OnHTML: &{ObjectIdHex("") Không bào [{0 Danh từ túi nhỏ chứa chất nước ở trong tế bào thực vật, hoặc làm nhiệm vụ tiêu hoá, bài tiết ở động vật đơn bào. []}] 2021-07-15 12:26:53.291893244 +0800 CST m=+3688.359096336 0001-01-01 00:00:00 +0000 UTC}
+INFO: 2021/07/15 12:26:53 crawler.go:106: Get Không bào in crawl func: &{ObjectIdHex("") Không bào [{0 Danh từ túi nhỏ chứa chất nước ở trong tế bào thực vật, hoặc làm nhiệm vụ tiêu hoá, bài tiết ở động vật đơn bào. []}] 2021-07-15 12:26:53.291893244 +0800 CST m=+3688.359096336 0001-01-01 00:00:00 +0000 UTC}
+INFO: 2021/07/15 12:26:53 crawler.go:107: crawl func finish
+INFO: 2021/07/15 12:26:53 record.go:45: 获取成功：Không bào，准备写入词库
+INFO: 2021/07/15 12:27:09 record.go:32: 139.9.118.67 正在获取：Không cánh mà bay
+INFO: 2021/07/15 12:27:09 record.go:54: 
+ERROR: 2021/07/15 12:27:09 record.go:37: 词库中暂无此单词：Không cánh mà bay
+INFO: 2021/07/15 12:27:09 record.go:38: 正在从网络获取：Không cánh mà bay
+INFO: 2021/07/15 12:27:09 crawler.go:93: Visiting http://tratu.soha.vn/dict/vn_vn/Kh%C3%B4ng_c%C3%A1nh_m%C3%A0_bay
+INFO: 2021/07/15 12:27:11 crawler.go:88: Get Không cánh mà bay in OnHTML: &{ObjectIdHex("") Không cánh mà bay [{0  (Khẩu ngữ) bỗng dưng mất đi lúc nào không ai biết, cũng không biết ai lấy [1. chiếc xe đạp đã không cánh mà bay]}] 2021-07-15 12:27:11.245001208 +0800 CST m=+3706.312204311 0001-01-01 00:00:00 +0000 UTC}
+INFO: 2021/07/15 12:27:11 crawler.go:106: Get Không cánh mà bay in crawl func: &{ObjectIdHex("") Không cánh mà bay [{0  (Khẩu ngữ) bỗng dưng mất đi lúc nào không ai biết, cũng không biết ai lấy [1. chiếc xe đạp đã không cánh mà bay]}] 2021-07-15 12:27:11.245001208 +0800 CST m=+3706.312204311 0001-01-01 00:00:00 +0000 UTC}
+INFO: 2021/07/15 12:27:11 crawler.go:107: crawl func finish
+INFO: 2021/07/15 12:27:11 record.go:45: 获取成功：Không cánh mà bay，准备写入词库
+INFO: 2021/07/15 12:27:45 record.go:32: 139.9.118.67 正在获取：Kappa
+INFO: 2021/07/15 12:27:45 record.go:54: 
+ERROR: 2021/07/15 12:27:45 record.go:37: 词库中暂无此单词：Kappa
+INFO: 2021/07/15 12:27:45 record.go:38: 正在从网络获取：Kappa
+INFO: 2021/07/15 12:27:45 crawler.go:93: Visiting http://tratu.soha.vn/dict/vn_vn/Kappa
+INFO: 2021/07/15 12:27:46 crawler.go:88: Get Kappa in OnHTML: &{ObjectIdHex("") Kappa [{0 Danh từ tên một con chữ (κ, viết hoa K) của chữ cái Hi Lạp. []}] 2021-07-15 12:27:46.021878241 +0800 CST m=+3741.089081345 0001-01-01 00:00:00 +0000 UTC}
+INFO: 2021/07/15 12:27:46 crawler.go:106: Get Kappa in crawl func: &{ObjectIdHex("") Kappa [{0 Danh từ tên một con chữ (κ, viết hoa K) của chữ cái Hi Lạp. []}] 2021-07-15 12:27:46.021878241 +0800 CST m=+3741.089081345 0001-01-01 00:00:00 +0000 UTC}
+INFO: 2021/07/15 12:27:46 crawler.go:107: crawl func finish
+INFO: 2021/07/15 12:27:46 record.go:45: 获取成功：Kappa，准备写入词库
+INFO: 2021/07/15 12:28:40 record.go:32: 139.9.118.67 正在获取：Pháp lí
+INFO: 2021/07/15 12:28:40 record.go:54: 
+ERROR: 2021/07/15 12:28:40 record.go:37: 词库中暂无此单词：Pháp lí
+INFO: 2021/07/15 12:28:40 record.go:38: 正在从网络获取：Pháp lí
+INFO: 2021/07/15 12:28:40 crawler.go:93: Visiting http://tratu.soha.vn/dict/vn_vn/Ph%C3%A1p_l%C3%AD
+INFO: 2021/07/15 12:28:42 crawler.go:88: Get Pháp lí in OnHTML: &{ObjectIdHex("") Pháp lí [{0 Danh từ lí luận, nguyên lí về pháp luật [1. không có cơ sở pháp lí 2. hoàn chỉnh các thủ tục pháp lí 3. hành lang pháp lí]}] 2021-07-15 12:28:42.002049541 +0800 CST m=+3797.069252684 0001-01-01 00:00:00 +0000 UTC}
+INFO: 2021/07/15 12:28:42 crawler.go:106: Get Pháp lí in crawl func: &{ObjectIdHex("") Pháp lí [{0 Danh từ lí luận, nguyên lí về pháp luật [1. không có cơ sở pháp lí 2. hoàn chỉnh các thủ tục pháp lí 3. hành lang pháp lí]}] 2021-07-15 12:28:42.002049541 +0800 CST m=+3797.069252684 0001-01-01 00:00:00 +0000 UTC}
+INFO: 2021/07/15 12:28:42 crawler.go:107: crawl func finish
+INFO: 2021/07/15 12:28:42 record.go:45: 获取成功：Pháp lí，准备写入词库
+INFO: 2021/07/15 12:29:36 record.go:32: 139.9.118.67 正在获取：Palan
+INFO: 2021/07/15 12:29:36 record.go:54: 
+ERROR: 2021/07/15 12:29:36 record.go:37: 词库中暂无此单词：Palan
+INFO: 2021/07/15 12:29:36 record.go:38: 正在从网络获取：Palan
+INFO: 2021/07/15 12:29:36 crawler.go:93: Visiting http://tratu.soha.vn/dict/vn_vn/Palan
+INFO: 2021/07/15 12:29:37 crawler.go:106: Get Palan in crawl func: <nil>
+INFO: 2021/07/15 12:29:37 crawler.go:107: crawl func finish
+INFO: 2021/07/15 12:29:47 record.go:32: 139.9.118.67 正在获取：Palan
+INFO: 2021/07/15 12:29:47 record.go:54: 
+ERROR: 2021/07/15 12:29:47 record.go:37: 词库中暂无此单词：Palan
+INFO: 2021/07/15 12:29:47 record.go:38: 正在从网络获取：Palan
+INFO: 2021/07/15 12:29:47 crawler.go:93: Visiting http://tratu.soha.vn/dict/vn_vn/Palan
+INFO: 2021/07/15 12:29:48 crawler.go:88: Get Palan in OnHTML: &{ObjectIdHex("") Palan [{0 Danh từ hệ thống gồm nhiều ròng rọc nối tiếp nhau thường dùng để kéo các vật nặng lên cao bằng một lực nhỏ hơn trọng lượng của vật. []}] 2021-07-15 12:29:48.872736384 +0800 CST m=+3863.939939492 0001-01-01 00:00:00 +0000 UTC}
+INFO: 2021/07/15 12:29:48 crawler.go:106: Get Palan in crawl func: &{ObjectIdHex("") Palan [{0 Danh từ hệ thống gồm nhiều ròng rọc nối tiếp nhau thường dùng để kéo các vật nặng lên cao bằng một lực nhỏ hơn trọng lượng của vật. []}] 2021-07-15 12:29:48.872736384 +0800 CST m=+3863.939939492 0001-01-01 00:00:00 +0000 UTC}
+INFO: 2021/07/15 12:29:48 crawler.go:107: crawl func finish
+INFO: 2021/07/15 12:29:48 record.go:45: 获取成功：Palan，准备写入词库
+INFO: 2021/07/15 12:30:08 record.go:32: 139.9.118.67 正在获取：Chỉnh lí
+INFO: 2021/07/15 12:30:08 record.go:54: 
+ERROR: 2021/07/15 12:30:08 record.go:37: 词库中暂无此单词：Chỉnh lí
+INFO: 2021/07/15 12:30:08 record.go:38: 正在从网络获取：Chỉnh lí
+INFO: 2021/07/15 12:30:08 crawler.go:93: Visiting http://tratu.soha.vn/dict/vn_vn/Ch%E1%BB%89nh_l%C3%AD
+INFO: 2021/07/15 12:30:09 crawler.go:88: Get Chỉnh lí in OnHTML: &{ObjectIdHex("") Chỉnh lí [{0 Động từ sửa chữa, sắp xếp lại cho đúng hơn và gọn gàng hơn [1. chỉnh lí lại bản thảo trước khi in 2. kiểm tra, chỉnh lí tài liệu trước khi công bố chính thức]}] 2021-07-15 12:30:09.603552547 +0800 CST m=+3884.670755645 0001-01-01 00:00:00 +0000 UTC}
+INFO: 2021/07/15 12:30:09 crawler.go:106: Get Chỉnh lí in crawl func: &{ObjectIdHex("") Chỉnh lí [{0 Động từ sửa chữa, sắp xếp lại cho đúng hơn và gọn gàng hơn [1. chỉnh lí lại bản thảo trước khi in 2. kiểm tra, chỉnh lí tài liệu trước khi công bố chính thức]}] 2021-07-15 12:30:09.603552547 +0800 CST m=+3884.670755645 0001-01-01 00:00:00 +0000 UTC}
+INFO: 2021/07/15 12:30:09 crawler.go:107: crawl func finish
+INFO: 2021/07/15 12:30:09 record.go:45: 获取成功：Chỉnh lí，准备写入词库
+INFO: 2021/07/15 12:30:46 record.go:32: 139.9.118.67 正在获取：Gọn gàng
+INFO: 2021/07/15 12:30:46 record.go:54: 60d6f61d5518ceb668c825ed
+INFO: 2021/07/15 12:37:04 record.go:32: 139.9.118.67 正在获取：Ha 
+INFO: 2021/07/15 12:37:04 record.go:54: 60d6f6295518ceb668c826db
+INFO: 2021/07/15 16:26:11 record.go:32: 139.9.118.67 正在获取：Không 
+INFO: 2021/07/15 16:26:11 record.go:54: 60d6f7935518ceb668c8421d

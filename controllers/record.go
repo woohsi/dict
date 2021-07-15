@@ -29,6 +29,7 @@ func FindId(c *gin.Context) {
 //根据单词查释义
 func FindOne(c *gin.Context) {
 	title := c.Param("title")
+	utils.InfoLogger.Printf("%v 正在获取：%v\n", c.ClientIP(), title)
 	record := &models.Record{}
 	err := record.FindTitle(title)
 
