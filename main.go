@@ -1,17 +1,28 @@
 package main
 
 import (
-	"dict/controllers"
+	"dict/api/records"
+	"io"
+	"os"
 
 	"github.com/gin-gonic/gin"
 )
 
 func main() {
+	// Disable Console Color, you don't need console color when writing the logs to file.
+	gin.DisableConsoleColor()
+
+	// Logging to a file.
+	f, _ := os.Create("gin.log")
+	//gin.DefaultWriter = io.MultiWriter(f)
+
+	// Use the following code if you need to write the logs to file and console at the same time.
+	gin.DefaultWriter = io.MultiWriter(f, os.Stdout)
 	router := gin.Default()
-	router.Group("/api")
+	api := router.Group("/api")
 	{
-		router.GET("/records/:title", controllers.FindOne)
-		router.GET("/record/:id", controllers.FindId)
+		api.GET("/records/:title", records.FindOne)
+		api.GET("/record/:id", records.FindId)
 	}
-	router.Run()
+	router.Run(":8080")
 }

@@ -1,20 +1,18 @@
-package controllers
+package records
 
 import (
-	"dict/crawl"
-	"dict/models"
-	"dict/utils"
-	. "dict/utils"
 	"time"
-
 	"github.com/gin-gonic/gin"
 	"gopkg.in/mgo.v2/bson"
+
+	"dict/utils"
+	. "dict/utils"
 )
 
 //根据id查释义
 func FindId(c *gin.Context) {
 	id := c.Param("id")
-	record := &models.Record{}
+	record := &Record{}
 	err := record.FindId(id)
 	if err != nil {
 		utils.ErrorLogger.Printf("获取失败,id：%v\n", id)
@@ -30,13 +28,13 @@ func FindId(c *gin.Context) {
 func FindOne(c *gin.Context) {
 	title := c.Param("title")
 	utils.InfoLogger.Printf("%v 正在获取：%v\n", c.ClientIP(), title)
-	record := &models.Record{}
+	record := &Record{}
 	err := record.FindTitle(title)
 
 	if err != nil {
 		utils.ErrorLogger.Printf("词库中暂无此单词：%v\n", title)
 		utils.InfoLogger.Printf("正在从网络获取：%v\n", title)
-		record = crawl.Crawl(title)
+		record = Crawl(title)
 		if record == nil {
 			utils.ErrorLogger.Printf("获取失败：%v\n", title)
 			RES(c, ERROR, gin.H{})

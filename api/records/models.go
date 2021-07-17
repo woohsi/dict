@@ -1,4 +1,4 @@
-package models
+package records
 
 import (
 	"dict/db"

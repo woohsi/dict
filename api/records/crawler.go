@@ -1,4 +1,4 @@
-package crawl
+package records
 
 import (
 	"encoding/json"
@@ -11,14 +11,11 @@ import (
 	//"regexp"
 	"strconv"
 	"strings"
-
-	"dict/models"
 	"dict/utils"
-
 	"github.com/gocolly/colly"
 )
 
-func Crawl(word string) (record *models.Record){
+func Crawl(word string) (record *Record){
 	word = strings.Trim(word, " ")
 
 	c := colly.NewCollector(
@@ -34,7 +31,7 @@ func Crawl(word string) (record *models.Record){
 		title0 := h.Request.Ctx.Get("title")
 		title0, _ = url.QueryUnescape(title0)
 
-		definitions := make([]models.Definition, 0)
+		definitions := make([]Definition, 0)
 		// for each type (noun, verb, ...)
 		h.ForEach("#bodyContent > div#content-3",func(i int, h *colly.HTMLElement) {
 			tp := strings.Trim(h.ChildText("h3 > span.mw-headline"), " ")
@@ -46,7 +43,7 @@ func Crawl(word string) (record *models.Record){
 				h.ForEach("div#content-5 > dl > dd > i", func(i int, h *colly.HTMLElement) {
 					examples = append(examples, strconv.Itoa(i+1) + ". " + h.Text)
 				})
-				definition := models.Definition{
+				definition := Definition{
 					Id: i,
 					Type: tp,
 					Meaning: meaning,
@@ -68,7 +65,7 @@ func Crawl(word string) (record *models.Record){
 				h.ForEach("div#content-5 > dl > dd > i", func(i int, h *colly.HTMLElement) {
 					examples = append(examples, strconv.Itoa(i+1) + ". " + h.Text)
 				})
-				definition := models.Definition{
+				definition := Definition{
 					Id: i,
 					Type: tp,
 					Meaning: meaning,
@@ -79,7 +76,7 @@ func Crawl(word string) (record *models.Record){
 			})
 		}
 
-		record = &models.Record{
+		record = &Record{
 			Title: title0,
 			Definitions: definitions,
 			CreateAt: time.Now(),
