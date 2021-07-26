@@ -1,17 +1,5 @@
 import { Component, useState, useEffect } from 'react';
-import {
-  TextField,
-  OutlinedInput,
-  Button,
-  InputAdornment,
-  FormControl,
-  FormHelperText,
-  FormLabel,
-  Typography,
-} from '@material-ui/core';
-import SearchIcon from '@material-ui/icons/Search';
 import { makeStyles } from '@material-ui/core/styles';
-import clsx from 'clsx';
 import SearchBar from './searchbar';
 //import Suggestions from './suggestions';
 import WordCard from './wordcard';
@@ -34,8 +22,11 @@ class LookupWordComponent extends Component {
     super(props);
     this.state = {
       inputText: '',
+      select: 'viethan',
       suggestions: [],
       record: {},
+      page: -1,
+      showLearnMore: false,
     };
   }
 
@@ -47,6 +38,10 @@ class LookupWordComponent extends Component {
       this.setState({ suggestions: [] });
       return;
     }
+    if (this.state.select === "viethan") {
+      return
+    }
+    inputText = inputText.trim()
     const request = `https://glacial-sea-66767.herokuapp.com/http://tratu.soha.vn/extensions/curl_suggest.php?search=${encodeURI(
       inputText
     )}&dict=vn_vn`;
@@ -80,21 +75,41 @@ class LookupWordComponent extends Component {
       );
   };
 
+  handleSelectChange = (select) => {
+    this.setState({select: select})
+  }
+
   handleSearch = (word) => {
     //this.setState({ inputText: '' });
-    this.setState({ suggestions: [] });
-    console.log('searching ', word);
-
-    const request = `http://192.168.31.205:8088/api/records/${encodeURI(word)}`;
-    fetch(request)
-      .then((response) => response.json())
-        .then((result) => {
-          console.log("result: ", result)
-          const { data } = result
-          if (data != null) {
-            this.setState({record: data})
-          }
-      });
+    this.setState({ suggestions: [], showLearnMore: true });
+    word = word.trim()
+    if (this.state.select === "vietviet") {
+      console.log('searching vietviet', word);
+      const request = `http://woohsi.top:88/api/records/${encodeURI(word)}`;
+      fetch(request)
+        .then((response) => response.json())
+          .then((result) => {
+            console.log("result: ", result)
+            const { data } = result
+            if (data != null) {
+              this.setState({record: data})
+            }
+        });
+    }
+    
+    if (this.state.select === "viethan") {
+      console.log('searching viethan', word);
+      const request = `http://woohsi.top:88/api/pages/${encodeURI(word)}`;
+      fetch(request)
+        .then((response) => response.json())
+          .then((result) => {
+            console.log("result: ", result)
+            const { page } = result
+            if (page != null) {
+              this.setState({page: page})
+            }
+        });
+    }
   };
 
   render() {
@@ -103,14 +118,17 @@ class LookupWordComponent extends Component {
         <SearchBar
           inputText={this.state.inputText}
           suggestions={this.state.suggestions}
-          onInputchange={this.handleInputChange}
+          select={this.state.select}
+          onInputChange={this.handleInputChange}
+          onSelectChange={this.handleSelectChange}
           onSearch={this.handleSearch}
+
         />
         {/* <Suggestions
           suggestions={this.state.suggestions}
           onSearch={this.handleSearch}
         /> */}
-        <WordCard record={this.state.record} />
+        <WordCard select={this.state.select} showLearnMore={this.state.showLearnMore} word={this.state.inputText} record={this.state.record} page={this.state.page}/>
       </div>
     );
   }

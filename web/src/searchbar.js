@@ -6,6 +6,10 @@ import {
   FormLabel,
 } from '@material-ui/core';
 import SearchIcon from '@material-ui/icons/Search';
+import React from 'react';
+import Radio from '@material-ui/core/Radio';
+import RadioGroup from '@material-ui/core/RadioGroup';
+import FormControlLabel from '@material-ui/core/FormControlLabel';
 import { Component, useState } from 'react';
 
 import './style.css';
@@ -15,7 +19,7 @@ export default function SearchBar(props) {
   //setInputText(props.inputText);
 
   const handleInputChange = (e) => {
-    props.onInputchange(e.target.value);
+    props.onInputChange(e.target.value);
   };
 
   const handleSearchIconClick = () => {
@@ -34,15 +38,19 @@ export default function SearchBar(props) {
     props.onSearch(word);
   };
 
-  const sugestList = props.suggestions.map((s, i) => (
+  let sugestList = props.suggestions.map((s, i) => (
     <div key={i} value={s} className='sugg' onClick={handleSuggestionClick}>
       {s}
     </div>
   ));
 
+  if (props.select === "viethan") {
+    sugestList = <></>
+  }
+
   return (
     <div>
-      <form onSubmit={ handleSubmit} noValidate autoComplete='off'>
+      <form onSubmit={handleSubmit} noValidate autoComplete='off'>
         <FormControl fullWidth>
           <FormLabel></FormLabel>
           <OutlinedInput
@@ -56,7 +64,7 @@ export default function SearchBar(props) {
               </InputAdornment>
             }
           />
-          <FormHelperText></FormHelperText>
+          <FormHelperText><Select onSelectChange={props.onSelectChange}/></FormHelperText>
         </FormControl>
 
         {/* <Button variant='outlined' size='middle' color='primary'>
@@ -67,5 +75,25 @@ export default function SearchBar(props) {
         {sugestList}
       </div>
     </div>
+  );
+}
+
+function Select(props) {
+  const [select, setSelect] = useState("viethan")
+
+  const handleRadioChange = (event) => {
+    debugger;
+    setSelect(event.target.value);
+    props.onSelectChange(event.target.value)
+  };
+
+  return (
+    <FormControl component="fieldset">
+      {/* <FormLabel component="legend">Lựa Chọn</FormLabel> */}
+      <RadioGroup row aria-label="position" name="position" defaultValue="vietviet" value={select} onChange={handleRadioChange}>
+        <FormControlLabel value="viethan" control={<Radio color="primary" />} label="Việt-Hán" />
+        <FormControlLabel value="vietviet" control={<Radio color="primary" />} label="Việt-Việt" />
+      </RadioGroup>
+    </FormControl>
   );
 }

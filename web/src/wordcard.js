@@ -6,7 +6,8 @@ import CardContent from '@material-ui/core/CardContent';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import Chip from '@material-ui/core/Chip';
-
+import PDF from './pdf';
+import './style.css'
 const useStyles = makeStyles({
   root: {
     minWidth: 275,
@@ -27,17 +28,16 @@ const useStyles = makeStyles({
   },
 });
 
-export default function WordCard(props) {
-  const classes = useStyles();
-  const bull = <span className={classes.bullet}>•</span>;
-  const record = props.record;
+const vieviet = (record, classes) => {
   const defs = record.definitions;
-  let preType = null;
   if (defs === undefined) {
     //TODO
-    return <div></div>
+    return <div></div>;
   }
-  const body = defs.map((def, index) => {
+
+  let preType = null;
+
+  const content = defs.map((def, index) => {
     let badge = null;
     if (def.type !== preType) {
       badge = <Chip size='small' label={def.type} />;
@@ -54,6 +54,7 @@ export default function WordCard(props) {
     const examples = def.examples.map((example, index) => {
       return (
         <Typography
+          key={index}
           className={classes.example}
           color='textSecondary'
           gutterBottom
@@ -70,123 +71,52 @@ export default function WordCard(props) {
   });
 
   return (
+    <>
+      <Typography variant='h5' component='h2'>
+        {record.title}
+      </Typography>
+      {content}
+    </>
+  );
+};
+
+const viethan = (page) => {
+  if (page === -1) return <></>
+  return <PDF page={page} />;
+};
+
+export default function WordCard(props) {
+  const classes = useStyles();
+
+  let record = null;
+  let page = 1;
+  let body = null;
+  let learnmore = null;
+  //debugger;
+  if (props.select === '') {
+    body = <></>
+  }
+
+  if (props.select === 'vietviet') {
+    record = props.record;
+    body = vieviet(record, classes);
+  }
+
+  if (props.select === 'viethan') {
+    page = props.page;
+    body = viethan(page);
+  }
+
+  if (props.showLearnMore === true) {
+    learnmore = <Button size='small' onClick={(e) => { e.preventDefault(); window.open("https://www.google.com/search?q=" + props.word, "_blank");}}>Learn More</Button>
+  } else {
+    learnmore = <></>
+  }
+
+  return (
     <Card className={classes.root} variant='outlined'>
-      <CardContent>
-        <Typography variant='h5' component='h2'>
-          {record.title}
-        </Typography>
-
-        {body}
-
-        {/* <Typography className={classes.meaning} variant='body2' component='p'>
-          <Chip size='small' label='đg.' />
-          không còn nữa, sau một quá trình tiêu hao, mất dần
-        </Typography>
-        <Typography
-          className={classes.example}
-          color='textSecondary'
-          gutterBottom
-        >
-          1. hết tiền
-        </Typography>
-        <Typography
-          className={classes.example}
-          color='textSecondary'
-          gutterBottom
-        >
-          2. hết hạn sử dụng
-        </Typography>
-        <Typography
-          className={classes.example}
-          color='textSecondary'
-          gutterBottom
-        >
-          3. súng hết đạn
-        </Typography>
-
-        <Typography className={classes.meaning} variant='body2' component='p'>
-        
-          không còn nữa, sau một quá trình tiêu hao, mất dần
-        </Typography>
-        <Typography
-          className={classes.example}
-          color='textSecondary'
-          gutterBottom
-        >
-          1. hết tiền
-        </Typography>
-        <Typography
-          className={classes.example}
-          color='textSecondary'
-          gutterBottom
-        >
-          2. hết hạn sử dụng
-        </Typography>
-        <Typography
-          className={classes.example}
-          color='textSecondary'
-          gutterBottom
-        >
-          3. súng hết đạn
-        </Typography>
-
-        <Typography className={classes.meaning} variant='body2' component='p'>
-          <Chip size='small' label='p.' />
-          từ biểu thị ý kết thúc, không còn tiếp tục, tiếp diễn hay tồn tại một
-          hoạt động, trạng thái, tính chất nào đó
-        </Typography>
-        <Typography
-          className={classes.example}
-          color='textSecondary'
-          gutterBottom
-        >
-          1. trời hết mưa
-        </Typography>
-        <Typography
-          className={classes.example}
-          color='textSecondary'
-          gutterBottom
-        >
-          2. hết giận
-        </Typography>
-        <Typography
-          className={classes.example}
-          color='textSecondary'
-          gutterBottom
-        >
-          3. Còn duyên kẻ đón người đưa, Hết duyên đi sớm về trưa mặc lòng.
-          (Cdao)
-        </Typography>
-
-        <Typography className={classes.meaning} variant='body2' component='p'>
-          <Chip size='small' label='tr.' />
-          từ biểu thị ý nhấn mạnh về phạm vi không hạn chế của điều vừa phủ định
-        </Typography>
-        <Typography
-          className={classes.example}
-          color='textSecondary'
-          gutterBottom
-        >
-          1. không có đi đâu hết!
-        </Typography>
-        <Typography
-          className={classes.example}
-          color='textSecondary'
-          gutterBottom
-        >
-          2. chẳng làm sao hết!
-        </Typography>
-        <Typography
-          className={classes.example}
-          color='textSecondary'
-          gutterBottom
-        >
-          3. không còn gì nữa hết!
-        </Typography> */}
-      </CardContent>
-      <CardActions>
-        <Button size='small'>Learn More</Button>
-      </CardActions>
+      <CardContent>{body}</CardContent>
+      <CardActions>{learnmore}</CardActions>
     </Card>
   );
 }

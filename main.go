@@ -2,6 +2,7 @@ package main
 
 import (
 	"dict/api/records"
+	"dict/api/pages"
 	"io"
 	"os"
 
@@ -23,6 +24,7 @@ func main() {
 	{
 		api.GET("/records/:title", records.FindOne)
 		api.GET("/record/:id", records.FindId)
+		api.GET("/pages/:title", pages.FindPage)
 	}
 	router.Run(":8080")
 }
