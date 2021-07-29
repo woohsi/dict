@@ -42,7 +42,7 @@ class LookupWordComponent extends Component {
       return
     }
     inputText = inputText.trim()
-    const request = `https://glacial-sea-66767.herokuapp.com/http://tratu.soha.vn/extensions/curl_suggest.php?search=${encodeURI(
+    const request = `https://wcors.herokuapp.com/http://tratu.soha.vn/extensions/curl_suggest.php?search=${encodeURI(
       inputText
     )}&dict=vn_vn`;
     console.log(request);
@@ -85,7 +85,7 @@ class LookupWordComponent extends Component {
     word = word.trim()
     if (this.state.select === "vietviet") {
       console.log('searching vietviet', word);
-      const request = `http://woohsi.top:88/api/records/${encodeURI(word)}`;
+      const request = `http://woohsi.top/api/records/${encodeURI(word)}`;
       fetch(request)
         .then((response) => response.json())
           .then((result) => {
@@ -99,7 +99,7 @@ class LookupWordComponent extends Component {
     
     if (this.state.select === "viethan") {
       console.log('searching viethan', word);
-      const request = `http://woohsi.top:88/api/pages/${encodeURI(word)}`;
+      const request = `http://woohsi.top/api/pages/${encodeURI(word)}`;
       fetch(request)
         .then((response) => response.json())
           .then((result) => {

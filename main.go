@@ -1,8 +1,8 @@
 package main
 
 import (
-	"dict/api/records"
 	"dict/api/pages"
+	"dict/api/records"
 	"io"
 	"os"
 

@@ -589,3 +589,577 @@ INFO: 2021/07/27 01:02:09 crawler.go:103: Get ha in crawl func: &{ObjectIdHex(""
 INFO: 2021/07/27 01:02:09 crawler.go:104: crawl func finish
 INFO: 2021/07/27 01:02:09 controller.go:43: 获取成功：ha，准备写入词库
 ERROR: 2021/07/27 01:02:09 controller.go:46: 插入失败：read tcp 192.168.31.205:55346->139.9.118.67:27017: read: connection reset by peer
+INFO: 2021/07/27 02:59:29 controller.go:30: 139.9.118.67 正在获取：ha
+INFO: 2021/07/27 02:59:29 models.go:54: 60d6f6295518ceb668c826db
+INFO: 2021/07/27 03:12:40 controller.go:30: 139.9.118.67 正在获取：hoa
+INFO: 2021/07/27 03:12:40 models.go:54: 60d6f6465518ceb668c828fb
+INFO: 2021/07/27 16:42:01 controller.go:30: 139.9.118.67 正在获取：ha
+INFO: 2021/07/27 16:42:02 models.go:54: 60d6f6295518ceb668c826db
+INFO: 2021/07/27 16:42:04 controller.go:30: 139.9.118.67 正在获取：ha
+INFO: 2021/07/27 16:42:04 models.go:54: 60d6f6295518ceb668c826db
+INFO: 2021/07/27 16:43:35 controller.go:30: 139.9.118.67 正在获取：Y
+INFO: 2021/07/27 16:43:35 models.go:54: 60d705295518ceb668c8f89d
+INFO: 2021/07/27 17:02:40 controller.go:30: 139.9.118.67 正在获取：go
+INFO: 2021/07/27 17:02:40 models.go:54: 60d6f5e95518ceb668c8220d
+INFO: 2021/07/27 22:56:16 controller.go:30: 139.9.118.67 正在获取：Hồ
+INFO: 2021/07/27 22:56:16 models.go:54: 60d6f71e5518ceb668c83951
+INFO: 2021/07/27 23:13:39 controller.go:30: 139.9.118.67 正在获取：Á
+INFO: 2021/07/27 23:13:39 models.go:54: 60d705365518ceb668c8f990
+INFO: 2021/07/27 23:22:26 controller.go:30: 139.9.118.67 正在获取：Học sinh
+INFO: 2021/07/27 23:22:26 models.go:54: 60d6f6f15518ceb668c835ea
+INFO: 2021/07/28 01:10:15 controller.go:30: 139.9.118.67 正在获取：Bạn
+INFO: 2021/07/28 01:10:15 models.go:54: 60d6f18e5518ceb668c7ce08
+INFO: 2021/07/28 01:10:52 controller.go:30: 139.9.118.67 正在获取：Tuyệt vời
+INFO: 2021/07/28 01:10:52 models.go:54: 60d703175518ceb668c8d2c7
+INFO: 2021/07/28 02:02:03 controller.go:30: 139.9.118.67 正在获取：Công nghiệp
+INFO: 2021/07/28 02:02:03 models.go:54: 60d6f40b5518ceb668c7fdf8
+INFO: 2021/07/28 08:47:57 controller.go:30: 139.9.118.67 正在获取：Sao
+INFO: 2021/07/28 08:47:57 models.go:54: 60d700975518ceb668c8a4d3
+INFO: 2021/07/28 08:53:17 controller.go:30: 139.9.118.67 正在获取：Vịt
+INFO: 2021/07/28 08:53:17 models.go:54: 60d704af5518ceb668c8efd5
+INFO: 2021/07/28 08:53:39 controller.go:30: 139.9.118.67 正在获取：vịt
+INFO: 2021/07/28 08:53:39 models.go:54: 60d704af5518ceb668c8efd5
+INFO: 2021/07/28 09:17:58 controller.go:30: 139.9.118.67 正在获取：kỷ vọng
+INFO: 2021/07/28 09:17:58 models.go:54: 
+ERROR: 2021/07/28 09:17:58 controller.go:35: 词库中暂无此单词：kỷ vọng
+INFO: 2021/07/28 09:17:58 controller.go:36: 正在从网络获取：kỷ vọng
+INFO: 2021/07/28 09:17:58 crawler.go:90: Visiting http://tratu.soha.vn/dict/vn_vn/k%E1%BB%B7_v%E1%BB%8Dng
+INFO: 2021/07/28 09:18:00 crawler.go:85: Get kỷ vọng in OnHTML: &{ObjectIdHex("") kỷ vọng [] 2021-07-28 09:18:00.487246969 +0800 CST m=+38897.527187181 0001-01-01 00:00:00 +0000 UTC}
+INFO: 2021/07/28 09:18:00 crawler.go:103: Get kỷ vọng in crawl func: &{ObjectIdHex("") kỷ vọng [] 2021-07-28 09:18:00.487246969 +0800 CST m=+38897.527187181 0001-01-01 00:00:00 +0000 UTC}
+INFO: 2021/07/28 09:18:00 crawler.go:104: crawl func finish
+ERROR: 2021/07/28 09:18:00 controller.go:39: 获取失败：kỷ vọng
+INFO: 2021/07/28 09:18:00 controller.go:30: 139.9.118.67 正在获取：kỷ vọng
+INFO: 2021/07/28 09:18:00 models.go:54: 
+ERROR: 2021/07/28 09:18:00 controller.go:35: 词库中暂无此单词：kỷ vọng
+INFO: 2021/07/28 09:18:00 controller.go:36: 正在从网络获取：kỷ vọng
+INFO: 2021/07/28 09:18:00 crawler.go:90: Visiting http://tratu.soha.vn/dict/vn_vn/k%E1%BB%B7_v%E1%BB%8Dng
+INFO: 2021/07/28 09:18:02 crawler.go:85: Get kỷ vọng in OnHTML: &{ObjectIdHex("") kỷ vọng [] 2021-07-28 09:18:02.033402494 +0800 CST m=+38899.073342705 0001-01-01 00:00:00 +0000 UTC}
+INFO: 2021/07/28 09:18:02 crawler.go:103: Get kỷ vọng in crawl func: &{ObjectIdHex("") kỷ vọng [] 2021-07-28 09:18:02.033402494 +0800 CST m=+38899.073342705 0001-01-01 00:00:00 +0000 UTC}
+INFO: 2021/07/28 09:18:02 crawler.go:104: crawl func finish
+ERROR: 2021/07/28 09:18:02 controller.go:39: 获取失败：kỷ vọng
+INFO: 2021/07/28 09:18:03 controller.go:30: 139.9.118.67 正在获取：kỷ vọng
+INFO: 2021/07/28 09:18:03 models.go:54: 
+ERROR: 2021/07/28 09:18:03 controller.go:35: 词库中暂无此单词：kỷ vọng
+INFO: 2021/07/28 09:18:03 controller.go:36: 正在从网络获取：kỷ vọng
+INFO: 2021/07/28 09:18:03 crawler.go:90: Visiting http://tratu.soha.vn/dict/vn_vn/k%E1%BB%B7_v%E1%BB%8Dng
+INFO: 2021/07/28 09:18:04 crawler.go:85: Get kỷ vọng in OnHTML: &{ObjectIdHex("") kỷ vọng [] 2021-07-28 09:18:04.517808277 +0800 CST m=+38901.557748487 0001-01-01 00:00:00 +0000 UTC}
+INFO: 2021/07/28 09:18:04 crawler.go:103: Get kỷ vọng in crawl func: &{ObjectIdHex("") kỷ vọng [] 2021-07-28 09:18:04.517808277 +0800 CST m=+38901.557748487 0001-01-01 00:00:00 +0000 UTC}
+INFO: 2021/07/28 09:18:04 crawler.go:104: crawl func finish
+ERROR: 2021/07/28 09:18:04 controller.go:39: 获取失败：kỷ vọng
+INFO: 2021/07/28 09:18:14 controller.go:30: 139.9.118.67 正在获取：kỷ vọng
+INFO: 2021/07/28 09:18:14 models.go:54: 
+ERROR: 2021/07/28 09:18:14 controller.go:35: 词库中暂无此单词：kỷ vọng
+INFO: 2021/07/28 09:18:14 controller.go:36: 正在从网络获取：kỷ vọng
+INFO: 2021/07/28 09:18:14 crawler.go:90: Visiting http://tratu.soha.vn/dict/vn_vn/k%E1%BB%B7_v%E1%BB%8Dng
+INFO: 2021/07/28 09:18:15 crawler.go:85: Get kỷ vọng in OnHTML: &{ObjectIdHex("") kỷ vọng [] 2021-07-28 09:18:15.324674871 +0800 CST m=+38912.364615117 0001-01-01 00:00:00 +0000 UTC}
+INFO: 2021/07/28 09:18:15 crawler.go:103: Get kỷ vọng in crawl func: &{ObjectIdHex("") kỷ vọng [] 2021-07-28 09:18:15.324674871 +0800 CST m=+38912.364615117 0001-01-01 00:00:00 +0000 UTC}
+INFO: 2021/07/28 09:18:15 crawler.go:104: crawl func finish
+ERROR: 2021/07/28 09:18:15 controller.go:39: 获取失败：kỷ vọng
+INFO: 2021/07/28 09:19:00 controller.go:30: 139.9.118.67 正在获取：kỳ vọng
+INFO: 2021/07/28 09:19:00 models.go:54: 
+ERROR: 2021/07/28 09:19:00 controller.go:35: 词库中暂无此单词：kỳ vọng
+INFO: 2021/07/28 09:19:00 controller.go:36: 正在从网络获取：kỳ vọng
+INFO: 2021/07/28 09:19:00 crawler.go:90: Visiting http://tratu.soha.vn/dict/vn_vn/k%E1%BB%B3_v%E1%BB%8Dng
+INFO: 2021/07/28 09:19:01 crawler.go:85: Get kỳ vọng in OnHTML: &{ObjectIdHex("") kỳ vọng [] 2021-07-28 09:19:01.219389357 +0800 CST m=+38958.259329574 0001-01-01 00:00:00 +0000 UTC}
+INFO: 2021/07/28 09:19:01 crawler.go:103: Get kỳ vọng in crawl func: &{ObjectIdHex("") kỳ vọng [] 2021-07-28 09:19:01.219389357 +0800 CST m=+38958.259329574 0001-01-01 00:00:00 +0000 UTC}
+INFO: 2021/07/28 09:19:01 crawler.go:104: crawl func finish
+ERROR: 2021/07/28 09:19:01 controller.go:39: 获取失败：kỳ vọng
+INFO: 2021/07/28 09:19:02 controller.go:30: 139.9.118.67 正在获取：kỳ vọng
+INFO: 2021/07/28 09:19:02 models.go:54: 
+ERROR: 2021/07/28 09:19:02 controller.go:35: 词库中暂无此单词：kỳ vọng
+INFO: 2021/07/28 09:19:02 controller.go:36: 正在从网络获取：kỳ vọng
+INFO: 2021/07/28 09:19:02 crawler.go:90: Visiting http://tratu.soha.vn/dict/vn_vn/k%E1%BB%B3_v%E1%BB%8Dng
+INFO: 2021/07/28 09:19:03 crawler.go:85: Get kỳ vọng in OnHTML: &{ObjectIdHex("") kỳ vọng [] 2021-07-28 09:19:03.456549231 +0800 CST m=+38960.496489441 0001-01-01 00:00:00 +0000 UTC}
+INFO: 2021/07/28 09:19:03 crawler.go:103: Get kỳ vọng in crawl func: &{ObjectIdHex("") kỳ vọng [] 2021-07-28 09:19:03.456549231 +0800 CST m=+38960.496489441 0001-01-01 00:00:00 +0000 UTC}
+INFO: 2021/07/28 09:19:03 crawler.go:104: crawl func finish
+ERROR: 2021/07/28 09:19:03 controller.go:39: 获取失败：kỳ vọng
+INFO: 2021/07/28 09:19:07 controller.go:30: 139.9.118.67 正在获取：kỳ vọng
+INFO: 2021/07/28 09:19:07 models.go:54: 
+ERROR: 2021/07/28 09:19:07 controller.go:35: 词库中暂无此单词：kỳ vọng
+INFO: 2021/07/28 09:19:07 controller.go:36: 正在从网络获取：kỳ vọng
+INFO: 2021/07/28 09:19:07 crawler.go:90: Visiting http://tratu.soha.vn/dict/vn_vn/k%E1%BB%B3_v%E1%BB%8Dng
+INFO: 2021/07/28 09:19:08 crawler.go:85: Get kỳ vọng in OnHTML: &{ObjectIdHex("") kỳ vọng [] 2021-07-28 09:19:08.28968891 +0800 CST m=+38965.329629117 0001-01-01 00:00:00 +0000 UTC}
+INFO: 2021/07/28 09:19:08 crawler.go:103: Get kỳ vọng in crawl func: &{ObjectIdHex("") kỳ vọng [] 2021-07-28 09:19:08.28968891 +0800 CST m=+38965.329629117 0001-01-01 00:00:00 +0000 UTC}
+INFO: 2021/07/28 09:19:08 crawler.go:104: crawl func finish
+ERROR: 2021/07/28 09:19:08 controller.go:39: 获取失败：kỳ vọng
+INFO: 2021/07/28 09:36:45 controller.go:30: 139.9.118.67 正在获取：thân thuộc
+INFO: 2021/07/28 09:36:45 models.go:54: 60d701a75518ceb668c8b873
+INFO: 2021/07/28 09:40:08 controller.go:30: 139.9.118.67 正在获取：kỳ vọng
+INFO: 2021/07/28 09:40:08 models.go:54: 
+ERROR: 2021/07/28 09:40:08 controller.go:35: 词库中暂无此单词：kỳ vọng
+INFO: 2021/07/28 09:40:08 controller.go:36: 正在从网络获取：kỳ vọng
+INFO: 2021/07/28 09:40:08 crawler.go:90: Visiting http://tratu.soha.vn/dict/vn_vn/k%E1%BB%B3_v%E1%BB%8Dng
+INFO: 2021/07/28 09:40:09 crawler.go:85: Get kỳ vọng in OnHTML: &{ObjectIdHex("") kỳ vọng [] 2021-07-28 09:40:09.588929342 +0800 CST m=+40226.628869552 0001-01-01 00:00:00 +0000 UTC}
+INFO: 2021/07/28 09:40:09 crawler.go:103: Get kỳ vọng in crawl func: &{ObjectIdHex("") kỳ vọng [] 2021-07-28 09:40:09.588929342 +0800 CST m=+40226.628869552 0001-01-01 00:00:00 +0000 UTC}
+INFO: 2021/07/28 09:40:09 crawler.go:104: crawl func finish
+ERROR: 2021/07/28 09:40:09 controller.go:39: 获取失败：kỳ vọng
+INFO: 2021/07/28 09:40:09 controller.go:30: 139.9.118.67 正在获取：kỳ vọng
+INFO: 2021/07/28 09:40:09 models.go:54: 
+ERROR: 2021/07/28 09:40:09 controller.go:35: 词库中暂无此单词：kỳ vọng
+INFO: 2021/07/28 09:40:09 controller.go:36: 正在从网络获取：kỳ vọng
+INFO: 2021/07/28 09:40:09 crawler.go:90: Visiting http://tratu.soha.vn/dict/vn_vn/k%E1%BB%B3_v%E1%BB%8Dng
+INFO: 2021/07/28 09:40:10 controller.go:30: 139.9.118.67 正在获取：kỳ vọng
+INFO: 2021/07/28 09:40:10 models.go:54: 
+ERROR: 2021/07/28 09:40:10 controller.go:35: 词库中暂无此单词：kỳ vọng
+INFO: 2021/07/28 09:40:10 controller.go:36: 正在从网络获取：kỳ vọng
+INFO: 2021/07/28 09:40:10 crawler.go:90: Visiting http://tratu.soha.vn/dict/vn_vn/k%E1%BB%B3_v%E1%BB%8Dng
+INFO: 2021/07/28 09:40:10 crawler.go:85: Get kỳ vọng in OnHTML: &{ObjectIdHex("") kỳ vọng [] 2021-07-28 09:40:10.704470297 +0800 CST m=+40227.744410506 0001-01-01 00:00:00 +0000 UTC}
+INFO: 2021/07/28 09:40:10 crawler.go:103: Get kỳ vọng in crawl func: &{ObjectIdHex("") kỳ vọng [] 2021-07-28 09:40:10.704470297 +0800 CST m=+40227.744410506 0001-01-01 00:00:00 +0000 UTC}
+INFO: 2021/07/28 09:40:10 crawler.go:104: crawl func finish
+ERROR: 2021/07/28 09:40:10 controller.go:39: 获取失败：kỳ vọng
+INFO: 2021/07/28 09:40:11 controller.go:30: 139.9.118.67 正在获取：kỳ vọng
+INFO: 2021/07/28 09:40:11 models.go:54: 
+ERROR: 2021/07/28 09:40:11 controller.go:35: 词库中暂无此单词：kỳ vọng
+INFO: 2021/07/28 09:40:11 controller.go:36: 正在从网络获取：kỳ vọng
+INFO: 2021/07/28 09:40:11 crawler.go:90: Visiting http://tratu.soha.vn/dict/vn_vn/k%E1%BB%B3_v%E1%BB%8Dng
+INFO: 2021/07/28 09:40:11 crawler.go:85: Get kỳ vọng in OnHTML: &{ObjectIdHex("") kỳ vọng [] 2021-07-28 09:40:11.526572036 +0800 CST m=+40228.566512246 0001-01-01 00:00:00 +0000 UTC}
+INFO: 2021/07/28 09:40:11 crawler.go:103: Get kỳ vọng in crawl func: &{ObjectIdHex("") kỳ vọng [] 2021-07-28 09:40:11.526572036 +0800 CST m=+40228.566512246 0001-01-01 00:00:00 +0000 UTC}
+INFO: 2021/07/28 09:40:11 crawler.go:104: crawl func finish
+ERROR: 2021/07/28 09:40:11 controller.go:39: 获取失败：kỳ vọng
+INFO: 2021/07/28 09:40:12 crawler.go:85: Get kỳ vọng in OnHTML: &{ObjectIdHex("") kỳ vọng [] 2021-07-28 09:40:12.316143734 +0800 CST m=+40229.356083946 0001-01-01 00:00:00 +0000 UTC}
+INFO: 2021/07/28 09:40:12 crawler.go:103: Get kỳ vọng in crawl func: &{ObjectIdHex("") kỳ vọng [] 2021-07-28 09:40:12.316143734 +0800 CST m=+40229.356083946 0001-01-01 00:00:00 +0000 UTC}
+INFO: 2021/07/28 09:40:12 crawler.go:104: crawl func finish
+ERROR: 2021/07/28 09:40:12 controller.go:39: 获取失败：kỳ vọng
+INFO: 2021/07/28 09:44:23 controller.go:30: 139.9.118.67 正在获取：kỳ vọng
+INFO: 2021/07/28 09:44:23 models.go:54: 
+ERROR: 2021/07/28 09:44:23 controller.go:35: 词库中暂无此单词：kỳ vọng
+INFO: 2021/07/28 09:44:23 controller.go:36: 正在从网络获取：kỳ vọng
+INFO: 2021/07/28 09:44:23 crawler.go:90: Visiting http://tratu.soha.vn/dict/vn_vn/k%E1%BB%B3_v%E1%BB%8Dng
+INFO: 2021/07/28 09:44:24 crawler.go:85: Get kỳ vọng in OnHTML: &{ObjectIdHex("") kỳ vọng [] 2021-07-28 09:44:24.257950635 +0800 CST m=+40481.297890847 0001-01-01 00:00:00 +0000 UTC}
+INFO: 2021/07/28 09:44:24 crawler.go:103: Get kỳ vọng in crawl func: &{ObjectIdHex("") kỳ vọng [] 2021-07-28 09:44:24.257950635 +0800 CST m=+40481.297890847 0001-01-01 00:00:00 +0000 UTC}
+INFO: 2021/07/28 09:44:24 crawler.go:104: crawl func finish
+ERROR: 2021/07/28 09:44:24 controller.go:39: 获取失败：kỳ vọng
+INFO: 2021/07/28 09:44:57 controller.go:30: 139.9.118.67 正在获取：làm tình
+INFO: 2021/07/28 09:44:57 models.go:54: 
+ERROR: 2021/07/28 09:44:57 controller.go:35: 词库中暂无此单词：làm tình
+INFO: 2021/07/28 09:44:57 controller.go:36: 正在从网络获取：làm tình
+INFO: 2021/07/28 09:44:57 crawler.go:90: Visiting http://tratu.soha.vn/dict/vn_vn/l%C3%A0m_t%C3%ACnh
+INFO: 2021/07/28 09:44:58 crawler.go:85: Get làm tình in OnHTML: &{ObjectIdHex("") làm tình [{0 Động từ thực hiện hoạt động tình dục. []}] 2021-07-28 09:44:58.795122634 +0800 CST m=+40515.835062851 0001-01-01 00:00:00 +0000 UTC}
+INFO: 2021/07/28 09:44:58 crawler.go:103: Get làm tình in crawl func: &{ObjectIdHex("") làm tình [{0 Động từ thực hiện hoạt động tình dục. []}] 2021-07-28 09:44:58.795122634 +0800 CST m=+40515.835062851 0001-01-01 00:00:00 +0000 UTC}
+INFO: 2021/07/28 09:44:58 crawler.go:104: crawl func finish
+INFO: 2021/07/28 09:44:58 controller.go:43: 获取成功：làm tình，准备写入词库
+INFO: 2021/07/28 09:44:58 controller.go:30: 139.9.118.67 正在获取：làm tình
+INFO: 2021/07/28 09:44:58 models.go:54: 6100b69a0ed8ad5767c96203
+INFO: 2021/07/28 09:45:37 controller.go:30: 139.9.118.67 正在获取：tình
+INFO: 2021/07/28 09:45:37 models.go:54: 60d703525518ceb668c8d6fc
+INFO: 2021/07/28 09:53:23 controller.go:30: 139.9.118.67 正在获取：mơ màng
+INFO: 2021/07/28 09:53:23 models.go:54: 
+ERROR: 2021/07/28 09:53:23 controller.go:35: 词库中暂无此单词：mơ màng
+INFO: 2021/07/28 09:53:23 controller.go:36: 正在从网络获取：mơ màng
+INFO: 2021/07/28 09:53:23 crawler.go:90: Visiting http://tratu.soha.vn/dict/vn_vn/m%C6%A1_m%C3%A0ng
+INFO: 2021/07/28 09:53:24 crawler.go:85: Get mơ màng in OnHTML: &{ObjectIdHex("") mơ màng [{0  thấy phảng phất, không rõ ràng, trong trạng thái không hoàn toàn tỉnh táo [1. giấc ngủ mơ màng 2. “Thuốc mê đâu đã rưới vào, Mơ màng như giấc chiêm bao biết gì!” (TKiều)]} {1  ở trạng thái say mê theo đuổi những hình ảnh xa xôi, thoát li thực tại [1. đôi mắt mơ màng]} {2  (Khẩu ngữ) luôn luôn nghĩ tới, tưởng tới điều mình mong muốn (thường là không thiết thực) [1. suốt ngày mơ màng viển vông]}] 2021-07-28 09:53:24.86582018 +0800 CST m=+41021.905760390 0001-01-01 00:00:00 +0000 UTC}
+INFO: 2021/07/28 09:53:24 crawler.go:103: Get mơ màng in crawl func: &{ObjectIdHex("") mơ màng [{0  thấy phảng phất, không rõ ràng, trong trạng thái không hoàn toàn tỉnh táo [1. giấc ngủ mơ màng 2. “Thuốc mê đâu đã rưới vào, Mơ màng như giấc chiêm bao biết gì!” (TKiều)]} {1  ở trạng thái say mê theo đuổi những hình ảnh xa xôi, thoát li thực tại [1. đôi mắt mơ màng]} {2  (Khẩu ngữ) luôn luôn nghĩ tới, tưởng tới điều mình mong muốn (thường là không thiết thực) [1. suốt ngày mơ màng viển vông]}] 2021-07-28 09:53:24.86582018 +0800 CST m=+41021.905760390 0001-01-01 00:00:00 +0000 UTC}
+INFO: 2021/07/28 09:53:24 crawler.go:104: crawl func finish
+INFO: 2021/07/28 09:53:24 controller.go:43: 获取成功：mơ màng，准备写入词库
+INFO: 2021/07/28 09:56:00 controller.go:30: 139.9.118.67 正在获取：mơ màng
+INFO: 2021/07/28 09:56:00 models.go:54: 6100b8940ed8ad5767c96241
+INFO: 2021/07/28 09:59:07 controller.go:30: 139.9.118.67 正在获取：Trợ cấp
+INFO: 2021/07/28 09:59:07 models.go:54: 60d702fd5518ceb668c8d0f1
+INFO: 2021/07/28 09:59:41 controller.go:30: 139.9.118.67 正在获取：Trợ cấp
+INFO: 2021/07/28 09:59:41 models.go:54: 60d702fd5518ceb668c8d0f1
+INFO: 2021/07/28 10:46:25 controller.go:30: 139.9.118.67 正在获取：phố đông
+INFO: 2021/07/28 10:46:25 models.go:54: 
+ERROR: 2021/07/28 10:46:25 controller.go:35: 词库中暂无此单词：phố đông
+INFO: 2021/07/28 10:46:25 controller.go:36: 正在从网络获取：phố đông
+INFO: 2021/07/28 10:46:25 crawler.go:90: Visiting http://tratu.soha.vn/dict/vn_vn/ph%E1%BB%91_%C4%91%C3%B4ng
+INFO: 2021/07/28 10:46:26 crawler.go:85: Get phố đông in OnHTML: &{ObjectIdHex("") phố đông [] 2021-07-28 10:46:26.895339705 +0800 CST m=+44203.935279913 0001-01-01 00:00:00 +0000 UTC}
+INFO: 2021/07/28 10:46:26 crawler.go:103: Get phố đông in crawl func: &{ObjectIdHex("") phố đông [] 2021-07-28 10:46:26.895339705 +0800 CST m=+44203.935279913 0001-01-01 00:00:00 +0000 UTC}
+INFO: 2021/07/28 10:46:26 crawler.go:104: crawl func finish
+ERROR: 2021/07/28 10:46:26 controller.go:39: 获取失败：phố đông
+INFO: 2021/07/28 10:46:28 controller.go:30: 139.9.118.67 正在获取：phố đông
+INFO: 2021/07/28 10:46:29 models.go:54: 
+ERROR: 2021/07/28 10:46:29 controller.go:35: 词库中暂无此单词：phố đông
+INFO: 2021/07/28 10:46:29 controller.go:36: 正在从网络获取：phố đông
+INFO: 2021/07/28 10:46:29 crawler.go:90: Visiting http://tratu.soha.vn/dict/vn_vn/ph%E1%BB%91_%C4%91%C3%B4ng
+INFO: 2021/07/28 10:46:30 crawler.go:85: Get phố đông in OnHTML: &{ObjectIdHex("") phố đông [] 2021-07-28 10:46:30.12631592 +0800 CST m=+44207.166256130 0001-01-01 00:00:00 +0000 UTC}
+INFO: 2021/07/28 10:46:30 crawler.go:103: Get phố đông in crawl func: &{ObjectIdHex("") phố đông [] 2021-07-28 10:46:30.12631592 +0800 CST m=+44207.166256130 0001-01-01 00:00:00 +0000 UTC}
+INFO: 2021/07/28 10:46:30 crawler.go:104: crawl func finish
+ERROR: 2021/07/28 10:46:30 controller.go:39: 获取失败：phố đông
+INFO: 2021/07/28 11:46:39 controller.go:30: 139.9.118.67 正在获取：giương
+INFO: 2021/07/28 11:46:39 models.go:54: 60d6f5ab5518ceb668c81d61
+INFO: 2021/07/28 11:48:12 controller.go:30: 139.9.118.67 正在获取：gương
+INFO: 2021/07/28 11:48:12 models.go:54: 60d6f6045518ceb668c82419
+INFO: 2021/07/28 11:51:56 controller.go:30: 139.9.118.67 正在获取：mối tình
+INFO: 2021/07/28 11:51:56 models.go:54: 
+ERROR: 2021/07/28 11:51:56 controller.go:35: 词库中暂无此单词：mối tình
+INFO: 2021/07/28 11:51:56 controller.go:36: 正在从网络获取：mối tình
+INFO: 2021/07/28 11:51:56 crawler.go:90: Visiting http://tratu.soha.vn/dict/vn_vn/m%E1%BB%91i_t%C3%ACnh
+INFO: 2021/07/28 11:51:58 crawler.go:85: Get mối tình in OnHTML: &{ObjectIdHex("") mối tình [] 2021-07-28 11:51:58.343430956 +0800 CST m=+48135.383371178 0001-01-01 00:00:00 +0000 UTC}
+INFO: 2021/07/28 11:51:58 crawler.go:103: Get mối tình in crawl func: &{ObjectIdHex("") mối tình [] 2021-07-28 11:51:58.343430956 +0800 CST m=+48135.383371178 0001-01-01 00:00:00 +0000 UTC}
+INFO: 2021/07/28 11:51:58 crawler.go:104: crawl func finish
+ERROR: 2021/07/28 11:51:58 controller.go:39: 获取失败：mối tình
+INFO: 2021/07/28 11:52:03 controller.go:30: 139.9.118.67 正在获取：mối tình
+INFO: 2021/07/28 11:52:03 models.go:54: 
+ERROR: 2021/07/28 11:52:03 controller.go:35: 词库中暂无此单词：mối tình
+INFO: 2021/07/28 11:52:03 controller.go:36: 正在从网络获取：mối tình
+INFO: 2021/07/28 11:52:03 crawler.go:90: Visiting http://tratu.soha.vn/dict/vn_vn/m%E1%BB%91i_t%C3%ACnh
+INFO: 2021/07/28 11:52:04 crawler.go:85: Get mối tình in OnHTML: &{ObjectIdHex("") mối tình [] 2021-07-28 11:52:04.46886432 +0800 CST m=+48141.508804531 0001-01-01 00:00:00 +0000 UTC}
+INFO: 2021/07/28 11:52:04 crawler.go:103: Get mối tình in crawl func: &{ObjectIdHex("") mối tình [] 2021-07-28 11:52:04.46886432 +0800 CST m=+48141.508804531 0001-01-01 00:00:00 +0000 UTC}
+INFO: 2021/07/28 11:52:04 crawler.go:104: crawl func finish
+ERROR: 2021/07/28 11:52:04 controller.go:39: 获取失败：mối tình
+INFO: 2021/07/28 11:52:06 controller.go:30: 139.9.118.67 正在获取：mối tình
+INFO: 2021/07/28 11:52:06 models.go:54: 
+ERROR: 2021/07/28 11:52:06 controller.go:35: 词库中暂无此单词：mối tình
+INFO: 2021/07/28 11:52:06 controller.go:36: 正在从网络获取：mối tình
+INFO: 2021/07/28 11:52:06 crawler.go:90: Visiting http://tratu.soha.vn/dict/vn_vn/m%E1%BB%91i_t%C3%ACnh
+INFO: 2021/07/28 11:52:07 crawler.go:85: Get mối tình in OnHTML: &{ObjectIdHex("") mối tình [] 2021-07-28 11:52:07.158406887 +0800 CST m=+48144.198347097 0001-01-01 00:00:00 +0000 UTC}
+INFO: 2021/07/28 11:52:07 crawler.go:103: Get mối tình in crawl func: &{ObjectIdHex("") mối tình [] 2021-07-28 11:52:07.158406887 +0800 CST m=+48144.198347097 0001-01-01 00:00:00 +0000 UTC}
+INFO: 2021/07/28 11:52:07 crawler.go:104: crawl func finish
+ERROR: 2021/07/28 11:52:07 controller.go:39: 获取失败：mối tình
+INFO: 2021/07/28 11:52:08 controller.go:30: 139.9.118.67 正在获取：mối
+INFO: 2021/07/28 11:52:08 models.go:54: 60d6fdc05518ceb668c87082
+INFO: 2021/07/28 11:52:16 controller.go:30: 139.9.118.67 正在获取：mối tình
+INFO: 2021/07/28 11:52:16 models.go:54: 
+ERROR: 2021/07/28 11:52:16 controller.go:35: 词库中暂无此单词：mối tình
+INFO: 2021/07/28 11:52:16 controller.go:36: 正在从网络获取：mối tình
+INFO: 2021/07/28 11:52:16 crawler.go:90: Visiting http://tratu.soha.vn/dict/vn_vn/m%E1%BB%91i_t%C3%ACnh
+INFO: 2021/07/28 11:52:17 crawler.go:85: Get mối tình in OnHTML: &{ObjectIdHex("") mối tình [] 2021-07-28 11:52:17.407272356 +0800 CST m=+48154.447212566 0001-01-01 00:00:00 +0000 UTC}
+INFO: 2021/07/28 11:52:17 crawler.go:103: Get mối tình in crawl func: &{ObjectIdHex("") mối tình [] 2021-07-28 11:52:17.407272356 +0800 CST m=+48154.447212566 0001-01-01 00:00:00 +0000 UTC}
+INFO: 2021/07/28 11:52:17 crawler.go:104: crawl func finish
+ERROR: 2021/07/28 11:52:17 controller.go:39: 获取失败：mối tình
+INFO: 2021/07/28 12:01:37 controller.go:30: 139.9.118.67 正在获取：thức giấc
+INFO: 2021/07/28 12:01:37 models.go:54: 60fd9ff9bd8844183ea9a4bf
+INFO: 2021/07/28 12:31:40 controller.go:30: 139.9.118.67 正在获取：hình ảnh
+INFO: 2021/07/28 12:31:40 models.go:54: 60d6f6a75518ceb668c8305f
+INFO: 2021/07/28 12:38:01 controller.go:30: 139.9.118.67 正在获取：hình bóng
+INFO: 2021/07/28 12:38:01 models.go:54: 60d6f69e5518ceb668c82fac
+INFO: 2021/07/28 12:39:11 controller.go:30: 139.9.118.67 正在获取：hình ảnh
+INFO: 2021/07/28 12:39:11 models.go:54: 60d6f6a75518ceb668c8305f
+INFO: 2021/07/28 12:40:52 controller.go:30: 139.9.118.67 正在获取：tâm trí
+INFO: 2021/07/28 12:40:52 models.go:54: 60d7033f5518ceb668c8d5ab
+INFO: 2021/07/28 13:05:28 controller.go:30: 139.9.118.67 正在获取：yêu dấu
+INFO: 2021/07/28 13:05:28 models.go:54: 60d7052e5518ceb668c8f8fd
+INFO: 2021/07/28 13:07:57 controller.go:30: 139.9.118.67 正在获取：tiếng yêu
+INFO: 2021/07/28 13:07:57 models.go:54: 
+ERROR: 2021/07/28 13:07:57 controller.go:35: 词库中暂无此单词：tiếng yêu
+INFO: 2021/07/28 13:07:57 controller.go:36: 正在从网络获取：tiếng yêu
+INFO: 2021/07/28 13:07:57 crawler.go:90: Visiting http://tratu.soha.vn/dict/vn_vn/ti%E1%BA%BFng_y%C3%AAu
+INFO: 2021/07/28 13:08:01 crawler.go:85: Get tiếng yêu in OnHTML: &{ObjectIdHex("") tiếng yêu [] 2021-07-28 13:08:01.138524864 +0800 CST m=+52698.178465113 0001-01-01 00:00:00 +0000 UTC}
+INFO: 2021/07/28 13:08:01 crawler.go:103: Get tiếng yêu in crawl func: &{ObjectIdHex("") tiếng yêu [] 2021-07-28 13:08:01.138524864 +0800 CST m=+52698.178465113 0001-01-01 00:00:00 +0000 UTC}
+INFO: 2021/07/28 13:08:01 crawler.go:104: crawl func finish
+ERROR: 2021/07/28 13:08:01 controller.go:39: 获取失败：tiếng yêu
+INFO: 2021/07/28 13:08:02 controller.go:30: 139.9.118.67 正在获取：tiếng yêu
+INFO: 2021/07/28 13:08:02 models.go:54: 
+ERROR: 2021/07/28 13:08:02 controller.go:35: 词库中暂无此单词：tiếng yêu
+INFO: 2021/07/28 13:08:02 controller.go:36: 正在从网络获取：tiếng yêu
+INFO: 2021/07/28 13:08:02 crawler.go:90: Visiting http://tratu.soha.vn/dict/vn_vn/ti%E1%BA%BFng_y%C3%AAu
+INFO: 2021/07/28 13:08:04 crawler.go:85: Get tiếng yêu in OnHTML: &{ObjectIdHex("") tiếng yêu [] 2021-07-28 13:08:04.432176519 +0800 CST m=+52701.472116727 0001-01-01 00:00:00 +0000 UTC}
+INFO: 2021/07/28 13:08:04 crawler.go:103: Get tiếng yêu in crawl func: &{ObjectIdHex("") tiếng yêu [] 2021-07-28 13:08:04.432176519 +0800 CST m=+52701.472116727 0001-01-01 00:00:00 +0000 UTC}
+INFO: 2021/07/28 13:08:04 crawler.go:104: crawl func finish
+ERROR: 2021/07/28 13:08:04 controller.go:39: 获取失败：tiếng yêu
+INFO: 2021/07/28 14:28:29 controller.go:30: 139.9.118.67 正在获取：Cáu
+INFO: 2021/07/28 14:28:29 models.go:54: 60d6f3ad5518ceb668c7f6f3
+INFO: 2021/07/28 14:49:09 controller.go:30: 139.9.118.67 正在获取：hình dụng
+INFO: 2021/07/28 14:49:09 models.go:54: 
+ERROR: 2021/07/28 14:49:09 controller.go:35: 词库中暂无此单词：hình dụng
+INFO: 2021/07/28 14:49:09 controller.go:36: 正在从网络获取：hình dụng
+INFO: 2021/07/28 14:49:09 crawler.go:90: Visiting http://tratu.soha.vn/dict/vn_vn/h%C3%ACnh_d%E1%BB%A5ng
+INFO: 2021/07/28 14:49:10 crawler.go:85: Get hình dụng in OnHTML: &{ObjectIdHex("") hình dụng [] 2021-07-28 14:49:10.764217978 +0800 CST m=+58767.804158188 0001-01-01 00:00:00 +0000 UTC}
+INFO: 2021/07/28 14:49:10 crawler.go:103: Get hình dụng in crawl func: &{ObjectIdHex("") hình dụng [] 2021-07-28 14:49:10.764217978 +0800 CST m=+58767.804158188 0001-01-01 00:00:00 +0000 UTC}
+INFO: 2021/07/28 14:49:10 crawler.go:104: crawl func finish
+ERROR: 2021/07/28 14:49:10 controller.go:39: 获取失败：hình dụng
+INFO: 2021/07/28 14:49:15 controller.go:30: 139.9.118.67 正在获取：hình dung
+INFO: 2021/07/28 14:49:15 models.go:54: 60d6f6a05518ceb668c82fcc
+INFO: 2021/07/28 14:50:45 controller.go:30: 139.9.118.67 正在获取：hình bóng
+INFO: 2021/07/28 14:50:45 models.go:54: 60d6f69e5518ceb668c82fac
+INFO: 2021/07/28 15:04:34 controller.go:30: 139.9.118.67 正在获取：rõ nét
+INFO: 2021/07/28 15:04:34 models.go:54: 
+ERROR: 2021/07/28 15:04:34 controller.go:35: 词库中暂无此单词：rõ nét
+INFO: 2021/07/28 15:04:34 controller.go:36: 正在从网络获取：rõ nét
+INFO: 2021/07/28 15:04:34 crawler.go:90: Visiting http://tratu.soha.vn/dict/vn_vn/r%C3%B5_n%C3%A9t
+INFO: 2021/07/28 15:04:39 crawler.go:85: Get rõ nét in OnHTML: &{ObjectIdHex("") rõ nét [] 2021-07-28 15:04:39.236692911 +0800 CST m=+59696.276633122 0001-01-01 00:00:00 +0000 UTC}
+INFO: 2021/07/28 15:04:39 crawler.go:103: Get rõ nét in crawl func: &{ObjectIdHex("") rõ nét [] 2021-07-28 15:04:39.236692911 +0800 CST m=+59696.276633122 0001-01-01 00:00:00 +0000 UTC}
+INFO: 2021/07/28 15:04:39 crawler.go:104: crawl func finish
+ERROR: 2021/07/28 15:04:39 controller.go:39: 获取失败：rõ nét
+INFO: 2021/07/28 15:51:14 controller.go:30: 139.9.118.67 正在获取：cực kỳ
+INFO: 2021/07/28 15:51:14 models.go:54: 
+ERROR: 2021/07/28 15:51:14 controller.go:35: 词库中暂无此单词：cực kỳ
+INFO: 2021/07/28 15:51:14 controller.go:36: 正在从网络获取：cực kỳ
+INFO: 2021/07/28 15:51:14 crawler.go:90: Visiting http://tratu.soha.vn/dict/vn_vn/c%E1%BB%B1c_k%E1%BB%B3
+INFO: 2021/07/28 15:51:16 crawler.go:85: Get cực kỳ in OnHTML: &{ObjectIdHex("") cực kỳ [] 2021-07-28 15:51:16.299798965 +0800 CST m=+62493.339739173 0001-01-01 00:00:00 +0000 UTC}
+INFO: 2021/07/28 15:51:16 crawler.go:103: Get cực kỳ in crawl func: &{ObjectIdHex("") cực kỳ [] 2021-07-28 15:51:16.299798965 +0800 CST m=+62493.339739173 0001-01-01 00:00:00 +0000 UTC}
+INFO: 2021/07/28 15:51:16 crawler.go:104: crawl func finish
+ERROR: 2021/07/28 15:51:16 controller.go:39: 获取失败：cực kỳ
+INFO: 2021/07/28 15:52:18 controller.go:30: 139.9.118.67 正在获取：cực kỳ
+INFO: 2021/07/28 15:52:19 models.go:54: 
+ERROR: 2021/07/28 15:52:19 controller.go:35: 词库中暂无此单词：cực kỳ
+INFO: 2021/07/28 15:52:19 controller.go:36: 正在从网络获取：cực kỳ
+INFO: 2021/07/28 15:52:19 crawler.go:90: Visiting http://tratu.soha.vn/dict/vn_vn/c%E1%BB%B1c_k%E1%BB%B3
+INFO: 2021/07/28 15:52:20 crawler.go:85: Get cực kỳ in OnHTML: &{ObjectIdHex("") cực kỳ [] 2021-07-28 15:52:20.160558139 +0800 CST m=+62557.200498347 0001-01-01 00:00:00 +0000 UTC}
+INFO: 2021/07/28 15:52:20 crawler.go:103: Get cực kỳ in crawl func: &{ObjectIdHex("") cực kỳ [] 2021-07-28 15:52:20.160558139 +0800 CST m=+62557.200498347 0001-01-01 00:00:00 +0000 UTC}
+INFO: 2021/07/28 15:52:20 crawler.go:104: crawl func finish
+ERROR: 2021/07/28 15:52:20 controller.go:39: 获取失败：cực kỳ
+INFO: 2021/07/28 18:38:30 controller.go:30: 139.9.118.67 正在获取：Không
+INFO: 2021/07/28 18:38:30 models.go:54: 60d6f7935518ceb668c8421d
+INFO: 2021/07/28 18:40:07 controller.go:30: 139.9.118.67 正在获取：Không
+INFO: 2021/07/28 18:40:07 models.go:54: 60d6f7935518ceb668c8421d
+INFO: 2021/07/28 18:40:18 controller.go:30: 139.9.118.67 正在获取：Khó
+INFO: 2021/07/28 18:40:18 models.go:54: 60d6f78a5518ceb668c84163
+INFO: 2021/07/28 18:44:06 controller.go:30: 139.9.118.67 正在获取：Không
+INFO: 2021/07/28 18:44:06 models.go:54: 60d6f7935518ceb668c8421d
+INFO: 2021/07/28 18:44:44 controller.go:30: 139.9.118.67 正在获取：Không
+INFO: 2021/07/28 18:44:44 models.go:54: 60d6f7935518ceb668c8421d
+INFO: 2021/07/28 18:46:08 controller.go:30: 139.9.118.67 正在获取：Khổng
+INFO: 2021/07/28 18:46:08 models.go:54: 
+ERROR: 2021/07/28 18:46:08 controller.go:35: 词库中暂无此单词：Khổng
+INFO: 2021/07/28 18:46:08 controller.go:36: 正在从网络获取：Khổng
+INFO: 2021/07/28 18:46:08 crawler.go:90: Visiting http://tratu.soha.vn/dict/vn_vn/Kh%E1%BB%95ng
+INFO: 2021/07/28 18:46:09 crawler.go:85: Get Khổng in OnHTML: &{ObjectIdHex("") Khổng [] 2021-07-28 18:46:09.935546813 +0800 CST m=+72986.975487061 0001-01-01 00:00:00 +0000 UTC}
+INFO: 2021/07/28 18:46:09 crawler.go:103: Get Khổng in crawl func: &{ObjectIdHex("") Khổng [] 2021-07-28 18:46:09.935546813 +0800 CST m=+72986.975487061 0001-01-01 00:00:00 +0000 UTC}
+INFO: 2021/07/28 18:46:09 crawler.go:104: crawl func finish
+ERROR: 2021/07/28 18:46:09 controller.go:39: 获取失败：Khổng
+INFO: 2021/07/28 18:46:20 controller.go:30: 139.9.118.67 正在获取：Mình
+INFO: 2021/07/28 18:46:20 models.go:54: 60d6fd655518ceb668c869ec
+INFO: 2021/07/28 18:49:42 controller.go:30: 139.9.118.67 正在获取：M
+INFO: 2021/07/28 18:49:42 models.go:54: 
+ERROR: 2021/07/28 18:49:42 controller.go:35: 词库中暂无此单词：M
+INFO: 2021/07/28 18:49:42 controller.go:36: 正在从网络获取：M
+INFO: 2021/07/28 18:49:42 crawler.go:90: Visiting http://tratu.soha.vn/dict/vn_vn/M
+INFO: 2021/07/28 18:49:43 crawler.go:85: Get M in OnHTML: &{ObjectIdHex("") M [{0  đơn vị đo lường: mét (viết tắt). []} {1  chữ số La Mã: 1.000. []}] 2021-07-28 18:49:43.120614536 +0800 CST m=+73200.160554745 0001-01-01 00:00:00 +0000 UTC}
+INFO: 2021/07/28 18:49:43 crawler.go:103: Get M in crawl func: &{ObjectIdHex("") M [{0  đơn vị đo lường: mét (viết tắt). []} {1  chữ số La Mã: 1.000. []}] 2021-07-28 18:49:43.120614536 +0800 CST m=+73200.160554745 0001-01-01 00:00:00 +0000 UTC}
+INFO: 2021/07/28 18:49:43 crawler.go:104: crawl func finish
+INFO: 2021/07/28 18:49:43 controller.go:43: 获取成功：M，准备写入词库
+INFO: 2021/07/28 18:49:44 controller.go:30: 139.9.118.67 正在获取：M
+INFO: 2021/07/28 18:49:44 models.go:54: 610136470ed8ad5767c97198
+INFO: 2021/07/28 19:00:11 controller.go:30: 139.9.118.67 正在获取：Không
+INFO: 2021/07/28 19:00:11 models.go:54: 60d6f7935518ceb668c8421d
+INFO: 2021/07/28 19:05:19 controller.go:30: 139.9.118.67 正在获取：Không
+INFO: 2021/07/28 19:05:19 models.go:54: 60d6f7935518ceb668c8421d
+INFO: 2021/07/28 19:40:09 controller.go:30: 139.9.118.67 正在获取：bấm
+INFO: 2021/07/28 19:40:09 models.go:54: 60d6f1a95518ceb668c7d017
+INFO: 2021/07/28 19:51:16 controller.go:30: 139.9.118.67 正在获取：không
+INFO: 2021/07/28 19:51:16 models.go:54: 60d6f7935518ceb668c8421d
+INFO: 2021/07/28 20:55:25 controller.go:30: 139.9.118.67 正在获取：Cấp cứu
+INFO: 2021/07/28 20:55:25 models.go:54: 60d6f4625518ceb668c80487
+INFO: 2021/07/28 21:04:59 controller.go:30: 139.9.118.67 正在获取：Phong ba
+INFO: 2021/07/28 21:04:59 models.go:54: 60d6ff845518ceb668c8910b
+INFO: 2021/07/28 21:11:10 controller.go:30: 139.9.118.67 正在获取：mịt mờ
+INFO: 2021/07/28 21:11:10 models.go:54: 60d6fdb95518ceb668c87002
+INFO: 2021/07/28 21:18:03 controller.go:30: 139.9.118.67 正在获取：Mịt mù
+INFO: 2021/07/28 21:18:03 models.go:54: 60d6fdb95518ceb668c86ff9
+INFO: 2021/07/28 21:18:53 controller.go:30: 139.9.118.67 正在获取：mù mịt
+INFO: 2021/07/28 21:18:53 models.go:54: 60d6fd735518ceb668c86ae7
+INFO: 2021/07/28 22:48:44 controller.go:30: 139.9.118.67 正在获取：cưa
+INFO: 2021/07/28 22:48:44 models.go:54: 60d6f43c5518ceb668c801b0
+INFO: 2021/07/28 23:21:17 controller.go:30: 139.9.118.67 正在获取：Hi vọng
+INFO: 2021/07/28 23:21:17 models.go:54: 
+ERROR: 2021/07/28 23:21:17 controller.go:35: 词库中暂无此单词：Hi vọng
+INFO: 2021/07/28 23:21:17 controller.go:36: 正在从网络获取：Hi vọng
+INFO: 2021/07/28 23:21:17 crawler.go:90: Visiting http://tratu.soha.vn/dict/vn_vn/Hi_v%E1%BB%8Dng
+INFO: 2021/07/28 23:21:20 controller.go:30: 139.9.118.67 正在获取：Hi vọng
+INFO: 2021/07/28 23:21:20 models.go:54: 
+ERROR: 2021/07/28 23:21:20 controller.go:35: 词库中暂无此单词：Hi vọng
+INFO: 2021/07/28 23:21:20 controller.go:36: 正在从网络获取：Hi vọng
+INFO: 2021/07/28 23:21:20 crawler.go:90: Visiting http://tratu.soha.vn/dict/vn_vn/Hi_v%E1%BB%8Dng
+INFO: 2021/07/28 23:21:27 controller.go:30: 139.9.118.67 正在获取：Hy vọng
+INFO: 2021/07/28 23:21:27 models.go:54: 
+ERROR: 2021/07/28 23:21:27 controller.go:35: 词库中暂无此单词：Hy vọng
+INFO: 2021/07/28 23:21:27 controller.go:36: 正在从网络获取：Hy vọng
+INFO: 2021/07/28 23:21:27 crawler.go:90: Visiting http://tratu.soha.vn/dict/vn_vn/Hy_v%E1%BB%8Dng
+ERROR: 2021/07/28 23:21:27 crawler.go:94: Error:  Hi vọng
+INFO: 2021/07/28 23:21:27 crawler.go:103: Get Hi vọng in crawl func: <nil>
+INFO: 2021/07/28 23:21:27 crawler.go:104: crawl func finish
+INFO: 2021/07/28 23:21:28 controller.go:30: 139.9.118.67 正在获取：Hy vọng
+INFO: 2021/07/28 23:21:28 models.go:54: 
+ERROR: 2021/07/28 23:21:28 controller.go:35: 词库中暂无此单词：Hy vọng
+INFO: 2021/07/28 23:21:28 controller.go:36: 正在从网络获取：Hy vọng
+INFO: 2021/07/28 23:21:28 crawler.go:90: Visiting http://tratu.soha.vn/dict/vn_vn/Hy_v%E1%BB%8Dng
+INFO: 2021/07/28 23:21:29 controller.go:30: 139.9.118.67 正在获取：Hy vọng
+INFO: 2021/07/28 23:21:29 models.go:54: 
+ERROR: 2021/07/28 23:21:29 controller.go:35: 词库中暂无此单词：Hy vọng
+INFO: 2021/07/28 23:21:29 controller.go:36: 正在从网络获取：Hy vọng
+INFO: 2021/07/28 23:21:29 crawler.go:90: Visiting http://tratu.soha.vn/dict/vn_vn/Hy_v%E1%BB%8Dng
+INFO: 2021/07/28 23:21:30 crawler.go:103: Get Hy vọng in crawl func: <nil>
+INFO: 2021/07/28 23:21:30 crawler.go:104: crawl func finish
+INFO: 2021/07/28 23:21:30 controller.go:30: 139.9.118.67 正在获取：Hy vọng
+INFO: 2021/07/28 23:21:30 models.go:54: 
+ERROR: 2021/07/28 23:21:30 controller.go:35: 词库中暂无此单词：Hy vọng
+INFO: 2021/07/28 23:21:30 controller.go:36: 正在从网络获取：Hy vọng
+INFO: 2021/07/28 23:21:30 crawler.go:90: Visiting http://tratu.soha.vn/dict/vn_vn/Hy_v%E1%BB%8Dng
+ERROR: 2021/07/28 23:21:30 crawler.go:94: Error:  Hi vọng
+INFO: 2021/07/28 23:21:30 crawler.go:103: Get Hi vọng in crawl func: <nil>
+INFO: 2021/07/28 23:21:30 crawler.go:104: crawl func finish
+INFO: 2021/07/28 23:21:34 crawler.go:85: Get Hy vọng in OnHTML: &{ObjectIdHex("") Hy vọng [] 2021-07-28 23:21:34.592546056 +0800 CST m=+9350.560628075 0001-01-01 00:00:00 +0000 UTC}
+INFO: 2021/07/28 23:21:34 crawler.go:103: Get Hy vọng in crawl func: &{ObjectIdHex("") Hy vọng [] 2021-07-28 23:21:34.592546056 +0800 CST m=+9350.560628075 0001-01-01 00:00:00 +0000 UTC}
+INFO: 2021/07/28 23:21:34 crawler.go:104: crawl func finish
+ERROR: 2021/07/28 23:21:34 controller.go:39: 获取失败：Hy vọng
+INFO: 2021/07/28 23:21:36 crawler.go:85: Get Hy vọng in OnHTML: &{ObjectIdHex("") Hy vọng [] 2021-07-28 23:21:36.023411738 +0800 CST m=+9351.991493787 0001-01-01 00:00:00 +0000 UTC}
+INFO: 2021/07/28 23:21:36 crawler.go:103: Get Hy vọng in crawl func: &{ObjectIdHex("") Hy vọng [] 2021-07-28 23:21:36.023411738 +0800 CST m=+9351.991493787 0001-01-01 00:00:00 +0000 UTC}
+INFO: 2021/07/28 23:21:36 crawler.go:104: crawl func finish
+ERROR: 2021/07/28 23:21:36 controller.go:39: 获取失败：Hy vọng
+ERROR: 2021/07/28 23:21:39 crawler.go:94: Error:  Hy vọng
+INFO: 2021/07/28 23:21:39 crawler.go:103: Get Hy vọng in crawl func: <nil>
+INFO: 2021/07/28 23:21:39 crawler.go:104: crawl func finish
+INFO: 2021/07/28 23:21:48 controller.go:30: 139.9.118.67 正在获取：Hi vọng
+INFO: 2021/07/28 23:21:48 models.go:54: 
+ERROR: 2021/07/28 23:21:48 controller.go:35: 词库中暂无此单词：Hi vọng
+INFO: 2021/07/28 23:21:48 controller.go:36: 正在从网络获取：Hi vọng
+INFO: 2021/07/28 23:21:48 crawler.go:90: Visiting http://tratu.soha.vn/dict/vn_vn/Hi_v%E1%BB%8Dng
+ERROR: 2021/07/28 23:21:58 crawler.go:94: Error:  Hi vọng
+INFO: 2021/07/28 23:21:58 crawler.go:103: Get Hi vọng in crawl func: <nil>
+INFO: 2021/07/28 23:21:58 crawler.go:104: crawl func finish
+INFO: 2021/07/28 23:22:19 controller.go:30: 139.9.118.67 正在获取：hi vọng
+INFO: 2021/07/28 23:22:19 models.go:54: 
+ERROR: 2021/07/28 23:22:19 controller.go:35: 词库中暂无此单词：hi vọng
+INFO: 2021/07/28 23:22:19 controller.go:36: 正在从网络获取：hi vọng
+INFO: 2021/07/28 23:22:19 crawler.go:90: Visiting http://tratu.soha.vn/dict/vn_vn/hi_v%E1%BB%8Dng
+INFO: 2021/07/28 23:22:23 controller.go:30: 139.9.118.67 正在获取：hi
+INFO: 2021/07/28 23:22:23 models.go:54: 
+ERROR: 2021/07/28 23:22:23 controller.go:35: 词库中暂无此单词：hi
+INFO: 2021/07/28 23:22:23 controller.go:36: 正在从网络获取：hi
+INFO: 2021/07/28 23:22:23 crawler.go:90: Visiting http://tratu.soha.vn/dict/vn_vn/hi
+INFO: 2021/07/28 23:22:25 controller.go:30: 139.9.118.67 正在获取：hi
+INFO: 2021/07/28 23:22:25 models.go:54: 
+ERROR: 2021/07/28 23:22:25 controller.go:35: 词库中暂无此单词：hi
+INFO: 2021/07/28 23:22:25 controller.go:36: 正在从网络获取：hi
+INFO: 2021/07/28 23:22:25 crawler.go:90: Visiting http://tratu.soha.vn/dict/vn_vn/hi
+INFO: 2021/07/28 23:22:26 controller.go:30: 139.9.118.67 正在获取：hi
+INFO: 2021/07/28 23:22:26 models.go:54: 
+ERROR: 2021/07/28 23:22:26 controller.go:35: 词库中暂无此单词：hi
+INFO: 2021/07/28 23:22:26 controller.go:36: 正在从网络获取：hi
+INFO: 2021/07/28 23:22:26 crawler.go:90: Visiting http://tratu.soha.vn/dict/vn_vn/hi
+INFO: 2021/07/28 23:22:29 crawler.go:85: Get hi in OnHTML: &{ObjectIdHex("") hi [] 2021-07-28 23:22:29.180019323 +0800 CST m=+9405.148101343 0001-01-01 00:00:00 +0000 UTC}
+INFO: 2021/07/28 23:22:29 crawler.go:103: Get hi in crawl func: &{ObjectIdHex("") hi [] 2021-07-28 23:22:29.180019323 +0800 CST m=+9405.148101343 0001-01-01 00:00:00 +0000 UTC}
+INFO: 2021/07/28 23:22:29 crawler.go:104: crawl func finish
+ERROR: 2021/07/28 23:22:29 controller.go:39: 获取失败：hi
+INFO: 2021/07/28 23:22:29 controller.go:30: 139.9.118.67 正在获取：hi
+INFO: 2021/07/28 23:22:29 models.go:54: 
+ERROR: 2021/07/28 23:22:29 controller.go:35: 词库中暂无此单词：hi
+INFO: 2021/07/28 23:22:29 controller.go:36: 正在从网络获取：hi
+INFO: 2021/07/28 23:22:29 crawler.go:90: Visiting http://tratu.soha.vn/dict/vn_vn/hi
+ERROR: 2021/07/28 23:22:29 crawler.go:94: Error:  hi vọng
+INFO: 2021/07/28 23:22:29 crawler.go:103: Get hi vọng in crawl func: <nil>
+INFO: 2021/07/28 23:22:29 crawler.go:104: crawl func finish
+INFO: 2021/07/28 23:22:29 controller.go:30: 139.9.118.67 正在获取：hi
+INFO: 2021/07/28 23:22:29 models.go:54: 
+ERROR: 2021/07/28 23:22:29 controller.go:35: 词库中暂无此单词：hi
+INFO: 2021/07/28 23:22:29 controller.go:36: 正在从网络获取：hi
+INFO: 2021/07/28 23:22:29 crawler.go:90: Visiting http://tratu.soha.vn/dict/vn_vn/hi
+INFO: 2021/07/28 23:22:30 crawler.go:85: Get hi in OnHTML: &{ObjectIdHex("") hi [] 2021-07-28 23:22:30.025630818 +0800 CST m=+9405.993712840 0001-01-01 00:00:00 +0000 UTC}
+INFO: 2021/07/28 23:22:30 crawler.go:103: Get hi in crawl func: &{ObjectIdHex("") hi [] 2021-07-28 23:22:30.025630818 +0800 CST m=+9405.993712840 0001-01-01 00:00:00 +0000 UTC}
+INFO: 2021/07/28 23:22:30 crawler.go:104: crawl func finish
+ERROR: 2021/07/28 23:22:30 controller.go:39: 获取失败：hi
+INFO: 2021/07/28 23:22:30 crawler.go:85: Get hi in OnHTML: &{ObjectIdHex("") hi [] 2021-07-28 23:22:30.589188555 +0800 CST m=+9406.557270572 0001-01-01 00:00:00 +0000 UTC}
+INFO: 2021/07/28 23:22:30 crawler.go:103: Get hi in crawl func: &{ObjectIdHex("") hi [] 2021-07-28 23:22:30.589188555 +0800 CST m=+9406.557270572 0001-01-01 00:00:00 +0000 UTC}
+INFO: 2021/07/28 23:22:30 crawler.go:104: crawl func finish
+ERROR: 2021/07/28 23:22:30 controller.go:39: 获取失败：hi
+ERROR: 2021/07/28 23:22:35 crawler.go:94: Error:  hi
+INFO: 2021/07/28 23:22:35 crawler.go:103: Get hi in crawl func: <nil>
+INFO: 2021/07/28 23:22:35 crawler.go:104: crawl func finish
+ERROR: 2021/07/28 23:22:39 crawler.go:94: Error:  hi
+INFO: 2021/07/28 23:22:39 crawler.go:103: Get hi in crawl func: <nil>
+INFO: 2021/07/28 23:22:39 crawler.go:104: crawl func finish
+INFO: 2021/07/28 23:24:45 controller.go:30: 139.9.118.67 正在获取：ha
+INFO: 2021/07/28 23:24:45 models.go:54: 60d6f6295518ceb668c826db
+INFO: 2021/07/28 23:25:14 controller.go:30: 139.9.118.67 正在获取：Dấu
+INFO: 2021/07/28 23:25:14 models.go:54: 60d6f5315518ceb668c8142b
+INFO: 2021/07/28 23:25:26 controller.go:30: 139.9.118.67 正在获取：hi vọng
+INFO: 2021/07/28 23:25:26 models.go:54: 
+ERROR: 2021/07/28 23:25:26 controller.go:35: 词库中暂无此单词：hi vọng
+INFO: 2021/07/28 23:25:26 controller.go:36: 正在从网络获取：hi vọng
+INFO: 2021/07/28 23:25:26 crawler.go:90: Visiting http://tratu.soha.vn/dict/vn_vn/hi_v%E1%BB%8Dng
+INFO: 2021/07/28 23:25:27 controller.go:30: 139.9.118.67 正在获取：hi vọng
+INFO: 2021/07/28 23:25:27 models.go:54: 
+ERROR: 2021/07/28 23:25:27 controller.go:35: 词库中暂无此单词：hi vọng
+INFO: 2021/07/28 23:25:27 controller.go:36: 正在从网络获取：hi vọng
+INFO: 2021/07/28 23:25:27 crawler.go:90: Visiting http://tratu.soha.vn/dict/vn_vn/hi_v%E1%BB%8Dng
+INFO: 2021/07/28 23:25:27 controller.go:30: 139.9.118.67 正在获取：Xấu
+INFO: 2021/07/28 23:25:27 models.go:54: 60d705195518ceb668c8f780
+INFO: 2021/07/28 23:25:28 crawler.go:85: Get hi vọng in OnHTML: &{ObjectIdHex("") hi vọng [{0 Động từ tin tưởng và mong chờ điều tốt đẹp đến [1. hi vọng có ngày gặp lại 2. hi vọng nhiều ở thế hệ trẻ]} {0 Danh từ niềm hi vọng [1. nuôi hi vọng 2. lòng tràn trề hi vọng]}] 2021-07-28 23:25:28.875469929 +0800 CST m=+9584.843551948 0001-01-01 00:00:00 +0000 UTC}
+INFO: 2021/07/28 23:25:28 crawler.go:103: Get hi vọng in crawl func: &{ObjectIdHex("") hi vọng [{0 Động từ tin tưởng và mong chờ điều tốt đẹp đến [1. hi vọng có ngày gặp lại 2. hi vọng nhiều ở thế hệ trẻ]} {0 Danh từ niềm hi vọng [1. nuôi hi vọng 2. lòng tràn trề hi vọng]}] 2021-07-28 23:25:28.875469929 +0800 CST m=+9584.843551948 0001-01-01 00:00:00 +0000 UTC}
+INFO: 2021/07/28 23:25:28 crawler.go:104: crawl func finish
+INFO: 2021/07/28 23:25:28 controller.go:43: 获取成功：hi vọng，准备写入词库
+INFO: 2021/07/28 23:25:32 controller.go:30: 139.9.118.67 正在获取：Hi vọng
+INFO: 2021/07/28 23:25:32 models.go:54: 610176e86c6c3a07ca59e498
+ERROR: 2021/07/28 23:25:37 crawler.go:94: Error:  hi vọng
+INFO: 2021/07/28 23:25:37 crawler.go:103: Get hi vọng in crawl func: <nil>
+INFO: 2021/07/28 23:25:37 crawler.go:104: crawl func finish
+INFO: 2021/07/28 23:26:40 controller.go:30: 139.9.118.67 正在获取：hi vọng
+INFO: 2021/07/28 23:26:40 models.go:54: 610176e86c6c3a07ca59e498
+INFO: 2021/07/28 23:59:30 controller.go:30: 139.9.118.67 正在获取：quê lụa
+INFO: 2021/07/28 23:59:30 models.go:54: 
+ERROR: 2021/07/28 23:59:30 controller.go:35: 词库中暂无此单词：quê lụa
+INFO: 2021/07/28 23:59:30 controller.go:36: 正在从网络获取：quê lụa
+INFO: 2021/07/28 23:59:30 crawler.go:90: Visiting http://tratu.soha.vn/dict/vn_vn/qu%C3%AA_l%E1%BB%A5a
+INFO: 2021/07/28 23:59:31 controller.go:30: 139.9.118.67 正在获取：quê lụa
+INFO: 2021/07/28 23:59:31 models.go:54: 
+ERROR: 2021/07/28 23:59:31 controller.go:35: 词库中暂无此单词：quê lụa
+INFO: 2021/07/28 23:59:31 controller.go:36: 正在从网络获取：quê lụa
+INFO: 2021/07/28 23:59:31 crawler.go:90: Visiting http://tratu.soha.vn/dict/vn_vn/qu%C3%AA_l%E1%BB%A5a
+ERROR: 2021/07/28 23:59:40 crawler.go:94: Error:  quê lụa
+INFO: 2021/07/28 23:59:40 crawler.go:103: Get quê lụa in crawl func: <nil>
+INFO: 2021/07/28 23:59:40 crawler.go:104: crawl func finish
+ERROR: 2021/07/28 23:59:41 crawler.go:94: Error:  quê lụa
+INFO: 2021/07/28 23:59:41 crawler.go:103: Get quê lụa in crawl func: <nil>
+INFO: 2021/07/28 23:59:41 crawler.go:104: crawl func finish
+INFO: 2021/07/29 00:29:26 controller.go:30: 139.9.118.67 正在获取：cả
+INFO: 2021/07/29 00:29:26 models.go:54: 60d6f44d5518ceb668c802fc
+INFO: 2021/07/29 00:34:21 controller.go:30: 139.9.118.67 正在获取：Cùng với
+INFO: 2021/07/29 00:34:21 models.go:54: 
+ERROR: 2021/07/29 00:34:21 controller.go:35: 词库中暂无此单词：Cùng với
+INFO: 2021/07/29 00:34:21 controller.go:36: 正在从网络获取：Cùng với
+INFO: 2021/07/29 00:34:21 crawler.go:90: Visiting http://tratu.soha.vn/dict/vn_vn/C%C3%B9ng_v%E1%BB%9Bi
+INFO: 2021/07/29 00:34:23 crawler.go:85: Get Cùng với in OnHTML: &{ObjectIdHex("") Cùng với [] 2021-07-29 00:34:23.45169555 +0800 CST m=+13719.419777569 0001-01-01 00:00:00 +0000 UTC}
+INFO: 2021/07/29 00:34:23 crawler.go:103: Get Cùng với in crawl func: &{ObjectIdHex("") Cùng với [] 2021-07-29 00:34:23.45169555 +0800 CST m=+13719.419777569 0001-01-01 00:00:00 +0000 UTC}
+INFO: 2021/07/29 00:34:23 crawler.go:104: crawl func finish
+ERROR: 2021/07/29 00:34:23 controller.go:39: 获取失败：Cùng với
+INFO: 2021/07/29 00:34:26 controller.go:30: 139.9.118.67 正在获取：Cùng với
+INFO: 2021/07/29 00:34:26 models.go:54: 
+ERROR: 2021/07/29 00:34:26 controller.go:35: 词库中暂无此单词：Cùng với
+INFO: 2021/07/29 00:34:26 controller.go:36: 正在从网络获取：Cùng với
+INFO: 2021/07/29 00:34:26 crawler.go:90: Visiting http://tratu.soha.vn/dict/vn_vn/C%C3%B9ng_v%E1%BB%9Bi
+INFO: 2021/07/29 00:34:27 crawler.go:85: Get Cùng với in OnHTML: &{ObjectIdHex("") Cùng với [] 2021-07-29 00:34:27.870121529 +0800 CST m=+13723.838203549 0001-01-01 00:00:00 +0000 UTC}
+INFO: 2021/07/29 00:34:27 crawler.go:103: Get Cùng với in crawl func: &{ObjectIdHex("") Cùng với [] 2021-07-29 00:34:27.870121529 +0800 CST m=+13723.838203549 0001-01-01 00:00:00 +0000 UTC}
+INFO: 2021/07/29 00:34:27 crawler.go:104: crawl func finish
+ERROR: 2021/07/29 00:34:27 controller.go:39: 获取失败：Cùng với
+INFO: 2021/07/29 09:38:35 controller.go:30: 139.9.118.67 正在获取：thương
+INFO: 2021/07/29 09:38:35 models.go:54: 60d701d75518ceb668c8bbd6
+INFO: 2021/07/29 09:39:05 controller.go:30: 139.9.118.67 正在获取：tthương
+INFO: 2021/07/29 09:39:05 models.go:54: 
+ERROR: 2021/07/29 09:39:05 controller.go:35: 词库中暂无此单词：tthương
+INFO: 2021/07/29 09:39:05 controller.go:36: 正在从网络获取：tthương
+INFO: 2021/07/29 09:39:05 crawler.go:90: Visiting http://tratu.soha.vn/dict/vn_vn/tth%C6%B0%C6%A1ng
+INFO: 2021/07/29 09:39:06 crawler.go:85: Get tthương in OnHTML: &{ObjectIdHex("") tthương [] 2021-07-29 09:39:06.641185672 +0800 CST m=+46402.609267702 0001-01-01 00:00:00 +0000 UTC}
+INFO: 2021/07/29 09:39:06 crawler.go:103: Get tthương in crawl func: &{ObjectIdHex("") tthương [] 2021-07-29 09:39:06.641185672 +0800 CST m=+46402.609267702 0001-01-01 00:00:00 +0000 UTC}
+INFO: 2021/07/29 09:39:06 crawler.go:104: crawl func finish
+ERROR: 2021/07/29 09:39:06 controller.go:39: 获取失败：tthương
+INFO: 2021/07/29 09:39:07 controller.go:30: 139.9.118.67 正在获取：tthương
+INFO: 2021/07/29 09:39:07 models.go:54: 
+ERROR: 2021/07/29 09:39:07 controller.go:35: 词库中暂无此单词：tthương
+INFO: 2021/07/29 09:39:07 controller.go:36: 正在从网络获取：tthương
+INFO: 2021/07/29 09:39:07 crawler.go:90: Visiting http://tratu.soha.vn/dict/vn_vn/tth%C6%B0%C6%A1ng
+INFO: 2021/07/29 09:39:08 controller.go:30: 139.9.118.67 正在获取：tthương
+INFO: 2021/07/29 09:39:08 models.go:54: 
+ERROR: 2021/07/29 09:39:08 controller.go:35: 词库中暂无此单词：tthương
+INFO: 2021/07/29 09:39:08 controller.go:36: 正在从网络获取：tthương
+INFO: 2021/07/29 09:39:08 crawler.go:90: Visiting http://tratu.soha.vn/dict/vn_vn/tth%C6%B0%C6%A1ng
+INFO: 2021/07/29 09:39:08 crawler.go:85: Get tthương in OnHTML: &{ObjectIdHex("") tthương [] 2021-07-29 09:39:08.882656429 +0800 CST m=+46404.850738482 0001-01-01 00:00:00 +0000 UTC}
+INFO: 2021/07/29 09:39:08 crawler.go:103: Get tthương in crawl func: &{ObjectIdHex("") tthương [] 2021-07-29 09:39:08.882656429 +0800 CST m=+46404.850738482 0001-01-01 00:00:00 +0000 UTC}
+INFO: 2021/07/29 09:39:08 crawler.go:104: crawl func finish
+ERROR: 2021/07/29 09:39:08 controller.go:39: 获取失败：tthương
+INFO: 2021/07/29 09:39:09 controller.go:30: 139.9.118.67 正在获取：tthương
+INFO: 2021/07/29 09:39:09 models.go:54: 
+ERROR: 2021/07/29 09:39:09 controller.go:35: 词库中暂无此单词：tthương
+INFO: 2021/07/29 09:39:09 controller.go:36: 正在从网络获取：tthương
+INFO: 2021/07/29 09:39:09 crawler.go:90: Visiting http://tratu.soha.vn/dict/vn_vn/tth%C6%B0%C6%A1ng
+INFO: 2021/07/29 09:39:09 crawler.go:85: Get tthương in OnHTML: &{ObjectIdHex("") tthương [] 2021-07-29 09:39:09.882637 +0800 CST m=+46405.850719026 0001-01-01 00:00:00 +0000 UTC}
+INFO: 2021/07/29 09:39:09 crawler.go:103: Get tthương in crawl func: &{ObjectIdHex("") tthương [] 2021-07-29 09:39:09.882637 +0800 CST m=+46405.850719026 0001-01-01 00:00:00 +0000 UTC}
+INFO: 2021/07/29 09:39:09 crawler.go:104: crawl func finish
+ERROR: 2021/07/29 09:39:09 controller.go:39: 获取失败：tthương
+INFO: 2021/07/29 09:39:10 crawler.go:85: Get tthương in OnHTML: &{ObjectIdHex("") tthương [] 2021-07-29 09:39:10.569809185 +0800 CST m=+46406.537891261 0001-01-01 00:00:00 +0000 UTC}
+INFO: 2021/07/29 09:39:10 crawler.go:103: Get tthương in crawl func: &{ObjectIdHex("") tthương [] 2021-07-29 09:39:10.569809185 +0800 CST m=+46406.537891261 0001-01-01 00:00:00 +0000 UTC}
+INFO: 2021/07/29 09:39:10 crawler.go:104: crawl func finish
+ERROR: 2021/07/29 09:39:10 controller.go:39: 获取失败：tthương
+INFO: 2021/07/29 09:39:10 controller.go:30: 139.9.118.67 正在获取：tthương
+INFO: 2021/07/29 09:39:10 models.go:54: 
+ERROR: 2021/07/29 09:39:10 controller.go:35: 词库中暂无此单词：tthương
+INFO: 2021/07/29 09:39:10 controller.go:36: 正在从网络获取：tthương
+INFO: 2021/07/29 09:39:10 crawler.go:90: Visiting http://tratu.soha.vn/dict/vn_vn/tth%C6%B0%C6%A1ng
+INFO: 2021/07/29 09:39:11 crawler.go:85: Get tthương in OnHTML: &{ObjectIdHex("") tthương [] 2021-07-29 09:39:11.761446292 +0800 CST m=+46407.729528320 0001-01-01 00:00:00 +0000 UTC}
+INFO: 2021/07/29 09:39:11 crawler.go:103: Get tthương in crawl func: &{ObjectIdHex("") tthương [] 2021-07-29 09:39:11.761446292 +0800 CST m=+46407.729528320 0001-01-01 00:00:00 +0000 UTC}
+INFO: 2021/07/29 09:39:11 crawler.go:104: crawl func finish
+ERROR: 2021/07/29 09:39:11 controller.go:39: 获取失败：tthương
+INFO: 2021/07/29 09:40:52 controller.go:30: 139.9.118.67 正在获取：hợp
+INFO: 2021/07/29 09:40:52 models.go:54: 60d6f7365518ceb668c83b23
+INFO: 2021/07/29 11:43:13 controller.go:30: 139.9.118.67 正在获取：phẩm chất
+INFO: 2021/07/29 11:43:13 models.go:54: 60d6ffdf5518ceb668c8978f
