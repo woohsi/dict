@@ -98,6 +98,7 @@ class LookupWordComponent extends Component {
     }
     
     if (this.state.select === "viethan") {
+      word = word.toLowerCase();
       console.log('searching viethan', word);
       const request = `http://woohsi.top/api/pages/${encodeURI(word)}`;
       fetch(request)

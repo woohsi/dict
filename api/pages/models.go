@@ -73,6 +73,8 @@ func myLess(a, b string) bool {
 }
 
 func myLesse(a, b string) bool {
+	a = strings.ReplaceAll(a, "-", " ")
+	b = strings.ReplaceAll(b, "-", " ")
 	return myLess(a, b) || equal(a, b)
 }
 
