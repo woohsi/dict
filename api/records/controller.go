@@ -28,9 +28,12 @@ func FindId(c *gin.Context) {
 func FindOne(c *gin.Context) {
 	title := c.Param("title")
 	utils.InfoLogger.Printf("%v 正在获取：%v\n", c.ClientIP(), title)
+	
 	record := &Record{}
-	err := record.FindTitle(title)
+	word := &Word{}
 
+	err := record.FindTitle(title)
+	word.FindTitleInVV30K(title)
 	if err != nil {
 		utils.ErrorLogger.Printf("词库中暂无此单词：%v\n", title)
 		utils.InfoLogger.Printf("正在从网络获取：%v\n", title)
@@ -52,5 +55,6 @@ func FindOne(c *gin.Context) {
 	//返回报文
 	RES(c, SUCCESS, gin.H{
 		"data": record,
+		"data2": word,
 	})
 }

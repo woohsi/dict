@@ -28,9 +28,14 @@ const useStyles = makeStyles({
   },
 });
 
-const vieviet = (record, classes) => {
+const vieviet = (record, vvword, classes) => {
   const defs = record.definitions;
   if (defs === undefined) {
+    //TODO
+    return <div></div>;
+  }
+  const defs2 = vvword.items;
+  if (defs2 === undefined) {
     //TODO
     return <div></div>;
   }
@@ -70,12 +75,31 @@ const vieviet = (record, classes) => {
     );
   });
 
+  const content2 = defs2.map((item, index) => {
+    const badge = <Chip size='small' label={} />;
+    return (
+      <Typography
+        key={index}
+        className={classes.example}
+        color='textSecondary'
+        gutterBottom
+      >
+        {badge}{item}
+      </Typography>
+    );
+  });
+
   return (
     <>
       <Typography variant='h5' component='h2'>
         {record.title}
       </Typography>
       {content}
+      <hr/>
+      <Typography variant='h5' component='h2'>
+        {vvword.title}
+      </Typography>
+      {content2}
     </>
   );
 };
@@ -89,6 +113,7 @@ export default function WordCard(props) {
   const classes = useStyles();
 
   let record = null;
+  let vvword = null;
   let page = 1;
   let body = null;
   let learnmore = null;
@@ -99,7 +124,8 @@ export default function WordCard(props) {
 
   if (props.select === 'vietviet') {
     record = props.record;
-    body = vieviet(record, classes);
+    vvword = props.vvword;
+    body = vieviet(record, vvword, classes);
   }
 
   if (props.select === 'viethan') {

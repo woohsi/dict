@@ -25,6 +25,7 @@ class LookupWordComponent extends Component {
       select: 'viethan',
       suggestions: [],
       record: {},
+      vvword: {},
       page: -1,
       showLearnMore: false,
     };
@@ -90,9 +91,12 @@ class LookupWordComponent extends Component {
         .then((response) => response.json())
           .then((result) => {
             console.log("result: ", result)
-            const { data } = result
+            const { data, data2 } = result
             if (data != null) {
               this.setState({record: data})
+            }
+            if (data2 != null) {
+              this.setState({vvword: data2})
             }
         });
     }
@@ -129,7 +133,8 @@ class LookupWordComponent extends Component {
           suggestions={this.state.suggestions}
           onSearch={this.handleSearch}
         /> */}
-        <WordCard select={this.state.select} showLearnMore={this.state.showLearnMore} word={this.state.inputText} record={this.state.record} page={this.state.page}/>
+        <Word
+          Card select={this.state.select} showLearnMore={this.state.showLearnMore} word={this.state.inputText} record={this.state.record} vvword={this.state.vvword} page={this.state.page} />
       </div>
     );
   }
