@@ -133,8 +133,7 @@ class LookupWordComponent extends Component {
           suggestions={this.state.suggestions}
           onSearch={this.handleSearch}
         /> */}
-        <Word
-          Card select={this.state.select} showLearnMore={this.state.showLearnMore} word={this.state.inputText} record={this.state.record} vvword={this.state.vvword} page={this.state.page} />
+        <WordCard select={this.state.select} showLearnMore={this.state.showLearnMore} word={this.state.inputText} record={this.state.record} vvword={this.state.vvword} page={this.state.page} />
       </div>
     );
   }

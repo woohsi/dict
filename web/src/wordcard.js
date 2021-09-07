@@ -76,7 +76,7 @@ const vieviet = (record, vvword, classes) => {
   });
 
   const content2 = defs2.map((item, index) => {
-    const badge = <Chip size='small' label={} />;
+    const badge = <Chip size='small' label={""} />;
     return (
       <Typography
         key={index}

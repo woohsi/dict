@@ -2651,3 +2651,15 @@ INFO: 2021/09/08 01:03:43 models.go:73:
 INFO: 2021/09/08 01:05:13 controller.go:30: 139.9.118.67 正在获取：Cỏ
 INFO: 2021/09/08 01:05:13 models.go:62: 60d6f4885518ceb668c80765
 INFO: 2021/09/08 01:05:13 models.go:73: 
+<<<<<<< HEAD
+=======
+INFO: 2021/09/08 01:26:05 controller.go:30: 139.9.118.67 正在获取：xem
+INFO: 2021/09/08 01:26:05 models.go:62: 60d704d65518ceb668c8f299
+INFO: 2021/09/08 01:26:05 models.go:73: 
+INFO: 2021/09/08 01:26:20 controller.go:30: 139.9.118.67 正在获取：Phim
+INFO: 2021/09/08 01:26:20 models.go:62: 60d6ff7b5518ceb668c89068
+INFO: 2021/09/08 01:26:20 models.go:73: 
+INFO: 2021/09/08 01:26:31 controller.go:30: 139.9.118.67 正在获取：Phim
+INFO: 2021/09/08 01:26:31 models.go:62: 60d6ff7b5518ceb668c89068
+INFO: 2021/09/08 01:26:31 models.go:73: 
+>>>>>>> add vv30k
