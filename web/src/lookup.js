@@ -26,6 +26,7 @@ class LookupWordComponent extends Component {
       suggestions: [],
       record: {},
       vvword: {},
+      record3: {},
       page: -1,
       showLearnMore: false,
     };
@@ -85,8 +86,8 @@ class LookupWordComponent extends Component {
     this.setState({ suggestions: [], showLearnMore: true });
     word = word.trim()
     if (this.state.select === "vietviet") {
-      console.log('searching vietviet', word);
-      const request = `http://woohsi.top/api/records/${encodeURI(word)}`;
+      console.log('searching vietviet: ', word);
+      const request = `http://woohsi.top/api/records/vietviet/${encodeURI(word)}`;
       fetch(request)
         .then((response) => response.json())
           .then((result) => {
@@ -103,7 +104,7 @@ class LookupWordComponent extends Component {
     
     if (this.state.select === "viethan") {
       word = word.toLowerCase();
-      console.log('searching viethan', word);
+      console.log('searching viethan: ', word);
       const request = `http://woohsi.top/api/pages/${encodeURI(word)}`;
       fetch(request)
         .then((response) => response.json())
@@ -112,6 +113,21 @@ class LookupWordComponent extends Component {
             const { page } = result
             if (page != null) {
               this.setState({page: page})
+            }
+        });
+    }
+
+    if (this.state.select === "hanviet") {
+      word = word.toLowerCase();
+      console.log('searching hanviet: ', word);
+      const request = `http://woohsi.top/api/records/hanviet/${encodeURI(word)}`;
+      fetch(request)
+        .then((response) => response.json())
+          .then((result) => {
+            console.log("result: ", result)
+            const { data } = result
+            if (data != null) {
+              this.setState({ record3: data })
             }
         });
     }
@@ -133,7 +149,7 @@ class LookupWordComponent extends Component {
           suggestions={this.state.suggestions}
           onSearch={this.handleSearch}
         /> */}
-        <WordCard select={this.state.select} showLearnMore={this.state.showLearnMore} word={this.state.inputText} record={this.state.record} vvword={this.state.vvword} page={this.state.page} />
+        <WordCard select={this.state.select} showLearnMore={this.state.showLearnMore} word={this.state.inputText} record={this.state.record} vvword={this.state.vvword} record3={this.state.record3} page={this.state.page} />
       </div>
     );
   }

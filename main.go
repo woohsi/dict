@@ -22,7 +22,8 @@ func main() {
 	router := gin.Default()
 	api := router.Group("/api")
 	{
-		api.GET("/records/:title", records.FindOne)
+		api.GET("/records/vietviet/:title", records.FindVietVietOne)
+		api.GET("/records/hanviet/:title", records.FindHanVietOne)
 		api.GET("/record/:id", records.FindId)
 		api.GET("/pages/:title", pages.FindPage)
 	}

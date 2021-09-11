@@ -109,6 +109,47 @@ const viethan = (page) => {
   return <PDF page={page} />;
 };
 
+const vieviet = (record3, classes) => {
+  const defs = record.definition;
+  if (defs === undefined) {
+    //TODO
+    return <div></div>;
+  }
+  const defs2 = vvword.items;
+  if (defs2 === undefined) {
+    //TODO
+    return <div></div>;
+  }
+
+  const content2 = defs2.map((item, index) => {
+    const badge = <Chip size='small' label={""} />;
+    return (
+      <Typography
+        key={index}
+        className={classes.example}
+        color='textSecondary'
+        gutterBottom
+      >
+        {badge}{item}
+      </Typography>
+    );
+  });
+
+  return (
+    <>
+      <Typography variant='h5' component='h2'>
+        {record.title}
+      </Typography>
+      {content}
+      <hr/>
+      <Typography variant='h5' component='h2'>
+        {vvword.title}
+      </Typography>
+      {content2}
+    </>
+  );
+};
+
 export default function WordCard(props) {
   const classes = useStyles();
 

@@ -25,10 +25,16 @@ type Definition struct {
 	Examples []string `json:"examples" bson:"examples"`
 }
 
-type Word struct {
+type Record2 struct {
 	Id bson.ObjectId `json:"id,omitempty" bson:"id,omitempty"`
 	Title string `json:"title" bson:"title"`
 	Items []string `json:"items" bson:"items"`
+}
+
+type Record3 struct {
+	Id bson.ObjectId `json:"id,omitempty" bson:"id,omitempty"`
+	Title string `json:"title" bson:"title"`
+	Definition string `json:"definition" bson:"definition"`
 }
 
 var dbConnection *db.DBConnection
@@ -37,8 +43,9 @@ var collection2 *mgo.Collection
 
 func init()  {
 	dbConnection = db.NewConnection()
-	collection = dbConnection.Use("dict", "words")
+	collection1 = dbConnection.Use("dict", "words")
 	collection2 = dbConnection.Use("dict", "vv30k")
+	collection3 = dbConnection.Use("dict", "hanviet")
 }
 
 func (r *Record)Find() (list []Record, err error) {
@@ -47,14 +54,14 @@ func (r *Record)Find() (list []Record, err error) {
 }
 
 func (r *Record)FindId(id string) (err error) {
-	err = collection.FindId(bson.ObjectIdHex(id)).One(&r)
+	err = collection1.FindId(bson.ObjectIdHex(id)).One(&r)
 	utils.InfoLogger.Println(r.Id.Hex())
 	return err
 }
 
 func (r *Record)FindTitle(title string)(err error) {
 	reg := bson.M{"$regex": bson.RegEx{Pattern: "^" + strings.Trim(title, " ") + "$", Options: "i"}}
-	err = collection.Find(bson.M{"title": reg}).Select(bson.M{"_id": 1, "title": 1, "definitions": 1}).One(r)
+	err = collection1.Find(bson.M{"title": reg}).Select(bson.M{"_id": 1, "title": 1, "definitions": 1}).One(r)
 	// if err != nil {
 	// 	regex := bson.M{"$regex": bson.RegEx{Pattern: strings.Trim(title, " "), Options: "i"}}
 	// 	err = collection.Find(bson.M{"title": regex}).One(r)
@@ -63,9 +70,20 @@ func (r *Record)FindTitle(title string)(err error) {
 	return err
 }
 
-func (r *Word)FindTitleInVV30K(title string)(err error) {
+func (r *Record2)FindTitleInVV30K(title string)(err error) {
 	reg := bson.M{"$regex": bson.RegEx{Pattern: "^" + strings.Trim(title, " ") + "$", Options: "i"}}
 	err = collection2.Find(bson.M{"title": reg}).Select(bson.M{"_id": 1, "title": 1, "items": 1}).One(r)
+	// if err != nil {
+	// 	regex := bson.M{"$regex": bson.RegEx{Pattern: strings.Trim(title, " "), Options: "i"}}
+	// 	err = collection.Find(bson.M{"title": regex}).One(r)
+	// }
+	utils.InfoLogger.Println(r.Id.Hex())
+	return err
+}
+
+func (r *Record3)FindTitleInHanviet(title string)(err error) {
+	reg := bson.M{"$regex": bson.RegEx{Pattern: "^" + strings.Trim(title, " ") + "$", Options: "i"}}
+	err = collection3.Find(bson.M{"title": reg}).Select(bson.M{"_id": 1, "title": 1, "items": 1}).One(r)
 	// if err != nil {
 	// 	regex := bson.M{"$regex": bson.RegEx{Pattern: strings.Trim(title, " "), Options: "i"}}
 	// 	err = collection.Find(bson.M{"title": regex}).One(r)

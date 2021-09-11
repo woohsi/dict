@@ -10,7 +10,7 @@
             "type": "go",
             "request": "launch",
             "mode": "auto",
-            "program": "${workspaceFolder}/crawler/wash/vv30k.go", 
+            "program": "${workspaceFolder}/crawler/wash/hanviet.go", 
             "dlvFlags": ["--check-go-version=false"],
         }
     ]
