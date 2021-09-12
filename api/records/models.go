@@ -38,8 +38,9 @@ type Record3 struct {
 }
 
 var dbConnection *db.DBConnection
-var collection *mgo.Collection
+var collection1 *mgo.Collection
 var collection2 *mgo.Collection
+var collection3 *mgo.Collection
 
 func init()  {
 	dbConnection = db.NewConnection()
@@ -49,7 +50,7 @@ func init()  {
 }
 
 func (r *Record)Find() (list []Record, err error) {
-	err = collection.Find(bson.M{"title": "hết"}).All(&list)
+	err = collection1.Find(bson.M{"title": "hết"}).All(&list)
 	return list, err
 }
 
@@ -83,7 +84,7 @@ func (r *Record2)FindTitleInVV30K(title string)(err error) {
 
 func (r *Record3)FindTitleInHanviet(title string)(err error) {
 	reg := bson.M{"$regex": bson.RegEx{Pattern: "^" + strings.Trim(title, " ") + "$", Options: "i"}}
-	err = collection3.Find(bson.M{"title": reg}).Select(bson.M{"_id": 1, "title": 1, "items": 1}).One(r)
+	err = collection3.Find(bson.M{"title": reg}).Select(bson.M{"_id": 1, "title": 1, "definition": 1}).One(r)
 	// if err != nil {
 	// 	regex := bson.M{"$regex": bson.RegEx{Pattern: strings.Trim(title, " "), Options: "i"}}
 	// 	err = collection.Find(bson.M{"title": regex}).One(r)
@@ -94,14 +95,14 @@ func (r *Record3)FindTitleInHanviet(title string)(err error) {
 
 func (r *Record)InsertOne() (id string, err error) {
 	var t *Record = &Record{}
-	err = collection.Insert(*r)
+	err = collection1.Insert(*r)
 	if err != nil {
 		return "", err
 	} 
-	collection.Find(bson.M{"title": r.Title}).One(t)
+	collection1.Find(bson.M{"title": r.Title}).One(t)
 	return t.Id.Hex(), err
 }
 
 func (r *Record)Update(selector interface{}, update interface{}) (err error){
-	return collection.Update(selector, update)
+	return collection1.Update(selector, update)
 }

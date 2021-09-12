@@ -3186,3 +3186,215 @@ INFO: 2021/09/11 09:26:49 models.go:73:
 INFO: 2021/09/11 09:27:08 controller.go:30: 139.9.118.67 正在获取：Cho
 INFO: 2021/09/11 09:27:08 models.go:62: 60d6f2645518ceb668c7de34
 INFO: 2021/09/11 09:27:08 models.go:73: 
+INFO: 2021/09/12 21:02:27 controller.go:30: 139.9.118.67 正在获取：ha
+INFO: 2021/09/12 21:02:27 models.go:70: 60d6f6295518ceb668c826db
+INFO: 2021/09/12 21:02:27 models.go:81: 
+INFO: 2021/09/12 21:02:55 controller.go:65: 139.9.118.67 正在获取：一
+INFO: 2021/09/12 21:02:55 models.go:70: 
+INFO: 2021/09/12 21:02:55 models.go:81: 
+ERROR: 2021/09/12 21:02:55 controller.go:73: 词库中暂无此单词：一
+INFO: 2021/09/12 21:02:55 controller.go:74: 正在从网络获取：一
+INFO: 2021/09/12 21:02:55 crawler.go:90: Visiting http://tratu.soha.vn/dict/vn_vn/%E4%B8%80
+INFO: 2021/09/12 21:03:02 crawler.go:85: Get 一 in OnHTML: &{ObjectIdHex("") 一 [] 2021-09-12 21:03:02.383121608 +0800 CST m=+586.537939308 0001-01-01 00:00:00 +0000 UTC}
+INFO: 2021/09/12 21:03:02 crawler.go:103: Get 一 in crawl func: &{ObjectIdHex("") 一 [] 2021-09-12 21:03:02.383121608 +0800 CST m=+586.537939308 0001-01-01 00:00:00 +0000 UTC}
+INFO: 2021/09/12 21:03:02 crawler.go:104: crawl func finish
+ERROR: 2021/09/12 21:03:02 controller.go:77: 获取失败：一
+INFO: 2021/09/12 21:03:02 controller.go:65: 139.9.118.67 正在获取：一
+INFO: 2021/09/12 21:03:02 models.go:70: 
+INFO: 2021/09/12 21:03:02 models.go:81: 
+ERROR: 2021/09/12 21:03:02 controller.go:73: 词库中暂无此单词：一
+INFO: 2021/09/12 21:03:02 controller.go:74: 正在从网络获取：一
+INFO: 2021/09/12 21:03:02 crawler.go:90: Visiting http://tratu.soha.vn/dict/vn_vn/%E4%B8%80
+INFO: 2021/09/12 21:03:05 crawler.go:85: Get 一 in OnHTML: &{ObjectIdHex("") 一 [] 2021-09-12 21:03:05.647070057 +0800 CST m=+589.801887751 0001-01-01 00:00:00 +0000 UTC}
+INFO: 2021/09/12 21:03:05 crawler.go:103: Get 一 in crawl func: &{ObjectIdHex("") 一 [] 2021-09-12 21:03:05.647070057 +0800 CST m=+589.801887751 0001-01-01 00:00:00 +0000 UTC}
+INFO: 2021/09/12 21:03:05 crawler.go:104: crawl func finish
+ERROR: 2021/09/12 21:03:05 controller.go:77: 获取失败：一
+INFO: 2021/09/12 21:13:26 controller.go:65: 139.9.118.67 正在获取：一
+INFO: 2021/09/12 21:14:40 controller.go:65: 139.9.118.67 正在获取：一
+INFO: 2021/09/12 21:15:02 models.go:92: 
+INFO: 2021/09/12 21:16:17 controller.go:65: 139.9.118.67 正在获取：一
+INFO: 2021/09/12 21:16:17 models.go:92: 
+INFO: 2021/09/12 21:21:39 controller.go:65: 139.9.118.67 正在获取：信任
+INFO: 2021/09/12 21:21:39 models.go:92: 
+INFO: 2021/09/12 21:21:53 controller.go:65: 139.9.118.67 正在获取：一
+INFO: 2021/09/12 21:21:53 models.go:92: 
+INFO: 2021/09/12 21:22:18 controller.go:65: 139.9.118.67 正在获取：一
+INFO: 2021/09/12 21:22:18 models.go:92: 
+INFO: 2021/09/12 21:51:53 controller.go:65: 139.9.118.67 正在获取：一
+INFO: 2021/09/12 21:51:53 models.go:92: 
+INFO: 2021/09/12 21:53:16 controller.go:65: 139.9.118.67 正在获取：国企
+INFO: 2021/09/12 21:53:16 models.go:92: 
+ERROR: 2021/09/12 21:53:16 controller.go:70: 获取失败：国企
+INFO: 2021/09/12 21:53:24 controller.go:65: 139.9.118.67 正在获取：北京
+INFO: 2021/09/12 21:53:24 models.go:92: 
+INFO: 2021/09/12 22:07:36 controller.go:65: 139.9.118.67 正在获取：一
+INFO: 2021/09/12 22:07:36 models.go:92: 
+INFO: 2021/09/12 22:07:50 controller.go:65: 139.9.118.67 正在获取：一
+INFO: 2021/09/12 22:07:50 models.go:92: 
+INFO: 2021/09/12 22:10:56 controller.go:65: 139.9.118.67 正在获取：一
+INFO: 2021/09/12 22:10:56 models.go:92: 
+INFO: 2021/09/12 22:26:05 controller.go:65: 139.9.118.67 正在获取：一
+INFO: 2021/09/12 22:26:05 models.go:92: 
+ERROR: 2021/09/12 22:26:05 controller.go:70: 获取失败：一
+INFO: 2021/09/12 22:26:23 controller.go:65: 139.9.118.67 正在获取：一
+INFO: 2021/09/12 22:26:23 models.go:92: 
+ERROR: 2021/09/12 22:26:23 controller.go:70: 获取失败：一
+INFO: 2021/09/12 22:26:46 controller.go:65: 139.9.118.67 正在获取：一
+INFO: 2021/09/12 22:26:46 models.go:92: 
+ERROR: 2021/09/12 22:26:46 controller.go:70: 获取失败：一
+INFO: 2021/09/12 22:26:48 controller.go:65: 139.9.118.67 正在获取：一
+INFO: 2021/09/12 22:26:48 models.go:92: 
+ERROR: 2021/09/12 22:26:48 controller.go:70: 获取失败：一
+INFO: 2021/09/12 22:27:17 controller.go:65: 139.9.118.67 正在获取：一
+INFO: 2021/09/12 22:27:17 models.go:92: 
+ERROR: 2021/09/12 22:27:17 controller.go:70: 获取失败：一
+INFO: 2021/09/12 22:28:30 controller.go:65: 139.9.118.67 正在获取：一
+INFO: 2021/09/12 22:28:30 models.go:92: 
+INFO: 2021/09/12 22:28:41 controller.go:65: 139.9.118.67 正在获取：一
+INFO: 2021/09/12 22:28:41 models.go:92: 
+INFO: 2021/09/12 22:28:52 controller.go:65: 139.9.118.67 正在获取：信任
+INFO: 2021/09/12 22:28:52 models.go:92: 
+INFO: 2021/09/12 22:29:01 controller.go:65: 139.9.118.67 正在获取：国家
+INFO: 2021/09/12 22:29:01 models.go:92: 
+INFO: 2021/09/12 22:29:08 controller.go:65: 139.9.118.67 正在获取：和平
+INFO: 2021/09/12 22:29:08 models.go:92: 
+INFO: 2021/09/12 22:30:30 controller.go:65: 139.9.118.67 正在获取：明天
+INFO: 2021/09/12 22:30:30 models.go:92: 
+INFO: 2021/09/12 22:30:44 controller.go:65: 139.9.118.67 正在获取：一
+INFO: 2021/09/12 22:30:44 models.go:92: 
+INFO: 2021/09/12 22:31:10 controller.go:65: 139.9.118.67 正在获取：妻子
+INFO: 2021/09/12 22:31:10 models.go:92: 
+INFO: 2021/09/12 22:45:30 controller.go:65: 139.9.118.67 正在获取：一
+INFO: 2021/09/12 22:45:30 models.go:92: 
+INFO: 2021/09/12 22:45:45 controller.go:65: 139.9.118.67 正在获取：九州
+INFO: 2021/09/12 22:45:45 models.go:92: 
+INFO: 2021/09/12 22:46:37 controller.go:65: 139.9.118.67 正在获取：人类
+INFO: 2021/09/12 22:46:37 models.go:92: 
+INFO: 2021/09/12 22:47:04 controller.go:65: 139.9.118.67 正在获取：人类
+INFO: 2021/09/12 22:47:04 models.go:92: 
+INFO: 2021/09/12 23:00:48 controller.go:65: 139.9.118.67 正在获取：人类
+INFO: 2021/09/12 23:00:48 models.go:92: 
+INFO: 2021/09/12 23:01:00 controller.go:65: 139.9.118.67 正在获取：傻瓜
+INFO: 2021/09/12 23:01:00 models.go:92: 
+INFO: 2021/09/12 23:01:21 controller.go:65: 139.9.118.67 正在获取：长城
+INFO: 2021/09/12 23:01:21 models.go:92: 
+INFO: 2021/09/12 23:04:01 controller.go:30: 139.9.118.67 正在获取：tinh tế
+INFO: 2021/09/12 23:04:01 models.go:70: 60d702535518ceb668c8c4bf
+INFO: 2021/09/12 23:04:01 models.go:81: 
+INFO: 2021/09/12 23:04:03 controller.go:30: 139.9.118.67 正在获取：tinh tế
+INFO: 2021/09/12 23:04:03 models.go:70: 60d702535518ceb668c8c4bf
+INFO: 2021/09/12 23:04:03 models.go:81: 
+INFO: 2021/09/12 23:04:06 controller.go:30: 139.9.118.67 正在获取：tinh
+INFO: 2021/09/12 23:04:06 models.go:70: 
+INFO: 2021/09/12 23:04:06 models.go:81: 
+ERROR: 2021/09/12 23:04:06 controller.go:38: 词库中暂无此单词：tinh
+INFO: 2021/09/12 23:04:06 controller.go:39: 正在从网络获取：tinh
+INFO: 2021/09/12 23:04:06 crawler.go:90: Visiting http://tratu.soha.vn/dict/vn_vn/tinh
+INFO: 2021/09/12 23:04:07 controller.go:30: 139.9.118.67 正在获取：tinh
+INFO: 2021/09/12 23:04:07 models.go:70: 
+INFO: 2021/09/12 23:04:07 models.go:81: 
+ERROR: 2021/09/12 23:04:07 controller.go:38: 词库中暂无此单词：tinh
+INFO: 2021/09/12 23:04:07 controller.go:39: 正在从网络获取：tinh
+INFO: 2021/09/12 23:04:07 crawler.go:90: Visiting http://tratu.soha.vn/dict/vn_vn/tinh
+INFO: 2021/09/12 23:04:12 crawler.go:85: Get tinh in OnHTML: &{ObjectIdHex("") tinh [{0 Danh từ con vật sống lâu năm trở thành yêu quái chuyên hại người, theo tưởng tượng; cũng thường dùng để ví kẻ lão luyện, ranh ma, xảo quyệt [1. con hồ li đã thành tinh]} {0 Danh từ phần xanh ở ngoài vỏ cây loài tre, nứa [1. cạo tinh tre]} {0 Tính từ có khả năng nhận biết nhanh cả những cái rất nhỏ, phức tạp, tế nhị [1. tinh mắt, nhìn thấy trước 2. nhận xét rất tinh 3. trẻ con giờ tinh lắm, chuyện gì cũng biết!]} {1 Tính từ đạt đến trình độ cao, nắm vững, thành thạo [1. nét vẽ đã tinh 2. nhất nghệ tinh, nhất thân vinh (tng)]} {0 Tính từ thuần nhất, không bị pha tạp với thứ khác, loại khác [1. muối tinh 2. thức ăn tinh]} {0 Phụ từ chỉ toàn là [1. chọn tinh đồ tốt 2. toán thợ tinh những người khoẻ mạnh]}] 2021-09-12 23:04:12.308665665 +0800 CST m=+1518.899984875 0001-01-01 00:00:00 +0000 UTC}
+INFO: 2021/09/12 23:04:12 crawler.go:103: Get tinh in crawl func: &{ObjectIdHex("") tinh [{0 Danh từ con vật sống lâu năm trở thành yêu quái chuyên hại người, theo tưởng tượng; cũng thường dùng để ví kẻ lão luyện, ranh ma, xảo quyệt [1. con hồ li đã thành tinh]} {0 Danh từ phần xanh ở ngoài vỏ cây loài tre, nứa [1. cạo tinh tre]} {0 Tính từ có khả năng nhận biết nhanh cả những cái rất nhỏ, phức tạp, tế nhị [1. tinh mắt, nhìn thấy trước 2. nhận xét rất tinh 3. trẻ con giờ tinh lắm, chuyện gì cũng biết!]} {1 Tính từ đạt đến trình độ cao, nắm vững, thành thạo [1. nét vẽ đã tinh 2. nhất nghệ tinh, nhất thân vinh (tng)]} {0 Tính từ thuần nhất, không bị pha tạp với thứ khác, loại khác [1. muối tinh 2. thức ăn tinh]} {0 Phụ từ chỉ toàn là [1. chọn tinh đồ tốt 2. toán thợ tinh những người khoẻ mạnh]}] 2021-09-12 23:04:12.308665665 +0800 CST m=+1518.899984875 0001-01-01 00:00:00 +0000 UTC}
+INFO: 2021/09/12 23:04:12 crawler.go:104: crawl func finish
+INFO: 2021/09/12 23:04:12 controller.go:46: 获取成功：tinh，准备写入词库
+INFO: 2021/09/12 23:04:13 crawler.go:85: Get tinh in OnHTML: &{ObjectIdHex("") tinh [{0 Danh từ con vật sống lâu năm trở thành yêu quái chuyên hại người, theo tưởng tượng; cũng thường dùng để ví kẻ lão luyện, ranh ma, xảo quyệt [1. con hồ li đã thành tinh]} {0 Danh từ phần xanh ở ngoài vỏ cây loài tre, nứa [1. cạo tinh tre]} {0 Tính từ có khả năng nhận biết nhanh cả những cái rất nhỏ, phức tạp, tế nhị [1. tinh mắt, nhìn thấy trước 2. nhận xét rất tinh 3. trẻ con giờ tinh lắm, chuyện gì cũng biết!]} {1 Tính từ đạt đến trình độ cao, nắm vững, thành thạo [1. nét vẽ đã tinh 2. nhất nghệ tinh, nhất thân vinh (tng)]} {0 Tính từ thuần nhất, không bị pha tạp với thứ khác, loại khác [1. muối tinh 2. thức ăn tinh]} {0 Phụ từ chỉ toàn là [1. chọn tinh đồ tốt 2. toán thợ tinh những người khoẻ mạnh]}] 2021-09-12 23:04:13.887136395 +0800 CST m=+1520.478455605 0001-01-01 00:00:00 +0000 UTC}
+INFO: 2021/09/12 23:04:13 crawler.go:103: Get tinh in crawl func: &{ObjectIdHex("") tinh [{0 Danh từ con vật sống lâu năm trở thành yêu quái chuyên hại người, theo tưởng tượng; cũng thường dùng để ví kẻ lão luyện, ranh ma, xảo quyệt [1. con hồ li đã thành tinh]} {0 Danh từ phần xanh ở ngoài vỏ cây loài tre, nứa [1. cạo tinh tre]} {0 Tính từ có khả năng nhận biết nhanh cả những cái rất nhỏ, phức tạp, tế nhị [1. tinh mắt, nhìn thấy trước 2. nhận xét rất tinh 3. trẻ con giờ tinh lắm, chuyện gì cũng biết!]} {1 Tính từ đạt đến trình độ cao, nắm vững, thành thạo [1. nét vẽ đã tinh 2. nhất nghệ tinh, nhất thân vinh (tng)]} {0 Tính từ thuần nhất, không bị pha tạp với thứ khác, loại khác [1. muối tinh 2. thức ăn tinh]} {0 Phụ từ chỉ toàn là [1. chọn tinh đồ tốt 2. toán thợ tinh những người khoẻ mạnh]}] 2021-09-12 23:04:13.887136395 +0800 CST m=+1520.478455605 0001-01-01 00:00:00 +0000 UTC}
+INFO: 2021/09/12 23:04:13 crawler.go:104: crawl func finish
+INFO: 2021/09/12 23:04:13 controller.go:46: 获取成功：tinh，准备写入词库
+INFO: 2021/09/12 23:04:29 controller.go:65: 139.9.118.67 正在获取：国际
+INFO: 2021/09/12 23:04:29 models.go:92: 
+INFO: 2021/09/12 23:04:30 controller.go:65: 139.9.118.67 正在获取：国际
+INFO: 2021/09/12 23:04:30 models.go:92: 
+INFO: 2021/09/12 23:04:36 controller.go:30: 139.9.118.67 正在获取：ha
+INFO: 2021/09/12 23:04:36 models.go:70: 60d6f6295518ceb668c826db
+INFO: 2021/09/12 23:04:36 models.go:81: 
+INFO: 2021/09/12 23:04:37 controller.go:30: 139.9.118.67 正在获取：ha
+INFO: 2021/09/12 23:04:37 models.go:70: 60d6f6295518ceb668c826db
+INFO: 2021/09/12 23:04:37 models.go:81: 
+INFO: 2021/09/12 23:04:40 controller.go:30: 139.9.118.67 正在获取：ha
+INFO: 2021/09/12 23:04:40 models.go:70: 60d6f6295518ceb668c826db
+INFO: 2021/09/12 23:04:40 models.go:81: 
+INFO: 2021/09/12 23:05:01 controller.go:30: 139.9.118.67 正在获取：ha
+INFO: 2021/09/12 23:05:01 models.go:70: 60d6f6295518ceb668c826db
+INFO: 2021/09/12 23:05:01 models.go:81: 
+INFO: 2021/09/12 23:06:06 controller.go:30: 139.9.118.67 正在获取：ha
+INFO: 2021/09/12 23:06:06 models.go:70: 60d6f6295518ceb668c826db
+INFO: 2021/09/12 23:06:06 models.go:81: 
+INFO: 2021/09/12 23:11:01 controller.go:30: 139.9.118.67 正在获取：cho
+INFO: 2021/09/12 23:11:01 models.go:70: 60d6f2645518ceb668c7de34
+INFO: 2021/09/12 23:11:01 models.go:81: 
+INFO: 2021/09/12 23:11:40 controller.go:30: 139.9.118.67 正在获取：cho
+INFO: 2021/09/12 23:11:40 models.go:70: 60d6f2645518ceb668c7de34
+INFO: 2021/09/12 23:11:40 models.go:81: 
+INFO: 2021/09/12 23:11:53 controller.go:30: 139.9.118.67 正在获取：cho
+INFO: 2021/09/12 23:11:53 models.go:70: 60d6f2645518ceb668c7de34
+INFO: 2021/09/12 23:11:53 models.go:81: 
+INFO: 2021/09/12 23:16:27 controller.go:30: 139.9.118.67 正在获取：cho
+INFO: 2021/09/12 23:16:27 models.go:70: 60d6f2645518ceb668c7de34
+INFO: 2021/09/12 23:16:27 models.go:81: 
+INFO: 2021/09/12 23:16:48 controller.go:30: 139.9.118.67 正在获取：cho
+INFO: 2021/09/12 23:16:48 models.go:70: 60d6f2645518ceb668c7de34
+INFO: 2021/09/12 23:16:48 models.go:81: 
+INFO: 2021/09/12 23:22:51 controller.go:30: 139.9.118.67 正在获取：cho
+INFO: 2021/09/12 23:22:51 models.go:70: 60d6f2645518ceb668c7de34
+INFO: 2021/09/12 23:22:51 models.go:81: 
+INFO: 2021/09/12 23:27:47 controller.go:30: 139.9.118.67 正在获取：pho
+INFO: 2021/09/12 23:27:47 models.go:70: 60d6ff845518ceb668c8910e
+INFO: 2021/09/12 23:27:47 models.go:81: 
+INFO: 2021/09/12 23:54:54 controller.go:65: 139.9.118.67 正在获取：再说
+INFO: 2021/09/12 23:54:54 models.go:92: 
+INFO: 2021/09/13 13:06:35 controller.go:65: 139.9.118.67 正在获取：本来
+INFO: 2021/09/13 13:06:35 models.go:92: 
+INFO: 2021/09/13 14:58:40 controller.go:65: 139.9.118.67 正在获取：亏本
+INFO: 2021/09/13 14:58:40 models.go:92: 
+ERROR: 2021/09/13 14:58:40 controller.go:70: 获取失败：亏本
+INFO: 2021/09/13 14:58:43 controller.go:65: 139.9.118.67 正在获取：亏本
+INFO: 2021/09/13 14:58:43 models.go:92: 
+ERROR: 2021/09/13 14:58:43 controller.go:70: 获取失败：亏本
+INFO: 2021/09/13 14:58:46 controller.go:65: 139.9.118.67 正在获取：亏
+INFO: 2021/09/13 14:58:46 models.go:92: 
+ERROR: 2021/09/13 14:58:46 controller.go:70: 获取失败：亏
+INFO: 2021/09/13 14:59:02 controller.go:65: 139.9.118.67 正在获取：亏
+INFO: 2021/09/13 14:59:02 models.go:92: 
+ERROR: 2021/09/13 14:59:02 controller.go:70: 获取失败：亏
+INFO: 2021/09/13 14:59:15 controller.go:65: 139.9.118.67 正在获取：本
+INFO: 2021/09/13 14:59:15 models.go:92: 
+ERROR: 2021/09/13 14:59:15 controller.go:70: 获取失败：本
+INFO: 2021/09/13 14:59:25 controller.go:65: 139.9.118.67 正在获取：本来
+INFO: 2021/09/13 14:59:25 models.go:92: 
+ERROR: 2021/09/13 14:59:25 controller.go:70: 获取失败：本来
+INFO: 2021/09/13 14:59:46 controller.go:65: 139.9.118.67 正在获取：本来
+INFO: 2021/09/13 14:59:46 models.go:92: 
+ERROR: 2021/09/13 14:59:46 controller.go:70: 获取失败：本来
+INFO: 2021/09/13 15:00:21 controller.go:65: 139.9.118.67 正在获取：九州
+INFO: 2021/09/13 15:00:21 models.go:92: 
+ERROR: 2021/09/13 15:00:21 controller.go:70: 获取失败：九州
+INFO: 2021/09/13 16:18:12 controller.go:30: 139.9.118.67 正在获取：Ơi
+INFO: 2021/09/13 16:18:12 models.go:70: 
+INFO: 2021/09/13 16:18:12 models.go:81: 
+ERROR: 2021/09/13 16:18:12 controller.go:38: 词库中暂无此单词：Ơi
+INFO: 2021/09/13 16:18:12 controller.go:39: 正在从网络获取：Ơi
+INFO: 2021/09/13 16:18:12 crawler.go:90: Visiting http://tratu.soha.vn/dict/vn_vn/%C6%A0i
+INFO: 2021/09/13 16:18:16 controller.go:30: 139.9.118.67 正在获取：Ơi
+INFO: 2021/09/13 16:18:16 models.go:70: 
+INFO: 2021/09/13 16:18:16 models.go:81: 
+ERROR: 2021/09/13 16:18:16 controller.go:38: 词库中暂无此单词：Ơi
+INFO: 2021/09/13 16:18:16 controller.go:39: 正在从网络获取：Ơi
+INFO: 2021/09/13 16:18:16 crawler.go:90: Visiting http://tratu.soha.vn/dict/vn_vn/%C6%A0i
+INFO: 2021/09/13 16:18:19 crawler.go:85: Get Ơi in OnHTML: &{ObjectIdHex("") Ơi [{0 Cảm từ tiếng gọi dùng để gọi một cách thân mật, thân thiết [1. mẹ ơi! 2. "Thuyền ơi có nhớ bến chăng, Bến thì một dạ khăng khăng đợi thuyền." (Cdao)]} {1 Cảm từ (Khẩu ngữ) tiếng đáp dùng để đáp lại tiếng gọi của người ngang hàng hoặc người dưới [1. (- chị ơi!) - ơi! đợi chị một tí!]} {2 Cảm từ tiếng gọi dùng để kêu với ý than vãn [1. "Trời ơi có thấu tình chăng! Bước sang mười sáu ông trăng gần già." (Cdao)]}] 2021-09-13 16:18:19.483944492 +0800 CST m=+63566.075263702 0001-01-01 00:00:00 +0000 UTC}
+INFO: 2021/09/13 16:18:19 crawler.go:103: Get Ơi in crawl func: &{ObjectIdHex("") Ơi [{0 Cảm từ tiếng gọi dùng để gọi một cách thân mật, thân thiết [1. mẹ ơi! 2. "Thuyền ơi có nhớ bến chăng, Bến thì một dạ khăng khăng đợi thuyền." (Cdao)]} {1 Cảm từ (Khẩu ngữ) tiếng đáp dùng để đáp lại tiếng gọi của người ngang hàng hoặc người dưới [1. (- chị ơi!) - ơi! đợi chị một tí!]} {2 Cảm từ tiếng gọi dùng để kêu với ý than vãn [1. "Trời ơi có thấu tình chăng! Bước sang mười sáu ông trăng gần già." (Cdao)]}] 2021-09-13 16:18:19.483944492 +0800 CST m=+63566.075263702 0001-01-01 00:00:00 +0000 UTC}
+INFO: 2021/09/13 16:18:19 crawler.go:104: crawl func finish
+INFO: 2021/09/13 16:18:19 controller.go:46: 获取成功：Ơi，准备写入词库
+INFO: 2021/09/13 16:18:23 crawler.go:85: Get Ơi in OnHTML: &{ObjectIdHex("") Ơi [{0 Cảm từ tiếng gọi dùng để gọi một cách thân mật, thân thiết [1. mẹ ơi! 2. "Thuyền ơi có nhớ bến chăng, Bến thì một dạ khăng khăng đợi thuyền." (Cdao)]} {1 Cảm từ (Khẩu ngữ) tiếng đáp dùng để đáp lại tiếng gọi của người ngang hàng hoặc người dưới [1. (- chị ơi!) - ơi! đợi chị một tí!]} {2 Cảm từ tiếng gọi dùng để kêu với ý than vãn [1. "Trời ơi có thấu tình chăng! Bước sang mười sáu ông trăng gần già." (Cdao)]}] 2021-09-13 16:18:23.465333115 +0800 CST m=+63570.056652325 0001-01-01 00:00:00 +0000 UTC}
+INFO: 2021/09/13 16:18:23 crawler.go:103: Get Ơi in crawl func: &{ObjectIdHex("") Ơi [{0 Cảm từ tiếng gọi dùng để gọi một cách thân mật, thân thiết [1. mẹ ơi! 2. "Thuyền ơi có nhớ bến chăng, Bến thì một dạ khăng khăng đợi thuyền." (Cdao)]} {1 Cảm từ (Khẩu ngữ) tiếng đáp dùng để đáp lại tiếng gọi của người ngang hàng hoặc người dưới [1. (- chị ơi!) - ơi! đợi chị một tí!]} {2 Cảm từ tiếng gọi dùng để kêu với ý than vãn [1. "Trời ơi có thấu tình chăng! Bước sang mười sáu ông trăng gần già." (Cdao)]}] 2021-09-13 16:18:23.465333115 +0800 CST m=+63570.056652325 0001-01-01 00:00:00 +0000 UTC}
+INFO: 2021/09/13 16:18:23 crawler.go:104: crawl func finish
+INFO: 2021/09/13 16:18:23 controller.go:46: 获取成功：Ơi，准备写入词库
+INFO: 2021/09/13 16:18:29 controller.go:30: 139.9.118.67 正在获取：ơi
+INFO: 2021/09/13 16:18:29 models.go:70: 613f094b88ec1c4888b41028
+INFO: 2021/09/13 16:18:29 models.go:81: 
+INFO: 2021/09/14 00:32:38 controller.go:65: 139.9.118.67 正在获取：一
+INFO: 2021/09/14 00:32:38 models.go:92: 
+ERROR: 2021/09/14 00:32:38 controller.go:70: 获取失败：一

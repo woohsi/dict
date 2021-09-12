@@ -82,7 +82,6 @@ function Select(props) {
   const [select, setSelect] = useState("viethan")
 
   const handleRadioChange = (event) => {
-    debugger;
     setSelect(event.target.value);
     props.onSelectChange(event.target.value)
   };
@@ -93,6 +92,7 @@ function Select(props) {
       <RadioGroup row aria-label="position" name="position" defaultValue="vietviet" value={select} onChange={handleRadioChange}>
         <FormControlLabel value="viethan" control={<Radio color="primary" />} label="Việt-Hán" />
         <FormControlLabel value="vietviet" control={<Radio color="primary" />} label="Việt-Việt" />
+        <FormControlLabel value="hanviet" control={<Radio color="primary" />} label="Hán-Việt" />
       </RadioGroup>
     </FormControl>
   );

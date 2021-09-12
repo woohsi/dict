@@ -28,14 +28,13 @@ const useStyles = makeStyles({
   },
 });
 
-const vieviet = (record, vvword, classes) => {
+const vieviet = (record, record2, classes) => {
+
   const defs = record.definitions;
-  if (defs === undefined) {
-    //TODO
-    return <div></div>;
-  }
-  const defs2 = vvword.items;
-  if (defs2 === undefined) {
+  const defs2 = record2.items;
+  console.log("defs", defs)
+  console.log("defs2", defs2)
+  if (defs === undefined && defs2 === undefined) {
     //TODO
     return <div></div>;
   }
@@ -97,7 +96,7 @@ const vieviet = (record, vvword, classes) => {
       {content}
       <hr/>
       <Typography variant='h5' component='h2'>
-        {vvword.title}
+        {record2.title}
       </Typography>
       {content2}
     </>
@@ -109,43 +108,37 @@ const viethan = (page) => {
   return <PDF page={page} />;
 };
 
-const vieviet = (record3, classes) => {
-  const defs = record.definition;
+function createMarkup(s) {
+  return {__html: s};
+}
+
+function MyComponent(props) {
+  return <div dangerouslySetInnerHTML={createMarkup(props.str)} />;
+}
+
+const hanviet = (record3, classes) => {
+  const defs = record3.definition;
   if (defs === undefined) {
     //TODO
-    return <div></div>;
-  }
-  const defs2 = vvword.items;
-  if (defs2 === undefined) {
-    //TODO
-    return <div></div>;
+    return <div dangerouslySetInnerHTML={{__html: defs}}></div>;
   }
 
-  const content2 = defs2.map((item, index) => {
-    const badge = <Chip size='small' label={""} />;
-    return (
+  const content =  (
       <Typography
-        key={index}
         className={classes.example}
         color='textSecondary'
         gutterBottom
       >
-        {badge}{item}
+        <MyComponent str={defs}/>
       </Typography>
     );
-  });
 
   return (
     <>
       <Typography variant='h5' component='h2'>
-        {record.title}
+        {record3.title}
       </Typography>
       {content}
-      <hr/>
-      <Typography variant='h5' component='h2'>
-        {vvword.title}
-      </Typography>
-      {content2}
     </>
   );
 };
@@ -154,7 +147,8 @@ export default function WordCard(props) {
   const classes = useStyles();
 
   let record = null;
-  let vvword = null;
+  let record2 = null;
+  let record3 = null;
   let page = 1;
   let body = null;
   let learnmore = null;
@@ -165,13 +159,18 @@ export default function WordCard(props) {
 
   if (props.select === 'vietviet') {
     record = props.record;
-    vvword = props.vvword;
-    body = vieviet(record, vvword, classes);
+    record2 = props.record2;
+    body = vieviet(record, record2, classes);
   }
 
   if (props.select === 'viethan') {
     page = props.page;
     body = viethan(page);
+  }
+
+  if (props.select === 'hanviet') {
+    record3 = props.record3;
+    body = hanviet(record3, classes);
   }
 
   if (props.showLearnMore === true) {
