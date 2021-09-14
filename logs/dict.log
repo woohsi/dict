@@ -3398,3 +3398,265 @@ INFO: 2021/09/13 16:18:29 models.go:81:
 INFO: 2021/09/14 00:32:38 controller.go:65: 139.9.118.67 正在获取：一
 INFO: 2021/09/14 00:32:38 models.go:92: 
 ERROR: 2021/09/14 00:32:38 controller.go:70: 获取失败：一
+INFO: 2021/09/14 10:58:28 controller.go:65: 139.9.118.67 正在获取：九州
+INFO: 2021/09/14 10:58:28 models.go:92: 
+ERROR: 2021/09/14 10:58:28 controller.go:70: 获取失败：九州
+INFO: 2021/09/14 11:00:48 controller.go:30: 139.9.118.67 正在获取：ha
+INFO: 2021/09/14 11:00:48 models.go:70: 
+INFO: 2021/09/14 11:00:48 models.go:81: 
+ERROR: 2021/09/14 11:00:48 controller.go:38: 词库中暂无此单词：ha
+INFO: 2021/09/14 11:00:48 controller.go:39: 正在从网络获取：ha
+INFO: 2021/09/14 11:00:48 crawler.go:90: Visiting http://tratu.soha.vn/dict/vn_vn/ha
+INFO: 2021/09/14 11:00:51 crawler.go:85: Get ha in OnHTML: &{ObjectIdHex("") ha [{0 Cảm từ tiếng reo biểu lộ sự vui mừng, phấn khởi [1. ha! thích quá! 2. ha! má đã về!]} {1 Cảm từ .  hecta (viết tắt). []}] 2021-09-14 11:00:51.39752582 +0800 CST m=+130917.988845031 0001-01-01 00:00:00 +0000 UTC}
+INFO: 2021/09/14 11:00:51 crawler.go:103: Get ha in crawl func: &{ObjectIdHex("") ha [{0 Cảm từ tiếng reo biểu lộ sự vui mừng, phấn khởi [1. ha! thích quá! 2. ha! má đã về!]} {1 Cảm từ .  hecta (viết tắt). []}] 2021-09-14 11:00:51.39752582 +0800 CST m=+130917.988845031 0001-01-01 00:00:00 +0000 UTC}
+INFO: 2021/09/14 11:00:51 crawler.go:104: crawl func finish
+INFO: 2021/09/14 11:00:51 controller.go:46: 获取成功：ha，准备写入词库
+ERROR: 2021/09/14 11:00:51 controller.go:49: 插入失败：Closed explicitly
+INFO: 2021/09/14 11:04:09 controller.go:30: 139.9.118.67 正在获取：cho
+INFO: 2021/09/14 11:04:09 models.go:70: 
+INFO: 2021/09/14 11:04:09 models.go:81: 
+ERROR: 2021/09/14 11:04:09 controller.go:38: 词库中暂无此单词：cho
+INFO: 2021/09/14 11:04:09 controller.go:39: 正在从网络获取：cho
+INFO: 2021/09/14 11:04:09 crawler.go:90: Visiting http://tratu.soha.vn/dict/vn_vn/cho
+INFO: 2021/09/14 11:04:10 crawler.go:85: Get cho in OnHTML: &{ObjectIdHex("") cho [{0 Động từ chuyển cái thuộc sở hữu của mình sang thành của người khác mà không đổi lấy gì cả [1. cho quà 2. cho tiền]} {1 Động từ làm người khác có được, nhận được cái gì hoặc điều kiện để làm việc gì [1. cô giáo cho điểm 2. cho thời gian để chuẩn bị 3. lịch sử cho ta nhiều bài học quý]} {2 Động từ tạo ra ở khách thể một hoạt động nào đó [1. cho xe đi chậm lại 2. cho máy chạy thử 3. cho người đi tìm]} {3 Động từ chuyển sự vật đến một chỗ nào đó để phát huy tác dụng [1. cho dầu vào máy 2. cho mì chính vào nồi canh 3. hàng đã cho lên tàu]} {4 Động từ coi là, nghĩ rằng [1. tự cho mình là giỏi 2. tôi cho rằng đó không phải là việc xấu]} {5 Động từ (Khẩu ngữ) chuyển, đưa hoặc bán cho (nói tắt) [1. anh cho tôi chiếc mũ kia 2. cho một cốc bia nhé]} {0 Kết từ từ biểu thị điều sắp nêu ra là đối tượng nhằm đến hoặc đối tượng chịu tác động, ảnh hưởng của điều vừa được nói đến [1. gửi thư cho bạn 2. đưa tiền cho mẹ 3. nói cho mọi người rõ 4. không may cho anh ta]} {1 Kết từ từ biểu thị điều sắp nêu ra là yêu cầu, mục đích, mức độ nhằm đạt tới của điều vừa được nói đến [1. viết cho rõ ràng 2. học cho giỏi 3. chờ cho trời sáng hãy đi 4. đói cho sạch, rách cho thơm (tng)]} {2 Kết từ từ biểu thị điều sắp nêu ra là kết quả tự nhiên, hoặc là hệ quả tất yếu của điều vừa được nói đến [1. khôn cho người ta dái, dại cho người ta thương, dở dở ương ương tổ người ta ghét (tng)]} {0 Trợ từ từ biểu thị ý nhấn mạnh về mức độ (cho là có thể như thế) [1. mặc cho mưa gió, vẫn cứ đi 2. không tin cho lắm]} {1 Trợ từ từ biểu thị ý nhấn mạnh về một tác động không hay phải chịu đựng [1. đánh cho một trận 2. làm như thế để nó mắng cho!]} {2 Trợ từ từ biểu thị một đề nghị, một yêu cầu, với mong muốn có được sự đồng ý, thông cảm [1. mong anh giúp cho 2. để tôi làm cho 3. mời ông đi cho!]}] 2021-09-14 11:04:10.698397653 +0800 CST m=+131117.289716864 0001-01-01 00:00:00 +0000 UTC}
+INFO: 2021/09/14 11:04:10 crawler.go:103: Get cho in crawl func: &{ObjectIdHex("") cho [{0 Động từ chuyển cái thuộc sở hữu của mình sang thành của người khác mà không đổi lấy gì cả [1. cho quà 2. cho tiền]} {1 Động từ làm người khác có được, nhận được cái gì hoặc điều kiện để làm việc gì [1. cô giáo cho điểm 2. cho thời gian để chuẩn bị 3. lịch sử cho ta nhiều bài học quý]} {2 Động từ tạo ra ở khách thể một hoạt động nào đó [1. cho xe đi chậm lại 2. cho máy chạy thử 3. cho người đi tìm]} {3 Động từ chuyển sự vật đến một chỗ nào đó để phát huy tác dụng [1. cho dầu vào máy 2. cho mì chính vào nồi canh 3. hàng đã cho lên tàu]} {4 Động từ coi là, nghĩ rằng [1. tự cho mình là giỏi 2. tôi cho rằng đó không phải là việc xấu]} {5 Động từ (Khẩu ngữ) chuyển, đưa hoặc bán cho (nói tắt) [1. anh cho tôi chiếc mũ kia 2. cho một cốc bia nhé]} {0 Kết từ từ biểu thị điều sắp nêu ra là đối tượng nhằm đến hoặc đối tượng chịu tác động, ảnh hưởng của điều vừa được nói đến [1. gửi thư cho bạn 2. đưa tiền cho mẹ 3. nói cho mọi người rõ 4. không may cho anh ta]} {1 Kết từ từ biểu thị điều sắp nêu ra là yêu cầu, mục đích, mức độ nhằm đạt tới của điều vừa được nói đến [1. viết cho rõ ràng 2. học cho giỏi 3. chờ cho trời sáng hãy đi 4. đói cho sạch, rách cho thơm (tng)]} {2 Kết từ từ biểu thị điều sắp nêu ra là kết quả tự nhiên, hoặc là hệ quả tất yếu của điều vừa được nói đến [1. khôn cho người ta dái, dại cho người ta thương, dở dở ương ương tổ người ta ghét (tng)]} {0 Trợ từ từ biểu thị ý nhấn mạnh về mức độ (cho là có thể như thế) [1. mặc cho mưa gió, vẫn cứ đi 2. không tin cho lắm]} {1 Trợ từ từ biểu thị ý nhấn mạnh về một tác động không hay phải chịu đựng [1. đánh cho một trận 2. làm như thế để nó mắng cho!]} {2 Trợ từ từ biểu thị một đề nghị, một yêu cầu, với mong muốn có được sự đồng ý, thông cảm [1. mong anh giúp cho 2. để tôi làm cho 3. mời ông đi cho!]}] 2021-09-14 11:04:10.698397653 +0800 CST m=+131117.289716864 0001-01-01 00:00:00 +0000 UTC}
+INFO: 2021/09/14 11:04:10 crawler.go:104: crawl func finish
+INFO: 2021/09/14 11:04:10 controller.go:46: 获取成功：cho，准备写入词库
+ERROR: 2021/09/14 11:04:10 controller.go:49: 插入失败：Closed explicitly
+INFO: 2021/09/14 14:04:39 controller.go:30: 139.9.118.67 正在获取：ha
+INFO: 2021/09/14 14:04:39 models.go:70: 
+INFO: 2021/09/14 14:04:39 models.go:81: 
+ERROR: 2021/09/14 14:04:39 controller.go:38: 词库中暂无此单词：ha
+INFO: 2021/09/14 14:04:39 controller.go:39: 正在从网络获取：ha
+INFO: 2021/09/14 14:04:39 crawler.go:90: Visiting http://tratu.soha.vn/dict/vn_vn/ha
+INFO: 2021/09/14 14:04:45 crawler.go:85: Get ha in OnHTML: &{ObjectIdHex("") ha [{0 Cảm từ tiếng reo biểu lộ sự vui mừng, phấn khởi [1. ha! thích quá! 2. ha! má đã về!]} {1 Cảm từ .  hecta (viết tắt). []}] 2021-09-14 14:04:45.091867294 +0800 CST m=+141951.683186505 0001-01-01 00:00:00 +0000 UTC}
+INFO: 2021/09/14 14:04:45 crawler.go:103: Get ha in crawl func: &{ObjectIdHex("") ha [{0 Cảm từ tiếng reo biểu lộ sự vui mừng, phấn khởi [1. ha! thích quá! 2. ha! má đã về!]} {1 Cảm từ .  hecta (viết tắt). []}] 2021-09-14 14:04:45.091867294 +0800 CST m=+141951.683186505 0001-01-01 00:00:00 +0000 UTC}
+INFO: 2021/09/14 14:04:45 crawler.go:104: crawl func finish
+INFO: 2021/09/14 14:04:45 controller.go:46: 获取成功：ha，准备写入词库
+ERROR: 2021/09/14 14:04:45 controller.go:49: 插入失败：Closed explicitly
+INFO: 2021/09/14 14:05:00 controller.go:30: 139.9.118.67 正在获取：cho
+INFO: 2021/09/14 14:05:00 models.go:70: 
+INFO: 2021/09/14 14:05:00 models.go:81: 
+ERROR: 2021/09/14 14:05:00 controller.go:38: 词库中暂无此单词：cho
+INFO: 2021/09/14 14:05:00 controller.go:39: 正在从网络获取：cho
+INFO: 2021/09/14 14:05:00 crawler.go:90: Visiting http://tratu.soha.vn/dict/vn_vn/cho
+INFO: 2021/09/14 14:05:07 crawler.go:85: Get cho in OnHTML: &{ObjectIdHex("") cho [{0 Động từ chuyển cái thuộc sở hữu của mình sang thành của người khác mà không đổi lấy gì cả [1. cho quà 2. cho tiền]} {1 Động từ làm người khác có được, nhận được cái gì hoặc điều kiện để làm việc gì [1. cô giáo cho điểm 2. cho thời gian để chuẩn bị 3. lịch sử cho ta nhiều bài học quý]} {2 Động từ tạo ra ở khách thể một hoạt động nào đó [1. cho xe đi chậm lại 2. cho máy chạy thử 3. cho người đi tìm]} {3 Động từ chuyển sự vật đến một chỗ nào đó để phát huy tác dụng [1. cho dầu vào máy 2. cho mì chính vào nồi canh 3. hàng đã cho lên tàu]} {4 Động từ coi là, nghĩ rằng [1. tự cho mình là giỏi 2. tôi cho rằng đó không phải là việc xấu]} {5 Động từ (Khẩu ngữ) chuyển, đưa hoặc bán cho (nói tắt) [1. anh cho tôi chiếc mũ kia 2. cho một cốc bia nhé]} {0 Kết từ từ biểu thị điều sắp nêu ra là đối tượng nhằm đến hoặc đối tượng chịu tác động, ảnh hưởng của điều vừa được nói đến [1. gửi thư cho bạn 2. đưa tiền cho mẹ 3. nói cho mọi người rõ 4. không may cho anh ta]} {1 Kết từ từ biểu thị điều sắp nêu ra là yêu cầu, mục đích, mức độ nhằm đạt tới của điều vừa được nói đến [1. viết cho rõ ràng 2. học cho giỏi 3. chờ cho trời sáng hãy đi 4. đói cho sạch, rách cho thơm (tng)]} {2 Kết từ từ biểu thị điều sắp nêu ra là kết quả tự nhiên, hoặc là hệ quả tất yếu của điều vừa được nói đến [1. khôn cho người ta dái, dại cho người ta thương, dở dở ương ương tổ người ta ghét (tng)]} {0 Trợ từ từ biểu thị ý nhấn mạnh về mức độ (cho là có thể như thế) [1. mặc cho mưa gió, vẫn cứ đi 2. không tin cho lắm]} {1 Trợ từ từ biểu thị ý nhấn mạnh về một tác động không hay phải chịu đựng [1. đánh cho một trận 2. làm như thế để nó mắng cho!]} {2 Trợ từ từ biểu thị một đề nghị, một yêu cầu, với mong muốn có được sự đồng ý, thông cảm [1. mong anh giúp cho 2. để tôi làm cho 3. mời ông đi cho!]}] 2021-09-14 14:05:07.850744859 +0800 CST m=+141974.442064068 0001-01-01 00:00:00 +0000 UTC}
+INFO: 2021/09/14 14:05:07 crawler.go:103: Get cho in crawl func: &{ObjectIdHex("") cho [{0 Động từ chuyển cái thuộc sở hữu của mình sang thành của người khác mà không đổi lấy gì cả [1. cho quà 2. cho tiền]} {1 Động từ làm người khác có được, nhận được cái gì hoặc điều kiện để làm việc gì [1. cô giáo cho điểm 2. cho thời gian để chuẩn bị 3. lịch sử cho ta nhiều bài học quý]} {2 Động từ tạo ra ở khách thể một hoạt động nào đó [1. cho xe đi chậm lại 2. cho máy chạy thử 3. cho người đi tìm]} {3 Động từ chuyển sự vật đến một chỗ nào đó để phát huy tác dụng [1. cho dầu vào máy 2. cho mì chính vào nồi canh 3. hàng đã cho lên tàu]} {4 Động từ coi là, nghĩ rằng [1. tự cho mình là giỏi 2. tôi cho rằng đó không phải là việc xấu]} {5 Động từ (Khẩu ngữ) chuyển, đưa hoặc bán cho (nói tắt) [1. anh cho tôi chiếc mũ kia 2. cho một cốc bia nhé]} {0 Kết từ từ biểu thị điều sắp nêu ra là đối tượng nhằm đến hoặc đối tượng chịu tác động, ảnh hưởng của điều vừa được nói đến [1. gửi thư cho bạn 2. đưa tiền cho mẹ 3. nói cho mọi người rõ 4. không may cho anh ta]} {1 Kết từ từ biểu thị điều sắp nêu ra là yêu cầu, mục đích, mức độ nhằm đạt tới của điều vừa được nói đến [1. viết cho rõ ràng 2. học cho giỏi 3. chờ cho trời sáng hãy đi 4. đói cho sạch, rách cho thơm (tng)]} {2 Kết từ từ biểu thị điều sắp nêu ra là kết quả tự nhiên, hoặc là hệ quả tất yếu của điều vừa được nói đến [1. khôn cho người ta dái, dại cho người ta thương, dở dở ương ương tổ người ta ghét (tng)]} {0 Trợ từ từ biểu thị ý nhấn mạnh về mức độ (cho là có thể như thế) [1. mặc cho mưa gió, vẫn cứ đi 2. không tin cho lắm]} {1 Trợ từ từ biểu thị ý nhấn mạnh về một tác động không hay phải chịu đựng [1. đánh cho một trận 2. làm như thế để nó mắng cho!]} {2 Trợ từ từ biểu thị một đề nghị, một yêu cầu, với mong muốn có được sự đồng ý, thông cảm [1. mong anh giúp cho 2. để tôi làm cho 3. mời ông đi cho!]}] 2021-09-14 14:05:07.850744859 +0800 CST m=+141974.442064068 0001-01-01 00:00:00 +0000 UTC}
+INFO: 2021/09/14 14:05:07 crawler.go:104: crawl func finish
+INFO: 2021/09/14 14:05:07 controller.go:46: 获取成功：cho，准备写入词库
+ERROR: 2021/09/14 14:05:07 controller.go:49: 插入失败：Closed explicitly
+INFO: 2021/09/14 14:15:01 controller.go:30: 139.9.118.67 正在获取：ha
+INFO: 2021/09/14 14:15:01 models.go:70: 
+INFO: 2021/09/14 14:15:01 models.go:81: 
+ERROR: 2021/09/14 14:15:01 controller.go:38: 词库中暂无此单词：ha
+INFO: 2021/09/14 14:15:01 controller.go:39: 正在从网络获取：ha
+INFO: 2021/09/14 14:15:01 crawler.go:90: Visiting http://tratu.soha.vn/dict/vn_vn/ha
+INFO: 2021/09/14 14:15:09 crawler.go:85: Get ha in OnHTML: &{ObjectIdHex("") ha [{0 Cảm từ tiếng reo biểu lộ sự vui mừng, phấn khởi [1. ha! thích quá! 2. ha! má đã về!]} {1 Cảm từ .  hecta (viết tắt). []}] 2021-09-14 14:15:09.114067117 +0800 CST m=+34.820560555 0001-01-01 00:00:00 +0000 UTC}
+INFO: 2021/09/14 14:15:09 crawler.go:103: Get ha in crawl func: &{ObjectIdHex("") ha [{0 Cảm từ tiếng reo biểu lộ sự vui mừng, phấn khởi [1. ha! thích quá! 2. ha! má đã về!]} {1 Cảm từ .  hecta (viết tắt). []}] 2021-09-14 14:15:09.114067117 +0800 CST m=+34.820560555 0001-01-01 00:00:00 +0000 UTC}
+INFO: 2021/09/14 14:15:09 crawler.go:104: crawl func finish
+INFO: 2021/09/14 14:15:09 controller.go:46: 获取成功：ha，准备写入词库
+INFO: 2021/09/14 20:38:51 controller.go:30: 139.9.118.67 正在获取：cho
+INFO: 2021/09/14 20:38:51 models.go:70: 
+INFO: 2021/09/14 20:38:51 models.go:81: 
+ERROR: 2021/09/14 20:38:51 controller.go:38: 词库中暂无此单词：cho
+INFO: 2021/09/14 20:38:51 controller.go:39: 正在从网络获取：cho
+INFO: 2021/09/14 20:38:51 crawler.go:90: Visiting http://tratu.soha.vn/dict/vn_vn/cho
+INFO: 2021/09/14 20:38:52 crawler.go:85: Get cho in OnHTML: &{ObjectIdHex("") cho [{0 Động từ chuyển cái thuộc sở hữu của mình sang thành của người khác mà không đổi lấy gì cả [1. cho quà 2. cho tiền]} {1 Động từ làm người khác có được, nhận được cái gì hoặc điều kiện để làm việc gì [1. cô giáo cho điểm 2. cho thời gian để chuẩn bị 3. lịch sử cho ta nhiều bài học quý]} {2 Động từ tạo ra ở khách thể một hoạt động nào đó [1. cho xe đi chậm lại 2. cho máy chạy thử 3. cho người đi tìm]} {3 Động từ chuyển sự vật đến một chỗ nào đó để phát huy tác dụng [1. cho dầu vào máy 2. cho mì chính vào nồi canh 3. hàng đã cho lên tàu]} {4 Động từ coi là, nghĩ rằng [1. tự cho mình là giỏi 2. tôi cho rằng đó không phải là việc xấu]} {5 Động từ (Khẩu ngữ) chuyển, đưa hoặc bán cho (nói tắt) [1. anh cho tôi chiếc mũ kia 2. cho một cốc bia nhé]} {0 Kết từ từ biểu thị điều sắp nêu ra là đối tượng nhằm đến hoặc đối tượng chịu tác động, ảnh hưởng của điều vừa được nói đến [1. gửi thư cho bạn 2. đưa tiền cho mẹ 3. nói cho mọi người rõ 4. không may cho anh ta]} {1 Kết từ từ biểu thị điều sắp nêu ra là yêu cầu, mục đích, mức độ nhằm đạt tới của điều vừa được nói đến [1. viết cho rõ ràng 2. học cho giỏi 3. chờ cho trời sáng hãy đi 4. đói cho sạch, rách cho thơm (tng)]} {2 Kết từ từ biểu thị điều sắp nêu ra là kết quả tự nhiên, hoặc là hệ quả tất yếu của điều vừa được nói đến [1. khôn cho người ta dái, dại cho người ta thương, dở dở ương ương tổ người ta ghét (tng)]} {0 Trợ từ từ biểu thị ý nhấn mạnh về mức độ (cho là có thể như thế) [1. mặc cho mưa gió, vẫn cứ đi 2. không tin cho lắm]} {1 Trợ từ từ biểu thị ý nhấn mạnh về một tác động không hay phải chịu đựng [1. đánh cho một trận 2. làm như thế để nó mắng cho!]} {2 Trợ từ từ biểu thị một đề nghị, một yêu cầu, với mong muốn có được sự đồng ý, thông cảm [1. mong anh giúp cho 2. để tôi làm cho 3. mời ông đi cho!]}] 2021-09-14 20:38:52.925705208 +0800 CST m=+23058.632198647 0001-01-01 00:00:00 +0000 UTC}
+INFO: 2021/09/14 20:38:52 crawler.go:103: Get cho in crawl func: &{ObjectIdHex("") cho [{0 Động từ chuyển cái thuộc sở hữu của mình sang thành của người khác mà không đổi lấy gì cả [1. cho quà 2. cho tiền]} {1 Động từ làm người khác có được, nhận được cái gì hoặc điều kiện để làm việc gì [1. cô giáo cho điểm 2. cho thời gian để chuẩn bị 3. lịch sử cho ta nhiều bài học quý]} {2 Động từ tạo ra ở khách thể một hoạt động nào đó [1. cho xe đi chậm lại 2. cho máy chạy thử 3. cho người đi tìm]} {3 Động từ chuyển sự vật đến một chỗ nào đó để phát huy tác dụng [1. cho dầu vào máy 2. cho mì chính vào nồi canh 3. hàng đã cho lên tàu]} {4 Động từ coi là, nghĩ rằng [1. tự cho mình là giỏi 2. tôi cho rằng đó không phải là việc xấu]} {5 Động từ (Khẩu ngữ) chuyển, đưa hoặc bán cho (nói tắt) [1. anh cho tôi chiếc mũ kia 2. cho một cốc bia nhé]} {0 Kết từ từ biểu thị điều sắp nêu ra là đối tượng nhằm đến hoặc đối tượng chịu tác động, ảnh hưởng của điều vừa được nói đến [1. gửi thư cho bạn 2. đưa tiền cho mẹ 3. nói cho mọi người rõ 4. không may cho anh ta]} {1 Kết từ từ biểu thị điều sắp nêu ra là yêu cầu, mục đích, mức độ nhằm đạt tới của điều vừa được nói đến [1. viết cho rõ ràng 2. học cho giỏi 3. chờ cho trời sáng hãy đi 4. đói cho sạch, rách cho thơm (tng)]} {2 Kết từ từ biểu thị điều sắp nêu ra là kết quả tự nhiên, hoặc là hệ quả tất yếu của điều vừa được nói đến [1. khôn cho người ta dái, dại cho người ta thương, dở dở ương ương tổ người ta ghét (tng)]} {0 Trợ từ từ biểu thị ý nhấn mạnh về mức độ (cho là có thể như thế) [1. mặc cho mưa gió, vẫn cứ đi 2. không tin cho lắm]} {1 Trợ từ từ biểu thị ý nhấn mạnh về một tác động không hay phải chịu đựng [1. đánh cho một trận 2. làm như thế để nó mắng cho!]} {2 Trợ từ từ biểu thị một đề nghị, một yêu cầu, với mong muốn có được sự đồng ý, thông cảm [1. mong anh giúp cho 2. để tôi làm cho 3. mời ông đi cho!]}] 2021-09-14 20:38:52.925705208 +0800 CST m=+23058.632198647 0001-01-01 00:00:00 +0000 UTC}
+INFO: 2021/09/14 20:38:52 crawler.go:104: crawl func finish
+INFO: 2021/09/14 20:38:52 controller.go:46: 获取成功：cho，准备写入词库
+INFO: 2021/09/14 20:39:27 controller.go:30: 139.9.118.67 正在获取：cho
+INFO: 2021/09/14 20:39:27 models.go:70: 614097dc84aad904588ac3c6
+INFO: 2021/09/14 20:39:27 models.go:81: 
+INFO: 2021/09/14 20:44:25 controller.go:30: 139.9.118.67 正在获取：chơi
+INFO: 2021/09/14 20:44:25 models.go:70: 
+INFO: 2021/09/14 20:44:25 models.go:81: 
+ERROR: 2021/09/14 20:44:25 controller.go:38: 词库中暂无此单词：chơi
+INFO: 2021/09/14 20:44:25 controller.go:39: 正在从网络获取：chơi
+INFO: 2021/09/14 20:44:25 crawler.go:90: Visiting http://tratu.soha.vn/dict/vn_vn/ch%C6%A1i
+INFO: 2021/09/14 20:44:27 crawler.go:85: Get chơi in OnHTML: &{ObjectIdHex("") chơi [{0 Động từ hoạt động giải trí hoặc nghỉ ngơi [1. trẻ con chơi ngoài sân 2. đi chơi phố 3. chơi bài 4. ăn tuỳ nơi, chơi tuỳ lúc (tng)]} {1 Động từ hoạt động (dùng một đối tượng nào đó) để tiêu khiển, để làm thú vui [1. chơi tem 2. chơi cây cảnh]} {2 Động từ quan hệ với nhau trên cơ sở quen biết, gần gũi hoặc vì cùng chung thú vui, thú tiêu khiển [1. chơi thân với nhau từ nhỏ 2. chọn bạn mà chơi]} {3 Động từ hoạt động chỉ nhằm cho vui mà thôi, không có mục đích gì khác [1. đùa một tí chơi 2. thử chơi cho biết chứ không định làm thật]} {4 Động từ (Khẩu ngữ) (trẻ con) tỏ ra khoẻ mạnh, không đau ốm [1. cháu nó vẫn chơi]} {5 Động từ (Khẩu ngữ) hành động gây hại cho người khác, nhưng lại xem như trò vui [1. bị nó chơi cho một vố đau điếng]}] 2021-09-14 20:44:27.330889414 +0800 CST m=+23393.037382853 0001-01-01 00:00:00 +0000 UTC}
+INFO: 2021/09/14 20:44:27 crawler.go:103: Get chơi in crawl func: &{ObjectIdHex("") chơi [{0 Động từ hoạt động giải trí hoặc nghỉ ngơi [1. trẻ con chơi ngoài sân 2. đi chơi phố 3. chơi bài 4. ăn tuỳ nơi, chơi tuỳ lúc (tng)]} {1 Động từ hoạt động (dùng một đối tượng nào đó) để tiêu khiển, để làm thú vui [1. chơi tem 2. chơi cây cảnh]} {2 Động từ quan hệ với nhau trên cơ sở quen biết, gần gũi hoặc vì cùng chung thú vui, thú tiêu khiển [1. chơi thân với nhau từ nhỏ 2. chọn bạn mà chơi]} {3 Động từ hoạt động chỉ nhằm cho vui mà thôi, không có mục đích gì khác [1. đùa một tí chơi 2. thử chơi cho biết chứ không định làm thật]} {4 Động từ (Khẩu ngữ) (trẻ con) tỏ ra khoẻ mạnh, không đau ốm [1. cháu nó vẫn chơi]} {5 Động từ (Khẩu ngữ) hành động gây hại cho người khác, nhưng lại xem như trò vui [1. bị nó chơi cho một vố đau điếng]}] 2021-09-14 20:44:27.330889414 +0800 CST m=+23393.037382853 0001-01-01 00:00:00 +0000 UTC}
+INFO: 2021/09/14 20:44:27 crawler.go:104: crawl func finish
+INFO: 2021/09/14 20:44:27 controller.go:46: 获取成功：chơi，准备写入词库
+INFO: 2021/09/14 20:45:00 controller.go:30: 139.9.118.67 正在获取：chơi
+INFO: 2021/09/14 20:45:00 models.go:70: 6140992b84aad904588ac408
+INFO: 2021/09/14 20:45:00 models.go:81: 
+INFO: 2021/09/14 20:47:22 controller.go:30: 139.9.118.67 正在获取：chơi
+INFO: 2021/09/14 20:47:22 models.go:70: 6140992b84aad904588ac408
+INFO: 2021/09/14 20:47:22 models.go:81: 
+INFO: 2021/09/14 20:47:50 controller.go:30: 139.9.118.67 正在获取：chơi
+INFO: 2021/09/14 20:47:50 models.go:70: 6140992b84aad904588ac408
+INFO: 2021/09/14 20:47:50 models.go:81: 
+INFO: 2021/09/14 20:48:18 controller.go:30: 139.9.118.67 正在获取：thả
+INFO: 2021/09/14 20:48:18 models.go:70: 
+INFO: 2021/09/14 20:48:18 models.go:81: 
+ERROR: 2021/09/14 20:48:18 controller.go:38: 词库中暂无此单词：thả
+INFO: 2021/09/14 20:48:18 controller.go:39: 正在从网络获取：thả
+INFO: 2021/09/14 20:48:18 crawler.go:90: Visiting http://tratu.soha.vn/dict/vn_vn/th%E1%BA%A3
+INFO: 2021/09/14 20:48:19 crawler.go:85: Get thả in OnHTML: &{ObjectIdHex("") thả [{0 Động từ không giữ lại một chỗ nữa mà để cho được tự do hoạt động [1. thả gà ra vườn 2. thả thuyền trôi theo dòng nước 3. không có chứng cứ nên được thả tự do]} {1 Động từ cho vào môi trường thích hợp để có thể tự do hoạt động hoặc phát triển [1. thả diều 2. đào ao thả cá]} {2 Động từ để cho tự bay lên hoặc rơi thẳng xuống, nhằm mục đích nhất định [1. thả bom 2. thả bóng bay 3. thả hai ống quần xuống]}] 2021-09-14 20:48:19.63791421 +0800 CST m=+23625.344407647 0001-01-01 00:00:00 +0000 UTC}
+INFO: 2021/09/14 20:48:19 crawler.go:103: Get thả in crawl func: &{ObjectIdHex("") thả [{0 Động từ không giữ lại một chỗ nữa mà để cho được tự do hoạt động [1. thả gà ra vườn 2. thả thuyền trôi theo dòng nước 3. không có chứng cứ nên được thả tự do]} {1 Động từ cho vào môi trường thích hợp để có thể tự do hoạt động hoặc phát triển [1. thả diều 2. đào ao thả cá]} {2 Động từ để cho tự bay lên hoặc rơi thẳng xuống, nhằm mục đích nhất định [1. thả bom 2. thả bóng bay 3. thả hai ống quần xuống]}] 2021-09-14 20:48:19.63791421 +0800 CST m=+23625.344407647 0001-01-01 00:00:00 +0000 UTC}
+INFO: 2021/09/14 20:48:19 crawler.go:104: crawl func finish
+INFO: 2021/09/14 20:48:19 controller.go:46: 获取成功：thả，准备写入词库
+INFO: 2021/09/14 21:19:42 controller.go:30: 139.9.118.67 正在获取：bong
+INFO: 2021/09/14 21:19:42 models.go:70: 60d6f1355518ceb668c7c773
+INFO: 2021/09/14 21:19:42 models.go:81: 
+INFO: 2021/09/14 21:25:15 controller.go:30: 139.9.118.67 正在获取：cho
+INFO: 2021/09/14 21:25:15 models.go:70: 60d6f2645518ceb668c7de34
+INFO: 2021/09/14 21:25:15 models.go:81: 
+INFO: 2021/09/14 21:29:19 controller.go:30: 139.9.118.67 正在获取：cho
+INFO: 2021/09/14 21:29:19 models.go:70: 60d6f2645518ceb668c7de34
+INFO: 2021/09/14 21:29:19 models.go:81: 
+INFO: 2021/09/14 21:30:54 controller.go:30: 139.9.118.67 正在获取：cho
+INFO: 2021/09/14 21:30:54 models.go:70: 60d6f2645518ceb668c7de34
+INFO: 2021/09/14 21:30:54 models.go:81: 
+INFO: 2021/09/14 22:57:53 controller.go:30: 139.9.118.67 正在获取：cho
+INFO: 2021/09/14 22:57:53 models.go:70: 
+INFO: 2021/09/14 22:57:53 models.go:81: 
+ERROR: 2021/09/14 22:57:53 controller.go:38: 词库中暂无此单词：cho
+INFO: 2021/09/14 22:57:53 controller.go:39: 正在从网络获取：cho
+INFO: 2021/09/14 22:57:53 crawler.go:90: Visiting http://tratu.soha.vn/dict/vn_vn/cho
+INFO: 2021/09/14 22:58:02 crawler.go:85: Get cho in OnHTML: &{ObjectIdHex("") cho [{0 Động từ chuyển cái thuộc sở hữu của mình sang thành của người khác mà không đổi lấy gì cả [1. cho quà 2. cho tiền]} {1 Động từ làm người khác có được, nhận được cái gì hoặc điều kiện để làm việc gì [1. cô giáo cho điểm 2. cho thời gian để chuẩn bị 3. lịch sử cho ta nhiều bài học quý]} {2 Động từ tạo ra ở khách thể một hoạt động nào đó [1. cho xe đi chậm lại 2. cho máy chạy thử 3. cho người đi tìm]} {3 Động từ chuyển sự vật đến một chỗ nào đó để phát huy tác dụng [1. cho dầu vào máy 2. cho mì chính vào nồi canh 3. hàng đã cho lên tàu]} {4 Động từ coi là, nghĩ rằng [1. tự cho mình là giỏi 2. tôi cho rằng đó không phải là việc xấu]} {5 Động từ (Khẩu ngữ) chuyển, đưa hoặc bán cho (nói tắt) [1. anh cho tôi chiếc mũ kia 2. cho một cốc bia nhé]} {0 Kết từ từ biểu thị điều sắp nêu ra là đối tượng nhằm đến hoặc đối tượng chịu tác động, ảnh hưởng của điều vừa được nói đến [1. gửi thư cho bạn 2. đưa tiền cho mẹ 3. nói cho mọi người rõ 4. không may cho anh ta]} {1 Kết từ từ biểu thị điều sắp nêu ra là yêu cầu, mục đích, mức độ nhằm đạt tới của điều vừa được nói đến [1. viết cho rõ ràng 2. học cho giỏi 3. chờ cho trời sáng hãy đi 4. đói cho sạch, rách cho thơm (tng)]} {2 Kết từ từ biểu thị điều sắp nêu ra là kết quả tự nhiên, hoặc là hệ quả tất yếu của điều vừa được nói đến [1. khôn cho người ta dái, dại cho người ta thương, dở dở ương ương tổ người ta ghét (tng)]} {0 Trợ từ từ biểu thị ý nhấn mạnh về mức độ (cho là có thể như thế) [1. mặc cho mưa gió, vẫn cứ đi 2. không tin cho lắm]} {1 Trợ từ từ biểu thị ý nhấn mạnh về một tác động không hay phải chịu đựng [1. đánh cho một trận 2. làm như thế để nó mắng cho!]} {2 Trợ từ từ biểu thị một đề nghị, một yêu cầu, với mong muốn có được sự đồng ý, thông cảm [1. mong anh giúp cho 2. để tôi làm cho 3. mời ông đi cho!]}] 2021-09-14 22:58:02.735588548 +0800 CST m=+31408.442081986 0001-01-01 00:00:00 +0000 UTC}
+INFO: 2021/09/14 22:58:02 crawler.go:103: Get cho in crawl func: &{ObjectIdHex("") cho [{0 Động từ chuyển cái thuộc sở hữu của mình sang thành của người khác mà không đổi lấy gì cả [1. cho quà 2. cho tiền]} {1 Động từ làm người khác có được, nhận được cái gì hoặc điều kiện để làm việc gì [1. cô giáo cho điểm 2. cho thời gian để chuẩn bị 3. lịch sử cho ta nhiều bài học quý]} {2 Động từ tạo ra ở khách thể một hoạt động nào đó [1. cho xe đi chậm lại 2. cho máy chạy thử 3. cho người đi tìm]} {3 Động từ chuyển sự vật đến một chỗ nào đó để phát huy tác dụng [1. cho dầu vào máy 2. cho mì chính vào nồi canh 3. hàng đã cho lên tàu]} {4 Động từ coi là, nghĩ rằng [1. tự cho mình là giỏi 2. tôi cho rằng đó không phải là việc xấu]} {5 Động từ (Khẩu ngữ) chuyển, đưa hoặc bán cho (nói tắt) [1. anh cho tôi chiếc mũ kia 2. cho một cốc bia nhé]} {0 Kết từ từ biểu thị điều sắp nêu ra là đối tượng nhằm đến hoặc đối tượng chịu tác động, ảnh hưởng của điều vừa được nói đến [1. gửi thư cho bạn 2. đưa tiền cho mẹ 3. nói cho mọi người rõ 4. không may cho anh ta]} {1 Kết từ từ biểu thị điều sắp nêu ra là yêu cầu, mục đích, mức độ nhằm đạt tới của điều vừa được nói đến [1. viết cho rõ ràng 2. học cho giỏi 3. chờ cho trời sáng hãy đi 4. đói cho sạch, rách cho thơm (tng)]} {2 Kết từ từ biểu thị điều sắp nêu ra là kết quả tự nhiên, hoặc là hệ quả tất yếu của điều vừa được nói đến [1. khôn cho người ta dái, dại cho người ta thương, dở dở ương ương tổ người ta ghét (tng)]} {0 Trợ từ từ biểu thị ý nhấn mạnh về mức độ (cho là có thể như thế) [1. mặc cho mưa gió, vẫn cứ đi 2. không tin cho lắm]} {1 Trợ từ từ biểu thị ý nhấn mạnh về một tác động không hay phải chịu đựng [1. đánh cho một trận 2. làm như thế để nó mắng cho!]} {2 Trợ từ từ biểu thị một đề nghị, một yêu cầu, với mong muốn có được sự đồng ý, thông cảm [1. mong anh giúp cho 2. để tôi làm cho 3. mời ông đi cho!]}] 2021-09-14 22:58:02.735588548 +0800 CST m=+31408.442081986 0001-01-01 00:00:00 +0000 UTC}
+INFO: 2021/09/14 22:58:02 crawler.go:104: crawl func finish
+INFO: 2021/09/14 22:58:02 controller.go:46: 获取成功：cho，准备写入词库
+ERROR: 2021/09/14 22:58:02 controller.go:49: 插入失败：Closed explicitly
+INFO: 2021/09/14 23:20:03 controller.go:30: 139.9.118.67 正在获取：cho
+INFO: 2021/09/14 23:20:03 models.go:70: 
+INFO: 2021/09/14 23:20:03 models.go:81: 
+ERROR: 2021/09/14 23:20:03 controller.go:38: 词库中暂无此单词：cho
+INFO: 2021/09/14 23:20:03 controller.go:39: 正在从网络获取：cho
+INFO: 2021/09/14 23:20:03 crawler.go:90: Visiting http://tratu.soha.vn/dict/vn_vn/cho
+INFO: 2021/09/14 23:20:09 crawler.go:85: Get cho in OnHTML: &{ObjectIdHex("") cho [{0 Động từ chuyển cái thuộc sở hữu của mình sang thành của người khác mà không đổi lấy gì cả [1. cho quà 2. cho tiền]} {1 Động từ làm người khác có được, nhận được cái gì hoặc điều kiện để làm việc gì [1. cô giáo cho điểm 2. cho thời gian để chuẩn bị 3. lịch sử cho ta nhiều bài học quý]} {2 Động từ tạo ra ở khách thể một hoạt động nào đó [1. cho xe đi chậm lại 2. cho máy chạy thử 3. cho người đi tìm]} {3 Động từ chuyển sự vật đến một chỗ nào đó để phát huy tác dụng [1. cho dầu vào máy 2. cho mì chính vào nồi canh 3. hàng đã cho lên tàu]} {4 Động từ coi là, nghĩ rằng [1. tự cho mình là giỏi 2. tôi cho rằng đó không phải là việc xấu]} {5 Động từ (Khẩu ngữ) chuyển, đưa hoặc bán cho (nói tắt) [1. anh cho tôi chiếc mũ kia 2. cho một cốc bia nhé]} {0 Kết từ từ biểu thị điều sắp nêu ra là đối tượng nhằm đến hoặc đối tượng chịu tác động, ảnh hưởng của điều vừa được nói đến [1. gửi thư cho bạn 2. đưa tiền cho mẹ 3. nói cho mọi người rõ 4. không may cho anh ta]} {1 Kết từ từ biểu thị điều sắp nêu ra là yêu cầu, mục đích, mức độ nhằm đạt tới của điều vừa được nói đến [1. viết cho rõ ràng 2. học cho giỏi 3. chờ cho trời sáng hãy đi 4. đói cho sạch, rách cho thơm (tng)]} {2 Kết từ từ biểu thị điều sắp nêu ra là kết quả tự nhiên, hoặc là hệ quả tất yếu của điều vừa được nói đến [1. khôn cho người ta dái, dại cho người ta thương, dở dở ương ương tổ người ta ghét (tng)]} {0 Trợ từ từ biểu thị ý nhấn mạnh về mức độ (cho là có thể như thế) [1. mặc cho mưa gió, vẫn cứ đi 2. không tin cho lắm]} {1 Trợ từ từ biểu thị ý nhấn mạnh về một tác động không hay phải chịu đựng [1. đánh cho một trận 2. làm như thế để nó mắng cho!]} {2 Trợ từ từ biểu thị một đề nghị, một yêu cầu, với mong muốn có được sự đồng ý, thông cảm [1. mong anh giúp cho 2. để tôi làm cho 3. mời ông đi cho!]}] 2021-09-14 23:20:09.647271169 +0800 CST m=+32735.353764608 0001-01-01 00:00:00 +0000 UTC}
+INFO: 2021/09/14 23:20:09 crawler.go:103: Get cho in crawl func: &{ObjectIdHex("") cho [{0 Động từ chuyển cái thuộc sở hữu của mình sang thành của người khác mà không đổi lấy gì cả [1. cho quà 2. cho tiền]} {1 Động từ làm người khác có được, nhận được cái gì hoặc điều kiện để làm việc gì [1. cô giáo cho điểm 2. cho thời gian để chuẩn bị 3. lịch sử cho ta nhiều bài học quý]} {2 Động từ tạo ra ở khách thể một hoạt động nào đó [1. cho xe đi chậm lại 2. cho máy chạy thử 3. cho người đi tìm]} {3 Động từ chuyển sự vật đến một chỗ nào đó để phát huy tác dụng [1. cho dầu vào máy 2. cho mì chính vào nồi canh 3. hàng đã cho lên tàu]} {4 Động từ coi là, nghĩ rằng [1. tự cho mình là giỏi 2. tôi cho rằng đó không phải là việc xấu]} {5 Động từ (Khẩu ngữ) chuyển, đưa hoặc bán cho (nói tắt) [1. anh cho tôi chiếc mũ kia 2. cho một cốc bia nhé]} {0 Kết từ từ biểu thị điều sắp nêu ra là đối tượng nhằm đến hoặc đối tượng chịu tác động, ảnh hưởng của điều vừa được nói đến [1. gửi thư cho bạn 2. đưa tiền cho mẹ 3. nói cho mọi người rõ 4. không may cho anh ta]} {1 Kết từ từ biểu thị điều sắp nêu ra là yêu cầu, mục đích, mức độ nhằm đạt tới của điều vừa được nói đến [1. viết cho rõ ràng 2. học cho giỏi 3. chờ cho trời sáng hãy đi 4. đói cho sạch, rách cho thơm (tng)]} {2 Kết từ từ biểu thị điều sắp nêu ra là kết quả tự nhiên, hoặc là hệ quả tất yếu của điều vừa được nói đến [1. khôn cho người ta dái, dại cho người ta thương, dở dở ương ương tổ người ta ghét (tng)]} {0 Trợ từ từ biểu thị ý nhấn mạnh về mức độ (cho là có thể như thế) [1. mặc cho mưa gió, vẫn cứ đi 2. không tin cho lắm]} {1 Trợ từ từ biểu thị ý nhấn mạnh về một tác động không hay phải chịu đựng [1. đánh cho một trận 2. làm như thế để nó mắng cho!]} {2 Trợ từ từ biểu thị một đề nghị, một yêu cầu, với mong muốn có được sự đồng ý, thông cảm [1. mong anh giúp cho 2. để tôi làm cho 3. mời ông đi cho!]}] 2021-09-14 23:20:09.647271169 +0800 CST m=+32735.353764608 0001-01-01 00:00:00 +0000 UTC}
+INFO: 2021/09/14 23:20:09 crawler.go:104: crawl func finish
+INFO: 2021/09/14 23:20:09 controller.go:46: 获取成功：cho，准备写入词库
+ERROR: 2021/09/14 23:20:09 controller.go:49: 插入失败：Closed explicitly
+INFO: 2021/09/14 23:24:05 controller.go:30: 139.9.118.67 正在获取：cho
+INFO: 2021/09/14 23:24:05 models.go:70: 
+INFO: 2021/09/14 23:24:05 models.go:81: 
+ERROR: 2021/09/14 23:24:05 controller.go:38: 词库中暂无此单词：cho
+INFO: 2021/09/14 23:24:05 controller.go:39: 正在从网络获取：cho
+INFO: 2021/09/14 23:24:05 crawler.go:90: Visiting http://tratu.soha.vn/dict/vn_vn/cho
+INFO: 2021/09/14 23:24:08 crawler.go:85: Get cho in OnHTML: &{ObjectIdHex("") cho [{0 Động từ chuyển cái thuộc sở hữu của mình sang thành của người khác mà không đổi lấy gì cả [1. cho quà 2. cho tiền]} {1 Động từ làm người khác có được, nhận được cái gì hoặc điều kiện để làm việc gì [1. cô giáo cho điểm 2. cho thời gian để chuẩn bị 3. lịch sử cho ta nhiều bài học quý]} {2 Động từ tạo ra ở khách thể một hoạt động nào đó [1. cho xe đi chậm lại 2. cho máy chạy thử 3. cho người đi tìm]} {3 Động từ chuyển sự vật đến một chỗ nào đó để phát huy tác dụng [1. cho dầu vào máy 2. cho mì chính vào nồi canh 3. hàng đã cho lên tàu]} {4 Động từ coi là, nghĩ rằng [1. tự cho mình là giỏi 2. tôi cho rằng đó không phải là việc xấu]} {5 Động từ (Khẩu ngữ) chuyển, đưa hoặc bán cho (nói tắt) [1. anh cho tôi chiếc mũ kia 2. cho một cốc bia nhé]} {0 Kết từ từ biểu thị điều sắp nêu ra là đối tượng nhằm đến hoặc đối tượng chịu tác động, ảnh hưởng của điều vừa được nói đến [1. gửi thư cho bạn 2. đưa tiền cho mẹ 3. nói cho mọi người rõ 4. không may cho anh ta]} {1 Kết từ từ biểu thị điều sắp nêu ra là yêu cầu, mục đích, mức độ nhằm đạt tới của điều vừa được nói đến [1. viết cho rõ ràng 2. học cho giỏi 3. chờ cho trời sáng hãy đi 4. đói cho sạch, rách cho thơm (tng)]} {2 Kết từ từ biểu thị điều sắp nêu ra là kết quả tự nhiên, hoặc là hệ quả tất yếu của điều vừa được nói đến [1. khôn cho người ta dái, dại cho người ta thương, dở dở ương ương tổ người ta ghét (tng)]} {0 Trợ từ từ biểu thị ý nhấn mạnh về mức độ (cho là có thể như thế) [1. mặc cho mưa gió, vẫn cứ đi 2. không tin cho lắm]} {1 Trợ từ từ biểu thị ý nhấn mạnh về một tác động không hay phải chịu đựng [1. đánh cho một trận 2. làm như thế để nó mắng cho!]} {2 Trợ từ từ biểu thị một đề nghị, một yêu cầu, với mong muốn có được sự đồng ý, thông cảm [1. mong anh giúp cho 2. để tôi làm cho 3. mời ông đi cho!]}] 2021-09-14 23:24:08.09284766 +0800 CST m=+32973.799341100 0001-01-01 00:00:00 +0000 UTC}
+INFO: 2021/09/14 23:24:08 crawler.go:103: Get cho in crawl func: &{ObjectIdHex("") cho [{0 Động từ chuyển cái thuộc sở hữu của mình sang thành của người khác mà không đổi lấy gì cả [1. cho quà 2. cho tiền]} {1 Động từ làm người khác có được, nhận được cái gì hoặc điều kiện để làm việc gì [1. cô giáo cho điểm 2. cho thời gian để chuẩn bị 3. lịch sử cho ta nhiều bài học quý]} {2 Động từ tạo ra ở khách thể một hoạt động nào đó [1. cho xe đi chậm lại 2. cho máy chạy thử 3. cho người đi tìm]} {3 Động từ chuyển sự vật đến một chỗ nào đó để phát huy tác dụng [1. cho dầu vào máy 2. cho mì chính vào nồi canh 3. hàng đã cho lên tàu]} {4 Động từ coi là, nghĩ rằng [1. tự cho mình là giỏi 2. tôi cho rằng đó không phải là việc xấu]} {5 Động từ (Khẩu ngữ) chuyển, đưa hoặc bán cho (nói tắt) [1. anh cho tôi chiếc mũ kia 2. cho một cốc bia nhé]} {0 Kết từ từ biểu thị điều sắp nêu ra là đối tượng nhằm đến hoặc đối tượng chịu tác động, ảnh hưởng của điều vừa được nói đến [1. gửi thư cho bạn 2. đưa tiền cho mẹ 3. nói cho mọi người rõ 4. không may cho anh ta]} {1 Kết từ từ biểu thị điều sắp nêu ra là yêu cầu, mục đích, mức độ nhằm đạt tới của điều vừa được nói đến [1. viết cho rõ ràng 2. học cho giỏi 3. chờ cho trời sáng hãy đi 4. đói cho sạch, rách cho thơm (tng)]} {2 Kết từ từ biểu thị điều sắp nêu ra là kết quả tự nhiên, hoặc là hệ quả tất yếu của điều vừa được nói đến [1. khôn cho người ta dái, dại cho người ta thương, dở dở ương ương tổ người ta ghét (tng)]} {0 Trợ từ từ biểu thị ý nhấn mạnh về mức độ (cho là có thể như thế) [1. mặc cho mưa gió, vẫn cứ đi 2. không tin cho lắm]} {1 Trợ từ từ biểu thị ý nhấn mạnh về một tác động không hay phải chịu đựng [1. đánh cho một trận 2. làm như thế để nó mắng cho!]} {2 Trợ từ từ biểu thị một đề nghị, một yêu cầu, với mong muốn có được sự đồng ý, thông cảm [1. mong anh giúp cho 2. để tôi làm cho 3. mời ông đi cho!]}] 2021-09-14 23:24:08.09284766 +0800 CST m=+32973.799341100 0001-01-01 00:00:00 +0000 UTC}
+INFO: 2021/09/14 23:24:08 crawler.go:104: crawl func finish
+INFO: 2021/09/14 23:24:08 controller.go:46: 获取成功：cho，准备写入词库
+ERROR: 2021/09/14 23:24:08 controller.go:49: 插入失败：Closed explicitly
+INFO: 2021/09/14 23:26:06 controller.go:30: 139.9.118.67 正在获取：cho
+INFO: 2021/09/14 23:26:06 models.go:70: 60d6f2645518ceb668c7de34
+INFO: 2021/09/14 23:27:08 models.go:81: 
+INFO: 2021/09/14 23:28:23 controller.go:30: 139.9.118.67 正在获取：cho
+INFO: 2021/09/14 23:28:23 models.go:70: 60d6f2645518ceb668c7de34
+INFO: 2021/09/14 23:28:25 models.go:81: 
+INFO: 2021/09/14 23:30:02 controller.go:30: 139.9.118.67 正在获取：cho
+INFO: 2021/09/14 23:30:02 models.go:70: 60d6f2645518ceb668c7de34
+INFO: 2021/09/14 23:30:05 models.go:81: 
+INFO: 2021/09/14 23:32:37 controller.go:30: 139.9.118.67 正在获取：cho
+INFO: 2021/09/14 23:32:37 models.go:70: 60d6f2645518ceb668c7de34
+INFO: 2021/09/14 23:32:39 models.go:81: 61378a87c259c69f251f788d
+INFO: 2021/09/14 23:33:21 controller.go:30: 139.9.118.67 正在获取：cho
+INFO: 2021/09/14 23:33:21 models.go:70: 60d6f2645518ceb668c7de34
+INFO: 2021/09/14 23:33:23 models.go:81: 61378a87c259c69f251f788d
+INFO: 2021/09/14 23:35:22 controller.go:30: 139.9.118.67 正在获取：choo
+INFO: 2021/09/14 23:35:22 models.go:70: 
+INFO: 2021/09/14 23:35:24 models.go:81: 
+ERROR: 2021/09/14 23:35:24 controller.go:38: 词库中暂无此单词：choo
+INFO: 2021/09/14 23:35:24 controller.go:39: 正在从网络获取：choo
+INFO: 2021/09/14 23:35:24 crawler.go:90: Visiting http://tratu.soha.vn/dict/vn_vn/choo
+INFO: 2021/09/14 23:35:27 crawler.go:85: Get choo in OnHTML: &{ObjectIdHex("") choo [] 2021-09-14 23:35:27.40223707 +0800 CST m=+171.612087233 0001-01-01 00:00:00 +0000 UTC}
+INFO: 2021/09/14 23:35:27 crawler.go:103: Get choo in crawl func: &{ObjectIdHex("") choo [] 2021-09-14 23:35:27.40223707 +0800 CST m=+171.612087233 0001-01-01 00:00:00 +0000 UTC}
+INFO: 2021/09/14 23:35:27 crawler.go:104: crawl func finish
+ERROR: 2021/09/14 23:35:27 controller.go:42: 获取失败：choo
+INFO: 2021/09/14 23:36:49 controller.go:30: 139.9.118.67 正在获取：choo
+INFO: 2021/09/14 23:36:49 models.go:70: 
+INFO: 2021/09/14 23:36:51 models.go:81: 
+ERROR: 2021/09/14 23:36:51 controller.go:38: 词库中暂无此单词：choo
+INFO: 2021/09/14 23:36:51 controller.go:39: 正在从网络获取：choo
+INFO: 2021/09/14 23:36:51 crawler.go:90: Visiting http://tratu.soha.vn/dict/vn_vn/choo
+ERROR: 2021/09/14 23:37:01 crawler.go:94: Error:  choo
+INFO: 2021/09/14 23:37:01 crawler.go:103: Get choo in crawl func: <nil>
+INFO: 2021/09/14 23:37:01 crawler.go:104: crawl func finish
+INFO: 2021/09/14 23:40:19 controller.go:30: 139.9.118.67 正在获取：choo
+INFO: 2021/09/14 23:40:19 models.go:70: 
+INFO: 2021/09/14 23:40:29 models.go:81: 61378a87c259c69f251f788d
+ERROR: 2021/09/14 23:40:43 controller.go:38: 词库中暂无此单词：choo
+INFO: 2021/09/14 23:40:45 controller.go:39: 正在从网络获取：choo
+INFO: 2021/09/14 23:40:46 crawler.go:90: Visiting http://tratu.soha.vn/dict/vn_vn/choo
+INFO: 2021/09/14 23:40:50 crawler.go:85: Get choo in OnHTML: &{ObjectIdHex("") choo [] 2021-09-14 23:40:50.576704799 +0800 CST m=+34.120892745 0001-01-01 00:00:00 +0000 UTC}
+INFO: 2021/09/14 23:40:50 crawler.go:103: Get choo in crawl func: &{ObjectIdHex("") choo [] 2021-09-14 23:40:50.576704799 +0800 CST m=+34.120892745 0001-01-01 00:00:00 +0000 UTC}
+INFO: 2021/09/14 23:40:50 crawler.go:104: crawl func finish
+ERROR: 2021/09/14 23:40:52 controller.go:42: 获取失败：choo
+INFO: 2021/09/14 23:41:19 controller.go:30: 139.9.118.67 正在获取：choo
+INFO: 2021/09/14 23:41:19 models.go:70: 
+INFO: 2021/09/14 23:41:23 models.go:81: 61378a87c259c69f251f788d
+ERROR: 2021/09/14 23:41:23 controller.go:38: 词库中暂无此单词：choo
+INFO: 2021/09/14 23:41:23 controller.go:39: 正在从网络获取：choo
+INFO: 2021/09/14 23:41:23 crawler.go:90: Visiting http://tratu.soha.vn/dict/vn_vn/choo
+INFO: 2021/09/14 23:41:30 crawler.go:85: Get choo in OnHTML: &{ObjectIdHex("") choo [] 2021-09-14 23:41:30.757374239 +0800 CST m=+74.301562205 0001-01-01 00:00:00 +0000 UTC}
+INFO: 2021/09/14 23:41:30 crawler.go:103: Get choo in crawl func: &{ObjectIdHex("") choo [] 2021-09-14 23:41:30.757374239 +0800 CST m=+74.301562205 0001-01-01 00:00:00 +0000 UTC}
+INFO: 2021/09/14 23:41:30 crawler.go:104: crawl func finish
+ERROR: 2021/09/14 23:41:30 controller.go:42: 获取失败：choo
+INFO: 2021/09/14 23:42:41 controller.go:30: 139.9.118.67 正在获取：choo
+INFO: 2021/09/14 23:42:41 models.go:70: 
+INFO: 2021/09/14 23:42:44 models.go:81: 61378a87c259c69f251f788d
+ERROR: 2021/09/14 23:42:45 controller.go:38: 词库中暂无此单词：choo
+INFO: 2021/09/14 23:42:46 controller.go:39: 正在从网络获取：choo
+INFO: 2021/09/14 23:42:46 crawler.go:90: Visiting http://tratu.soha.vn/dict/vn_vn/choo
+INFO: 2021/09/14 23:42:48 crawler.go:85: Get choo in OnHTML: &{ObjectIdHex("") choo [] 2021-09-14 23:42:48.425545751 +0800 CST m=+10.107604573 0001-01-01 00:00:00 +0000 UTC}
+INFO: 2021/09/14 23:42:48 crawler.go:103: Get choo in crawl func: &{ObjectIdHex("") choo [] 2021-09-14 23:42:48.425545751 +0800 CST m=+10.107604573 0001-01-01 00:00:00 +0000 UTC}
+INFO: 2021/09/14 23:42:48 crawler.go:104: crawl func finish
+ERROR: 2021/09/14 23:42:50 controller.go:42: 获取失败：choo
+INFO: 2021/09/15 00:12:57 controller.go:30: 139.9.118.67 正在获取：choo
+INFO: 2021/09/15 00:12:57 models.go:70: 
+INFO: 2021/09/15 00:13:00 models.go:81: 61378a87c259c69f251f788d
+ERROR: 2021/09/15 00:13:00 controller.go:38: 词库中暂无此单词：choo
+INFO: 2021/09/15 00:13:00 controller.go:39: 正在从网络获取：choo
+INFO: 2021/09/15 00:13:00 crawler.go:90: Visiting http://tratu.soha.vn/dict/vn_vn/choo
+INFO: 2021/09/15 00:13:04 crawler.go:85: Get choo in OnHTML: &{ObjectIdHex("") choo [] 2021-09-15 00:13:04.426718524 +0800 CST m=+1705.475711309 0001-01-01 00:00:00 +0000 UTC}
+INFO: 2021/09/15 00:13:04 crawler.go:103: Get choo in crawl func: &{ObjectIdHex("") choo [] 2021-09-15 00:13:04.426718524 +0800 CST m=+1705.475711309 0001-01-01 00:00:00 +0000 UTC}
+INFO: 2021/09/15 00:13:04 crawler.go:104: crawl func finish
+ERROR: 2021/09/15 00:13:04 controller.go:42: 获取失败：choo
+INFO: 2021/09/15 00:20:18 controller.go:30: 139.9.118.67 正在获取：choo
+INFO: 2021/09/15 00:20:18 models.go:70: 
+INFO: 2021/09/15 00:20:18 models.go:81: 61378a87c259c69f251f788d
+ERROR: 2021/09/15 00:20:18 controller.go:38: 词库中暂无此单词：choo
+INFO: 2021/09/15 00:20:18 controller.go:39: 正在从网络获取：choo
+INFO: 2021/09/15 00:20:18 crawler.go:90: Visiting http://tratu.soha.vn/dict/vn_vn/choo
+INFO: 2021/09/15 00:20:27 crawler.go:85: Get choo in OnHTML: &{ObjectIdHex("") choo [] 2021-09-15 00:20:27.384104604 +0800 CST m=+22.612434775 0001-01-01 00:00:00 +0000 UTC}
+INFO: 2021/09/15 00:20:27 crawler.go:103: Get choo in crawl func: &{ObjectIdHex("") choo [] 2021-09-15 00:20:27.384104604 +0800 CST m=+22.612434775 0001-01-01 00:00:00 +0000 UTC}
+INFO: 2021/09/15 00:20:27 crawler.go:104: crawl func finish
+ERROR: 2021/09/15 00:20:27 controller.go:42: 获取失败：choo
+INFO: 2021/09/15 00:21:05 controller.go:30: 139.9.118.67 正在获取：cho
+INFO: 2021/09/15 00:21:05 models.go:70: 60d6f2645518ceb668c7de34
+INFO: 2021/09/15 00:21:05 models.go:81: 
+INFO: 2021/09/15 00:21:20 controller.go:30: 139.9.118.67 正在获取：choo
+INFO: 2021/09/15 00:21:20 models.go:70: 
+INFO: 2021/09/15 00:21:20 models.go:81: 61378a87c259c69f251f788d
+ERROR: 2021/09/15 00:21:20 controller.go:38: 词库中暂无此单词：choo
+INFO: 2021/09/15 00:21:20 controller.go:39: 正在从网络获取：choo
+INFO: 2021/09/15 00:21:20 crawler.go:90: Visiting http://tratu.soha.vn/dict/vn_vn/choo
+INFO: 2021/09/15 00:21:22 crawler.go:85: Get choo in OnHTML: &{ObjectIdHex("") choo [] 2021-09-15 00:21:22.269824746 +0800 CST m=+77.498154918 0001-01-01 00:00:00 +0000 UTC}
+INFO: 2021/09/15 00:21:22 crawler.go:103: Get choo in crawl func: &{ObjectIdHex("") choo [] 2021-09-15 00:21:22.269824746 +0800 CST m=+77.498154918 0001-01-01 00:00:00 +0000 UTC}
+INFO: 2021/09/15 00:21:22 crawler.go:104: crawl func finish
+ERROR: 2021/09/15 00:21:22 controller.go:42: 获取失败：choo
+INFO: 2021/09/15 00:49:05 controller.go:30: 139.9.118.67 正在获取：choo
+INFO: 2021/09/15 00:49:06 models.go:70: 
+INFO: 2021/09/15 00:49:06 models.go:81: 61378a87c259c69f251f788d
+ERROR: 2021/09/15 00:49:06 controller.go:38: 词库中暂无此单词：choo
+INFO: 2021/09/15 00:49:06 controller.go:39: 正在从网络获取：choo
+INFO: 2021/09/15 00:49:06 crawler.go:90: Visiting http://tratu.soha.vn/dict/vn_vn/choo
+INFO: 2021/09/15 00:49:08 crawler.go:85: Get choo in OnHTML: &{ObjectIdHex("") choo [] 2021-09-15 00:49:08.076004067 +0800 CST m=+59.975968067 0001-01-01 00:00:00 +0000 UTC}
+INFO: 2021/09/15 00:49:08 crawler.go:103: Get choo in crawl func: &{ObjectIdHex("") choo [] 2021-09-15 00:49:08.076004067 +0800 CST m=+59.975968067 0001-01-01 00:00:00 +0000 UTC}
+INFO: 2021/09/15 00:49:08 crawler.go:104: crawl func finish
+ERROR: 2021/09/15 00:49:08 controller.go:42: 获取失败：choo
+INFO: 2021/09/15 00:49:15 controller.go:30: 139.9.118.67 正在获取：ha
+INFO: 2021/09/15 00:49:15 models.go:70: 60d6f6295518ceb668c826db
+INFO: 2021/09/15 00:49:15 models.go:81: 61378a9fc259c69f251f99ad
+INFO: 2021/09/15 00:49:29 controller.go:30: 139.9.118.67 正在获取：ga
+INFO: 2021/09/15 00:49:29 models.go:70: 60d6f5665518ceb668c8181f
+INFO: 2021/09/15 00:49:29 models.go:81: 61378a95c259c69f251f8a3c
+INFO: 2021/09/15 00:51:39 controller.go:30: 139.9.118.67 正在获取：cho
+INFO: 2021/09/15 00:51:39 models.go:70: 60d6f2645518ceb668c7de34
+INFO: 2021/09/15 00:51:39 models.go:81: 61378a87c259c69f251f788d
+INFO: 2021/09/15 00:51:50 controller.go:63: 139.9.118.67 正在获取：一
+INFO: 2021/09/15 00:51:50 models.go:92: 613b7a0d02a115c96bd2b6e3

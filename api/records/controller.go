@@ -40,8 +40,6 @@ func FindVietVietOne(c *gin.Context) {
 		record = Crawl(title)
 		if record == nil {
 			utils.ErrorLogger.Printf("获取失败：%v\n", title)
-			RES(c, SUCCESS, gin.H{})
-			return
 		} else {
 			utils.InfoLogger.Printf("获取成功：%v，准备写入词库\n", title)
 			_, err = record.InsertOne()

@@ -24,6 +24,7 @@ class LookupWordComponent extends Component {
       inputText: '',
       select: 'viethan',
       suggestions: [],
+      data: {},
       record: {},
       record2: {},
       record3: {},
@@ -44,37 +45,37 @@ class LookupWordComponent extends Component {
       return
     }
     inputText = inputText.trim()
-    const request = `https://wcors.herokuapp.com/http://tratu.soha.vn/extensions/curl_suggest.php?search=${encodeURI(
-      inputText
-    )}&dict=vn_vn`;
-    console.log(request);
-    fetch(request)
-      .then((response) => response.text())
-      .then(
-        (result) => {
-          //console.log(result);
-          // const dom = new DOMParser().parseFromString(text, 'application/xml')
-          // console.log(dom.getElementsByTagName('results')[0].innerHTML)
-          const convert = require('xml-js');
-          const json = convert.xml2json(result, { compact: true, spaces: 4 });
-          //console.log(json);
-          const { results } = JSON.parse(json);
-          if (results) {
-            console.log("results", results)
-            if (Object.keys(results).length === 0) {
-              this.setState({ suggestions: [] });
-              return;
-            }
-            const rs = results.rs;
-            this.setState({
-              suggestions: Array.isArray(rs) ? rs.map((item) => item._text) : [rs._text],
-            });
-          }
-        },
-        (error) => {
-          console.log(error);
-        }
-      );
+    // const request = `https://wcors.herokuapp.com/http://tratu.soha.vn/extensions/curl_suggest.php?search=${encodeURI(
+    //   inputText
+    // )}&dict=vn_vn`;
+    // console.log(request);
+    // fetch(request)
+    //   .then((response) => response.text())
+    //   .then(
+    //     (result) => {
+    //       //console.log(result);
+    //       // const dom = new DOMParser().parseFromString(text, 'application/xml')
+    //       // console.log(dom.getElementsByTagName('results')[0].innerHTML)
+    //       const convert = require('xml-js');
+    //       const json = convert.xml2json(result, { compact: true, spaces: 4 });
+    //       //console.log(json);
+    //       const { results } = JSON.parse(json);
+    //       if (results) {
+    //         console.log("results", results)
+    //         if (Object.keys(results).length === 0) {
+    //           this.setState({ suggestions: [] });
+    //           return;
+    //         }
+    //         const rs = results.rs;
+    //         this.setState({
+    //           suggestions: Array.isArray(rs) ? rs.map((item) => item._text) : [rs._text],
+    //         });
+    //       }
+    //     },
+    //     (error) => {
+    //       console.log(error);
+    //     }
+    //   );
   };
 
   handleSelectChange = (select) => {
@@ -87,19 +88,17 @@ class LookupWordComponent extends Component {
     word = word.trim()
     if (this.state.select === "vietviet") {
       console.log('searching vietviet: ', word);
-      const request = `http://woohsi.top/api/records/vietviet/${encodeURI(word)}`;
+      const request = `http://woohsi.top:88/api/records/vietviet/${encodeURI(word)}`;
       fetch(request)
         .then((response) => response.json())
           .then((result) => {
             console.log("result: ", result)
-            const { data, data2 } = result
-            console.log("data:", data)
-            console.log("data2: ", data2)
-            if (data != null) {
-              this.setState({record: data})
-            }
-            if (data2 != null) {
-              this.setState({record2: data2})
+            // const { data, data2 } = result
+            // console.log("data: ", data)
+            // console.log("data2: ", data2)
+            if (result != null) {
+            
+              this.setState({data: result})
             }
         });
     }
@@ -107,7 +106,7 @@ class LookupWordComponent extends Component {
     if (this.state.select === "viethan") {
       word = word.toLowerCase();
       console.log('searching viethan: ', word);
-      const request = `http://woohsi.top/api/pages/${encodeURI(word)}`;
+      const request = `http://woohsi.top:88/api/pages/${encodeURI(word)}`;
       fetch(request)
         .then((response) => response.json())
           .then((result) => {
@@ -122,7 +121,7 @@ class LookupWordComponent extends Component {
     if (this.state.select === "hanviet") {
       word = word.toLowerCase();
       console.log('searching hanviet: ', word);
-      const request = `http://woohsi.top/api/records/hanviet/${encodeURI(word)}`;
+      const request = `http://woohsi.top:88/api/records/hanviet/${encodeURI(word)}`;
       fetch(request)
         .then((response) => response.json())
           .then((result) => {
@@ -151,7 +150,7 @@ class LookupWordComponent extends Component {
           suggestions={this.state.suggestions}
           onSearch={this.handleSearch}
         /> */}
-        <WordCard select={this.state.select} showLearnMore={this.state.showLearnMore} word={this.state.inputText} record={this.state.record} record2={this.state.record2} record3={this.state.record3} page={this.state.page} />
+        <WordCard select={this.state.select} showLearnMore={this.state.showLearnMore} word={this.state.inputText} data={this.state.data} record={this.state.record} record2={this.state.record2} record3={this.state.record3} page={this.state.page} />
       </div>
     );
   }

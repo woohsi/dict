@@ -26,7 +26,6 @@ func NewConnection() (conn *DBConnection) {
 		Timeout: 20 * time.Second,
 		Username: mongo_user,
 		Password: mongo_passwd,
-		Mechanism: "SCRAM-SHA-1",
 		Database: "test",
 		Source: "admin",
 	}

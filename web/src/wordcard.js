@@ -8,6 +8,7 @@ import Typography from '@material-ui/core/Typography';
 import Chip from '@material-ui/core/Chip';
 import PDF from './pdf';
 import './style.css'
+
 const useStyles = makeStyles({
   root: {
     minWidth: 275,
@@ -28,34 +29,73 @@ const useStyles = makeStyles({
   },
 });
 
-const vieviet = (record, record2, classes) => {
+const vieviet = (data, classes) => {
+  let record = null
+  let record2 = null
+  let defs = null
+  let defs2 = null
 
-  const defs = record.definitions;
-  const defs2 = record2.items;
+  if (data.data !== undefined) {
+    record = data.data;
+    if (record !== null) {
+      defs = record.definitions;
+    }
+  }
+  if (data.data2 !== undefined) {
+    record2 = data.data2;
+    if (record2 != null) {
+      defs2 = record2.items;
+    }
+  }
+  
   console.log("defs", defs)
   console.log("defs2", defs2)
-  if (defs === undefined && defs2 === undefined) {
+  if (defs === null && defs2 === null) {
     //TODO
     return <div></div>;
   }
 
   let preType = null;
+  let content = null;
+  if (defs !== null) {
+      content = defs.map((def, index) => {
+      let badge = null;
+      if (def.type !== preType) {
+        badge = <Chip size='small' label={def.type} />;
+        preType = def.type;
+      }
 
-  const content = defs.map((def, index) => {
-    let badge = null;
-    if (def.type !== preType) {
-      badge = <Chip size='small' label={def.type} />;
-      preType = def.type;
-    }
+      const meaning = (
+        <Typography className={classes.meaning} variant='body2' component='p'>
+          {badge}
+          {def.meaning}
+        </Typography>
+      );
 
-    const meaning = (
-      <Typography className={classes.meaning} variant='body2' component='p'>
-        {badge}
-        {def.meaning}
-      </Typography>
-    );
+      const examples = def.examples.map((example, index) => {
+        return (
+          <Typography
+            key={index}
+            className={classes.example}
+            color='textSecondary'
+            gutterBottom
+          >
+            {example}
+          </Typography>
+        );
+      });
+      return (
+        <>
+          {meaning} {examples}
+        </>
+      );
+    });
+  }
 
-    const examples = def.examples.map((example, index) => {
+  let content2 = null
+  if (defs2 !== null) {
+    content2 = defs2.map((item, index) => {
+      const badge = <Chip size='small' label={""} />;
       return (
         <Typography
           key={index}
@@ -63,44 +103,51 @@ const vieviet = (record, record2, classes) => {
           color='textSecondary'
           gutterBottom
         >
-          {example}
+          {badge}{item}
         </Typography>
       );
     });
+  }
+  
+  if (record !== null && record2 !== null) {
     return (
       <>
-        {meaning} {examples}
+        <Typography variant='h5' component='h2'>
+          {record.title}
+        </Typography>
+        {content}
+        <hr />
+        <Typography variant='h5' component='h2'>
+          {record2.title}
+        </Typography>
+        {content2}
       </>
     );
-  });
-
-  const content2 = defs2.map((item, index) => {
-    const badge = <Chip size='small' label={""} />;
+  } else if (record !== null && record2 === null) {
+      return (
+        <>
+          <Typography variant='h5' component='h2'>
+            {record.title}
+          </Typography>
+          {content}
+        </>
+      );
+  } else if (record === null && record2 !== null) {
     return (
-      <Typography
-        key={index}
-        className={classes.example}
-        color='textSecondary'
-        gutterBottom
-      >
-        {badge}{item}
-      </Typography>
+      <>
+        <Typography variant='h5' component='h2'>
+          {record2.title}
+        </Typography>
+        {content2}
+      </>
     );
-  });
-
-  return (
-    <>
-      <Typography variant='h5' component='h2'>
-        {record.title}
-      </Typography>
-      {content}
-      <hr/>
-      <Typography variant='h5' component='h2'>
-        {record2.title}
-      </Typography>
-      {content2}
-    </>
-  );
+  } else {
+    return (
+      <>
+        Not found
+      </>
+    );
+  }
 };
 
 const viethan = (page) => {
@@ -146,8 +193,8 @@ const hanviet = (record3, classes) => {
 export default function WordCard(props) {
   const classes = useStyles();
 
-  let record = null;
-  let record2 = null;
+  let data = null;
+  
   let record3 = null;
   let page = 1;
   let body = null;
@@ -158,9 +205,9 @@ export default function WordCard(props) {
   }
 
   if (props.select === 'vietviet') {
-    record = props.record;
-    record2 = props.record2;
-    body = vieviet(record, record2, classes);
+    data = props.data;
+    
+    body = vieviet(data, classes);
   }
 
   if (props.select === 'viethan') {

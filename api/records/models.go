@@ -26,13 +26,13 @@ type Definition struct {
 }
 
 type Record2 struct {
-	Id bson.ObjectId `json:"id,omitempty" bson:"id,omitempty"`
+	Id bson.ObjectId `json:"id,omitempty" bson:"_id,omitempty"`
 	Title string `json:"title" bson:"title"`
 	Items []string `json:"items" bson:"items"`
 }
 
 type Record3 struct {
-	Id bson.ObjectId `json:"id,omitempty" bson:"id,omitempty"`
+	Id bson.ObjectId `json:"id,omitempty" bson:"_id,omitempty"`
 	Title string `json:"title" bson:"title"`
 	Definition string `json:"definition" bson:"definition"`
 }
