@@ -20,7 +20,8 @@ func NewConnection() (conn *DBConnection) {
 	
 	mongo_host := os.Getenv("MONGO_HOST")
 	mongo_user := os.Getenv("MONGO_USER")
-	mongo_passwd := os.Getenv("MONGO_PASSWD")
+	//mongo_passwd := os.Getenv("MONGO_PASSWD")
+	mongo_passwd := "BestOfYear2021"
 	info := &mgo.DialInfo{
 		Addrs: []string{mongo_host},
 		Timeout: 20 * time.Second,
