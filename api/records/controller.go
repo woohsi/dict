@@ -57,7 +57,7 @@ func FindVietVietOne(c *gin.Context) {
 	})
 }
 
-//根据单词查释义(Hanviet)
+//根据单词查释义(Hanviet/Viethan2)
 func FindHanVietOne(c *gin.Context) {
 	title := c.Param("title")
 	utils.InfoLogger.Printf("%v 正在获取：%v\n", c.ClientIP(), title)

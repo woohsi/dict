@@ -41,12 +41,14 @@ var dbConnection *db.DBConnection
 var collection1 *mgo.Collection
 var collection2 *mgo.Collection
 var collection3 *mgo.Collection
+var collection4 *mgo.Collection
 
 func init()  {
 	dbConnection = db.NewConnection()
 	collection1 = dbConnection.Use("dict", "words")
 	collection2 = dbConnection.Use("dict", "vv30k")
 	collection3 = dbConnection.Use("dict", "hanviet")
+	collection4 = dbConnection.Use("dict", "viethan")
 }
 
 func (r *Record)Find() (list []Record, err error) {
@@ -85,11 +87,14 @@ func (r *Record2)FindTitleInVV30K(title string)(err error) {
 func (r *Record3)FindTitleInHanviet(title string)(err error) {
 	reg := bson.M{"$regex": bson.RegEx{Pattern: "^" + strings.Trim(title, " ") + "$", Options: "i"}}
 	err = collection3.Find(bson.M{"title": reg}).Select(bson.M{"_id": 1, "title": 1, "definition": 1}).One(r)
+	if err != nil {
+		err = collection4.Find(bson.M{"title": reg}).Select(bson.M{"_id": 1, "title": 1, "definition": 1}).One(r)
+	}
 	// if err != nil {
 	// 	regex := bson.M{"$regex": bson.RegEx{Pattern: strings.Trim(title, " "), Options: "i"}}
 	// 	err = collection.Find(bson.M{"title": regex}).One(r)
 	// }
-	utils.InfoLogger.Println(r.Id.Hex())
+	//utils.InfoLogger.Println(r.Id.Hex())
 	return err
 }
 

@@ -21,7 +21,7 @@ var collection *mgo.Collection
 
 func init()  {
 	dbConnection = db.NewConnection()
-	collection = dbConnection.Use("dict", "hanviet")
+	collection = dbConnection.Use("dict", "viethan")
 }
 
 func (r *Word2)InsertOne() (id string, err error) {
@@ -35,7 +35,7 @@ func (r *Word2)InsertOne() (id string, err error) {
 }
 
 func main() {
-	b, err := ioutil.ReadFile("../hanviet.html") // just pass the file name
+	b, err := ioutil.ReadFile("../viethan2.txt") // just pass the file name
 	// b, err := ioutil.ReadFile("test.txt") // just pass the file name
 	if err != nil {
 			fmt.Print(err)
@@ -46,7 +46,7 @@ func main() {
 
 	
 	for _, word := range words {
-		r := regexp.MustCompile(`^<DIV.+?>(.+?)</DIV>\r\n(<TABLE [\w\W]+?</TABLE>)`)
+		r := regexp.MustCompile(`^<DIV>(.+?)</DIV>\r\n(<TABLE [\w\W]+?</TABLE>)`)
 		matchs := r.FindStringSubmatch(word)
 		var wd *Word2
 		
