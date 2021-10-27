@@ -6,15 +6,16 @@ import {
   FormLabel,
 } from '@material-ui/core';
 import SearchIcon from '@material-ui/icons/Search';
-import React from 'react';
+import React, { useEffect } from 'react';
 import Radio from '@material-ui/core/Radio';
 import RadioGroup from '@material-ui/core/RadioGroup';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
-import { Component, useState } from 'react';
+import { Component, useRef, useState } from 'react';
 
 import './style.css';
 
 export default function SearchBar(props) {
+  const inputEl = useRef(null)
   const inputText = props.inputText;
   //setInputText(props.inputText);
 
@@ -37,6 +38,10 @@ export default function SearchBar(props) {
     console.log('You clicked ', word);
     props.onSearch(word);
   };
+
+  useEffect(() => {
+    inputEl.current.focus()
+  })
 
   let sugestList = props.suggestions.map((s, i) => (
     <div key={i} value={s} className='sugg' onClick={handleSuggestionClick}>
@@ -63,6 +68,7 @@ export default function SearchBar(props) {
                 <SearchIcon onClick={handleSearchIconClick} />
               </InputAdornment>
             }
+            ref={inputEl}
           />
           <FormHelperText><Select onSelectChange={props.onSelectChange}/></FormHelperText>
         </FormControl>
