@@ -7805,3 +7805,105 @@ INFO: 2021/10/26 22:02:22 controller.go:63: 139.9.118.67 正在获取：热情
 INFO: 2021/10/26 22:09:59 controller.go:63: 139.9.118.67 正在获取：学以致用
 ERROR: 2021/10/26 22:09:59 controller.go:68: 获取失败：学以致用
 INFO: 2021/10/26 22:43:38 controller.go:63: 139.9.118.67 正在获取：đỉnh
+INFO: 2021/10/28 08:54:52 controller.go:63: 139.9.118.67 正在获取：dính vào
+INFO: 2021/10/28 08:56:03 controller.go:30: 139.9.118.67 正在获取：Dính vào
+INFO: 2021/10/28 08:56:03 models.go:72: 
+INFO: 2021/10/28 08:56:03 models.go:83: 
+ERROR: 2021/10/28 08:56:03 controller.go:38: 词库中暂无此单词：Dính vào
+INFO: 2021/10/28 08:56:03 controller.go:39: 正在从网络获取：Dính vào
+INFO: 2021/10/28 08:56:03 crawler.go:90: Visiting http://tratu.soha.vn/dict/vn_vn/D%C3%ADnh_v%C3%A0o
+INFO: 2021/10/28 08:56:04 controller.go:30: 139.9.118.67 正在获取：Dính vào
+INFO: 2021/10/28 08:56:04 models.go:72: 
+INFO: 2021/10/28 08:56:04 models.go:83: 
+ERROR: 2021/10/28 08:56:04 controller.go:38: 词库中暂无此单词：Dính vào
+INFO: 2021/10/28 08:56:04 controller.go:39: 正在从网络获取：Dính vào
+INFO: 2021/10/28 08:56:04 crawler.go:90: Visiting http://tratu.soha.vn/dict/vn_vn/D%C3%ADnh_v%C3%A0o
+ERROR: 2021/10/28 08:56:07 crawler.go:94: Error:  Dính vào
+INFO: 2021/10/28 08:56:07 crawler.go:103: Get Dính vào in crawl func: <nil>
+INFO: 2021/10/28 08:56:07 crawler.go:104: crawl func finish
+ERROR: 2021/10/28 08:56:07 crawler.go:94: Error:  Dính vào
+INFO: 2021/10/28 08:56:07 crawler.go:103: Get Dính vào in crawl func: <nil>
+INFO: 2021/10/28 08:56:07 crawler.go:104: crawl func finish
+INFO: 2021/10/28 08:57:19 controller.go:63: 139.9.118.67 正在获取：tệ nạn
+INFO: 2021/10/28 08:57:21 controller.go:63: 139.9.118.67 正在获取：tệ nạn
+INFO: 2021/10/28 15:47:55 controller.go:63: 139.9.118.67 正在获取：tỉnh táo
+INFO: 2021/10/28 20:22:16 controller.go:63: 139.9.118.67 正在获取：hành lang
+INFO: 2021/10/29 09:52:25 controller.go:63: 139.9.118.67 正在获取：安静
+INFO: 2021/10/29 09:52:46 controller.go:63: 139.9.118.67 正在获取：tĩnh lặng
+INFO: 2021/10/29 10:56:02 controller.go:30: 139.9.118.67 正在获取：ngập đầu
+INFO: 2021/10/29 10:56:02 models.go:72: 60d6fe775518ceb668c87dae
+INFO: 2021/10/29 10:56:02 models.go:83: 61378acfc259c69f251fe26b
+INFO: 2021/10/29 11:07:38 controller.go:30: 139.9.118.67 正在获取：lo liệu
+INFO: 2021/10/29 11:07:38 models.go:72: 60d6f8585518ceb668c850fd
+INFO: 2021/10/29 11:07:38 models.go:83: 61378abbc259c69f251fc4ed
+INFO: 2021/10/29 12:08:16 controller.go:63: 139.9.118.67 正在获取：cản
+INFO: 2021/10/29 13:02:58 controller.go:63: 139.9.118.67 正在获取：嗯哼
+ERROR: 2021/10/29 13:02:58 controller.go:68: 获取失败：嗯哼
+INFO: 2021/10/29 13:03:02 controller.go:63: 139.9.118.67 正在获取：嗯哼
+ERROR: 2021/10/29 13:03:02 controller.go:68: 获取失败：嗯哼
+INFO: 2021/10/29 13:03:02 controller.go:63: 139.9.118.67 正在获取：嗯哼
+ERROR: 2021/10/29 13:03:02 controller.go:68: 获取失败：嗯哼
+INFO: 2021/10/29 13:03:03 controller.go:63: 139.9.118.67 正在获取：嗯哼
+ERROR: 2021/10/29 13:03:03 controller.go:68: 获取失败：嗯哼
+INFO: 2021/10/30 00:08:34 controller.go:63: 139.9.118.67 正在获取：ngực
+ERROR: 2021/10/30 00:08:35 controller.go:68: 获取失败：ngực
+INFO: 2021/10/30 00:08:46 controller.go:30: 139.9.118.67 正在获取：Ngực
+INFO: 2021/10/30 00:08:46 models.go:72: 
+INFO: 2021/10/30 00:08:46 models.go:83: 61378ad5c259c69f251feade
+ERROR: 2021/10/30 00:08:46 controller.go:38: 词库中暂无此单词：Ngực
+INFO: 2021/10/30 00:08:46 controller.go:39: 正在从网络获取：Ngực
+INFO: 2021/10/30 00:08:46 crawler.go:90: Visiting http://tratu.soha.vn/dict/vn_vn/Ng%E1%BB%B1c
+INFO: 2021/10/30 00:08:51 crawler.go:85: Get Ngực in OnHTML: &{ObjectIdHex("") Ngực [{0 Danh từ phần thân từ cổ tới bụng, chứa tim và phổi, ứng với bộ xương sườn [1. mặc áo phanh ngực 2. nằm sấp bị tức ngực 3. vỗ ngực tự xưng]} {1 Danh từ (Khẩu ngữ) vú của phụ nữ (thường còn trẻ; lối nói kiêng tránh) [1. thẩm mĩ nâng ngực]}] 2021-10-30 00:08:51.079768061 +0800 CST m=+379549.388296471 0001-01-01 00:00:00 +0000 UTC}
+INFO: 2021/10/30 00:08:51 crawler.go:103: Get Ngực in crawl func: &{ObjectIdHex("") Ngực [{0 Danh từ phần thân từ cổ tới bụng, chứa tim và phổi, ứng với bộ xương sườn [1. mặc áo phanh ngực 2. nằm sấp bị tức ngực 3. vỗ ngực tự xưng]} {1 Danh từ (Khẩu ngữ) vú của phụ nữ (thường còn trẻ; lối nói kiêng tránh) [1. thẩm mĩ nâng ngực]}] 2021-10-30 00:08:51.079768061 +0800 CST m=+379549.388296471 0001-01-01 00:00:00 +0000 UTC}
+INFO: 2021/10/30 00:08:51 crawler.go:104: crawl func finish
+INFO: 2021/10/30 00:08:51 controller.go:44: 获取成功：Ngực，准备写入词库
+INFO: 2021/10/30 00:09:15 controller.go:63: 139.9.118.67 正在获取：ngực
+ERROR: 2021/10/30 00:09:15 controller.go:68: 获取失败：ngực
+INFO: 2021/10/30 00:09:16 controller.go:63: 139.9.118.67 正在获取：ngực
+ERROR: 2021/10/30 00:09:16 controller.go:68: 获取失败：ngực
+INFO: 2021/10/30 00:10:51 controller.go:63: 139.9.118.67 正在获取：nghiện
+ERROR: 2021/10/30 00:10:51 controller.go:68: 获取失败：nghiện
+INFO: 2021/10/30 00:11:06 controller.go:30: 139.9.118.67 正在获取：Nghiện
+INFO: 2021/10/30 00:11:06 models.go:72: 
+INFO: 2021/10/30 00:11:06 models.go:83: 61378ad1c259c69f251fe514
+ERROR: 2021/10/30 00:11:06 controller.go:38: 词库中暂无此单词：Nghiện
+INFO: 2021/10/30 00:11:06 controller.go:39: 正在从网络获取：Nghiện
+INFO: 2021/10/30 00:11:06 crawler.go:90: Visiting http://tratu.soha.vn/dict/vn_vn/Nghi%E1%BB%87n
+INFO: 2021/10/30 00:11:08 crawler.go:85: Get Nghiện in OnHTML: &{ObjectIdHex("") Nghiện [{0 Động từ ham thích đến mức thành thói quen khó bỏ [1. nghiện thuốc lá 2. nghiện rượu]} {1 Động từ (Khẩu ngữ) nghiện ma tuý (nói tắt) [1. con nghiện 2. đưa đi cai nghiện]}] 2021-10-30 00:11:08.699592495 +0800 CST m=+379687.008120904 0001-01-01 00:00:00 +0000 UTC}
+INFO: 2021/10/30 00:11:08 crawler.go:103: Get Nghiện in crawl func: &{ObjectIdHex("") Nghiện [{0 Động từ ham thích đến mức thành thói quen khó bỏ [1. nghiện thuốc lá 2. nghiện rượu]} {1 Động từ (Khẩu ngữ) nghiện ma tuý (nói tắt) [1. con nghiện 2. đưa đi cai nghiện]}] 2021-10-30 00:11:08.699592495 +0800 CST m=+379687.008120904 0001-01-01 00:00:00 +0000 UTC}
+INFO: 2021/10/30 00:11:08 crawler.go:104: crawl func finish
+INFO: 2021/10/30 00:11:08 controller.go:44: 获取成功：Nghiện，准备写入词库
+INFO: 2021/10/30 00:11:14 controller.go:30: 139.9.118.67 正在获取：Nghiện
+INFO: 2021/10/30 00:11:14 models.go:72: 617c1d1cf7542ebb95c4ed7e
+INFO: 2021/10/30 00:11:14 models.go:83: 61378ad1c259c69f251fe514
+INFO: 2021/10/30 00:11:16 controller.go:63: 139.9.118.67 正在获取：nghiện
+ERROR: 2021/10/30 00:11:16 controller.go:68: 获取失败：nghiện
+INFO: 2021/10/30 00:11:17 controller.go:63: 139.9.118.67 正在获取：nghiện
+ERROR: 2021/10/30 00:11:17 controller.go:68: 获取失败：nghiện
+INFO: 2021/10/30 00:11:17 controller.go:63: 139.9.118.67 正在获取：nghiện
+ERROR: 2021/10/30 00:11:17 controller.go:68: 获取失败：nghiện
+INFO: 2021/10/30 00:11:22 controller.go:63: 139.9.118.67 正在获取：cho
+INFO: 2021/10/30 00:17:00 controller.go:63: 139.9.118.67 正在获取：cư xử
+INFO: 2021/10/30 00:17:37 controller.go:30: 139.9.118.67 正在获取：Cư xử
+INFO: 2021/10/30 00:17:37 models.go:72: 60d6f43e5518ceb668c801d0
+INFO: 2021/10/30 00:17:37 models.go:83: 61378a8cc259c69f251f7df6
+INFO: 2021/10/30 00:18:50 controller.go:30: 139.9.118.67 正在获取：Đúng mực
+INFO: 2021/10/30 00:18:50 models.go:72: 60d706255518ceb668c90ac4
+INFO: 2021/10/30 00:18:50 models.go:83: 
+INFO: 2021/10/30 00:18:56 controller.go:63: 139.9.118.67 正在获取：đúng mực
+INFO: 2021/10/30 00:19:49 controller.go:63: 139.9.118.67 正在获取：cư xử
+INFO: 2021/10/30 00:19:51 controller.go:30: 139.9.118.67 正在获取：Cư xử
+INFO: 2021/10/30 00:19:51 models.go:72: 60d6f43e5518ceb668c801d0
+INFO: 2021/10/30 00:19:51 models.go:83: 61378a8cc259c69f251f7df6
+INFO: 2021/10/30 00:20:25 controller.go:63: 139.9.118.67 正在获取：lịch thiệp
+INFO: 2021/10/30 00:20:28 controller.go:30: 139.9.118.67 正在获取：Lịch thiệp
+INFO: 2021/10/30 00:20:28 models.go:72: 
+INFO: 2021/10/30 00:20:28 models.go:83: 61378abac259c69f251fc31f
+ERROR: 2021/10/30 00:20:28 controller.go:38: 词库中暂无此单词：Lịch thiệp
+INFO: 2021/10/30 00:20:28 controller.go:39: 正在从网络获取：Lịch thiệp
+INFO: 2021/10/30 00:20:28 crawler.go:90: Visiting http://tratu.soha.vn/dict/vn_vn/L%E1%BB%8Bch_thi%E1%BB%87p
+INFO: 2021/10/30 00:20:33 crawler.go:85: Get Lịch thiệp in OnHTML: &{ObjectIdHex("") Lịch thiệp [{0 Tính từ tỏ ra biết cách giao thiệp, làm vừa lòng người tiếp xúc với mình [1. cách cư xử lịch thiệp]}] 2021-10-30 00:20:33.376595863 +0800 CST m=+380251.685124280 0001-01-01 00:00:00 +0000 UTC}
+INFO: 2021/10/30 00:20:33 crawler.go:103: Get Lịch thiệp in crawl func: &{ObjectIdHex("") Lịch thiệp [{0 Tính từ tỏ ra biết cách giao thiệp, làm vừa lòng người tiếp xúc với mình [1. cách cư xử lịch thiệp]}] 2021-10-30 00:20:33.376595863 +0800 CST m=+380251.685124280 0001-01-01 00:00:00 +0000 UTC}
+INFO: 2021/10/30 00:20:33 crawler.go:104: crawl func finish
+INFO: 2021/10/30 00:20:33 controller.go:44: 获取成功：Lịch thiệp，准备写入词库
+INFO: 2021/10/30 00:21:19 controller.go:63: 139.9.118.67 正在获取：lịch thiệp
