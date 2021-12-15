@@ -88,7 +88,7 @@ class LookupWordComponent extends Component {
     word = word.trim()
     if (this.state.select === "vietviet") {
       console.log('searching vietviet: ', word);
-      const request = `http://woohsi.top/api/records/vietviet/${encodeURI(word)}`;
+      const request = `https://woohsi.top/api/records/vietviet/${encodeURI(word)}`;
       fetch(request)
         .then((response) => response.json())
           .then((result) => {
@@ -106,7 +106,7 @@ class LookupWordComponent extends Component {
     if (this.state.select === "viethan") {
       word = word.toLowerCase();
       console.log('searching viethan: ', word);
-      const request = `http://woohsi.top/api/pages/${encodeURI(word)}`;
+      const request = `https://woohsi.top/api/pages/${encodeURI(word)}`;
       fetch(request)
         .then((response) => response.json())
           .then((result) => {
@@ -121,7 +121,7 @@ class LookupWordComponent extends Component {
     if (this.state.select === "hanviet") {
       word = word.toLowerCase();
       console.log('searching hanviet: ', word);
-      const request = `http://woohsi.top/api/records/hanviet/${encodeURI(word)}`;
+      const request = `https://woohsi.top/api/records/hanviet/${encodeURI(word)}`;
       fetch(request)
         .then((response) => response.json())
           .then((result) => {
