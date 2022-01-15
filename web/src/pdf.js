@@ -1,13 +1,11 @@
 import React, { useState } from 'react';
 import { Document, Page } from 'react-pdf';
 import {isMobile} from 'react-device-detect';
-//import { Document, Page } from 'react-pdf/dist/esm/entry.webpack';
 import { pdfjs } from 'react-pdf';
 pdfjs.GlobalWorkerOptions.workerSrc = '_pdf.worker.min.js';
 export default function PDF(props) {
   const [numPages, setNumPages] = useState(null);
   const [pageNumber, setPageNumber] = useState(1);
-  const [pdfFile, setPdfFile] = useState("");
 
   function onDocumentLoadSuccess({ numPages }) {
     setNumPages(numPages);

@@ -13,7 +13,7 @@ type DBConnection struct {
 }
 
 func NewConnection() (conn *DBConnection) {
-	err := godotenv.Load("/root/work/dict/.env")
+	err := godotenv.Load(".env")
 	if err != nil {
 		panic(err)
 	}

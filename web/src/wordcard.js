@@ -61,7 +61,7 @@ const vieviet = (data, classes) => {
       content = defs.map((def, index) => {
       let badge = null;
       if (def.type !== preType) {
-        badge = <Chip size='small' label={def.type} />;
+        badge = <Chip component='span' size='small' label={def.type} />;
         preType = def.type;
       }
 
@@ -85,9 +85,9 @@ const vieviet = (data, classes) => {
         );
       });
       return (
-        <>
+        <div key={index}>
           {meaning} {examples}
-        </>
+        </div>
       );
     });
   }
@@ -95,7 +95,7 @@ const vieviet = (data, classes) => {
   let content2 = null
   if (defs2 !== null) {
     content2 = defs2.map((item, index) => {
-      const badge = <Chip size='small' label={""} />;
+      const badge = <Chip component='span' size='small' label={""} />;
       return (
         <Typography
           key={index}
@@ -174,6 +174,7 @@ const hanviet = (record3, classes) => {
       <Typography
         className={classes.example}
         color='textSecondary'
+        component='div'
         gutterBottom
       >
         <MyComponent str={defs}/>

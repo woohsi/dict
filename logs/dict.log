@@ -12117,3 +12117,19 @@ INFO: 2021/12/15 22:11:14 models.go:83: 61378a95c259c69f251f892b
 INFO: 2021/12/15 22:11:39 controller.go:30: 139.9.118.67 正在获取：Em
 INFO: 2021/12/15 22:11:39 models.go:72: 60d6f5625518ceb668c817d8
 INFO: 2021/12/15 22:11:39 models.go:83: 61378a95c259c69f251f892b
+INFO: 2022/01/15 16:56:50 controller.go:30: 127.0.0.1 正在获取：cha
+INFO: 2022/01/15 16:56:51 models.go:72: 60d6f23f5518ceb668c7db5e
+INFO: 2022/01/15 16:56:51 models.go:83: 61378a85c259c69f251f753a
+INFO: 2022/01/15 16:57:33 controller.go:63: 127.0.0.1 正在获取：cha
+INFO: 2022/01/15 18:08:38 controller.go:63: 127.0.0.1 正在获取：ha
+INFO: 2022/01/15 18:13:44 controller.go:63: 127.0.0.1 正在获取：cho
+INFO: 2022/01/15 18:14:09 controller.go:30: 127.0.0.1 正在获取：cho
+INFO: 2022/01/15 18:14:09 models.go:72: 60d6f2645518ceb668c7de34
+INFO: 2022/01/15 18:14:09 models.go:83: 61378a87c259c69f251f788d
+INFO: 2022/01/15 18:16:59 controller.go:30: 127.0.0.1 正在获取：cho
+INFO: 2022/01/15 18:16:59 models.go:72: 60d6f2645518ceb668c7de34
+INFO: 2022/01/15 18:16:59 models.go:83: 61378a87c259c69f251f788d
+INFO: 2022/01/15 18:28:15 controller.go:30: 127.0.0.1 正在获取：cho
+INFO: 2022/01/15 18:28:15 models.go:72: 60d6f2645518ceb668c7de34
+INFO: 2022/01/15 18:28:15 models.go:83: 61378a87c259c69f251f788d
+INFO: 2022/01/15 18:30:04 controller.go:63: 127.0.0.1 正在获取：cho

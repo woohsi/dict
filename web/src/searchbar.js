@@ -10,7 +10,7 @@ import React, { useEffect } from 'react';
 import Radio from '@material-ui/core/Radio';
 import RadioGroup from '@material-ui/core/RadioGroup';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
-import { Component, useRef, useState } from 'react';
+import { useRef, useState } from 'react';
 
 import './style.css';
 
@@ -54,7 +54,7 @@ export default function SearchBar(props) {
   }
 
   return (
-    <div>
+    <>
       <form onSubmit={handleSubmit} noValidate autoComplete='off'>
         <FormControl fullWidth>
           <FormLabel></FormLabel>
@@ -70,7 +70,9 @@ export default function SearchBar(props) {
             }
             ref={inputEl}
           />
-          <FormHelperText><Select onSelectChange={props.onSelectChange}/></FormHelperText>
+          <FormHelperText component='div'>
+            <Select onSelectChange={props.onSelectChange}/>
+          </FormHelperText>
         </FormControl>
 
         {/* <Button variant='outlined' size='middle' color='primary'>
@@ -80,7 +82,7 @@ export default function SearchBar(props) {
       <div id='suggs' style={{ textAlign: 'left' }}>
         {sugestList}
       </div>
-    </div>
+    </>
   );
 }
 

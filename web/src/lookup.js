@@ -1,21 +1,19 @@
-import { Component, useState, useEffect } from 'react';
-import { makeStyles } from '@material-ui/core/styles';
+import { Component } from 'react';
 import SearchBar from './searchbar';
-//import Suggestions from './suggestions';
 import WordCard from './wordcard';
 
 import './style.css';
 
-const useStyles = makeStyles((theme) => ({
-  root: {
-    '& > .MuiTextField-root': {
-      margin: theme.spacing(2),
-    },
-    '& > .MuiButton-root': {
-      margin: theme.spacing(2),
-    },
-  },
-}));
+// const useStyles = makeStyles((theme) => ({
+//   root: {
+//     '& > .MuiTextField-root': {
+//       margin: theme.spacing(2),
+//     },
+//     '& > .MuiButton-root': {
+//       margin: theme.spacing(2),
+//     },
+//   },
+// }));
 
 class LookupWordComponent extends Component {
   constructor(props) {
@@ -88,14 +86,11 @@ class LookupWordComponent extends Component {
     word = word.trim()
     if (this.state.select === "vietviet") {
       console.log('searching vietviet: ', word);
-      const request = `https://woohsi.top/api/records/vietviet/${encodeURI(word)}`;
+      const request = `http://localhost/api/records/vietviet/${encodeURI(word)}`;
       fetch(request)
         .then((response) => response.json())
           .then((result) => {
             console.log("result: ", result)
-            // const { data, data2 } = result
-            // console.log("data: ", data)
-            // console.log("data2: ", data2)
             if (result != null) {
             
               this.setState({data: result})
@@ -106,7 +101,7 @@ class LookupWordComponent extends Component {
     if (this.state.select === "viethan") {
       word = word.toLowerCase();
       console.log('searching viethan: ', word);
-      const request = `https://woohsi.top/api/pages/${encodeURI(word)}`;
+      const request = `http://localhost/api/pages/${encodeURI(word)}`;
       fetch(request)
         .then((response) => response.json())
           .then((result) => {
@@ -121,7 +116,7 @@ class LookupWordComponent extends Component {
     if (this.state.select === "hanviet") {
       word = word.toLowerCase();
       console.log('searching hanviet: ', word);
-      const request = `https://woohsi.top/api/records/hanviet/${encodeURI(word)}`;
+      const request = `http://localhost/api/records/hanviet/${encodeURI(word)}`;
       fetch(request)
         .then((response) => response.json())
           .then((result) => {
@@ -136,7 +131,7 @@ class LookupWordComponent extends Component {
 
   render() {
     return (
-      <div>
+      <>
         <SearchBar
           inputText={this.state.inputText}
           suggestions={this.state.suggestions}
@@ -151,7 +146,7 @@ class LookupWordComponent extends Component {
           onSearch={this.handleSearch}
         /> */}
         <WordCard select={this.state.select} showLearnMore={this.state.showLearnMore} word={this.state.inputText} data={this.state.data} record={this.state.record} record2={this.state.record2} record3={this.state.record3} page={this.state.page} />
-      </div>
+      </>
     );
   }
 }

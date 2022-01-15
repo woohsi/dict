@@ -10,7 +10,7 @@ func main() {
 	// Simple group: v1
 	v1 := router.Group("/v1")
 	{
-		v1.POST("/login", loginEndpoint)
+		v1.GET("/login", loginEndpoint)
 	
 	}
 
