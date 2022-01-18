@@ -6,50 +6,71 @@ import {
   FormLabel,
 } from '@material-ui/core';
 import SearchIcon from '@material-ui/icons/Search';
-import React, { useEffect } from 'react';
 import Radio from '@material-ui/core/Radio';
 import RadioGroup from '@material-ui/core/RadioGroup';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
-import { useRef, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
+import { useParams, useHistory } from 'react-router';
 
 import './style.css';
 
-export default function SearchBar(props) {
+const SearchBar = ({word, suggestions, select, onInputChange, onSelectChange,  onSearch}) => {
+  
+  console.log("Searchbar, word:", word);
+  const [inputText, setInputText] = useState(word);
   const inputEl = useRef(null)
-  const inputText = props.inputText;
-  //setInputText(props.inputText);
+  const history = useHistory();
 
   const handleInputChange = (e) => {
-    props.onInputChange(e.target.value);
+    onInputChange(e.target.value);
+  };
+
+  const nextUrl = () => {
+    let nextUrl = ""
+    switch(select) {
+      case 'vietviet':
+        nextUrl = '/vietviet/'+encodeURI(inputText);
+        break;
+      case 'viethan':
+        nextUrl = '/viethan/'+encodeURI(inputText);
+        break;
+      case 'hanviet':
+        nextUrl = '/hanviet/'+encodeURI(inputText)
+        break;
+      default:
+    }
+    history.push(nextUrl);
   };
 
   const handleSearchIconClick = () => {
-    props.onSearch(inputText);
+    // onSearch(inputText);
+    nextUrl();
   };
 
   const handleSubmit = (e) => {
     e.preventDefault()
     //console.log(e.target[0].getAttribute("value"))
-    props.onSearch(inputText);
+    //onSearch(inputText);
+    nextUrl();
   };
 
   const handleSuggestionClick = (e) => {
     const word = e.target.getAttribute('value');
     console.log('You clicked ', word);
-    props.onSearch(word);
+    onSearch(word);
   };
 
   useEffect(() => {
     inputEl.current.focus()
   })
 
-  let sugestList = props.suggestions.map((s, i) => (
+  let sugestList = suggestions.map((s, i) => (
     <div key={i} value={s} className='sugg' onClick={handleSuggestionClick}>
       {s}
     </div>
   ));
 
-  if (props.select === "viethan") {
+  if (select === "viethan") {
     sugestList = <></>
   }
 
@@ -62,16 +83,15 @@ export default function SearchBar(props) {
             value={inputText}
             //   className={classes.input}
             placeholder='Nhập từ để tra cứu ...'
-            onChange={handleInputChange}
+            onChange={(e) => {setInputText(e.target.value)}}
             endAdornment={
               <InputAdornment position='end'>
                 <SearchIcon onClick={handleSearchIconClick} />
               </InputAdornment>
             }
-            ref={inputEl}
-          />
+            ref={inputEl} />
           <FormHelperText component='div'>
-            <Select onSelectChange={props.onSelectChange}/>
+            <Select onSelectChange={onSelectChange}/>
           </FormHelperText>
         </FormControl>
 
@@ -84,14 +104,14 @@ export default function SearchBar(props) {
       </div>
     </>
   );
-}
+} 
 
-function Select(props) {
+const Select = ({onSelectChange}) => {
   const [select, setSelect] = useState("viethan")
 
   const handleRadioChange = (event) => {
     setSelect(event.target.value);
-    props.onSelectChange(event.target.value)
+    onSelectChange(event.target.value)
   };
 
   return (
@@ -105,3 +125,5 @@ function Select(props) {
     </FormControl>
   );
 }
+
+export default SearchBar;

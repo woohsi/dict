@@ -1,4 +1,6 @@
 import { Component } from 'react';
+import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
+import Home from './Home'
 import SearchBar from './searchbar';
 import WordCard from './wordcard';
 
@@ -35,6 +37,7 @@ class LookupWordComponent extends Component {
     this.setState({
       inputText: inputText,
     });
+    console.log("handleInputChange in lookup.js: ", inputText);
     if (inputText === '') {
       this.setState({ suggestions: [] });
       return;
@@ -42,7 +45,7 @@ class LookupWordComponent extends Component {
     if (this.state.select === "viethan") {
       return
     }
-    inputText = inputText.trim()
+    // inputText = inputText.trim()
     // const request = `https://wcors.herokuapp.com/http://tratu.soha.vn/extensions/curl_suggest.php?search=${encodeURI(
     //   inputText
     // )}&dict=vn_vn`;
@@ -131,22 +134,39 @@ class LookupWordComponent extends Component {
 
   render() {
     return (
-      <>
-        <SearchBar
-          inputText={this.state.inputText}
-          suggestions={this.state.suggestions}
-          select={this.state.select}
-          onInputChange={this.handleInputChange}
-          onSelectChange={this.handleSelectChange}
-          onSearch={this.handleSearch}
-
-        />
-        {/* <Suggestions
-          suggestions={this.state.suggestions}
-          onSearch={this.handleSearch}
-        /> */}
-        <WordCard select={this.state.select} showLearnMore={this.state.showLearnMore} word={this.state.inputText} data={this.state.data} record={this.state.record} record2={this.state.record2} record3={this.state.record3} page={this.state.page} />
-      </>
+      <Router>
+        <div className="lookup">
+          <SearchBar
+            word={this.state.inputText}
+            suggestions={this.state.suggestions}
+            select={this.state.select}
+            onInputChange={this.handleInputChange}
+            onSelectChange={this.handleSelectChange}
+            onSearch={this.handleSearch}
+          />
+          <div className="content">
+            <Switch>
+              <Route exact path='/'>
+                <Home />
+              </Route>
+              <Route path='/vietviet/:word'>
+                <WordCard select='vietviet' />
+              </Route>
+              <Route path='/viethan/:word'>
+                <WordCard select='viethan' />
+              </Route>
+              <Route path='/hanviet/:word'>
+                <WordCard select='hanviet' onInputChange={this.handleInputChange} />
+              </Route>
+            </Switch>
+            {/* <WordCard select={this.state.select} showLearnMore={this.state.showLearnMore} word={this.state.inputText} data={this.state.data} record={this.state.record} record2={this.state.record2} record3={this.state.record3} page={this.state.page} /> */}
+          </div>
+          {/* <Suggestions
+            suggestions={this.state.suggestions}
+            onSearch={this.handleSearch}
+          /> */}
+        </div>
+      </Router>     
     );
   }
 }

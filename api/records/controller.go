@@ -52,7 +52,7 @@ func FindVietVietOne(c *gin.Context) {
 	record.Update(bson.M{"title": title}, bson.M{"$set": bson.M{"lastSeenAt": time.Now()}})
 	//返回报文
 	RES(c, SUCCESS, gin.H{
-		"data": record,
+		"data1": record,
 		"data2": record2,
 	})
 }

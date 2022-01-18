@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
 import CardActions from '@material-ui/core/CardActions';
@@ -8,6 +8,9 @@ import Typography from '@material-ui/core/Typography';
 import Chip from '@material-ui/core/Chip';
 import PDF from './pdf';
 import './style.css'
+import useFetch from './useFetch';
+import { useParams } from 'react-router';
+import ColumnGroup from 'antd/lib/table/ColumnGroup';
 
 const useStyles = makeStyles({
   root: {
@@ -30,35 +33,32 @@ const useStyles = makeStyles({
 });
 
 const vieviet = (data, classes) => {
-  let record = null
-  let record2 = null
-  let defs = null
-  let defs2 = null
-
-  if (data.data !== undefined) {
-    record = data.data;
-    if (record !== null) {
-      defs = record.definitions;
-    }
+  if (data === null) {
+    return null;
   }
-  if (data.data2 !== undefined) {
-    record2 = data.data2;
-    if (record2 != null) {
-      defs2 = record2.items;
-    }
+  const {data1, data2} = data;
+  console.log("vietviet-data1: ", data1)
+  console.log("vietviet-data2: ", data2)
+  let defs1 = null
+  let defs2 = null
+ 
+  if (data1 !== undefined) {
+    defs1 = data1.definitions;
+  }
+
+  if (data2 !== undefined) {
+    defs2 = data2.items;
   }
   
-  console.log("defs", defs)
-  console.log("defs2", defs2)
-  if (defs === null && defs2 === null) {
+  if (defs1 === null && defs2 === null) {
     //TODO
-    return <div></div>;
+    return <div>No this word in the dictionary :(</div>;
   }
 
   let preType = null;
   let content = null;
-  if (defs !== null) {
-      content = defs.map((def, index) => {
+  if (defs1 !== null) {
+      content = defs1.map((def, index) => {
       let badge = null;
       if (def.type !== preType) {
         badge = <Chip component='span' size='small' label={def.type} />;
@@ -109,34 +109,34 @@ const vieviet = (data, classes) => {
     });
   }
   
-  if (record !== null && record2 !== null) {
+  if (data1 !== undefined && data2 !== undefined) {
     return (
       <>
         <Typography variant='h5' component='h2'>
-          {record.title}
+          {data1.title}
         </Typography>
         {content}
         <hr />
         <Typography variant='h5' component='h2'>
-          {record2.title}
+          {data2.title}
         </Typography>
         {content2}
       </>
     );
-  } else if (record !== null && record2 === null) {
+  } else if (data1 !== undefined && data2 === undefined) {
       return (
         <>
           <Typography variant='h5' component='h2'>
-            {record.title}
+            {data1.title}
           </Typography>
           {content}
         </>
       );
-  } else if (record === null && record2 !== null) {
+  } else if (data1 === undefined && data2 !== undefined) {
     return (
       <>
         <Typography variant='h5' component='h2'>
-          {record2.title}
+          {data2.title}
         </Typography>
         {content2}
       </>
@@ -144,30 +144,42 @@ const vieviet = (data, classes) => {
   } else {
     return (
       <>
-        Not found
+        No this word in the dictionary :(
       </>
     );
   }
 };
 
-const viethan = (page) => {
-  if (page === -1) return <></>
+const viethan = (data) => {
+  if (data === null) {
+    return null;
+  }
+  const {page} = data;
+  if (page === -1) return <>No this word in the dictionary :(</>
   return <PDF page={page} />;
 };
 
-function createMarkup(s) {
+const createMarkup = (s) => {
   return {__html: s};
 }
 
-function MyComponent(props) {
+const MyComponent = (props) => {
   return <div dangerouslySetInnerHTML={createMarkup(props.str)} />;
 }
 
-const hanviet = (record3, classes) => {
-  const defs = record3.definition;
-  if (defs === undefined) {
+const hanviet = (data_t, classes) => {
+  if (data_t === null) {
+    return null;
+  }
+  const {data} = data_t;
+  console.log("hanviet-data: ", data);
+  if (data === null || data === undefined) {
+    return null;
+  }
+  const defs = data.definition;
+  if (defs === "") {
     //TODO
-    return <div dangerouslySetInnerHTML={{__html: defs}}></div>;
+    return <div>No this word in the dictionary :(</div>;
   }
 
   const content =  (
@@ -184,53 +196,73 @@ const hanviet = (record3, classes) => {
   return (
     <>
       <Typography variant='h5' component='h2'>
-        {record3.title}
+        {data.title}
       </Typography>
       {content}
     </>
   );
 };
 
-export default function WordCard(props) {
+const WordCard = ({select, onInputChange, showLearnMore}) => {
+  const { word } = useParams();
+  console.log("wordcard.js, word1:", word);
+
   const classes = useStyles();
 
-  let data = null;
-  
-  let record3 = null;
-  let page = 1;
+  useEffect(() => {
+    console.log("wordcard.js, word:", word);
+    onInputChange(word);
+  }, []);
+
+  let url = "";
   let body = null;
-  let learnmore = null;
-  //debugger;
-  if (props.select === '') {
-    body = <></>
+  let learnmore = true;
+  switch(select) {
+    case 'vietviet':
+      url = `http://localhost/api/records/vietviet/${encodeURI(word)}`;
+      break;
+    case 'viethan':
+      url = `http://localhost/api/pages/${encodeURI(word)}`;
+      break;
+    case 'hanviet':
+      url = `http://localhost/api/records/hanviet/${encodeURI(word)}`;
+      break;
+    default:
+
   }
 
-  if (props.select === 'vietviet') {
-    data = props.data;
-    
-    body = vieviet(data, classes);
+  const {data, error, isPending} = useFetch(url);
+  switch(select) {
+    case 'vietviet':
+      // const { data1, data2 } = data;
+      body = vieviet(data, classes);
+      break;
+    case 'viethan':
+      body = viethan(data);
+      break;
+    case 'hanviet':
+      body = hanviet(data, classes);
+      break;    
+    default:
+      body = <></>;
   }
 
-  if (props.select === 'viethan') {
-    page = props.page;
-    body = viethan(page);
-  }
-
-  if (props.select === 'hanviet') {
-    record3 = props.record3;
-    body = hanviet(record3, classes);
-  }
-
-  if (props.showLearnMore === true) {
-    learnmore = <Button size='small' onClick={(e) => { e.preventDefault(); window.open("https://www.google.com/search?q=" + props.word, "_blank");}}>Learn More</Button>
+  if (showLearnMore === true) {
+    learnmore = <Button size='small' onClick={(e) => { e.preventDefault(); window.open("https://www.google.com/search?q=" + word, "_blank");}}>Learn More</Button>
   } else {
     learnmore = <></>
   }
 
   return (
-    <Card className={classes.root} variant='outlined'>
-      <CardContent>{body}</CardContent>
-      <CardActions>{learnmore}</CardActions>
-    </Card>
+    <div className="wordcard">
+      {isPending && <div>Loading</div>}
+      {error && <div>{error}</div>}
+      {body && <Card className={classes.root} variant='outlined'>
+        <CardContent>{body}</CardContent>
+        <CardActions>{learnmore}</CardActions>
+      </Card>}
+    </div>
   );
 }
+
+export default WordCard;

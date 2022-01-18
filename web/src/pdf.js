@@ -2,7 +2,9 @@ import React, { useState } from 'react';
 import { Document, Page } from 'react-pdf';
 import {isMobile} from 'react-device-detect';
 import { pdfjs } from 'react-pdf';
-pdfjs.GlobalWorkerOptions.workerSrc = '_pdf.worker.min.js';
+// pdfjs.GlobalWorkerOptions.workerSrc = '_pdf.worker.min.js';
+pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
+
 export default function PDF(props) {
   const [numPages, setNumPages] = useState(null);
   const [pageNumber, setPageNumber] = useState(1);
