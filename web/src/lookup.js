@@ -1,4 +1,4 @@
-import { Component } from 'react';
+import { useState } from 'react';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
 import Home from './Home'
 import SearchBar from './searchbar';
@@ -17,32 +17,20 @@ import './style.css';
 //   },
 // }));
 
-class LookupWordComponent extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      inputText: '',
-      select: 'viethan',
-      suggestions: [],
-      data: {},
-      record: {},
-      record2: {},
-      record3: {},
-      page: -1,
-      showLearnMore: false,
-    };
-  }
+const LookupWordComponent = () => {
+  const [inputText, setInputText] = useState("");
+  const [select, setSelect] = useState("viethan");
+  const [page, setpage] = useState(-1);
+  const [showLearnMore, setShowLearnMore] = useState(false);
 
-  handleInputChange = (inputText) => {
-    this.setState({
-      inputText: inputText,
-    });
+  const handleInputChange = (inputText) => {
+    setInputText(inputText);
     console.log("handleInputChange in lookup.js: ", inputText);
-    if (inputText === '') {
-      this.setState({ suggestions: [] });
-      return;
-    }
-    if (this.state.select === "viethan") {
+    // if (inputText === '') {
+    //   this.setState({ suggestions: [] });
+    //   return;
+    // }
+    if (select === "viethan") {
       return
     }
     // inputText = inputText.trim()
@@ -79,96 +67,53 @@ class LookupWordComponent extends Component {
     //   );
   };
 
-  handleSelectChange = (select) => {
-    this.setState({select: select})
+  const handleSelectChange = (select) => {
+    setSelect(select);
+    console.log("select change: ", select);
   }
 
-  handleSearch = (word) => {
-    //this.setState({ inputText: '' });
-    this.setState({ suggestions: [], showLearnMore: true });
-    word = word.trim()
-    if (this.state.select === "vietviet") {
-      console.log('searching vietviet: ', word);
-      const request = `http://localhost/api/records/vietviet/${encodeURI(word)}`;
-      fetch(request)
-        .then((response) => response.json())
-          .then((result) => {
-            console.log("result: ", result)
-            if (result != null) {
-            
-              this.setState({data: result})
-            }
-        });
-    }
-    
-    if (this.state.select === "viethan") {
-      word = word.toLowerCase();
-      console.log('searching viethan: ', word);
-      const request = `http://localhost/api/pages/${encodeURI(word)}`;
-      fetch(request)
-        .then((response) => response.json())
-          .then((result) => {
-            console.log("result: ", result)
-            const { page } = result
-            if (page != null) {
-              this.setState({page: page})
-            }
-        });
-    }
-
-    if (this.state.select === "hanviet") {
-      word = word.toLowerCase();
-      console.log('searching hanviet: ', word);
-      const request = `http://localhost/api/records/hanviet/${encodeURI(word)}`;
-      fetch(request)
-        .then((response) => response.json())
-          .then((result) => {
-            console.log("result: ", result)
-            const { data } = result
-            if (data != null) {
-              this.setState({ record3: data })
-            }
-        });
-    }
-  };
-
-  render() {
-    return (
-      <Router>
-        <div className="lookup">
-          <SearchBar
-            word={this.state.inputText}
-            suggestions={this.state.suggestions}
-            select={this.state.select}
-            onInputChange={this.handleInputChange}
-            onSelectChange={this.handleSelectChange}
-            onSearch={this.handleSearch}
-          />
-          <div className="content">
-            <Switch>
-              <Route exact path='/'>
-                <Home />
-              </Route>
-              <Route path='/vietviet/:word'>
-                <WordCard select='vietviet' />
-              </Route>
-              <Route path='/viethan/:word'>
-                <WordCard select='viethan' />
-              </Route>
-              <Route path='/hanviet/:word'>
-                <WordCard select='hanviet' onInputChange={this.handleInputChange} />
-              </Route>
-            </Switch>
-            {/* <WordCard select={this.state.select} showLearnMore={this.state.showLearnMore} word={this.state.inputText} data={this.state.data} record={this.state.record} record2={this.state.record2} record3={this.state.record3} page={this.state.page} /> */}
-          </div>
-          {/* <Suggestions
-            suggestions={this.state.suggestions}
-            onSearch={this.handleSearch}
-          /> */}
+  return (
+    <Router>
+      <div className='lookup'>
+        <div className='content'>
+          <Switch>
+            <Route exact path='/'>
+              <Home />
+            </Route>
+            <Route path='/vietviet/:word'>
+              <SearchBar
+                word={inputText}
+                select={select}
+                onSelectChange={handleSelectChange}
+              />
+              <WordCard select={select} onInputChange={handleInputChange} />
+            </Route>
+            <Route path='/viethan/:word'>
+              <SearchBar
+                word={inputText}
+                select={select}
+                onSelectChange={handleSelectChange}
+              />
+              <WordCard select={select} onInputChange={handleInputChange} />
+            </Route>
+            <Route path='/hanviet/:word'>
+              <SearchBar
+                word={inputText}
+                select={select}
+                onSelectChange={handleSelectChange}
+              />
+              <WordCard select={select} onInputChange={handleInputChange} />
+            </Route>
+          </Switch>
+          {/* <WordCard select={this.state.select} showLearnMore={this.state.showLearnMore} word={this.state.inputText} data={this.state.data} record={this.state.record} record2={this.state.record2} record3={this.state.record3} page={this.state.page} /> */}
         </div>
-      </Router>     
-    );
-  }
+        {/* <Suggestions
+          suggestions={this.state.suggestions}
+          onSearch={this.handleSearch}
+        /> */}
+      </div>
+    </Router>
+  );
 }
 
 export default LookupWordComponent;

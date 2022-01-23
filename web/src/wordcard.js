@@ -1,15 +1,19 @@
-import React, { useEffect } from 'react';
-import { makeStyles } from '@material-ui/core/styles';
-import Card from '@material-ui/core/Card';
-import CardActions from '@material-ui/core/CardActions';
-import CardContent from '@material-ui/core/CardContent';
-import Button from '@material-ui/core/Button';
-import Typography from '@material-ui/core/Typography';
-import Chip from '@material-ui/core/Chip';
+import React, { useEffect, useRef } from 'react';
+import { useParams, useLocation } from 'react-router';
+import {
+  Card,
+  CardActions,
+  CardContent,
+  Button,
+  Typography,
+  Chip,
+  makeStyles,
+} from '@material-ui/core';
+
 import PDF from './pdf';
-import './style.css'
 import useFetch from './useFetch';
-import { useParams } from 'react-router';
+
+import './style.css'
 import ColumnGroup from 'antd/lib/table/ColumnGroup';
 
 const useStyles = makeStyles({
@@ -203,9 +207,19 @@ const hanviet = (data_t, classes) => {
   );
 };
 
-const WordCard = ({select, onInputChange, showLearnMore}) => {
+const usePrevious = (value) => {
+  const ref = useRef();
+  useEffect(() => {
+    ref.current = value;
+  });
+  return ref.current;
+}
+
+const WordCard = ({onInputChange, showLearnMore}) => {
   const { word } = useParams();
-  console.log("wordcard.js, word1:", word);
+  const location = useLocation();
+  const select = location.pathname.split('/')[1];
+  console.log("wordcard.js, word1:", word, "select: ", select);
 
   const classes = useStyles();
 
@@ -244,7 +258,7 @@ const WordCard = ({select, onInputChange, showLearnMore}) => {
       body = hanviet(data, classes);
       break;    
     default:
-      body = <></>;
+      body = <>wow</>;
   }
 
   if (showLearnMore === true) {
