@@ -13,7 +13,7 @@ import {
 import PDF from './pdf';
 import useFetch from './useFetch';
 
-import './style.css'
+import './style.css';
 import ColumnGroup from 'antd/lib/table/ColumnGroup';
 
 const useStyles = makeStyles({
@@ -40,12 +40,12 @@ const vieviet = (data, classes) => {
   if (data === null) {
     return null;
   }
-  const {data1, data2} = data;
-  console.log("vietviet-data1: ", data1)
-  console.log("vietviet-data2: ", data2)
-  let defs1 = null
-  let defs2 = null
- 
+  const { data1, data2 } = data;
+  console.log('vietviet-data1: ', data1);
+  console.log('vietviet-data2: ', data2);
+  let defs1 = null;
+  let defs2 = null;
+
   if (data1 !== undefined) {
     defs1 = data1.definitions;
   }
@@ -53,7 +53,7 @@ const vieviet = (data, classes) => {
   if (data2 !== undefined) {
     defs2 = data2.items;
   }
-  
+
   if (defs1 === null && defs2 === null) {
     //TODO
     return <div>No this word in the dictionary :(</div>;
@@ -62,7 +62,7 @@ const vieviet = (data, classes) => {
   let preType = null;
   let content = null;
   if (defs1 !== null) {
-      content = defs1.map((def, index) => {
+    content = defs1.map((def, index) => {
       let badge = null;
       if (def.type !== preType) {
         badge = <Chip component='span' size='small' label={def.type} />;
@@ -96,10 +96,10 @@ const vieviet = (data, classes) => {
     });
   }
 
-  let content2 = null
+  let content2 = null;
   if (defs2 !== null) {
     content2 = defs2.map((item, index) => {
-      const badge = <Chip component='span' size='small' label={""} />;
+      const badge = <Chip component='span' size='small' label={''} />;
       return (
         <Typography
           key={index}
@@ -107,12 +107,13 @@ const vieviet = (data, classes) => {
           color='textSecondary'
           gutterBottom
         >
-          {badge}{item}
+          {badge}
+          {item}
         </Typography>
       );
     });
   }
-  
+
   if (data1 !== undefined && data2 !== undefined) {
     return (
       <>
@@ -128,14 +129,14 @@ const vieviet = (data, classes) => {
       </>
     );
   } else if (data1 !== undefined && data2 === undefined) {
-      return (
-        <>
-          <Typography variant='h5' component='h2'>
-            {data1.title}
-          </Typography>
-          {content}
-        </>
-      );
+    return (
+      <>
+        <Typography variant='h5' component='h2'>
+          {data1.title}
+        </Typography>
+        {content}
+      </>
+    );
   } else if (data1 === undefined && data2 !== undefined) {
     return (
       <>
@@ -146,11 +147,7 @@ const vieviet = (data, classes) => {
       </>
     );
   } else {
-    return (
-      <>
-        No this word in the dictionary :(
-      </>
-    );
+    return <>No this word in the dictionary :(</>;
   }
 };
 
@@ -158,44 +155,44 @@ const viethan = (data) => {
   if (data === null) {
     return null;
   }
-  const {page} = data;
-  if (page === -1) return <>No this word in the dictionary :(</>
+  const { page } = data;
+  if (page === -1) return <>No this word in the dictionary :(</>;
   return <PDF page={page} />;
 };
 
 const createMarkup = (s) => {
-  return {__html: s};
-}
+  return { __html: s };
+};
 
 const MyComponent = (props) => {
   return <div dangerouslySetInnerHTML={createMarkup(props.str)} />;
-}
+};
 
 const hanviet = (data_t, classes) => {
   if (data_t === null) {
     return null;
   }
-  const {data} = data_t;
-  console.log("hanviet-data: ", data);
+  const { data } = data_t;
+  console.log('hanviet-data: ', data);
   if (data === null || data === undefined) {
     return null;
   }
   const defs = data.definition;
-  if (defs === "") {
+  if (defs === '') {
     //TODO
     return <div>No this word in the dictionary :(</div>;
   }
 
-  const content =  (
-      <Typography
-        className={classes.example}
-        color='textSecondary'
-        component='div'
-        gutterBottom
-      >
-        <MyComponent str={defs}/>
-      </Typography>
-    );
+  const content = (
+    <Typography
+      className={classes.example}
+      color='textSecondary'
+      component='div'
+      gutterBottom
+    >
+      <MyComponent str={defs} />
+    </Typography>
+  );
 
   return (
     <>
@@ -213,40 +210,39 @@ const usePrevious = (value) => {
     ref.current = value;
   });
   return ref.current;
-}
+};
 
-const WordCard = ({onInputChange, showLearnMore}) => {
+const WordCard = ({ onInputChange, showLearnMore }) => {
   const { word } = useParams();
   const location = useLocation();
   const select = location.pathname.split('/')[1];
-  console.log("wordcard.js, word1:", word, "select: ", select);
+  console.log('wordcard.js, word1:', word, 'select: ', select);
 
   const classes = useStyles();
 
   useEffect(() => {
-    console.log("wordcard.js, word:", word);
+    console.log('wordcard.js, word:', word);
     onInputChange(word);
   }, []);
 
-  let url = "";
+  let url = '';
   let body = null;
   let learnmore = true;
-  switch(select) {
+  switch (select) {
     case 'vietviet':
-      url = `http://localhost/api/records/vietviet/${encodeURI(word)}`;
+      url = `http://dict.woohsi.top:88/api/records/vietviet/${encodeURI(word)}`;
       break;
     case 'viethan':
-      url = `http://localhost/api/pages/${encodeURI(word)}`;
+      url = `http://dict.woohsi.top:88/api/pages/${encodeURI(word)}`;
       break;
     case 'hanviet':
-      url = `http://localhost/api/records/hanviet/${encodeURI(word)}`;
+      url = `http://dict.woohsi.top:88/api/records/hanviet/${encodeURI(word)}`;
       break;
     default:
-
   }
 
-  const {data, error, isPending} = useFetch(url);
-  switch(select) {
+  const { data, error, isPending } = useFetch(url);
+  switch (select) {
     case 'vietviet':
       // const { data1, data2 } = data;
       body = vieviet(data, classes);
@@ -256,27 +252,39 @@ const WordCard = ({onInputChange, showLearnMore}) => {
       break;
     case 'hanviet':
       body = hanviet(data, classes);
-      break;    
+      break;
     default:
       body = <>wow</>;
   }
 
   if (showLearnMore === true) {
-    learnmore = <Button size='small' onClick={(e) => { e.preventDefault(); window.open("https://www.google.com/search?q=" + word, "_blank");}}>Learn More</Button>
+    learnmore = (
+      <Button
+        size='small'
+        onClick={(e) => {
+          e.preventDefault();
+          window.open('https://www.google.com/search?q=' + word, '_blank');
+        }}
+      >
+        Learn More
+      </Button>
+    );
   } else {
-    learnmore = <></>
+    learnmore = <></>;
   }
 
   return (
-    <div className="wordcard">
+    <div className='wordcard'>
       {isPending && <div>Loading</div>}
       {error && <div>{error}</div>}
-      {body && <Card className={classes.root} variant='outlined'>
-        <CardContent>{body}</CardContent>
-        <CardActions>{learnmore}</CardActions>
-      </Card>}
+      {body && (
+        <Card className={classes.root} variant='outlined'>
+          <CardContent>{body}</CardContent>
+          <CardActions>{learnmore}</CardActions>
+        </Card>
+      )}
     </div>
   );
-}
+};
 
 export default WordCard;

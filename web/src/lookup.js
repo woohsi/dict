@@ -19,7 +19,7 @@ import './style.css';
 
 const LookupWordComponent = () => {
   const [inputText, setInputText] = useState("");
-  const [select, setSelect] = useState("viethan");
+  const [select, setSelect] = useState("");
   const [page, setpage] = useState(-1);
   const [showLearnMore, setShowLearnMore] = useState(false);
 
@@ -30,9 +30,6 @@ const LookupWordComponent = () => {
     //   this.setState({ suggestions: [] });
     //   return;
     // }
-    if (select === "viethan") {
-      return
-    }
     // inputText = inputText.trim()
     // const request = `https://wcors.herokuapp.com/http://tratu.soha.vn/extensions/curl_suggest.php?search=${encodeURI(
     //   inputText
@@ -78,6 +75,11 @@ const LookupWordComponent = () => {
         <div className='content'>
           <Switch>
             <Route exact path='/'>
+              <SearchBar
+                word={inputText}
+                select="viethan"
+                onSelectChange={handleSelectChange}
+              />
               <Home />
             </Route>
             <Route path='/vietviet/:word'>

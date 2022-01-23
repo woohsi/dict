@@ -47,9 +47,10 @@ const SearchBar = ({ word, select, onSelectChange, onSearch }) => {
   };
 
 
-  // if (prevSelect !== select) {
-  //   nextUrl();
-  // }
+  if (prevSelect !== undefined && prevSelect !== "" && prevSelect !== select) {
+    console.log("test: ", prevSelect);
+    nextUrl();
+  }
 
   const handleSearchIconClick = () => {
     // onSearch(inputText);
@@ -69,10 +70,9 @@ const SearchBar = ({ word, select, onSelectChange, onSearch }) => {
   }, [word, select]);
 
   return (
-    <>
-      {location.pathname.split('/')[1]}
+    <div>
       <form onSubmit={handleSubmit} noValidate autoComplete='off'>
-        <FormControl fullWidth>
+        <FormControl fullWidth >
           <FormLabel></FormLabel>
           <OutlinedInput
             value={inputText}
@@ -93,7 +93,7 @@ const SearchBar = ({ word, select, onSelectChange, onSearch }) => {
           </FormHelperText>
         </FormControl>
       </form>
-    </>
+    </div>
   );
 } 
 

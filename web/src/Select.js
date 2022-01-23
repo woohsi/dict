@@ -14,8 +14,8 @@ const Select = ({ select, onSelectChange }) => {
 
   useEffect(() => {
     console.log("Select-useEffect........");
-    setValue(location.pathname.split('/')[1]);
-    onSelectChange(location.pathname.split('/')[1]);
+    setValue(location.pathname.split('/')[1] ? location.pathname.split('/')[1] : "viethan");
+    onSelectChange(location.pathname.split('/')[1] ? location.pathname.split('/')[1]: 'viethan');
   }, []);
 
   const handleRadioChange = (e) => {
