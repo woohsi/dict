@@ -1,15 +1,11 @@
-import SearchIcon from '@material-ui/icons/Search';
 import React, { useEffect, useRef, useState } from 'react';
 import { useParams, useHistory, useLocation } from 'react-router';
-import {
-  OutlinedInput,
-  InputAdornment,
-  FormControl,
-  FormHelperText,
-  FormLabel,
-} from '@material-ui/core';
+import { Row, Col, Input, Layout } from 'antd';
+
 import Select from './Select'
 import './style.css';
+
+const { Search } = Input;
 
 const SearchBar = ({ word, select, onSelectChange, onSearch }) => {
   const usePrevious = (value) => {
@@ -32,14 +28,14 @@ const SearchBar = ({ word, select, onSelectChange, onSearch }) => {
   const nextUrl = () => {
     let nextUrl = ""
     switch(select) {
-      case 'vietviet':
-        nextUrl = '/vietviet/'+encodeURI(inputText);
+      case 'vi-vi':
+        nextUrl = '/vi-vi/'+encodeURI(inputText);
         break;
-      case 'viethan':
-        nextUrl = '/viethan/'+encodeURI(inputText);
+      case 'vi-zh':
+        nextUrl = '/vi-zh/'+encodeURI(inputText);
         break;
-      case 'hanviet':
-        nextUrl = '/hanviet/'+encodeURI(inputText)
+      case 'zh-vi':
+        nextUrl = '/zh-vi/'+encodeURI(inputText)
         break;
       default:
     }
@@ -70,30 +66,27 @@ const SearchBar = ({ word, select, onSelectChange, onSearch }) => {
   }, [word, select]);
 
   return (
-    <div>
-      <form onSubmit={handleSubmit} noValidate autoComplete='off'>
-        <FormControl fullWidth >
-          <FormLabel></FormLabel>
-          <OutlinedInput
-            value={inputText}
-            //   className={classes.input}
-            placeholder='Nhập từ để tra cứu ...'
-            onChange={(e) => {
-              setInputText(e.target.value);
-            }}
-            endAdornment={
-              <InputAdornment position='end'>
-                <SearchIcon onClick={handleSearchIconClick} />
-              </InputAdornment>
-            }
-            ref={inputEl}
-          />
-          <FormHelperText component='div'>
+    <>
+      <Row>
+          <Col span={24}>
+            <Search
+              size='large'
+              placeholder='Input search word'
+              onSearch={handleSearchIconClick}
+              onChange={(e) => {
+                setInputText(e.target.value);
+              }}
+              ref={inputEl}
+              enterButton
+            />
+          </Col>
+        </Row>
+        <Row>
+          <Col span={24}>
             <Select select={select} onSelectChange={onSelectChange} />
-          </FormHelperText>
-        </FormControl>
-      </form>
-    </div>
+          </Col>
+        </Row>
+      </>
   );
 } 
 

@@ -1,11 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
-import {
-  FormControl,
-  FormControlLabel,
-  Radio,
-  RadioGroup,
-} from '@material-ui/core';
+import { Radio } from 'antd';
 
 const Select = ({ select, onSelectChange }) => {
   console.log("Select comp: ", select);
@@ -14,8 +9,8 @@ const Select = ({ select, onSelectChange }) => {
 
   useEffect(() => {
     console.log("Select-useEffect........");
-    setValue(location.pathname.split('/')[1] ? location.pathname.split('/')[1] : "viethan");
-    onSelectChange(location.pathname.split('/')[1] ? location.pathname.split('/')[1]: 'viethan');
+    setValue(location.pathname.split('/')[1] ? location.pathname.split('/')[1] : "vi-zh");
+    onSelectChange(location.pathname.split('/')[1] ? location.pathname.split('/')[1]: 'vi-zh');
   }, []);
 
   const handleRadioChange = (e) => {
@@ -25,33 +20,16 @@ const Select = ({ select, onSelectChange }) => {
   };
 
   return (
-    <FormControl component='fieldset'>
-      {/* <FormLabel component="legend">Lựa Chọn</FormLabel> */}
-      <RadioGroup
-        row
-        aria-label='position'
-        name='position'
-        defaultValue='vietviet'
-        value={value}
-        onChange={handleRadioChange}
-      >
-        <FormControlLabel
-          value='viethan'
-          control={<Radio color='primary' />}
-          label='Việt-Hán'
-        />
-        <FormControlLabel
-          value='vietviet'
-          control={<Radio color='primary' />}
-          label='Việt-Việt'
-        />
-        <FormControlLabel
-          value='hanviet'
-          control={<Radio color='primary' />}
-          label='Hán-Việt'
-        />
-      </RadioGroup>
-    </FormControl>
+    <Radio.Group
+      defaultValue='vi-zh'
+      style={{ marginTop: 16 }}
+      buttonStyle='solid'
+      onChange={handleRadioChange}
+    >
+      <Radio.Button value='vi-zh'>Viet-Trung</Radio.Button>
+      <Radio.Button value='vi-vi'>Viet-Viet</Radio.Button>
+      <Radio.Button value='zh-vi'>Trung-Viet</Radio.Button>
+    </Radio.Group>
   );
 };
 
