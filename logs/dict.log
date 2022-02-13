@@ -12651,3 +12651,419 @@ INFO: 2022/01/24 00:05:39 controller.go:63: 127.0.0.1 正在获取：con
 INFO: 2022/01/24 00:07:06 controller.go:63: ::1 正在获取：con
 INFO: 2022/01/24 00:15:16 controller.go:63: 127.0.0.1 正在获取：con
 INFO: 2022/01/24 00:16:00 controller.go:63: ::1 正在获取：con
+INFO: 2022/01/24 01:37:15 controller.go:30: 139.9.118.67 正在获取：cho
+INFO: 2022/01/24 01:37:15 models.go:72: 60d6f2645518ceb668c7de34
+INFO: 2022/01/24 01:37:15 models.go:83: 61378a87c259c69f251f788d
+INFO: 2022/01/24 01:37:28 controller.go:63: 139.9.118.67 正在获取：cho
+INFO: 2022/01/24 01:37:33 controller.go:30: 139.9.118.67 正在获取：cho
+INFO: 2022/01/24 01:37:33 models.go:72: 60d6f2645518ceb668c7de34
+INFO: 2022/01/24 01:37:33 models.go:83: 61378a87c259c69f251f788d
+INFO: 2022/01/24 01:37:37 controller.go:63: 139.9.118.67 正在获取：cho
+INFO: 2022/01/24 01:38:49 controller.go:63: 139.9.118.67 正在获取：Cho
+INFO: 2022/01/24 01:38:52 controller.go:30: 139.9.118.67 正在获取：Cho
+INFO: 2022/01/24 01:38:52 models.go:72: 60d6f2645518ceb668c7de34
+INFO: 2022/01/24 01:38:52 models.go:83: 61378a87c259c69f251f788d
+INFO: 2022/01/24 01:38:54 controller.go:63: 139.9.118.67 正在获取：Cho
+INFO: 2022/01/24 01:39:03 controller.go:30: 139.9.118.67 正在获取：Cho
+INFO: 2022/01/24 01:39:03 models.go:72: 60d6f2645518ceb668c7de34
+INFO: 2022/01/24 01:39:03 models.go:83: 61378a87c259c69f251f788d
+INFO: 2022/01/24 01:39:12 controller.go:30: 139.9.118.67 正在获取：Chơi
+INFO: 2022/01/24 01:39:12 models.go:72: 60d6f2c65518ceb668c7e57c
+INFO: 2022/01/24 01:39:12 models.go:83: 61378a88c259c69f251f7955
+INFO: 2022/01/24 01:39:17 controller.go:63: 139.9.118.67 正在获取：Chơi
+INFO: 2022/01/24 01:39:22 controller.go:63: 139.9.118.67 正在获取：Chồng
+INFO: 2022/01/24 01:39:23 controller.go:30: 139.9.118.67 正在获取：Chồng
+INFO: 2022/01/24 01:39:23 models.go:72: 60d6f31c5518ceb668c7ebfe
+INFO: 2022/01/24 01:39:23 models.go:83: 61378a88c259c69f251f7922
+INFO: 2022/01/24 01:42:25 controller.go:63: 139.9.118.67 正在获取：Giật 
+INFO: 2022/01/24 01:42:26 controller.go:30: 139.9.118.67 正在获取：Cho
+INFO: 2022/01/24 01:42:26 models.go:72: 60d6f2645518ceb668c7de34
+INFO: 2022/01/24 01:42:26 models.go:83: 61378a87c259c69f251f788d
+INFO: 2022/01/24 01:52:45 controller.go:63: 139.9.118.67 正在获取：Cho
+INFO: 2022/01/24 01:52:49 controller.go:30: 139.9.118.67 正在获取：Cho
+INFO: 2022/01/24 01:52:49 models.go:72: 60d6f2645518ceb668c7de34
+INFO: 2022/01/24 01:52:49 models.go:83: 61378a87c259c69f251f788d
+INFO: 2022/01/24 01:52:50 controller.go:63: 139.9.118.67 正在获取：Cho
+INFO: 2022/01/24 02:08:28 controller.go:30: 139.9.118.67 正在获取：Chịu 
+INFO: 2022/01/24 02:08:28 models.go:72: 60d6f30d5518ceb668c7eadd
+INFO: 2022/01/24 02:08:28 models.go:83: 61378a87c259c69f251f787e
+INFO: 2022/01/24 08:31:02 controller.go:63: 139.9.118.67 正在获取：Chất lừ 
+ERROR: 2022/01/24 08:31:02 controller.go:68: 获取失败：Chất lừ 
+INFO: 2022/01/24 08:31:08 controller.go:30: 139.9.118.67 正在获取：Chất lừ 
+INFO: 2022/01/24 08:31:08 models.go:72: 
+INFO: 2022/01/24 08:31:08 models.go:83: 
+ERROR: 2022/01/24 08:31:08 controller.go:38: 词库中暂无此单词：Chất lừ 
+INFO: 2022/01/24 08:31:08 controller.go:39: 正在从网络获取：Chất lừ 
+INFO: 2022/01/24 08:31:08 crawler.go:90: Visiting http://tratu.soha.vn/dict/vn_vn/Ch%E1%BA%A5t_l%E1%BB%AB
+ERROR: 2022/01/24 08:31:12 crawler.go:94: Error:  Chất lừ
+INFO: 2022/01/24 08:31:12 crawler.go:103: Get Chất lừ in crawl func: <nil>
+INFO: 2022/01/24 08:31:12 crawler.go:104: crawl func finish
+INFO: 2022/01/24 11:11:06 controller.go:30: 139.9.118.67 正在获取：cho
+INFO: 2022/01/24 11:11:06 models.go:72: 60d6f2645518ceb668c7de34
+INFO: 2022/01/24 11:11:06 models.go:83: 61378a87c259c69f251f788d
+INFO: 2022/01/24 11:11:25 controller.go:30: 139.9.118.67 正在获取：cho
+INFO: 2022/01/24 11:11:25 models.go:72: 60d6f2645518ceb668c7de34
+INFO: 2022/01/24 11:11:25 models.go:83: 61378a87c259c69f251f788d
+INFO: 2022/01/24 14:37:00 controller.go:30: 139.9.118.67 正在获取：cho
+INFO: 2022/01/24 14:37:00 models.go:72: 60d6f2645518ceb668c7de34
+INFO: 2022/01/24 14:37:00 models.go:83: 61378a87c259c69f251f788d
+INFO: 2022/01/24 18:03:45 controller.go:30: 139.9.118.67 正在获取：Khối lượng 
+INFO: 2022/01/24 18:03:45 models.go:72: 60d6f7df5518ceb668c847d8
+INFO: 2022/01/24 18:03:45 models.go:83: 61378aafc259c69f251fb2b4
+INFO: 2022/01/24 18:23:42 controller.go:63: 139.9.118.67 正在获取：Khối lượng 
+INFO: 2022/01/24 18:23:50 controller.go:63: 139.9.118.67 正在获取：拥抱
+INFO: 2022/01/24 18:24:37 controller.go:63: 139.9.118.67 正在获取：Om 
+ERROR: 2022/01/24 18:24:37 controller.go:68: 获取失败：Om 
+INFO: 2022/01/24 18:24:44 controller.go:63: 139.9.118.67 正在获取：拥抱
+INFO: 2022/01/24 18:34:08 controller.go:63: 139.9.118.67 正在获取：Ôm Chầm 
+ERROR: 2022/01/24 18:34:08 controller.go:68: 获取失败：Ôm Chầm 
+INFO: 2022/01/24 18:34:11 controller.go:30: 139.9.118.67 正在获取：Khối lượng 
+INFO: 2022/01/24 18:34:11 models.go:72: 60d6f7df5518ceb668c847d8
+INFO: 2022/01/24 18:34:11 models.go:83: 61378aafc259c69f251fb2b4
+INFO: 2022/01/24 18:34:21 controller.go:63: 139.9.118.67 正在获取：提醒
+INFO: 2022/01/24 18:34:44 controller.go:30: 139.9.118.67 正在获取：提醒
+INFO: 2022/01/24 18:34:44 models.go:72: 
+INFO: 2022/01/24 18:34:44 models.go:83: 
+ERROR: 2022/01/24 18:34:44 controller.go:38: 词库中暂无此单词：提醒
+INFO: 2022/01/24 18:34:44 controller.go:39: 正在从网络获取：提醒
+INFO: 2022/01/24 18:34:44 crawler.go:90: Visiting http://tratu.soha.vn/dict/vn_vn/%E6%8F%90%E9%86%92
+INFO: 2022/01/24 18:34:45 controller.go:63: 139.9.118.67 正在获取：Khối lượng 
+INFO: 2022/01/24 18:34:46 controller.go:30: 139.9.118.67 正在获取：Khối lượng 
+INFO: 2022/01/24 18:34:46 models.go:72: 60d6f7df5518ceb668c847d8
+INFO: 2022/01/24 18:34:46 models.go:83: 61378aafc259c69f251fb2b4
+INFO: 2022/01/24 18:34:46 crawler.go:85: Get 提醒 in OnHTML: &{ObjectIdHex("") 提醒 [] 2022-01-24 18:34:46.843479498 +0800 CST m=+61092.033864410 0001-01-01 00:00:00 +0000 UTC}
+INFO: 2022/01/24 18:34:46 crawler.go:103: Get 提醒 in crawl func: &{ObjectIdHex("") 提醒 [] 2022-01-24 18:34:46.843479498 +0800 CST m=+61092.033864410 0001-01-01 00:00:00 +0000 UTC}
+INFO: 2022/01/24 18:34:46 crawler.go:104: crawl func finish
+ERROR: 2022/01/24 18:34:46 controller.go:42: 获取失败：提醒
+INFO: 2022/01/24 18:34:47 controller.go:63: 139.9.118.67 正在获取：Khối lượng 
+INFO: 2022/01/24 18:34:50 controller.go:30: 139.9.118.67 正在获取：Khối lượng 
+INFO: 2022/01/24 18:34:50 models.go:72: 60d6f7df5518ceb668c847d8
+INFO: 2022/01/24 18:34:50 models.go:83: 61378aafc259c69f251fb2b4
+INFO: 2022/01/24 18:35:00 controller.go:63: 139.9.118.67 正在获取：Khối lượng 
+INFO: 2022/01/24 22:37:24 controller.go:63: 139.9.118.67 正在获取：dễ dãi
+INFO: 2022/01/25 09:11:56 controller.go:63: 139.9.118.67 正在获取：Cho
+INFO: 2022/01/25 09:11:57 controller.go:30: 139.9.118.67 正在获取：Cho
+INFO: 2022/01/25 09:11:57 models.go:72: 60d6f2645518ceb668c7de34
+INFO: 2022/01/25 09:11:57 models.go:83: 61378a87c259c69f251f788d
+INFO: 2022/01/25 09:12:21 controller.go:30: 139.9.118.67 正在获取：Ha
+INFO: 2022/01/25 09:12:21 models.go:72: 60d6f6295518ceb668c826db
+INFO: 2022/01/25 09:12:21 models.go:83: 61378a9fc259c69f251f99ad
+INFO: 2022/01/25 09:12:41 controller.go:63: 139.9.118.67 正在获取：Cho
+INFO: 2022/01/25 09:12:44 controller.go:30: 139.9.118.67 正在获取：Cho
+INFO: 2022/01/25 09:12:44 models.go:72: 60d6f2645518ceb668c7de34
+INFO: 2022/01/25 09:12:44 models.go:83: 61378a87c259c69f251f788d
+INFO: 2022/01/25 09:12:45 controller.go:63: 139.9.118.67 正在获取：Cho
+INFO: 2022/01/25 09:17:02 controller.go:30: 139.9.118.67 正在获取：Cho
+INFO: 2022/01/25 09:17:02 models.go:72: 60d6f2645518ceb668c7de34
+INFO: 2022/01/25 09:17:02 models.go:83: 61378a87c259c69f251f788d
+INFO: 2022/01/25 13:24:21 controller.go:63: 139.9.118.67 正在获取：Ven
+INFO: 2022/01/25 13:25:36 controller.go:63: 139.9.118.67 正在获取：Vốn 
+INFO: 2022/01/26 19:41:50 controller.go:30: 139.9.118.67 正在获取：chị
+INFO: 2022/01/26 19:41:50 models.go:72: 60d6f30c5518ceb668c7eac9
+INFO: 2022/01/26 19:41:50 models.go:83: 61378a87c259c69f251f77b6
+INFO: 2022/01/26 19:41:52 controller.go:63: 139.9.118.67 正在获取：chị
+INFO: 2022/01/26 19:42:02 controller.go:30: 139.9.118.67 正在获取：con
+INFO: 2022/01/26 19:42:02 models.go:72: 60d6f34f5518ceb668c7efe2
+INFO: 2022/01/26 19:42:02 models.go:83: 61378a8ac259c69f251f7b77
+INFO: 2022/01/26 19:42:03 controller.go:63: 139.9.118.67 正在获取：chị
+INFO: 2022/01/26 19:42:08 controller.go:63: 139.9.118.67 正在获取：con
+INFO: 2022/01/26 19:42:14 controller.go:30: 139.9.118.67 正在获取：con
+INFO: 2022/01/26 19:42:14 models.go:72: 60d6f34f5518ceb668c7efe2
+INFO: 2022/01/26 19:42:14 models.go:83: 61378a8ac259c69f251f7b77
+INFO: 2022/01/26 19:42:23 controller.go:30: 139.9.118.67 正在获取：chị
+INFO: 2022/01/26 19:42:23 models.go:72: 60d6f30c5518ceb668c7eac9
+INFO: 2022/01/26 19:42:23 models.go:83: 61378a87c259c69f251f77b6
+INFO: 2022/01/26 19:42:24 controller.go:63: 139.9.118.67 正在获取：chị
+INFO: 2022/01/26 19:42:27 controller.go:30: 139.9.118.67 正在获取：chị
+INFO: 2022/01/26 19:42:27 models.go:72: 60d6f30c5518ceb668c7eac9
+INFO: 2022/01/26 19:42:27 models.go:83: 61378a87c259c69f251f77b6
+INFO: 2022/01/26 19:42:28 controller.go:63: 139.9.118.67 正在获取：chị
+INFO: 2022/01/26 19:42:29 controller.go:30: 139.9.118.67 正在获取：chị
+INFO: 2022/01/26 19:42:29 models.go:72: 60d6f30c5518ceb668c7eac9
+INFO: 2022/01/26 19:42:29 models.go:83: 61378a87c259c69f251f77b6
+INFO: 2022/01/28 20:06:01 controller.go:63: 139.9.118.67 正在获取：Gu
+INFO: 2022/01/29 11:17:44 controller.go:30: 139.9.118.67 正在获取：chương trình
+INFO: 2022/01/29 11:17:44 models.go:72: 60d6f2cf5518ceb668c7e625
+INFO: 2022/01/29 11:17:44 models.go:83: 61378a89c259c69f251f7b02
+INFO: 2022/01/29 11:19:14 controller.go:30: 139.9.118.67 正在获取：chương trình
+INFO: 2022/01/29 11:19:14 models.go:72: 60d6f2cf5518ceb668c7e625
+INFO: 2022/01/29 11:19:15 models.go:83: 61378a89c259c69f251f7b02
+INFO: 2022/01/29 11:23:19 controller.go:30: 139.9.118.67 正在获取：cài đặt
+INFO: 2022/01/29 11:23:19 models.go:72: 60d6f3745518ceb668c7f2ad
+INFO: 2022/01/29 11:23:19 models.go:83: 
+INFO: 2022/01/29 11:33:21 controller.go:30: 139.9.118.67 正在获取：chương trình
+INFO: 2022/01/29 11:33:21 models.go:72: 60d6f2cf5518ceb668c7e625
+INFO: 2022/01/29 11:33:21 models.go:83: 61378a89c259c69f251f7b02
+INFO: 2022/01/29 11:33:22 controller.go:30: 139.9.118.67 正在获取：cài đặt
+INFO: 2022/01/29 11:33:22 models.go:72: 60d6f3745518ceb668c7f2ad
+INFO: 2022/01/29 11:33:22 models.go:83: 
+INFO: 2022/01/29 11:33:47 controller.go:30: 139.9.118.67 正在获取：chương trình
+INFO: 2022/01/29 11:33:47 models.go:72: 60d6f2cf5518ceb668c7e625
+INFO: 2022/01/29 11:33:47 models.go:83: 61378a89c259c69f251f7b02
+INFO: 2022/01/29 11:37:25 controller.go:30: 139.9.118.67 正在获取：dãy
+INFO: 2022/01/29 11:37:25 models.go:72: 60d6f50d5518ceb668c81171
+INFO: 2022/01/29 11:37:25 models.go:83: 61378a8dc259c69f251f7f9a
+INFO: 2022/01/29 11:39:55 controller.go:63: 139.9.118.67 正在获取：dãy
+INFO: 2022/01/29 11:40:04 controller.go:63: 139.9.118.67 正在获取：竖
+INFO: 2022/01/29 11:41:41 controller.go:63: 139.9.118.67 正在获取：tích lũy
+ERROR: 2022/01/29 11:41:41 controller.go:68: 获取失败：tích lũy
+INFO: 2022/01/29 11:42:14 controller.go:30: 139.9.118.67 正在获取：tích lũy
+INFO: 2022/01/29 11:42:14 models.go:72: 
+INFO: 2022/01/29 11:42:14 models.go:83: 61378b2ac259c69f2520472f
+ERROR: 2022/01/29 11:42:14 controller.go:38: 词库中暂无此单词：tích lũy
+INFO: 2022/01/29 11:42:14 controller.go:39: 正在从网络获取：tích lũy
+INFO: 2022/01/29 11:42:14 crawler.go:90: Visiting http://tratu.soha.vn/dict/vn_vn/t%C3%ADch_l%C5%A9y
+INFO: 2022/01/29 11:42:19 crawler.go:85: Get tích lũy in OnHTML: &{ObjectIdHex("") tích lũy [] 2022-01-29 11:42:19.989106048 +0800 CST m=+468345.179490962 0001-01-01 00:00:00 +0000 UTC}
+INFO: 2022/01/29 11:42:19 crawler.go:103: Get tích lũy in crawl func: &{ObjectIdHex("") tích lũy [] 2022-01-29 11:42:19.989106048 +0800 CST m=+468345.179490962 0001-01-01 00:00:00 +0000 UTC}
+INFO: 2022/01/29 11:42:19 crawler.go:104: crawl func finish
+ERROR: 2022/01/29 11:42:19 controller.go:42: 获取失败：tích lũy
+INFO: 2022/01/29 11:42:25 controller.go:30: 139.9.118.67 正在获取：tích lũy
+INFO: 2022/01/29 11:42:25 models.go:72: 
+INFO: 2022/01/29 11:42:25 models.go:83: 61378b2ac259c69f2520472f
+ERROR: 2022/01/29 11:42:25 controller.go:38: 词库中暂无此单词：tích lũy
+INFO: 2022/01/29 11:42:25 controller.go:39: 正在从网络获取：tích lũy
+INFO: 2022/01/29 11:42:25 crawler.go:90: Visiting http://tratu.soha.vn/dict/vn_vn/t%C3%ADch_l%C5%A9y
+INFO: 2022/01/29 11:42:26 crawler.go:85: Get tích lũy in OnHTML: &{ObjectIdHex("") tích lũy [] 2022-01-29 11:42:26.636965934 +0800 CST m=+468351.827350846 0001-01-01 00:00:00 +0000 UTC}
+INFO: 2022/01/29 11:42:26 crawler.go:103: Get tích lũy in crawl func: &{ObjectIdHex("") tích lũy [] 2022-01-29 11:42:26.636965934 +0800 CST m=+468351.827350846 0001-01-01 00:00:00 +0000 UTC}
+INFO: 2022/01/29 11:42:26 crawler.go:104: crawl func finish
+ERROR: 2022/01/29 11:42:26 controller.go:42: 获取失败：tích lũy
+INFO: 2022/01/29 12:08:16 controller.go:63: 139.9.118.67 正在获取：Rán 
+INFO: 2022/01/29 17:10:17 controller.go:30: 139.9.118.67 正在获取：Lang thang 
+INFO: 2022/01/29 17:10:17 models.go:72: 60d6f83f5518ceb668c84f12
+INFO: 2022/01/29 17:10:17 models.go:83: 61378ab5c259c69f251fbc03
+INFO: 2022/01/29 20:49:15 controller.go:63: 139.9.118.67 正在获取：Mách
+INFO: 2022/01/29 23:33:50 controller.go:30: 139.9.118.67 正在获取：Ấy 
+INFO: 2022/01/29 23:33:50 models.go:72: 60d707295518ceb668c91d51
+INFO: 2022/01/29 23:33:50 models.go:83: 61378a7ac259c69f251f67e7
+INFO: 2022/01/29 23:34:00 controller.go:30: 139.9.118.67 正在获取：ấy 
+INFO: 2022/01/29 23:34:00 models.go:72: 60d707295518ceb668c91d51
+INFO: 2022/01/29 23:34:00 models.go:83: 61378a7ac259c69f251f67e7
+INFO: 2022/01/29 23:34:00 controller.go:30: 139.9.118.67 正在获取：Ấy 
+INFO: 2022/01/29 23:34:00 models.go:72: 60d707295518ceb668c91d51
+INFO: 2022/01/29 23:34:00 models.go:83: 61378a7ac259c69f251f67e7
+INFO: 2022/01/30 10:58:58 controller.go:30: 139.9.118.67 正在获取：Ám ảnh 
+INFO: 2022/01/30 10:58:58 models.go:72: 60d7053b5518ceb668c8f9ee
+INFO: 2022/01/30 10:58:58 models.go:83: 61378a79c259c69f251f658e
+INFO: 2022/01/30 10:59:36 controller.go:30: 139.9.118.67 正在获取：kí ức
+INFO: 2022/01/30 10:59:36 models.go:72: 
+INFO: 2022/01/30 10:59:36 models.go:83: 
+ERROR: 2022/01/30 10:59:36 controller.go:38: 词库中暂无此单词：kí ức
+INFO: 2022/01/30 10:59:36 controller.go:39: 正在从网络获取：kí ức
+INFO: 2022/01/30 10:59:36 crawler.go:90: Visiting http://tratu.soha.vn/dict/vn_vn/k%C3%AD_%E1%BB%A9c
+ERROR: 2022/01/30 10:59:39 crawler.go:94: Error:  kí ức
+INFO: 2022/01/30 10:59:39 crawler.go:103: Get kí ức in crawl func: <nil>
+INFO: 2022/01/30 10:59:39 crawler.go:104: crawl func finish
+INFO: 2022/01/30 14:16:21 controller.go:63: 139.9.118.67 正在获取：内衣
+INFO: 2022/01/30 16:28:04 controller.go:63: 139.9.118.67 正在获取：Tất niên 
+ERROR: 2022/01/30 16:28:04 controller.go:68: 获取失败：Tất niên 
+INFO: 2022/01/30 16:28:07 controller.go:30: 139.9.118.67 正在获取：Tất niên 
+INFO: 2022/01/30 16:28:07 models.go:72: 
+INFO: 2022/01/30 16:28:07 models.go:83: 61378b10c259c69f25202e07
+ERROR: 2022/01/30 16:28:07 controller.go:38: 词库中暂无此单词：Tất niên 
+INFO: 2022/01/30 16:28:07 controller.go:39: 正在从网络获取：Tất niên 
+INFO: 2022/01/30 16:28:07 crawler.go:90: Visiting http://tratu.soha.vn/dict/vn_vn/T%E1%BA%A5t_ni%C3%AAn
+INFO: 2022/01/30 16:28:09 crawler.go:85: Get Tất niên in OnHTML: &{ObjectIdHex("") Tất niên [{0 Danh từ lúc sắp hết năm cũ, chuẩn bị đón năm mới [1. bữa cơm tất niên 2. cúng tất niên]}] 2022-01-30 16:28:09.619419783 +0800 CST m=+571894.809804696 0001-01-01 00:00:00 +0000 UTC}
+INFO: 2022/01/30 16:28:09 crawler.go:103: Get Tất niên in crawl func: &{ObjectIdHex("") Tất niên [{0 Danh từ lúc sắp hết năm cũ, chuẩn bị đón năm mới [1. bữa cơm tất niên 2. cúng tất niên]}] 2022-01-30 16:28:09.619419783 +0800 CST m=+571894.809804696 0001-01-01 00:00:00 +0000 UTC}
+INFO: 2022/01/30 16:28:09 crawler.go:104: crawl func finish
+INFO: 2022/01/30 16:28:09 controller.go:44: 获取成功：Tất niên ，准备写入词库
+INFO: 2022/01/30 16:42:45 controller.go:30: 139.9.118.67 正在获取：Tất niên 
+INFO: 2022/01/30 16:42:45 models.go:72: 61f64c19f7542ebb95d3360d
+INFO: 2022/01/30 16:42:45 models.go:83: 61378b10c259c69f25202e07
+INFO: 2022/01/30 19:37:12 controller.go:63: 139.9.118.67 正在获取：可怜
+INFO: 2022/01/30 20:08:16 controller.go:63: 139.9.118.67 正在获取：Đẹo
+ERROR: 2022/01/30 20:08:16 controller.go:68: 获取失败：Đẹo
+INFO: 2022/01/30 20:08:18 controller.go:30: 139.9.118.67 正在获取：Đẹo
+INFO: 2022/01/30 20:08:18 models.go:72: 
+INFO: 2022/01/30 20:08:18 models.go:83: 
+ERROR: 2022/01/30 20:08:18 controller.go:38: 词库中暂无此单词：Đẹo
+INFO: 2022/01/30 20:08:18 controller.go:39: 正在从网络获取：Đẹo
+INFO: 2022/01/30 20:08:18 crawler.go:90: Visiting http://tratu.soha.vn/dict/vn_vn/%C4%90%E1%BA%B9o
+INFO: 2022/01/30 20:08:21 crawler.go:85: Get Đẹo in OnHTML: &{ObjectIdHex("") Đẹo [] 2022-01-30 20:08:21.992594232 +0800 CST m=+585107.182979146 0001-01-01 00:00:00 +0000 UTC}
+INFO: 2022/01/30 20:08:21 crawler.go:103: Get Đẹo in crawl func: &{ObjectIdHex("") Đẹo [] 2022-01-30 20:08:21.992594232 +0800 CST m=+585107.182979146 0001-01-01 00:00:00 +0000 UTC}
+INFO: 2022/01/30 20:08:21 crawler.go:104: crawl func finish
+ERROR: 2022/01/30 20:08:21 controller.go:42: 获取失败：Đẹo
+INFO: 2022/02/01 11:02:40 controller.go:30: 139.9.118.67 正在获取：Tham chiếu 
+INFO: 2022/02/01 11:02:40 models.go:72: 
+INFO: 2022/02/01 11:02:40 models.go:83: 
+ERROR: 2022/02/01 11:02:40 controller.go:38: 词库中暂无此单词：Tham chiếu 
+INFO: 2022/02/01 11:02:40 controller.go:39: 正在从网络获取：Tham chiếu 
+INFO: 2022/02/01 11:02:40 crawler.go:90: Visiting http://tratu.soha.vn/dict/vn_vn/Tham_chi%E1%BA%BFu
+ERROR: 2022/02/01 11:02:44 crawler.go:94: Error:  Tham chiếu
+INFO: 2022/02/01 11:02:44 crawler.go:103: Get Tham chiếu in crawl func: <nil>
+INFO: 2022/02/01 11:02:44 crawler.go:104: crawl func finish
+INFO: 2022/02/01 11:03:13 controller.go:63: 139.9.118.67 正在获取：Tham chiếu 
+ERROR: 2022/02/01 11:03:13 controller.go:68: 获取失败：Tham chiếu 
+INFO: 2022/02/01 11:03:15 controller.go:30: 139.9.118.67 正在获取：Tham chiếu 
+INFO: 2022/02/01 11:03:15 models.go:72: 
+INFO: 2022/02/01 11:03:15 models.go:83: 
+ERROR: 2022/02/01 11:03:15 controller.go:38: 词库中暂无此单词：Tham chiếu 
+INFO: 2022/02/01 11:03:15 controller.go:39: 正在从网络获取：Tham chiếu 
+INFO: 2022/02/01 11:03:15 crawler.go:90: Visiting http://tratu.soha.vn/dict/vn_vn/Tham_chi%E1%BA%BFu
+INFO: 2022/02/01 11:03:19 crawler.go:85: Get Tham chiếu in OnHTML: &{ObjectIdHex("") Tham chiếu [{0 Động từ căn cứ, dựa vào để tham khảo và đối chiếu [1. tài liệu tham chiếu]}] 2022-02-01 11:03:19.127537336 +0800 CST m=+725204.317922250 0001-01-01 00:00:00 +0000 UTC}
+INFO: 2022/02/01 11:03:19 crawler.go:103: Get Tham chiếu in crawl func: &{ObjectIdHex("") Tham chiếu [{0 Động từ căn cứ, dựa vào để tham khảo và đối chiếu [1. tài liệu tham chiếu]}] 2022-02-01 11:03:19.127537336 +0800 CST m=+725204.317922250 0001-01-01 00:00:00 +0000 UTC}
+INFO: 2022/02/01 11:03:19 crawler.go:104: crawl func finish
+INFO: 2022/02/01 11:03:19 controller.go:44: 获取成功：Tham chiếu ，准备写入词库
+INFO: 2022/02/01 11:19:16 controller.go:30: 139.9.118.67 正在获取：căn cứ 
+INFO: 2022/02/01 11:19:16 models.go:72: 60d6f42c5518ceb668c80085
+INFO: 2022/02/01 11:19:16 models.go:83: 61378a83c259c69f251f7399
+INFO: 2022/02/01 11:21:00 controller.go:30: 139.9.118.67 正在获取：Căn à
+INFO: 2022/02/01 11:21:00 models.go:72: 
+INFO: 2022/02/01 11:21:00 models.go:83: 
+ERROR: 2022/02/01 11:21:00 controller.go:38: 词库中暂无此单词：Căn à
+INFO: 2022/02/01 11:21:00 controller.go:39: 正在从网络获取：Căn à
+INFO: 2022/02/01 11:21:00 crawler.go:90: Visiting http://tratu.soha.vn/dict/vn_vn/C%C4%83n_%C3%A0
+INFO: 2022/02/01 11:21:02 crawler.go:85: Get Căn à in OnHTML: &{ObjectIdHex("") Căn à [] 2022-02-01 11:21:02.155360704 +0800 CST m=+726267.345745618 0001-01-01 00:00:00 +0000 UTC}
+INFO: 2022/02/01 11:21:02 crawler.go:103: Get Căn à in crawl func: &{ObjectIdHex("") Căn à [] 2022-02-01 11:21:02.155360704 +0800 CST m=+726267.345745618 0001-01-01 00:00:00 +0000 UTC}
+INFO: 2022/02/01 11:21:02 crawler.go:104: crawl func finish
+ERROR: 2022/02/01 11:21:02 controller.go:42: 获取失败：Căn à
+INFO: 2022/02/01 19:39:40 controller.go:63: 139.9.118.67 正在获取：Nức nở 
+INFO: 2022/02/01 19:39:46 controller.go:63: 139.9.118.67 正在获取：大家闺秀
+INFO: 2022/02/01 23:05:58 controller.go:63: 139.9.118.67 正在获取：手淫
+INFO: 2022/02/01 23:10:42 controller.go:63: 139.9.118.67 正在获取：手淫
+INFO: 2022/02/01 23:10:54 controller.go:63: 139.9.118.67 正在获取：刺激
+INFO: 2022/02/02 13:38:09 controller.go:30: 139.9.118.67 正在获取：Hư hỏng 
+INFO: 2022/02/02 13:38:09 models.go:72: 60d6f6b75518ceb668c83193
+INFO: 2022/02/02 13:38:09 models.go:83: 61378aa8c259c69f251fa6b1
+INFO: 2022/02/02 13:43:33 controller.go:30: 139.9.118.67 正在获取：Điếu đổ 
+INFO: 2022/02/02 13:43:33 models.go:72: 
+INFO: 2022/02/02 13:43:33 models.go:83: 
+ERROR: 2022/02/02 13:43:33 controller.go:38: 词库中暂无此单词：Điếu đổ 
+INFO: 2022/02/02 13:43:33 controller.go:39: 正在从网络获取：Điếu đổ 
+INFO: 2022/02/02 13:43:33 crawler.go:90: Visiting http://tratu.soha.vn/dict/vn_vn/%C4%90i%E1%BA%BFu_%C4%91%E1%BB%95
+INFO: 2022/02/02 13:43:36 controller.go:30: 139.9.118.67 正在获取：Hư hỏng 
+INFO: 2022/02/02 13:43:36 models.go:72: 60d6f6b75518ceb668c83193
+INFO: 2022/02/02 13:43:36 models.go:83: 61378aa8c259c69f251fa6b1
+INFO: 2022/02/02 13:43:36 controller.go:63: 139.9.118.67 正在获取：Hư hỏng 
+INFO: 2022/02/02 13:43:38 crawler.go:85: Get Điếu đổ in OnHTML: &{ObjectIdHex("") Điếu đổ [] 2022-02-02 13:43:38.878153485 +0800 CST m=+821224.068538404 0001-01-01 00:00:00 +0000 UTC}
+INFO: 2022/02/02 13:43:38 crawler.go:103: Get Điếu đổ in crawl func: &{ObjectIdHex("") Điếu đổ [] 2022-02-02 13:43:38.878153485 +0800 CST m=+821224.068538404 0001-01-01 00:00:00 +0000 UTC}
+INFO: 2022/02/02 13:43:38 crawler.go:104: crawl func finish
+ERROR: 2022/02/02 13:43:38 controller.go:42: 获取失败：Điếu đổ 
+INFO: 2022/02/02 13:44:11 controller.go:30: 139.9.118.67 正在获取：Điếu 
+INFO: 2022/02/02 13:44:11 models.go:72: 60d705b05518ceb668c90250
+INFO: 2022/02/02 13:44:11 models.go:83: 
+INFO: 2022/02/02 13:44:17 controller.go:30: 139.9.118.67 正在获取：Hư hỏng 
+INFO: 2022/02/02 13:44:17 models.go:72: 60d6f6b75518ceb668c83193
+INFO: 2022/02/02 13:44:17 models.go:83: 61378aa8c259c69f251fa6b1
+INFO: 2022/02/02 13:44:19 controller.go:30: 139.9.118.67 正在获取：Hư hỏng 
+INFO: 2022/02/02 13:44:19 models.go:72: 60d6f6b75518ceb668c83193
+INFO: 2022/02/02 13:44:19 models.go:83: 61378aa8c259c69f251fa6b1
+INFO: 2022/02/02 13:44:20 controller.go:30: 139.9.118.67 正在获取：Hư hỏng 
+INFO: 2022/02/02 13:44:20 models.go:72: 60d6f6b75518ceb668c83193
+INFO: 2022/02/02 13:44:20 models.go:83: 61378aa8c259c69f251fa6b1
+INFO: 2022/02/02 13:45:04 controller.go:30: 139.9.118.67 正在获取：Điếu 
+INFO: 2022/02/02 13:45:04 models.go:72: 60d705b05518ceb668c90250
+INFO: 2022/02/02 13:45:04 models.go:83: 
+INFO: 2022/02/02 13:45:10 controller.go:30: 139.9.118.67 正在获取：Điếu 
+INFO: 2022/02/02 13:45:10 models.go:72: 60d705b05518ceb668c90250
+INFO: 2022/02/02 13:45:10 models.go:83: 
+INFO: 2022/02/02 13:45:12 controller.go:30: 139.9.118.67 正在获取：Điếu 
+INFO: 2022/02/02 13:45:12 models.go:72: 60d705b05518ceb668c90250
+INFO: 2022/02/02 13:45:12 models.go:83: 
+INFO: 2022/02/02 13:45:12 controller.go:63: 139.9.118.67 正在获取：Điếu 
+INFO: 2022/02/02 13:45:26 controller.go:63: 139.9.118.67 正在获取：Điếu đổ
+ERROR: 2022/02/02 13:45:26 controller.go:68: 获取失败：Điếu đổ
+INFO: 2022/02/02 13:45:32 controller.go:63: 139.9.118.67 正在获取： đổ
+INFO: 2022/02/02 23:18:15 controller.go:63: 139.9.118.67 正在获取：Sửu nhi 
+ERROR: 2022/02/02 23:18:15 controller.go:68: 获取失败：Sửu nhi 
+INFO: 2022/02/02 23:18:19 controller.go:30: 139.9.118.67 正在获取：Sửu nhi 
+INFO: 2022/02/02 23:18:19 models.go:72: 
+INFO: 2022/02/02 23:18:19 models.go:83: 
+ERROR: 2022/02/02 23:18:19 controller.go:38: 词库中暂无此单词：Sửu nhi 
+INFO: 2022/02/02 23:18:19 controller.go:39: 正在从网络获取：Sửu nhi 
+INFO: 2022/02/02 23:18:19 crawler.go:90: Visiting http://tratu.soha.vn/dict/vn_vn/S%E1%BB%ADu_nhi
+INFO: 2022/02/02 23:18:22 crawler.go:85: Get Sửu nhi in OnHTML: &{ObjectIdHex("") Sửu nhi [] 2022-02-02 23:18:22.461804036 +0800 CST m=+855707.652188949 0001-01-01 00:00:00 +0000 UTC}
+INFO: 2022/02/02 23:18:22 crawler.go:103: Get Sửu nhi in crawl func: &{ObjectIdHex("") Sửu nhi [] 2022-02-02 23:18:22.461804036 +0800 CST m=+855707.652188949 0001-01-01 00:00:00 +0000 UTC}
+INFO: 2022/02/02 23:18:22 crawler.go:104: crawl func finish
+ERROR: 2022/02/02 23:18:22 controller.go:42: 获取失败：Sửu nhi 
+INFO: 2022/02/02 23:18:25 controller.go:30: 139.9.118.67 正在获取：Sửu nhi 
+INFO: 2022/02/02 23:18:25 models.go:72: 
+INFO: 2022/02/02 23:18:25 models.go:83: 
+ERROR: 2022/02/02 23:18:25 controller.go:38: 词库中暂无此单词：Sửu nhi 
+INFO: 2022/02/02 23:18:25 controller.go:39: 正在从网络获取：Sửu nhi 
+INFO: 2022/02/02 23:18:25 crawler.go:90: Visiting http://tratu.soha.vn/dict/vn_vn/S%E1%BB%ADu_nhi
+INFO: 2022/02/02 23:18:25 controller.go:63: 139.9.118.67 正在获取：Sửu nhi 
+ERROR: 2022/02/02 23:18:25 controller.go:68: 获取失败：Sửu nhi 
+INFO: 2022/02/02 23:18:27 crawler.go:85: Get Sửu nhi in OnHTML: &{ObjectIdHex("") Sửu nhi [] 2022-02-02 23:18:27.680987084 +0800 CST m=+855712.871371997 0001-01-01 00:00:00 +0000 UTC}
+INFO: 2022/02/02 23:18:27 crawler.go:103: Get Sửu nhi in crawl func: &{ObjectIdHex("") Sửu nhi [] 2022-02-02 23:18:27.680987084 +0800 CST m=+855712.871371997 0001-01-01 00:00:00 +0000 UTC}
+INFO: 2022/02/02 23:18:27 crawler.go:104: crawl func finish
+ERROR: 2022/02/02 23:18:27 controller.go:42: 获取失败：Sửu nhi 
+INFO: 2022/02/03 18:36:15 controller.go:63: 139.9.118.67 正在获取：促进
+INFO: 2022/02/03 18:36:33 controller.go:63: 139.9.118.67 正在获取：智力
+INFO: 2022/02/04 07:37:44 controller.go:63: 139.9.118.67 正在获取：Ngắn ngủi 
+INFO: 2022/02/04 07:53:30 controller.go:30: 139.9.118.67 正在获取：Gặp gỡ
+INFO: 2022/02/04 07:53:30 models.go:72: 60d6f6185518ceb668c82594
+INFO: 2022/02/04 07:53:30 models.go:83: 61378a97c259c69f251f8c98
+INFO: 2022/02/04 10:30:17 controller.go:30: 139.9.118.67 正在获取：Thôi nôi 
+INFO: 2022/02/04 10:30:17 models.go:72: 60d701bb5518ceb668c8b9e2
+INFO: 2022/02/04 10:30:17 models.go:83: 
+INFO: 2022/02/04 10:30:18 controller.go:30: 139.9.118.67 正在获取：Ngắn ngủi 
+INFO: 2022/02/04 10:30:18 models.go:72: 60d6fe785518ceb668c87dc3
+INFO: 2022/02/04 10:30:18 models.go:83: 61378acec259c69f251fe1b7
+INFO: 2022/02/04 10:30:27 controller.go:30: 139.9.118.67 正在获取：Thôi nôi 
+INFO: 2022/02/04 10:30:27 models.go:72: 60d701bb5518ceb668c8b9e2
+INFO: 2022/02/04 10:30:27 models.go:83: 
+INFO: 2022/02/04 10:44:20 controller.go:30: 139.9.118.67 正在获取：Lễ
+INFO: 2022/02/04 10:44:20 models.go:72: 60d6fcba5518ceb668c85d98
+INFO: 2022/02/04 10:44:20 models.go:83: 61378ab9c259c69f251fc1c6
+INFO: 2022/02/04 10:45:25 controller.go:30: 139.9.118.67 正在获取：Ngắn ngủi 
+INFO: 2022/02/04 10:45:25 models.go:72: 60d6fe785518ceb668c87dc3
+INFO: 2022/02/04 10:45:25 models.go:83: 61378acec259c69f251fe1b7
+INFO: 2022/02/04 10:45:32 controller.go:30: 139.9.118.67 正在获取：Lễ 
+INFO: 2022/02/04 10:45:32 models.go:72: 60d6fcba5518ceb668c85d98
+INFO: 2022/02/04 10:45:32 models.go:83: 61378ab9c259c69f251fc1c6
+INFO: 2022/02/04 10:48:15 controller.go:30: 139.9.118.67 正在获取：Đám ma 
+INFO: 2022/02/04 10:48:15 models.go:72: 60d705e95518ceb668c9066b
+INFO: 2022/02/04 10:48:15 models.go:83: 61378a91c259c69f251f8442
+INFO: 2022/02/04 12:26:36 controller.go:63: 139.9.118.67 正在获取：Nhất là 
+INFO: 2022/02/06 17:37:43 controller.go:30: 139.9.118.67 正在获取：Chí lí
+INFO: 2022/02/06 17:37:43 models.go:72: 
+INFO: 2022/02/06 17:37:43 models.go:83: 
+ERROR: 2022/02/06 17:37:43 controller.go:38: 词库中暂无此单词：Chí lí
+INFO: 2022/02/06 17:37:43 controller.go:39: 正在从网络获取：Chí lí
+INFO: 2022/02/06 17:37:43 crawler.go:90: Visiting http://tratu.soha.vn/dict/vn_vn/Ch%C3%AD_l%C3%AD
+INFO: 2022/02/06 17:37:45 controller.go:63: 139.9.118.67 正在获取：Chí lí
+ERROR: 2022/02/06 17:37:45 controller.go:68: 获取失败：Chí lí
+ERROR: 2022/02/06 17:37:47 crawler.go:94: Error:  Chí lí
+INFO: 2022/02/06 17:37:47 crawler.go:103: Get Chí lí in crawl func: <nil>
+INFO: 2022/02/06 17:37:47 crawler.go:104: crawl func finish
+INFO: 2022/02/08 14:12:47 controller.go:30: 139.9.118.67 正在获取：Báo
+INFO: 2022/02/08 14:12:47 models.go:72: 61b1a57af7542ebb95cad5f7
+INFO: 2022/02/08 14:12:47 models.go:83: 61378a7cc259c69f251f6a84
+INFO: 2022/02/09 07:13:08 controller.go:30: 139.9.118.67 正在获取：Tương thích 
+INFO: 2022/02/09 07:13:08 models.go:72: 
+INFO: 2022/02/09 07:13:09 models.go:83: 
+ERROR: 2022/02/09 07:13:09 controller.go:38: 词库中暂无此单词：Tương thích 
+INFO: 2022/02/09 07:13:09 controller.go:39: 正在从网络获取：Tương thích 
+INFO: 2022/02/09 07:13:09 crawler.go:90: Visiting http://tratu.soha.vn/dict/vn_vn/T%C6%B0%C6%A1ng_th%C3%ADch
+INFO: 2022/02/09 07:13:12 controller.go:63: 139.9.118.67 正在获取：Tương thích 
+ERROR: 2022/02/09 07:13:13 crawler.go:94: Error:  Tương thích
+INFO: 2022/02/09 07:13:13 crawler.go:103: Get Tương thích in crawl func: <nil>
+INFO: 2022/02/09 07:13:13 crawler.go:104: crawl func finish
+ERROR: 2022/02/09 07:13:13 controller.go:68: 获取失败：Tương thích 
+INFO: 2022/02/11 07:28:52 controller.go:63: 139.9.118.67 正在获取：Cưc 
+ERROR: 2022/02/11 07:28:52 controller.go:68: 获取失败：Cưc 
+INFO: 2022/02/11 22:42:35 controller.go:30: 139.9.118.67 正在获取：Hàng len
+INFO: 2022/02/11 22:42:35 models.go:72: 
+INFO: 2022/02/11 22:42:35 models.go:83: 
+ERROR: 2022/02/11 22:42:35 controller.go:38: 词库中暂无此单词：Hàng len
+INFO: 2022/02/11 22:42:35 controller.go:39: 正在从网络获取：Hàng len
+INFO: 2022/02/11 22:42:35 crawler.go:90: Visiting http://tratu.soha.vn/dict/vn_vn/H%C3%A0ng_len
+ERROR: 2022/02/11 22:42:37 crawler.go:94: Error:  Hàng len
+INFO: 2022/02/11 22:42:37 crawler.go:103: Get Hàng len in crawl func: <nil>
+INFO: 2022/02/11 22:42:37 crawler.go:104: crawl func finish
+INFO: 2022/02/11 22:42:40 controller.go:63: 139.9.118.67 正在获取：Hàng len
+INFO: 2022/02/11 22:43:13 controller.go:63: 139.9.118.67 正在获取：Hàng len
+INFO: 2022/02/12 10:06:11 controller.go:63: 139.9.118.67 正在获取：rét buốt
+INFO: 2022/02/12 10:06:13 controller.go:30: 139.9.118.67 正在获取：rét buốt
+INFO: 2022/02/12 10:06:13 models.go:72: 60d7006c5518ceb668c8a1c2
+INFO: 2022/02/12 10:06:13 models.go:83: 61378af8c259c69f25201556
+INFO: 2022/02/12 11:48:30 controller.go:63: 139.9.118.67 正在获取：Niêm yết 
+INFO: 2022/02/12 11:48:31 controller.go:63: 139.9.118.67 正在获取：Ới
+INFO: 2022/02/12 13:58:45 controller.go:30: 139.9.118.67 正在获取：Đèo
+INFO: 2022/02/12 13:58:45 models.go:72: 60d7060f5518ceb668c90920
+INFO: 2022/02/12 13:58:46 models.go:83: 61378a92c259c69f251f860a
+INFO: 2022/02/12 13:58:47 controller.go:63: 139.9.118.67 正在获取：Đèo 
+INFO: 2022/02/12 13:59:05 controller.go:63: 139.9.118.67 正在获取：Đèo 
+INFO: 2022/02/12 20:32:15 controller.go:30: 139.9.118.67 正在获取：Vô duyên 
+INFO: 2022/02/12 20:32:15 models.go:72: 60d704585518ceb668c8e9c3
+INFO: 2022/02/12 20:32:15 models.go:83: 
