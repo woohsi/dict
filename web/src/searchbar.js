@@ -32,7 +32,7 @@ const SearchBar = ({ word, select, onSelectChange, onSearch }) => {
         nextUrl = '/vi-vi/'+encodeURI(inputText);
         break;
       case 'vi-zh':
-        nextUrl = '/vi-zh/'+encodeURI(inputText);
+        nextUrl = '/vi-zh/'+encodeURI(inputText.toLowerCase());
         break;
       case 'zh-vi':
         nextUrl = '/zh-vi/'+encodeURI(inputText)
