@@ -229,28 +229,28 @@ const WordCard = ({ onInputChange, showLearnMore }) => {
   let body = null;
   let learnmore = true;
   switch (select) {
-    case 'vietviet':
-      url = `http://dict.woohsi.top:88/api/records/vietviet/${encodeURI(word)}`;
+    case 'vi-vi':
+      url = `http://localhost/api/records/vietviet/${encodeURI(word)}`;
       break;
-    case 'viethan':
-      url = `http://dict.woohsi.top:88/api/pages/${encodeURI(word)}`;
+    case 'vi-zh':
+      url = `http://localhost/api/pages/${encodeURI(word)}`;
       break;
-    case 'hanviet':
-      url = `http://dict.woohsi.top:88/api/records/hanviet/${encodeURI(word)}`;
+    case 'zh-vi':
+      url = `http://localhost/api/records/hanviet/${encodeURI(word)}`;
       break;
     default:
   }
 
   const { data, error, isPending } = useFetch(url);
   switch (select) {
-    case 'vietviet':
+    case 'vi-vi':
       // const { data1, data2 } = data;
       body = vieviet(data, classes);
       break;
-    case 'viethan':
+    case 'vi-zh':
       body = viethan(data);
       break;
-    case 'hanviet':
+    case 'zh-vi':
       body = hanviet(data, classes);
       break;
     default:

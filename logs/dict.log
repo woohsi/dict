@@ -66,7 +66,6 @@ INFO: 2021/07/15 00:11:28 crawler.go:66: Get Nổi in OnHTML: &{ObjectIdHex("") 
 INFO: 2021/07/15 00:11:28 crawler.go:84: Get Nổi in crawl func: &{ObjectIdHex("") Nổi [{0 Động từ ở trên bề mặt của một chất lỏng [1. bè nứa nổi lềnh bềnh 2. tảng băng nửa chìm nửa nổi 3. đàn cá ăn nổi]} {1 Động từ chuyển từ phía dưới lên phía bề mặt của một chất lỏng [1. tàu ngầm từ từ nổi lên 2. rùa nổi ở Hồ Gươm]} {2 Động từ nhô lên, hiện lên trên bề mặt, dễ nhận thấy [1. sợ nổi gai ốc 2. rễ cây nổi lên trên mặt đất 3. mặt nổi mụn]} {3 Động từ (nước) dâng lên cao do mưa lũ [1. mùa nước nổi 2. ruộng nổi nước trắng xoá]} {4 Động từ phát ra hoặc làm cho phát ra (âm thanh, ánh sáng) ít nhiều mạnh mẽ [1. tiếng trống nổi lên rộn rã 2. trọng tài nổi còi cho bắt đầu trận đấu 3. nổi lửa nấu cơm]} {5 Động từ phát sinh, nảy sinh đột ngột, thường thành đợt, thành cơn và có tác dụng đáng kể [1. trời nổi cơn dông 2. mặt biển nổi sóng 3. nổi cáu 4. nổi cơn ghen]} {6 Động từ vùng lên thành lực lượng đông đảo, gây ra biến động [1. các cuộc khởi nghĩa nổi lên khắp nơi]} {7 Động từ hiện ra rõ rệt, khiến rất dễ nhận thấy giữa những cái khác [1. ca sĩ mới nổi 2. chiếc áo màu đỏ trông rất nổi 3. từ kết quả này thấy nổi lên một số vấn đề]} {8 Động từ (âm thanh, hình ảnh) sống động, tự nhiên, giống như thực [1. âm thanh nổi 2. phim nổi]} {0 Phụ từ từ biểu thị khả năng thực hiện của một việc khó khăn, nặng nề [1. nặng quá không vác nổi 2. không thể tưởng tượng nổi 3. không nén nổi xúc động]}] 2021-07-15 00:11:28.146198 +0800 CST m=+86.636261168 0001-01-01 00:00:00 +0000 UTC}
 INFO: 2021/07/15 00:11:28 crawler.go:85: crawl func finish
 INFO: 2021/07/15 00:11:28 record.go:44: 获取成功：Nổi，准备写入词库
-<<<<<<< Updated upstream
 INFO: 2021/07/15 01:02:16 record.go:54: 60d6ff1f5518ceb668c889c1
 INFO: 2021/07/15 01:02:37 record.go:54: 60d6fd1a5518ceb668c86496
 INFO: 2021/07/15 01:02:48 record.go:54: 60d6fd1a5518ceb668c86496
@@ -2651,8 +2650,6 @@ INFO: 2021/09/08 01:03:43 models.go:73:
 INFO: 2021/09/08 01:05:13 controller.go:30: 139.9.118.67 正在获取：Cỏ
 INFO: 2021/09/08 01:05:13 models.go:62: 60d6f4885518ceb668c80765
 INFO: 2021/09/08 01:05:13 models.go:73: 
-<<<<<<< HEAD
-=======
 INFO: 2021/09/08 01:26:05 controller.go:30: 139.9.118.67 正在获取：xem
 INFO: 2021/09/08 01:26:05 models.go:62: 60d704d65518ceb668c8f299
 INFO: 2021/09/08 01:26:05 models.go:73: 
@@ -2662,7 +2659,6 @@ INFO: 2021/09/08 01:26:20 models.go:73:
 INFO: 2021/09/08 01:26:31 controller.go:30: 139.9.118.67 正在获取：Phim
 INFO: 2021/09/08 01:26:31 models.go:62: 60d6ff7b5518ceb668c89068
 INFO: 2021/09/08 01:26:31 models.go:73: 
->>>>>>> add vv30k
 INFO: 2021/09/09 14:17:02 controller.go:30: 139.9.118.67 正在获取：Thấm
 INFO: 2021/09/09 14:17:02 models.go:62: 60d701eb5518ceb668c8bd4b
 INFO: 2021/09/09 14:17:02 models.go:73: 
@@ -13067,3 +13063,124 @@ INFO: 2022/02/12 13:59:05 controller.go:63: 139.9.118.67 正在获取：Đèo
 INFO: 2022/02/12 20:32:15 controller.go:30: 139.9.118.67 正在获取：Vô duyên 
 INFO: 2022/02/12 20:32:15 models.go:72: 60d704585518ceb668c8e9c3
 INFO: 2022/02/12 20:32:15 models.go:83: 
+=======
+INFO: 2022/01/26 21:08:23 controller.go:30: 127.0.0.1 正在获取：cho
+INFO: 2022/01/26 21:08:23 models.go:72: 60d6f2645518ceb668c7de34
+INFO: 2022/01/26 21:08:23 models.go:83: 61378a87c259c69f251f788d
+INFO: 2022/01/26 21:08:32 controller.go:30: 127.0.0.1 正在获取：cho
+INFO: 2022/01/26 21:08:32 models.go:72: 60d6f2645518ceb668c7de34
+INFO: 2022/01/26 21:08:32 models.go:83: 61378a87c259c69f251f788d
+INFO: 2022/01/26 21:08:36 controller.go:63: ::1 正在获取：cho
+INFO: 2022/01/26 21:08:38 controller.go:30: 127.0.0.1 正在获取：cho
+INFO: 2022/01/26 21:08:38 models.go:72: 60d6f2645518ceb668c7de34
+INFO: 2022/01/26 21:08:38 models.go:83: 61378a87c259c69f251f788d
+INFO: 2022/01/26 21:08:50 controller.go:63: ::1 正在获取：cho
+INFO: 2022/01/26 21:09:06 controller.go:30: ::1 正在获取：cho
+INFO: 2022/01/26 21:09:06 models.go:72: 60d6f2645518ceb668c7de34
+INFO: 2022/01/26 21:09:06 models.go:83: 61378a87c259c69f251f788d
+INFO: 2022/01/26 21:09:07 controller.go:63: 127.0.0.1 正在获取：cho
+INFO: 2022/01/26 21:10:09 controller.go:30: ::1 正在获取：cho
+INFO: 2022/01/26 21:10:09 models.go:72: 60d6f2645518ceb668c7de34
+INFO: 2022/01/26 21:10:09 models.go:83: 61378a87c259c69f251f788d
+INFO: 2022/01/26 21:10:13 controller.go:63: 127.0.0.1 正在获取：cho
+INFO: 2022/01/26 21:12:50 controller.go:63: 127.0.0.1 正在获取：cho
+INFO: 2022/01/26 21:14:05 controller.go:30: 127.0.0.1 正在获取：cho
+INFO: 2022/01/26 21:14:05 models.go:72: 60d6f2645518ceb668c7de34
+INFO: 2022/01/26 21:14:05 models.go:83: 61378a87c259c69f251f788d
+INFO: 2022/01/26 21:14:06 controller.go:63: ::1 正在获取：cho
+INFO: 2022/01/26 21:14:12 controller.go:63: ::1 正在获取：cho
+INFO: 2022/01/26 21:14:14 controller.go:30: 127.0.0.1 正在获取：cho
+INFO: 2022/01/26 21:14:14 models.go:72: 60d6f2645518ceb668c7de34
+INFO: 2022/01/26 21:14:14 models.go:83: 61378a87c259c69f251f788d
+INFO: 2022/01/26 21:14:19 controller.go:30: 127.0.0.1 正在获取：cho
+INFO: 2022/01/26 21:14:19 models.go:72: 60d6f2645518ceb668c7de34
+INFO: 2022/01/26 21:14:19 models.go:83: 61378a87c259c69f251f788d
+INFO: 2022/01/26 21:14:20 controller.go:63: ::1 正在获取：cho
+INFO: 2022/01/26 21:14:26 controller.go:63: 127.0.0.1 正在获取：cho
+INFO: 2022/01/26 21:15:09 controller.go:30: ::1 正在获取：cho
+INFO: 2022/01/26 21:15:09 models.go:72: 60d6f2645518ceb668c7de34
+INFO: 2022/01/26 21:15:09 models.go:83: 61378a87c259c69f251f788d
+INFO: 2022/01/26 21:15:47 controller.go:63: 127.0.0.1 正在获取：cho
+INFO: 2022/01/26 21:15:58 controller.go:30: ::1 正在获取：con
+INFO: 2022/01/26 21:15:58 models.go:72: 60d6f34f5518ceb668c7efe2
+INFO: 2022/01/26 21:15:59 models.go:83: 61378a8ac259c69f251f7b77
+INFO: 2022/01/26 21:16:00 controller.go:63: 127.0.0.1 正在获取：cho
+INFO: 2022/01/26 21:16:02 controller.go:30: ::1 正在获取：cho
+INFO: 2022/01/26 21:16:02 models.go:72: 60d6f2645518ceb668c7de34
+INFO: 2022/01/26 21:16:02 models.go:83: 61378a87c259c69f251f788d
+INFO: 2022/01/26 21:16:04 controller.go:63: 127.0.0.1 正在获取：cho
+INFO: 2022/01/26 21:16:09 controller.go:30: 127.0.0.1 正在获取：cho
+INFO: 2022/01/26 21:16:09 models.go:72: 60d6f2645518ceb668c7de34
+INFO: 2022/01/26 21:16:09 models.go:83: 61378a87c259c69f251f788d
+INFO: 2022/01/26 21:16:22 controller.go:63: 127.0.0.1 正在获取：cho
+INFO: 2022/01/26 21:20:23 controller.go:63: ::1 正在获取：cho
+INFO: 2022/01/26 21:27:59 controller.go:30: 127.0.0.1 正在获取：cho
+INFO: 2022/01/26 21:27:59 models.go:72: 60d6f2645518ceb668c7de34
+INFO: 2022/01/26 21:27:59 models.go:83: 61378a87c259c69f251f788d
+INFO: 2022/01/26 21:29:23 controller.go:30: ::1 正在获取：cho
+INFO: 2022/01/26 21:29:23 models.go:72: 60d6f2645518ceb668c7de34
+INFO: 2022/01/26 21:29:23 models.go:83: 61378a87c259c69f251f788d
+INFO: 2022/01/26 21:29:38 controller.go:63: ::1 正在获取：cho
+INFO: 2022/01/26 21:32:55 controller.go:63: 127.0.0.1 正在获取：cho
+INFO: 2022/01/26 21:33:00 controller.go:30: ::1 正在获取：cho
+INFO: 2022/01/26 21:33:00 models.go:72: 60d6f2645518ceb668c7de34
+INFO: 2022/01/26 21:33:01 models.go:83: 61378a87c259c69f251f788d
+INFO: 2022/01/26 21:35:21 controller.go:30: 127.0.0.1 正在获取：cho
+INFO: 2022/01/26 21:35:22 models.go:72: 60d6f2645518ceb668c7de34
+INFO: 2022/01/26 21:35:22 models.go:83: 61378a87c259c69f251f788d
+INFO: 2022/01/26 21:36:11 controller.go:30: ::1 正在获取：cho
+INFO: 2022/01/26 21:36:11 models.go:72: 60d6f2645518ceb668c7de34
+INFO: 2022/01/26 21:36:11 models.go:83: 61378a87c259c69f251f788d
+INFO: 2022/01/26 21:38:12 controller.go:30: 127.0.0.1 正在获取：cho
+INFO: 2022/01/26 21:38:12 models.go:72: 60d6f2645518ceb668c7de34
+INFO: 2022/01/26 21:38:12 models.go:83: 61378a87c259c69f251f788d
+INFO: 2022/01/26 21:47:44 controller.go:30: ::1 正在获取：cho
+INFO: 2022/01/26 21:47:44 models.go:72: 60d6f2645518ceb668c7de34
+INFO: 2022/01/26 21:47:44 models.go:83: 61378a87c259c69f251f788d
+INFO: 2022/01/26 21:48:44 controller.go:63: 127.0.0.1 正在获取：cho
+INFO: 2022/01/26 21:48:48 controller.go:30: 127.0.0.1 正在获取：cho
+INFO: 2022/01/26 21:48:48 models.go:72: 60d6f2645518ceb668c7de34
+INFO: 2022/01/26 21:48:48 models.go:83: 61378a87c259c69f251f788d
+INFO: 2022/01/26 21:57:04 controller.go:30: ::1 正在获取：cho
+INFO: 2022/01/26 21:57:04 models.go:72: 60d6f2645518ceb668c7de34
+INFO: 2022/01/26 21:57:04 models.go:83: 61378a87c259c69f251f788d
+INFO: 2022/01/26 21:58:08 controller.go:30: 127.0.0.1 正在获取：ha
+INFO: 2022/01/26 21:58:08 models.go:72: 60d6f6295518ceb668c826db
+INFO: 2022/01/26 21:58:08 models.go:83: 61378a9fc259c69f251f99ad
+INFO: 2022/01/26 21:58:53 controller.go:30: ::1 正在获取：cho
+INFO: 2022/01/26 21:58:53 models.go:72: 60d6f2645518ceb668c7de34
+INFO: 2022/01/26 21:58:53 models.go:83: 61378a87c259c69f251f788d
+INFO: 2022/01/26 22:11:37 controller.go:30: ::1 正在获取：cho
+INFO: 2022/01/26 22:11:37 models.go:72: 60d6f2645518ceb668c7de34
+INFO: 2022/01/26 22:11:37 models.go:83: 61378a87c259c69f251f788d
+INFO: 2022/01/26 22:13:55 controller.go:30: 127.0.0.1 正在获取：cho
+INFO: 2022/01/26 22:13:55 models.go:72: 60d6f2645518ceb668c7de34
+INFO: 2022/01/26 22:13:55 models.go:83: 61378a87c259c69f251f788d
+INFO: 2022/01/26 22:32:46 controller.go:30: ::1 正在获取：cho
+INFO: 2022/01/26 22:32:46 models.go:72: 60d6f2645518ceb668c7de34
+INFO: 2022/01/26 22:32:46 models.go:83: 61378a87c259c69f251f788d
+INFO: 2022/01/26 22:32:52 controller.go:63: 127.0.0.1 正在获取：cho
+INFO: 2022/01/26 22:32:53 controller.go:30: ::1 正在获取：cho
+INFO: 2022/01/26 22:32:53 models.go:72: 60d6f2645518ceb668c7de34
+INFO: 2022/01/26 22:32:53 models.go:83: 61378a87c259c69f251f788d
+INFO: 2022/02/05 23:15:37 controller.go:30: 127.0.0.1 正在获取：cho
+INFO: 2022/02/05 23:15:37 models.go:72: 
+INFO: 2022/02/05 23:15:37 models.go:83: 
+ERROR: 2022/02/05 23:15:37 controller.go:38: 词库中暂无此单词：cho
+INFO: 2022/02/05 23:15:37 controller.go:39: 正在从网络获取：cho
+INFO: 2022/02/05 23:15:37 crawler.go:90: Visiting http://tratu.soha.vn/dict/vn_vn/cho
+ERROR: 2022/02/05 23:15:47 crawler.go:94: Error:  cho
+INFO: 2022/02/05 23:15:47 crawler.go:103: Get cho in crawl func: <nil>
+INFO: 2022/02/05 23:15:47 crawler.go:104: crawl func finish
+INFO: 2022/02/05 23:15:52 controller.go:63: ::1 正在获取：cho
+ERROR: 2022/02/05 23:15:52 controller.go:68: 获取失败：cho
+INFO: 2022/02/05 23:17:50 controller.go:63: 127.0.0.1 正在获取：cho
+INFO: 2022/02/05 23:17:53 controller.go:30: ::1 正在获取：cho
+INFO: 2022/02/05 23:17:53 models.go:72: 60d6f2645518ceb668c7de34
+INFO: 2022/02/05 23:17:53 models.go:83: 61378a87c259c69f251f788d
+INFO: 2022/02/13 10:38:12 controller.go:30: ::1 正在获取：Đèo
+INFO: 2022/02/13 10:38:12 models.go:72: 60d7060f5518ceb668c90920
+INFO: 2022/02/13 10:38:12 models.go:83: 61378a92c259c69f251f860a
+INFO: 2022/02/13 10:38:20 controller.go:30: 127.0.0.1 正在获取：Đèo
+INFO: 2022/02/13 10:38:20 models.go:72: 60d7060f5518ceb668c90920
+INFO: 2022/02/13 10:38:20 models.go:83: 61378a92c259c69f251f860a
