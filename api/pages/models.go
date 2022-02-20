@@ -17,7 +17,7 @@ var idxs = make([]Index, 0)
 
 func init()  {
 	//api.SplitFile("1001-1079.pdf", "1001-1079", 1, nil)
-	f, _ := os.Open("./api/pages/index.csv")
+	f, _ := os.Open("./index.csv")
 	r := csv.NewReader(f)
 	r.LazyQuotes = true
 	for {
@@ -32,8 +32,7 @@ func init()  {
 		pg, _ := strconv.Atoi(record[0])
 		idxs = append(idxs, Index{pg, record[1], record[2]})
 	}
-	fmt.Println("Load index.csv")
-	fmt.Println(Find("ảo"))
+	fmt.Println("Load index.csv success")
 }
 
 type Index struct {
