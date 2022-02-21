@@ -230,13 +230,13 @@ const WordCard = ({ onInputChange, showLearnMore }) => {
   let learnmore = true;
   switch (select) {
     case 'vi-vi':
-      url = `http://localhost/api/records/vietviet/${encodeURI(word)}`;
+      url = `http://d.woohsi.top/api/records/vietviet/${encodeURI(word)}`;
       break;
     case 'vi-zh':
-      url = `http://localhost/api/pages/${encodeURI(word)}`;
+      url = `http://d.woohsi.top/api/pages/${encodeURI(word)}`;
       break;
     case 'zh-vi':
-      url = `http://localhost/api/records/hanviet/${encodeURI(word)}`;
+      url = `http://d.woohsi.top/api/records/hanviet/${encodeURI(word)}`;
       break;
     default:
   }
