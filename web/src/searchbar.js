@@ -7,7 +7,7 @@ import './style.css';
 
 const { Search } = Input;
 
-const SearchBar = ({ word, select, onSelectChange, onSearch }) => {
+const SearchBar = ({ word, select, onSelectChange, onInputChange }) => {
   const usePrevious = (value) => {
     const ref = useRef();
     useEffect(() => {
@@ -15,36 +15,35 @@ const SearchBar = ({ word, select, onSelectChange, onSearch }) => {
     });
     return ref.current;
   };
-  
-  console.log("Searchbar, word:", word, "select: ", select);
-  const [inputText, setInputText] = useState("");
+
+  console.log('Searchbar, word:', word, 'select: ', select);
+  const [inputText, setInputText] = useState('');
   const prevSelect = usePrevious(select);
-  const inputEl = useRef(null)
+  const inputEl = useRef(null);
   const history = useHistory();
   const location = useLocation();
 
   //select = location.pathname.split('/')[1];
-  
+
   const nextUrl = () => {
-    let nextUrl = ""
-    switch(select) {
+    let nextUrl = '';
+    switch (select) {
       case 'vi-vi':
-        nextUrl = '/vi-vi/'+encodeURI(inputText);
+        nextUrl = '/vi-vi/' + encodeURI(inputText);
         break;
       case 'vi-zh':
-        nextUrl = '/vi-zh/'+encodeURI(inputText.trim().toLowerCase());
+        nextUrl = '/vi-zh/' + encodeURI(inputText.trim().toLowerCase());
         break;
       case 'zh-vi':
-        nextUrl = '/zh-vi/'+encodeURI(inputText)
+        nextUrl = '/zh-vi/' + encodeURI(inputText);
         break;
       default:
     }
     history.push(nextUrl);
   };
 
-
-  if (prevSelect !== undefined && prevSelect !== "" && prevSelect !== select) {
-    console.log("test: ", prevSelect);
+  if (prevSelect !== undefined && prevSelect !== '' && prevSelect !== select) {
+    console.log('test: ', prevSelect);
     nextUrl();
   }
 
@@ -54,7 +53,7 @@ const SearchBar = ({ word, select, onSelectChange, onSearch }) => {
   };
 
   const handleSubmit = (e) => {
-    e.preventDefault()
+    e.preventDefault();
     //console.log(e.target[0].getAttribute("value"))
     //onSearch(inputText);
     nextUrl();
@@ -68,26 +67,27 @@ const SearchBar = ({ word, select, onSelectChange, onSearch }) => {
   return (
     <>
       <Row>
-          <Col span={24}>
-            <Search
-              size='large'
-              placeholder='Input search word'
-              onSearch={handleSearchIconClick}
-              onChange={(e) => {
-                setInputText(e.target.value);
-              }}
-              ref={inputEl}
-              enterButton
-            />
-          </Col>
-        </Row>
-        <Row>
-          <Col span={24}>
-            <Select select={select} onSelectChange={onSelectChange} />
-          </Col>
-        </Row>
-      </>
+        <Col span={24}>
+          <Search
+            size='large'
+            placeholder='Input search word'
+            onSearch={handleSearchIconClick}
+            onChange={(e) => {
+              setInputText(e.target.value);
+              onInputChange(e.target.value);
+            }}
+            ref={inputEl}
+            enterButton
+          />
+        </Col>
+      </Row>
+      <Row>
+        <Col span={24}>
+          <Select select={select} onSelectChange={onSelectChange} />
+        </Col>
+      </Row>
+    </>
   );
-} 
+}; 
 
 export default SearchBar;

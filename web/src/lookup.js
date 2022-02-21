@@ -45,6 +45,7 @@ const LookupWordComponent = () => {
                 word={inputText}
                 select='vi-zh'
                 onSelectChange={handleSelectChange}
+                onInputChange={handleInputChange}
               />
               <Home />
             </Route>
@@ -53,6 +54,7 @@ const LookupWordComponent = () => {
                 word={inputText}
                 select={select}
                 onSelectChange={handleSelectChange}
+                onInputChange={handleInputChange}
               />
               <WordCard select={select} onInputChange={handleInputChange} />
             </Route>
@@ -61,6 +63,7 @@ const LookupWordComponent = () => {
                 word={inputText}
                 select={select}
                 onSelectChange={handleSelectChange}
+                onInputChange={handleInputChange}
               />
               <WordCard select={select} onInputChange={handleInputChange} />
             </Route>
@@ -69,6 +72,7 @@ const LookupWordComponent = () => {
                 word={inputText}
                 select={select}
                 onSelectChange={handleSelectChange}
+                onInputChange={handleInputChange}
               />
               <WordCard select={select} onInputChange={handleInputChange} />
             </Route>
