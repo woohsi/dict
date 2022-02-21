@@ -2,7 +2,6 @@ package pages
 
 import (
 	"encoding/csv"
-	"fmt"
 	"io"
 	"log"
 	"os"
@@ -11,11 +10,13 @@ import (
 	//"github.com/pdfcpu/pdfcpu/pkg/api"
 	"golang.org/x/text/collate"
 	"golang.org/x/text/language"
+
+	"dict/utils"
 )
 
 var idxs = make([]Index, 0)
 
-func init()  {
+func init() {
 	//api.SplitFile("1001-1079.pdf", "1001-1079", 1, nil)
 	f, _ := os.Open("./index.csv")
 	r := csv.NewReader(f)
@@ -32,7 +33,7 @@ func init()  {
 		pg, _ := strconv.Atoi(record[0])
 		idxs = append(idxs, Index{pg, record[1], record[2]})
 	}
-	fmt.Println("Load index.csv success")
+	utils.InfoLogger.Println("Load index.csv success")
 }
 
 type Index struct {
@@ -51,7 +52,7 @@ func myLess(a, b string) bool {
 	s1 := strings.Split(a, " ")
 	s2 := strings.Split(b, " ")
 	len1, len2 := len(s1), len(s2)
-	
+
 	minLen := min(len1, len2)
 	var i = 0
 	for ; i < minLen; i++ {
@@ -113,7 +114,7 @@ func Trim(s string) string {
 
 func min(a, b int) int {
 	if a < b {
-			return a
+		return a
 	}
 	return b
 }
