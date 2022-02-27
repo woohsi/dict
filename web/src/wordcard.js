@@ -46,11 +46,11 @@ const vieviet = (data, classes) => {
   let defs1 = null;
   let defs2 = null;
 
-  if (data1 !== undefined) {
+  if (data1 !== undefined && data1 !== null) {
     defs1 = data1.definitions;
   }
 
-  if (data2 !== undefined) {
+  if (data2 !== undefined && data2 !== null) {
     defs2 = data2.items;
   }
 
@@ -114,7 +114,7 @@ const vieviet = (data, classes) => {
     });
   }
 
-  if (data1 !== undefined && data2 !== undefined) {
+  if (data1 !== null && data2 !== null) {
     return (
       <>
         <Typography variant='h5' component='h2'>
@@ -128,7 +128,7 @@ const vieviet = (data, classes) => {
         {content2}
       </>
     );
-  } else if (data1 !== undefined && data2 === undefined) {
+  } else if (data1 !== null && data2 === null) {
     return (
       <>
         <Typography variant='h5' component='h2'>
@@ -137,7 +137,7 @@ const vieviet = (data, classes) => {
         {content}
       </>
     );
-  } else if (data1 === undefined && data2 !== undefined) {
+  } else if (data1 === null && data2 !== null) {
     return (
       <>
         <Typography variant='h5' component='h2'>
@@ -230,13 +230,13 @@ const WordCard = ({ onInputChange, showLearnMore }) => {
   let learnmore = true;
   switch (select) {
     case 'vi-vi':
-      url = `http://d.woohsi.top/api/records/vietviet/${encodeURI(word)}`;
+      url = `http://localhost/api/records/vietviet/${encodeURI(word)}`;
       break;
     case 'vi-zh':
-      url = `http://d.woohsi.top/api/pages/${encodeURI(word)}`;
+      url = `http://localhost/api/pages/${encodeURI(word)}`;
       break;
     case 'zh-vi':
-      url = `http://d.woohsi.top/api/records/hanviet/${encodeURI(word)}`;
+      url = `http://localhost/api/records/hanviet/${encodeURI(word)}`;
       break;
     default:
   }

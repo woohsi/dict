@@ -29,30 +29,35 @@ func FindVietVietOne(c *gin.Context) {
 	title := c.Param("title")
 	utils.InfoLogger.Printf("%v 正在获取：%v\n", c.ClientIP(), title)
 	
-	record := &Record{}
+	record1 := &Record{}
 	record2 := &Record2{}
 
-	err := record.FindTitle(title)
-	record2.FindTitleInVV30K(title)
+	err := record1.FindTitle(title)
 	if err != nil {
 		utils.ErrorLogger.Printf("词库中暂无此单词：%v\n", title)
 		utils.InfoLogger.Printf("正在从网络获取：%v\n", title)
-		record = Crawl(title)
-		if record == nil {
+		record1 = Crawl(title)
+		if record1 == nil {
 			utils.ErrorLogger.Printf("获取失败：%v\n", title)
 		} else {
 			utils.InfoLogger.Printf("获取成功：%v，准备写入词库\n", title)
-			_, err = record.InsertOne()
+			_, err = record1.InsertOne()
 			if err != nil {
 				utils.ErrorLogger.Printf("插入失败：%v\n", err)
 			}
 		}
 	}
+	
+	err = record2.FindTitleInVV30K(title)
+	if err != nil {
+		record2 = nil
+	}
+
 	//更新lastSeenAt
-	record.Update(bson.M{"title": title}, bson.M{"$set": bson.M{"lastSeenAt": time.Now()}})
+	record1.Update(bson.M{"title": title}, bson.M{"$set": bson.M{"lastSeenAt": time.Now()}})
 	//返回报文
 	RES(c, SUCCESS, gin.H{
-		"data1": record,
+		"data1": record1,
 		"data2": record2,
 	})
 }

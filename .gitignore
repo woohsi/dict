@@ -2,3 +2,5 @@ main
 .DS_Store
 .vscode
 *.log
+build
+package-lock.json

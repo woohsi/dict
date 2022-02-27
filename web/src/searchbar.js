@@ -26,20 +26,20 @@ const SearchBar = ({ word, select, onSelectChange, onInputChange }) => {
   //select = location.pathname.split('/')[1];
 
   const nextUrl = () => {
-    let nextUrl = '';
+    let url = '';
     switch (select) {
       case 'vi-vi':
-        nextUrl = '/vi-vi/' + encodeURI(inputText);
+        url = '/vi-vi/' + encodeURI(inputText);
         break;
       case 'vi-zh':
-        nextUrl = '/vi-zh/' + encodeURI(inputText.trim().toLowerCase());
+        url = '/vi-zh/' + encodeURI(inputText.trim().toLowerCase());
         break;
       case 'zh-vi':
-        nextUrl = '/zh-vi/' + encodeURI(inputText);
+        url = '/zh-vi/' + encodeURI(inputText);
         break;
       default:
     }
-    history.push(nextUrl);
+    history.push(url);
   };
 
   if (prevSelect !== undefined && prevSelect !== '' && prevSelect !== select) {
