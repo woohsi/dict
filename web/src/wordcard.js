@@ -37,10 +37,11 @@ const useStyles = makeStyles({
 });
 
 const vieviet = (data, classes) => {
-  if (data === null) {
+  if (data === undefined || data === null || data.status === false) {
     return null;
   }
-  const { data1, data2 } = data;
+  
+  const { data1, data2 } = data.data;
   console.log('vietviet-data1: ', data1);
   console.log('vietviet-data2: ', data2);
   let defs1 = null;
@@ -56,7 +57,8 @@ const vieviet = (data, classes) => {
 
   if (defs1 === null && defs2 === null) {
     //TODO
-    return <div>No this word in the dictionary :(</div>;
+    // return <div>No this word in the dictionary :(</div>;
+    return <div></div>;
   }
 
   let preType = null;
@@ -146,16 +148,18 @@ const vieviet = (data, classes) => {
         {content2}
       </>
     );
+  } else if (data1 === null && data2 === null) {
+    return <>No this word in the dictionary----- :(</>;
   } else {
-    return <>No this word in the dictionary :(</>;
+    return null;
   }
 };
 
 const viethan = (data) => {
-  if (data === null) {
+  if (data === null || data.status === false) {
     return null;
   }
-  const { page } = data;
+  const { page } = data.data;
   if (page === -1) return <>No this word in the dictionary :(</>;
   return <PDF page={page} />;
 };
@@ -169,10 +173,10 @@ const MyComponent = (props) => {
 };
 
 const hanviet = (data_t, classes) => {
-  if (data_t === null) {
+  if (data_t === null || data_t.status === false) {
     return null;
   }
-  const { data } = data_t;
+  const { data } = data_t.data;
   console.log('hanviet-data: ', data);
   if (data === null || data === undefined) {
     return null;
@@ -242,6 +246,7 @@ const WordCard = ({ onInputChange, showLearnMore }) => {
   }
 
   const { data, error, isPending } = useFetch(url);
+  
   switch (select) {
     case 'vi-vi':
       // const { data1, data2 } = data;

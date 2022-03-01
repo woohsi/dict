@@ -2,6 +2,7 @@ package records
 
 import (
 	"time"
+
 	"github.com/gin-gonic/gin"
 	"gopkg.in/mgo.v2/bson"
 
@@ -55,10 +56,18 @@ func FindVietVietOne(c *gin.Context) {
 
 	//更新lastSeenAt
 	record1.Update(bson.M{"title": title}, bson.M{"$set": bson.M{"lastSeenAt": time.Now()}})
+	status := false
+	if record1 != nil || record2 != nil {
+		status = true
+	}
+	m := map[string]interface{} {
+			"data1": record1,
+			"data2": record2,
+			"status": status,
+		}
 	//返回报文
-	RES(c, SUCCESS, gin.H{
-		"data1": record1,
-		"data2": record2,
+	RES(c, SUCCESS, gin.H{ 
+		"data": m,
 	})
 }
 
@@ -70,11 +79,17 @@ func FindHanVietOne(c *gin.Context) {
 	record3 := &Record3{}
 	err := record3.FindTitleInHanviet(title)
 	if err != nil {
-		utils.ErrorLogger.Printf("获取失败：%v\n", title)
-
+		record3 = nil
 	}
+	if err != nil {
+		utils.ErrorLogger.Printf("获取失败：%v\n", title)
+	}
+	m := map[string]interface{} {
+			"data": record3,
+			"status": record3 != nil,
+		}
 	//返回报文
 	RES(c, SUCCESS, gin.H{
-		"data": record3,
+		"data": m,
 	})
 }

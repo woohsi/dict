@@ -103,7 +103,7 @@ func Crawl(word string) (record *Record){
 	utils.InfoLogger.Printf("Get %v in crawl func: %v\n", word, record)
 	utils.InfoLogger.Println("crawl func finish")
 	
-	if record.Definitions == nil || len(record.Definitions) == 0 {
+	if record == nil || record.Definitions == nil || len(record.Definitions) == 0 {
 		return nil
 	}
 	return record
