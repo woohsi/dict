@@ -61,13 +61,14 @@ func FindVietVietOne(c *gin.Context) {
 		status = true
 	}
 	m := map[string]interface{} {
-			"data1": record1,
-			"data2": record2,
-			"status": status,
+		"data1": record1,
+		"data2": record2,
 		}
 	//返回报文
 	RES(c, SUCCESS, gin.H{ 
 		"data": m,
+		"title": title,
+		"status": status,
 	})
 }
 
@@ -85,11 +86,12 @@ func FindHanVietOne(c *gin.Context) {
 		utils.ErrorLogger.Printf("获取失败：%v\n", title)
 	}
 	m := map[string]interface{} {
-			"data": record3,
-			"status": record3 != nil,
-		}
+		"data": record3,
+	}
 	//返回报文
 	RES(c, SUCCESS, gin.H{
 		"data": m,
+		"title": title,
+		"status": record3 != nil,
 	})
 }

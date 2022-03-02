@@ -1,6 +1,7 @@
 package main
 
 import (
+	"dict/api/history"
 	"dict/api/pages"
 	"dict/api/records"
 	"io"
@@ -26,6 +27,8 @@ func main() {
 		api.GET("/records/hanviet/:title", records.FindHanVietOne)
 		api.GET("/record/:id", records.FindId)
 		api.GET("/pages/:title", pages.FindPage)
+		api.GET("/history", history.List)
+		api.POST("/history", history.Create)
 	}
 	router.Run(":8080")
 }

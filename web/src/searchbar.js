@@ -1,11 +1,12 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { useParams, useHistory, useLocation } from 'react-router';
-import { Row, Col, Input, Layout } from 'antd';
+import { Row, Col, Input, Layout, Modal, Badge, Alert } from 'antd';
+import axios from 'axios';
 
-import Select from './Select'
+import Select from './Select';
 import './style.css';
 
-const { Search } = Input;
+const { Search, TextArea } = Input;
 
 const SearchBar = ({ word, select, onSelectChange, onInputChange }) => {
   const usePrevious = (value) => {
@@ -22,6 +23,48 @@ const SearchBar = ({ word, select, onSelectChange, onInputChange }) => {
   const inputEl = useRef(null);
   const history = useHistory();
   const location = useLocation();
+
+  const [visible, setVisible] = React.useState(false);
+  const [confirmLoading, setConfirmLoading] = React.useState(false);
+  const [note, setNote] = React.useState('');
+  const [showErrorMsg, setShowErrorMsg] = React.useState(false);
+
+  const showModal = () => {
+    setVisible(true);
+  };
+
+  const handleOk = () => {
+    setConfirmLoading(true);
+    console.log("ceshi: ", inputText, note)
+    axios
+      .post(
+        'http://localhost/api/history',
+        new URLSearchParams({
+          title: inputText,
+          note: note,
+        }),
+        {
+          headers: {
+            'Content-Type': 'application/x-www-form-urlencoded',
+          }
+        }
+      )
+      .then(function (response) {
+        console.log(response);
+        setVisible(false);
+        setConfirmLoading(false);
+      })
+      .catch(function (error) {
+        console.log(error);
+        setShowErrorMsg(true);
+        setConfirmLoading(false);
+      });
+  };
+
+  const handleCancel = () => {
+    console.log('Clicked cancel button');
+    setVisible(false);
+  };
 
   //select = location.pathname.split('/')[1];
 
@@ -49,6 +92,7 @@ const SearchBar = ({ word, select, onSelectChange, onInputChange }) => {
 
   const handleSearchIconClick = () => {
     // onSearch(inputText);
+    setNote('');
     nextUrl();
   };
 
@@ -82,8 +126,27 @@ const SearchBar = ({ word, select, onSelectChange, onInputChange }) => {
         </Col>
       </Row>
       <Row>
-        <Col span={24}>
+        <Col span={20}>
           <Select select={select} onSelectChange={onSelectChange} />
+        </Col>
+        <Col span={4}>
+          <div class='note' onClick={showModal}>
+            +
+          </div>
+          <Modal
+            title='将该词添加到记忆库'
+            visible={visible}
+            onOk={handleOk}
+            confirmLoading={confirmLoading}
+            onCancel={handleCancel}
+          >
+            <div>
+              <Badge.Ribbon text={inputText} color='volcano'>
+                <TextArea rows={4} value={note} onChange={(e) => setNote(e.target.value)} />
+              </Badge.Ribbon>
+              {showErrorMsg && <Alert message='Error' type='error' showIcon />}
+            </div>
+          </Modal>
         </Col>
       </Row>
     </>

@@ -11,9 +11,11 @@ func FindPage(c *gin.Context) {
 	page := Find(title)
 	m := map[string]interface{} {
 		"page": page, 
-		"status": page != -1,
+		
 	}
 	RES(c, SUCCESS, gin.H{
 		"data": m,
+		"title": title,
+		"status": page != -1,
 	})
 }

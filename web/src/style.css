@@ -15,3 +15,25 @@
   width: 100% !important;
   height: 100% !important;
 }
+.note {
+  height: 40px;
+  width: 40px;
+  margin-top: 5px;
+  line-height: 40px;
+  border-radius: 4px;
+  background-color: rgb(16, 136, 233);
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-size: 20px;
+
+  user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -o-user-select: none;
+}
+.note:hover {
+  background-color: rgb(160, 199, 231);
+  color: rgb(16, 136, 233);
+  cursor: pointer;
+}
