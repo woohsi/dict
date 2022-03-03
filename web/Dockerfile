@@ -5,6 +5,7 @@ COPY ./package.json .
 RUN npm install
 COPY . .
 RUN sed -i 's/localhost/d.woohsi.top/g' ./src/wordcard.js \
+&& sed -i 's/localhost/d.woohsi.top/g' ./src/searchbar.js \
 && sed -i 's/export NODE_OPTIONS=--openssl-legacy-provider && //g' ./package.json
 RUN npm run build
 
