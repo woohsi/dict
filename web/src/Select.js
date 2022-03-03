@@ -8,7 +8,7 @@ const Select = ({ select, onSelectChange }) => {
   const location = useLocation();
 
   useEffect(() => {
-    console.log("Select-useEffect........");
+    console.log('Select-useEffect........', location.pathname.split('/')[1]);
     setValue(location.pathname.split('/')[1] ? location.pathname.split('/')[1] : "vi-zh");
     onSelectChange(location.pathname.split('/')[1] ? location.pathname.split('/')[1]: 'vi-zh');
   }, []);

@@ -31,6 +31,20 @@ const SearchBar = ({ word, select, onSelectChange, onInputChange }) => {
 
   const showModal = () => {
     setVisible(true);
+    axios
+      .get('http://localhost/api/history/' + inputText)
+      .then(function (response) {
+        console.log("resp: " , response);
+        const { data } = response;
+        if (data.code === 0) {
+          const { note } = data.data;
+          console.log("note: ", note);
+          setNote(note);
+        }
+      })
+      .catch(function (error) {
+        console.log(error);
+      });
   };
 
   const handleOk = () => {
@@ -135,10 +149,13 @@ const SearchBar = ({ word, select, onSelectChange, onInputChange }) => {
           </div>
           <Modal
             title='将该词添加到记忆库'
+            okText='添加'
+            cancelText='取消'
             visible={visible}
             onOk={handleOk}
             confirmLoading={confirmLoading}
             onCancel={handleCancel}
+          
           >
             <div>
               <Badge.Ribbon text={inputText} color='volcano'>

@@ -28,6 +28,7 @@ func main() {
 		api.GET("/record/:id", records.FindId)
 		api.GET("/pages/:title", pages.FindPage)
 		api.GET("/history", history.List)
+		api.GET("/history/:title", history.FindHistory)
 		api.POST("/history", history.Create)
 	}
 	router.Run(":8080")

@@ -9,6 +9,7 @@ import {
   Chip,
   makeStyles,
 } from '@material-ui/core';
+import { Spin } from 'antd';
 
 import PDF from './pdf';
 import useFetch from './useFetch';
@@ -280,14 +281,16 @@ const WordCard = ({ onInputChange, showLearnMore }) => {
 
   return (
     <div className='wordcard'>
-      {isPending && <div>Loading</div>}
-      {error && <div>{error}</div>}
-      {body && (
-        <Card className={classes.root} variant='outlined'>
-          <CardContent>{body}</CardContent>
-          <CardActions>{learnmore}</CardActions>
-        </Card>
-      )}
+      {/* {isPending && <Spin tip='Loading'/>} */}
+      <Spin tip='Loading' spinning={isPending} style={{marginTop: 50}}>
+        {error && <div>{error}</div>}
+        {body && (
+          <Card className={classes.root} variant='outlined'>
+            <CardContent>{body}</CardContent>
+            <CardActions>{learnmore}</CardActions>
+          </Card>
+        )}
+      </Spin>
     </div>
   );
 };

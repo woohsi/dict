@@ -12,8 +12,19 @@ func List(c *gin.Context) {
 	if err != nil {
 		// utils.ErrorLogger.Fatalln("历史记录查询失败")
 		c.JSON(200, gin.H{"message": "历史记录查询失败", "code": 43})
+		return
 	}
-	c.JSON(200, gin.H{"data": l, "code": 40})
+	c.JSON(200, gin.H{"data": l, "code": 0})
+}
+
+func FindHistory(c *gin.Context) {
+	title := c.Param("title")
+	h, err := Find(title)
+	if err != nil {
+		c.JSON(200, gin.H{"message": "从记忆库中获取该词失败", "code": 43})
+		return
+	}
+	c.JSON(200, gin.H{"data": h, "code": 0})
 }
 
 func Create(c *gin.Context) {
@@ -26,6 +37,6 @@ func Create(c *gin.Context) {
 			CreateAt: time.Now(),
 		}
 	h.Insert()
-	c.JSON(200, gin.H{"code": 40, "message": "添加成功"})
+	c.JSON(200, gin.H{"code": 0, "message": "添加成功"})
 }
 
