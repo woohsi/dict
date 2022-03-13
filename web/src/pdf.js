@@ -21,9 +21,11 @@ export default function PDF(props) {
   let host = null
   if (props.page) {
     if (props.page <= 570) {
-      host = "https://protected-eyrie-67539.herokuapp.com"
+      // host = "https://protected-eyrie-67539.herokuapp.com"
+      host = "http://d.woohsi.top"
     } else {
-      host = "https://boiling-waters-71343.herokuapp.com"
+      // host = "https://boiling-waters-71343.herokuapp.com"
+      host = "http://d.woohsi.top"
     }
     f = host + "/pdf/" + props.page + ".pdf"
   }
