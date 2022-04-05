@@ -1,10 +1,11 @@
 import { useState } from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import { BackTop, Row, Col, Layout } from 'antd';
-import Home from './Home'
-import SearchBar from './searchbar';
-import WordCard from './wordcard';
-import './style.css';
+import SearchBar from 'search/Searchbar';
+import Home from 'card/Home'
+import WordCard from 'card/Wordcard';
+import History from 'card/History';
+import 'css/style.css';
 
 const { Header, Content } = Layout;
 
@@ -75,6 +76,9 @@ const LookupWordComponent = () => {
                 onInputChange={handleInputChange}
               />
               <WordCard select={select} onInputChange={handleInputChange} />
+            </Route>
+            <Route path='/history'>
+             <History />
             </Route>
           </Switch>
           <BackTop>

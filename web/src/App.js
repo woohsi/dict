@@ -1,12 +1,12 @@
-import LookupWordComponent from './lookup';
-import './App.css';
+import LookupWordComponent from 'Lookup'
+import 'css/App.css'
 
 function App() {
   return (
     <div className='App'>
       <LookupWordComponent />
-    </div>
-  );
+    </ div>
+  )
 }
 
-export default App;
+export default App

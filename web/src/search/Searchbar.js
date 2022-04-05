@@ -3,15 +3,15 @@ import { useParams, useHistory, useLocation } from 'react-router';
 import { Row, Col, Input, Layout, Modal, Badge, Alert } from 'antd';
 import axios from 'axios';
 
-import Select from './Select';
-import './style.css';
+import Select from 'search/Select';
+import 'css/style.css';
 
 const { Search, TextArea } = Input;
 
 const SearchBar = ({ word, select, onSelectChange, onInputChange }) => {
   const usePrevious = (value) => {
     const ref = useRef();
-    useEffect(() => {
+      useEffect(() => {
       ref.current = value;
     });
     return ref.current;
@@ -34,11 +34,11 @@ const SearchBar = ({ word, select, onSelectChange, onInputChange }) => {
     axios
       .get('http://localhost/api/history/' + inputText)
       .then(function (response) {
-        console.log("resp: " , response);
+        console.log('resp: ', response);
         const { data } = response;
         if (data.code === 0) {
           const { note } = data.data;
-          console.log("note: ", note);
+          console.log('note: ', note);
           setNote(note);
         }
       })
@@ -49,7 +49,7 @@ const SearchBar = ({ word, select, onSelectChange, onInputChange }) => {
 
   const handleOk = () => {
     setConfirmLoading(true);
-    console.log("ceshi: ", inputText, note)
+    console.log('ceshi: ', inputText, note);
     axios
       .post(
         'http://localhost/api/history',
@@ -60,7 +60,7 @@ const SearchBar = ({ word, select, onSelectChange, onInputChange }) => {
         {
           headers: {
             'Content-Type': 'application/x-www-form-urlencoded',
-          }
+          },
         }
       )
       .then(function (response) {
@@ -155,11 +155,14 @@ const SearchBar = ({ word, select, onSelectChange, onInputChange }) => {
             onOk={handleOk}
             confirmLoading={confirmLoading}
             onCancel={handleCancel}
-          
           >
             <div>
               <Badge.Ribbon text={inputText} color='volcano'>
-                <TextArea rows={4} value={note} onChange={(e) => setNote(e.target.value)} />
+                <TextArea
+                  rows={4}
+                  value={note}
+                  onChange={(e) => setNote(e.target.value)}
+                />
               </Badge.Ribbon>
               {showErrorMsg && <Alert message='Error' type='error' showIcon />}
             </div>
@@ -168,6 +171,6 @@ const SearchBar = ({ word, select, onSelectChange, onInputChange }) => {
       </Row>
     </>
   );
-}; 
+};
 
 export default SearchBar;

@@ -11,10 +11,10 @@ import {
 } from '@material-ui/core';
 import { Spin } from 'antd';
 
-import PDF from './pdf';
-import useFetch from './useFetch';
+import PDF from 'card/Pdf';
+import useFetch from 'tools/useFetch';
 
-import './style.css';
+import 'css/style.css';
 import ColumnGroup from 'antd/lib/table/ColumnGroup';
 
 const useStyles = makeStyles({
@@ -41,7 +41,7 @@ const vieviet = (data, classes) => {
   if (data === undefined || data === null || data.status === false) {
     return null;
   }
-  
+
   const { data1, data2 } = data.data;
   console.log('vietviet-data1: ', data1);
   console.log('vietviet-data2: ', data2);
@@ -247,7 +247,7 @@ const WordCard = ({ onInputChange, showLearnMore }) => {
   }
 
   const { data, error, isPending } = useFetch(url);
-  
+
   switch (select) {
     case 'vi-vi':
       // const { data1, data2 } = data;
@@ -282,7 +282,7 @@ const WordCard = ({ onInputChange, showLearnMore }) => {
   return (
     <div className='wordcard'>
       {/* {isPending && <Spin tip='Loading'/>} */}
-      <Spin tip='Loading' spinning={isPending} style={{marginTop: 50}}>
+      <Spin tip='Loading' spinning={isPending} style={{ marginTop: 50 }}>
         {error && <div>{error}</div>}
         {body && (
           <Card className={classes.root} variant='outlined'>
