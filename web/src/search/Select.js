@@ -1,22 +1,23 @@
-import { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import { Radio } from 'antd';
 
+// eslint-disable-next-line react/prop-types
 const Select = ({ select, onSelectChange }) => {
-  console.log("Select comp: ", select);
-  const [value, setValue] = useState(select);
+  console.log('Select comp: ', select);
+  const [, setValue] = useState(select);
   const location = useLocation();
 
   useEffect(() => {
     console.log('Select-useEffect........', location.pathname.split('/')[1]);
-    setValue(location.pathname.split('/')[1] ? location.pathname.split('/')[1] : "vi-zh");
+    setValue(location.pathname.split('/')[1] ? location.pathname.split('/')[1] : 'vi-zh');
     onSelectChange(location.pathname.split('/')[1] ? location.pathname.split('/')[1]: 'vi-zh');
   }, []);
 
   const handleRadioChange = (e) => {
     setValue(e.target.value);
     onSelectChange(e.target.value);
-    console.log("selected: ", e.target.value);
+    console.log('selected: ', e.target.value);
   };
 
   return (

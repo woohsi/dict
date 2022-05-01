@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 const Home = () => {
   return (
@@ -38,8 +38,8 @@ class Clock extends React.Component {
   render() {
     return (
       <div>
-        <h1>Hello, Runoob!</h1>
-        <h2>现在时间是：{this.state.date.toLocaleTimeString()}.</h2>
+        <h1>Welcome!</h1>
+        <h2>Current Time：{this.state.date.toLocaleTimeString()}</h2>
       </div>
     );
   }

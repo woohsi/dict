@@ -1,7 +1,7 @@
-import { useState, useEffect } from 'react'
+import React, { useState, useEffect } from 'react';
 
 import axios from 'axios';
-import 'css/datepick.css'
+import 'css/datepick.css';
 
 const History = () => {
   const [historyList, setHistoryList] = useState(null);
@@ -10,7 +10,7 @@ const History = () => {
     axios
       .get('http://localhost/api/history')
       .then(function (response) {
-        console.log(response)
+        console.log(response);
         const { data } = response;
         if (data.code === 0) {
           setHistoryList(data.data.filter((element, index, arr) => {
@@ -59,6 +59,6 @@ const History = () => {
       </div>
     </div>
   );
-}
+};
  
 export default History;

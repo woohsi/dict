@@ -1,4 +1,5 @@
-import React, { useEffect, useRef } from 'react';
+/* eslint-disable react/prop-types */
+import React, { useEffect } from 'react';
 import { useParams, useLocation } from 'react-router';
 import {
   Card,
@@ -15,7 +16,6 @@ import PDF from 'card/Pdf';
 import useFetch from 'tools/useFetch';
 
 import 'css/style.css';
-import ColumnGroup from 'antd/lib/table/ColumnGroup';
 
 const useStyles = makeStyles({
   root: {
@@ -207,14 +207,6 @@ const hanviet = (data_t, classes) => {
       {content}
     </>
   );
-};
-
-const usePrevious = (value) => {
-  const ref = useRef();
-  useEffect(() => {
-    ref.current = value;
-  });
-  return ref.current;
 };
 
 const WordCard = ({ onInputChange, showLearnMore }) => {

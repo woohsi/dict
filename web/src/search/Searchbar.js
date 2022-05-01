@@ -1,6 +1,7 @@
+/* eslint-disable react/prop-types */
 import React, { useEffect, useRef, useState } from 'react';
-import { useParams, useHistory, useLocation } from 'react-router';
-import { Row, Col, Input, Layout, Modal, Badge, Alert } from 'antd';
+import { useHistory } from 'react-router';
+import { Row, Col, Input, Modal, Badge, Alert } from 'antd';
 import axios from 'axios';
 
 import Select from 'search/Select';
@@ -22,7 +23,6 @@ const SearchBar = ({ word, select, onSelectChange, onInputChange }) => {
   const prevSelect = usePrevious(select);
   const inputEl = useRef(null);
   const history = useHistory();
-  const location = useLocation();
 
   const [visible, setVisible] = React.useState(false);
   const [confirmLoading, setConfirmLoading] = React.useState(false);
@@ -110,13 +110,6 @@ const SearchBar = ({ word, select, onSelectChange, onInputChange }) => {
     nextUrl();
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    //console.log(e.target[0].getAttribute("value"))
-    //onSearch(inputText);
-    nextUrl();
-  };
-
   useEffect(() => {
     setInputText(word);
     inputEl.current.focus();
@@ -144,7 +137,7 @@ const SearchBar = ({ word, select, onSelectChange, onInputChange }) => {
           <Select select={select} onSelectChange={onSelectChange} />
         </Col>
         <Col span={4}>
-          <div class='note' onClick={showModal}>
+          <div className='note' onClick={showModal}>
             +
           </div>
           <Modal
