@@ -4,8 +4,8 @@ WORKDIR /web
 COPY ./package.json .
 RUN yarn install
 COPY . .
-RUN sed -i 's/localhost/d.woohsi.top/g' ./src/card/Wordcard.js \
-&& sed -i 's/localhost/d.woohsi.top/g' ./src/search/Searchbar.js \
+RUN sed -i 's/http:\/\/localhost/https:\/\/d.woohsi.top/g' ./src/card/Wordcard.js \
+&& sed -i 's/http:\/\/localhost/https:\/\/d.woohsi.top/g' ./src/search/Searchbar.js \
 && sed -i 's/export NODE_OPTIONS=--openssl-legacy-provider && //g' ./package.json
 RUN yarn build
 
