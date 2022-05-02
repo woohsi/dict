@@ -288,7 +288,7 @@ const WordCard = ({ showLearnMore }) => {
       {/* {isPending && <Spin tip='Loading'/>} */}
       <Spin tip='Loading' spinning={isPending} style={{ marginTop: 50 }}>
         {error && <div>{error}</div>}
-        {body && (
+        {!isPending && body && (
           <Card className={classes.root} variant='outlined'>
             <CardContent>{body}</CardContent>
             <CardActions>{learnmore}</CardActions>
