@@ -24,10 +24,10 @@ export default function PDF(props) {
     // eslint-disable-next-line react/prop-types
     if (props.page <= 570) {
       // host = "https://protected-eyrie-67539.herokuapp.com"
-      host = 'http://d.woohsi.top';
+      host = 'https://d.woohsi.top';
     } else {
       // host = "https://boiling-waters-71343.herokuapp.com"
-      host = 'http://d.woohsi.top';
+      host = 'https://d.woohsi.top';
     }
     // eslint-disable-next-line react/prop-types
     f = host + '/pdf/' + props.page + '.pdf';
