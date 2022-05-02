@@ -1,19 +1,22 @@
 import React from 'react';
-
+import 'css/style.css';
 const Home = () => {
   return (
-    <div>
-      <h4 style={{ marginTop: 50 }}>
-        <Clock/> <br />
+    <div className='footer'>
+      <p>
+        {/* <Clock /> <br /> */}
         Dictionaries for Vietnamese Learners
         <br />
-        <br />
-        ©2022 woohsi
-      </h4>
+        ©2022{' '}
+        <a href='https://www.facebook.com/bohsiang111'>
+          <span className='name'>woohsi</span>
+        </a>
+      </p>
     </div>
   );
 };
 
+// eslint-disable-next-line no-unused-vars
 class Clock extends React.Component {
   constructor(props) {
     super(props);
@@ -38,8 +41,7 @@ class Clock extends React.Component {
   render() {
     return (
       <div>
-        <h1>Welcome!</h1>
-        <h2>Current Time：{this.state.date.toLocaleTimeString()}</h2>
+        <h2>{this.state.date.toLocaleTimeString()}</h2>
       </div>
     );
   }

@@ -38,7 +38,7 @@ const useStyles = makeStyles({
 });
 
 const vieviet = (data, classes) => {
-  if (data === undefined || data === null || data.status === false) {
+    if (data === undefined || data === null) {
     return null;
   }
 
@@ -58,8 +58,7 @@ const vieviet = (data, classes) => {
 
   if (defs1 === null && defs2 === null) {
     //TODO
-    // return <div>No this word in the dictionary :(</div>;
-    return <div></div>;
+    return <div style={{textAlign: 'center'}}>Not found in the dictionary :(</div>;
   }
 
   let preType = null;
@@ -150,7 +149,12 @@ const vieviet = (data, classes) => {
       </>
     );
   } else if (data1 === null && data2 === null) {
-    return <>No this word in the dictionary----- :(</>;
+    return (
+      <div style={{ textAlign: 'center' }}>
+        Not found in the dictionary :(
+      </div>
+    );
+
   } else {
     return null;
   }
@@ -161,7 +165,9 @@ const viethan = (data) => {
     return null;
   }
   const { page } = data.data;
-  if (page === -1) return <>No this word in the dictionary :(</>;
+  if (page === -1) return (
+    <div style={{ textAlign: 'center' }}>Not found in the dictionary :(</div>
+  );
   return <PDF page={page} />;
 };
 
@@ -174,18 +180,25 @@ const MyComponent = (props) => {
 };
 
 const hanviet = (data_t, classes) => {
-  if (data_t === null || data_t.status === false) {
+  if (data_t === null) {
     return null;
   }
   const { data } = data_t.data;
   console.log('hanviet-data: ', data);
   if (data === null || data === undefined) {
-    return null;
+    return (
+      <div style={{ textAlign: 'center' }}>Not found in the dictionary :(</div>
+    );
   }
   const defs = data.definition;
   if (defs === '') {
     //TODO
-    return <div>No this word in the dictionary :(</div>;
+    return (
+      <div style={{ textAlign: 'center' }}>
+        Not found in the dictionary :(
+      </div>
+    );
+
   }
 
   const content = (
