@@ -80,6 +80,7 @@ const WordCard = ({ showLearnMore }) => {
     return () => {
       console.log('wordcard clean..');
       setDt(null);
+      setIsPending(true);
     }
   }, [select]);
 
@@ -316,7 +317,7 @@ const WordCard = ({ showLearnMore }) => {
       {/* {isPending && <Spin tip='Loading'/>} */}
       <Spin tip='Loading' spinning={isPending} style={{ marginTop: 50 }}>
         {error && <div>{error}</div>}
-        {!isPending && body && (
+        {!isPending && dt && (
           <Card className={classes.root} variant='outlined'>
             <CardContent>{body}</CardContent>
             <CardActions>{learnmore}</CardActions>
