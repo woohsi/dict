@@ -6,28 +6,33 @@ import axios from 'axios';
 
 import Select from 'search/Select';
 import 'css/style.css';
+import { useLocation } from 'react-router-dom';
 
 const { Search, TextArea } = Input;
 
-const SearchBar = ({ word, select, onSelectChange, onInputChange }) => {
-  const usePrevious = (value) => {
-    const ref = useRef();
-      useEffect(() => {
-      ref.current = value;
-    });
-    return ref.current;
-  };
+const SearchBar = () => {
+  // const usePrevious = (value) => {
+  //   const ref = useRef();
+  //     useEffect(() => {
+  //     ref.current = value;
+  //   });
+  //   return ref.current;
+  // };
+  const [select, setSelect] = useState('vi-zh');
 
-  console.log('Searchbar, word:', word, 'select: ', select);
-  const [inputText, setInputText] = useState('');
-  const prevSelect = usePrevious(select);
+  console.log('Searchbar, word:', 'select: ', select);
+  const location = useLocation();
+  const [inputText, setInputText] = useState(
+    location.pathname.split('/')[2] ? location.pathname.split('/')[2] : ''
+  );
+  // const prevSelect = usePrevious(select);
   const inputEl = useRef(null);
   const history = useHistory();
 
-  const [visible, setVisible] = React.useState(false);
-  const [confirmLoading, setConfirmLoading] = React.useState(false);
-  const [note, setNote] = React.useState('');
-  const [showErrorMsg, setShowErrorMsg] = React.useState(false);
+  const [visible, setVisible] = useState(false);
+  const [confirmLoading, setConfirmLoading] = useState(false);
+  const [note, setNote] = useState('');
+  const [showErrorMsg, setShowErrorMsg] = useState(false);
 
   const showModal = () => {
     setVisible(true);
@@ -41,8 +46,7 @@ const SearchBar = ({ word, select, onSelectChange, onInputChange }) => {
           console.log('note: ', note);
           setNote(note);
         }
-      })
-      .catch(function (error) {
+      }).catch(function (error) {
         console.log(error);
       });
   };
@@ -62,13 +66,11 @@ const SearchBar = ({ word, select, onSelectChange, onInputChange }) => {
             'Content-Type': 'application/x-www-form-urlencoded',
           },
         }
-      )
-      .then(function (response) {
+      ).then(function (response) {
         console.log(response);
         setVisible(false);
         setConfirmLoading(false);
-      })
-      .catch(function (error) {
+      }).catch(function (error) {
         console.log(error);
         setShowErrorMsg(true);
         setConfirmLoading(false);
@@ -83,7 +85,7 @@ const SearchBar = ({ word, select, onSelectChange, onInputChange }) => {
   //select = location.pathname.split('/')[1];
 
   const nextUrl = () => {
-    let url = '';
+    let url = '/vi-zh/' + encodeURI(inputText.trim().toLowerCase());
     switch (select) {
       case 'vi-vi':
         url = '/vi-vi/' + encodeURI(inputText);
@@ -99,10 +101,10 @@ const SearchBar = ({ word, select, onSelectChange, onInputChange }) => {
     history.push(url);
   };
 
-  if (prevSelect !== undefined && prevSelect !== '' && prevSelect !== select) {
-    console.log('test: ', prevSelect);
-    nextUrl();
-  }
+  // if (prevSelect !== undefined && prevSelect !== '' && prevSelect !== select) {
+  //   console.log('test: ', prevSelect);
+  //   nextUrl();
+  // }
 
   const handleSearchIconClick = () => {
     // onSearch(inputText);
@@ -111,21 +113,23 @@ const SearchBar = ({ word, select, onSelectChange, onInputChange }) => {
   };
 
   useEffect(() => {
-    setInputText(word);
+    if (inputText != '') {
+      nextUrl();
+    }
     inputEl.current.focus();
-  }, [word, select]);
+  }, [select]);
 
   return (
     <>
       <Row>
         <Col span={24}>
           <Search
+            value={inputText}
             size='large'
             placeholder='Input search word'
             onSearch={handleSearchIconClick}
             onChange={(e) => {
               setInputText(e.target.value);
-              onInputChange(e.target.value);
             }}
             ref={inputEl}
             enterButton
@@ -134,7 +138,7 @@ const SearchBar = ({ word, select, onSelectChange, onInputChange }) => {
       </Row>
       <Row>
         <Col span={20}>
-          <Select select={select} onSelectChange={onSelectChange} />
+          <Select onSelectChange={(e) => setSelect(e)} />
         </Col>
         <Col span={4}>
           <div className='note' onClick={showModal}>

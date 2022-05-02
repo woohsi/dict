@@ -209,7 +209,7 @@ const hanviet = (data_t, classes) => {
   );
 };
 
-const WordCard = ({ onInputChange, showLearnMore }) => {
+const WordCard = ({ showLearnMore }) => {
   const { word } = useParams();
   const location = useLocation();
   const select = location.pathname.split('/')[1];
@@ -219,7 +219,6 @@ const WordCard = ({ onInputChange, showLearnMore }) => {
 
   useEffect(() => {
     console.log('wordcard.js, word:', word);
-    onInputChange(word);
   }, []);
 
   let url = '';

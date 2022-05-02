@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { BackTop } from 'antd';
 import SearchBar from 'search/Searchbar';
@@ -6,6 +6,7 @@ import Home from 'card/Home';
 import WordCard from 'card/Wordcard';
 import History from 'card/History';
 import 'css/style.css';
+import { Redirect } from 'react-router-dom/cjs/react-router-dom.min';
 
 const style = {
   height: 40,
@@ -19,20 +20,8 @@ const style = {
 };
 
 const LookupWordComponent = () => {
-  const [inputText, setInputText] = useState('');
-  const [select, setSelect] = useState('');
   // const [page, setpage] = useState(-1);
   // const [showLearnMore, setShowLearnMore] = useState(false);
-
-  const handleInputChange = (inputText) => {
-    setInputText(inputText);
-    console.log('handleInputChange in lookup.js: ', inputText);
-  };
-
-  const handleSelectChange = (select) => {
-    setSelect(select);
-    console.log('select change: ', select);
-  };
 
   return (
     <Router>
@@ -41,42 +30,32 @@ const LookupWordComponent = () => {
           <Switch>
             <Route exact path='/'>
               <SearchBar
-                word={inputText}
-                select='vi-zh'
-                onSelectChange={handleSelectChange}
-                onInputChange={handleInputChange}
               />
               <Home />
             </Route>
             <Route path='/vi-vi/:word'>
               <SearchBar
-                word={inputText}
-                select={select}
-                onSelectChange={handleSelectChange}
-                onInputChange={handleInputChange}
               />
-              <WordCard select={select} onInputChange={handleInputChange} />
+              <WordCard
+              />
             </Route>
             <Route path='/vi-zh/:word'>
               <SearchBar
-                word={inputText}
-                select={select}
-                onSelectChange={handleSelectChange}
-                onInputChange={handleInputChange}
               />
-              <WordCard select={select} onInputChange={handleInputChange} />
+              <WordCard
+              />
             </Route>
             <Route path='/zh-vi/:word'>
               <SearchBar
-                word={inputText}
-                select={select}
-                onSelectChange={handleSelectChange}
-                onInputChange={handleInputChange}
               />
-              <WordCard select={select} onInputChange={handleInputChange} />
+              <WordCard
+              />
             </Route>
             <Route path='/history'>
               <History />
+            </Route>
+            <Route path='*'>
+              <Redirect to='/' />
             </Route>
           </Switch>
           <BackTop>
