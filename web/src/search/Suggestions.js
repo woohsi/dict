@@ -1,6 +1,6 @@
 import { Component } from 'react';
 
-import './style.css';
+import 'css/style.css';
 
 export default class Suggestions extends Component {
   constructor(props) {
@@ -9,9 +9,9 @@ export default class Suggestions extends Component {
   }
 
   handleClick = (e) => {
-    const word = e.target.getAttribute('value')
+    const word = e.target.getAttribute('value');
     console.log('You clicked ', word);
-    this.props.onSearch(word)
+    this.props.onSearch(word);
   };
 
   render() {

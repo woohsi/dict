@@ -1,4 +1,5 @@
-import React, { useEffect, useRef } from 'react';
+/* eslint-disable react/prop-types */
+import React, { useEffect } from 'react';
 import { useParams, useLocation } from 'react-router';
 import {
   Card,
@@ -11,11 +12,10 @@ import {
 } from '@material-ui/core';
 import { Spin } from 'antd';
 
-import PDF from './pdf';
-import useFetch from './useFetch';
+import PDF from 'card/Pdf';
+import useFetch from 'tools/useFetch';
 
-import './style.css';
-import ColumnGroup from 'antd/lib/table/ColumnGroup';
+import 'css/style.css';
 
 const useStyles = makeStyles({
   root: {
@@ -38,10 +38,10 @@ const useStyles = makeStyles({
 });
 
 const vieviet = (data, classes) => {
-  if (data === undefined || data === null || data.status === false) {
+    if (data === undefined || data === null) {
     return null;
   }
-  
+
   const { data1, data2 } = data.data;
   console.log('vietviet-data1: ', data1);
   console.log('vietviet-data2: ', data2);
@@ -58,8 +58,7 @@ const vieviet = (data, classes) => {
 
   if (defs1 === null && defs2 === null) {
     //TODO
-    // return <div>No this word in the dictionary :(</div>;
-    return <div></div>;
+    return <div style={{textAlign: 'center'}}>Not found in the dictionary :(</div>;
   }
 
   let preType = null;
@@ -150,7 +149,12 @@ const vieviet = (data, classes) => {
       </>
     );
   } else if (data1 === null && data2 === null) {
-    return <>No this word in the dictionary----- :(</>;
+    return (
+      <div style={{ textAlign: 'center' }}>
+        Not found in the dictionary :(
+      </div>
+    );
+
   } else {
     return null;
   }
@@ -161,7 +165,9 @@ const viethan = (data) => {
     return null;
   }
   const { page } = data.data;
-  if (page === -1) return <>No this word in the dictionary :(</>;
+  if (page === -1) return (
+    <div style={{ textAlign: 'center' }}>Not found in the dictionary :(</div>
+  );
   return <PDF page={page} />;
 };
 
@@ -174,18 +180,25 @@ const MyComponent = (props) => {
 };
 
 const hanviet = (data_t, classes) => {
-  if (data_t === null || data_t.status === false) {
+  if (data_t === null) {
     return null;
   }
   const { data } = data_t.data;
   console.log('hanviet-data: ', data);
   if (data === null || data === undefined) {
-    return null;
+    return (
+      <div style={{ textAlign: 'center' }}>Not found in the dictionary :(</div>
+    );
   }
   const defs = data.definition;
   if (defs === '') {
     //TODO
-    return <div>No this word in the dictionary :(</div>;
+    return (
+      <div style={{ textAlign: 'center' }}>
+        Not found in the dictionary :(
+      </div>
+    );
+
   }
 
   const content = (
@@ -209,15 +222,7 @@ const hanviet = (data_t, classes) => {
   );
 };
 
-const usePrevious = (value) => {
-  const ref = useRef();
-  useEffect(() => {
-    ref.current = value;
-  });
-  return ref.current;
-};
-
-const WordCard = ({ onInputChange, showLearnMore }) => {
+const WordCard = ({ showLearnMore }) => {
   const { word } = useParams();
   const location = useLocation();
   const select = location.pathname.split('/')[1];
@@ -227,7 +232,6 @@ const WordCard = ({ onInputChange, showLearnMore }) => {
 
   useEffect(() => {
     console.log('wordcard.js, word:', word);
-    onInputChange(word);
   }, []);
 
   let url = '';
@@ -247,7 +251,7 @@ const WordCard = ({ onInputChange, showLearnMore }) => {
   }
 
   const { data, error, isPending } = useFetch(url);
-  
+
   switch (select) {
     case 'vi-vi':
       // const { data1, data2 } = data;
@@ -282,7 +286,7 @@ const WordCard = ({ onInputChange, showLearnMore }) => {
   return (
     <div className='wordcard'>
       {/* {isPending && <Spin tip='Loading'/>} */}
-      <Spin tip='Loading' spinning={isPending} style={{marginTop: 50}}>
+      <Spin tip='Loading' spinning={isPending} style={{ marginTop: 50 }}>
         {error && <div>{error}</div>}
         {body && (
           <Card className={classes.root} variant='outlined'>

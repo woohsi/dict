@@ -1,3 +1,26 @@
+.content {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(16, 136, 233);
+  color: white;
+  text-align: center;
+}
+
+.footer p {
+  margin-top: .2em;
+  margin-bottom: .2em;
+}
+.footer .name {
+  color: white;
+}
+
 #suggs {
   margin-left: 10px;
 }

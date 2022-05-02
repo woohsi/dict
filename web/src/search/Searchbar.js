@@ -1,55 +1,59 @@
+/* eslint-disable react/prop-types */
 import React, { useEffect, useRef, useState } from 'react';
-import { useParams, useHistory, useLocation } from 'react-router';
-import { Row, Col, Input, Layout, Modal, Badge, Alert } from 'antd';
+import { useHistory } from 'react-router';
+import { Row, Col, Input, Modal, Badge, Alert } from 'antd';
 import axios from 'axios';
 
-import Select from './Select';
-import './style.css';
+import Select from 'search/Select';
+import 'css/style.css';
+import { useLocation } from 'react-router-dom';
 
 const { Search, TextArea } = Input;
 
-const SearchBar = ({ word, select, onSelectChange, onInputChange }) => {
-  const usePrevious = (value) => {
-    const ref = useRef();
-    useEffect(() => {
-      ref.current = value;
-    });
-    return ref.current;
-  };
+const SearchBar = () => {
+  // const usePrevious = (value) => {
+  //   const ref = useRef();
+  //     useEffect(() => {
+  //     ref.current = value;
+  //   });
+  //   return ref.current;
+  // };
+  const [select, setSelect] = useState('vi-zh');
 
-  console.log('Searchbar, word:', word, 'select: ', select);
-  const [inputText, setInputText] = useState('');
-  const prevSelect = usePrevious(select);
+  console.log('Searchbar, word:', 'select: ', select);
+  const location = useLocation();
+  const [inputText, setInputText] = useState(
+    location.pathname.split('/')[2] ? location.pathname.split('/')[2] : ''
+  );
+  // const prevSelect = usePrevious(select);
   const inputEl = useRef(null);
   const history = useHistory();
-  const location = useLocation();
 
-  const [visible, setVisible] = React.useState(false);
-  const [confirmLoading, setConfirmLoading] = React.useState(false);
-  const [note, setNote] = React.useState('');
-  const [showErrorMsg, setShowErrorMsg] = React.useState(false);
+  const [visible, setVisible] = useState(false);
+  const [confirmLoading, setConfirmLoading] = useState(false);
+  const [note, setNote] = useState('');
+  const [showErrorMsg, setShowErrorMsg] = useState(false);
 
   const showModal = () => {
     setVisible(true);
     axios
       .get('http://localhost/api/history/' + inputText)
       .then(function (response) {
-        console.log("resp: " , response);
+        console.log('resp: ', response);
         const { data } = response;
         if (data.code === 0) {
           const { note } = data.data;
-          console.log("note: ", note);
+          console.log('note: ', note);
           setNote(note);
         }
-      })
-      .catch(function (error) {
+      }).catch(function (error) {
         console.log(error);
       });
   };
 
   const handleOk = () => {
     setConfirmLoading(true);
-    console.log("ceshi: ", inputText, note)
+    console.log('ceshi: ', inputText, note);
     axios
       .post(
         'http://localhost/api/history',
@@ -60,15 +64,13 @@ const SearchBar = ({ word, select, onSelectChange, onInputChange }) => {
         {
           headers: {
             'Content-Type': 'application/x-www-form-urlencoded',
-          }
+          },
         }
-      )
-      .then(function (response) {
+      ).then(function (response) {
         console.log(response);
         setVisible(false);
         setConfirmLoading(false);
-      })
-      .catch(function (error) {
+      }).catch(function (error) {
         console.log(error);
         setShowErrorMsg(true);
         setConfirmLoading(false);
@@ -83,7 +85,7 @@ const SearchBar = ({ word, select, onSelectChange, onInputChange }) => {
   //select = location.pathname.split('/')[1];
 
   const nextUrl = () => {
-    let url = '';
+    let url = '/vi-zh/' + encodeURI(inputText.trim().toLowerCase());
     switch (select) {
       case 'vi-vi':
         url = '/vi-vi/' + encodeURI(inputText);
@@ -99,10 +101,10 @@ const SearchBar = ({ word, select, onSelectChange, onInputChange }) => {
     history.push(url);
   };
 
-  if (prevSelect !== undefined && prevSelect !== '' && prevSelect !== select) {
-    console.log('test: ', prevSelect);
-    nextUrl();
-  }
+  // if (prevSelect !== undefined && prevSelect !== '' && prevSelect !== select) {
+  //   console.log('test: ', prevSelect);
+  //   nextUrl();
+  // }
 
   const handleSearchIconClick = () => {
     // onSearch(inputText);
@@ -110,29 +112,24 @@ const SearchBar = ({ word, select, onSelectChange, onInputChange }) => {
     nextUrl();
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    //console.log(e.target[0].getAttribute("value"))
-    //onSearch(inputText);
-    nextUrl();
-  };
-
   useEffect(() => {
-    setInputText(word);
+    if (inputText != '') {
+      nextUrl();
+    }
     inputEl.current.focus();
-  }, [word, select]);
+  }, [select]);
 
   return (
     <>
       <Row>
         <Col span={24}>
           <Search
+            value={inputText}
             size='large'
             placeholder='Input search word'
             onSearch={handleSearchIconClick}
             onChange={(e) => {
               setInputText(e.target.value);
-              onInputChange(e.target.value);
             }}
             ref={inputEl}
             enterButton
@@ -141,10 +138,10 @@ const SearchBar = ({ word, select, onSelectChange, onInputChange }) => {
       </Row>
       <Row>
         <Col span={20}>
-          <Select select={select} onSelectChange={onSelectChange} />
+          <Select onSelectChange={(e) => setSelect(e)} />
         </Col>
         <Col span={4}>
-          <div class='note' onClick={showModal}>
+          <div className='note' onClick={showModal}>
             +
           </div>
           <Modal
@@ -155,11 +152,14 @@ const SearchBar = ({ word, select, onSelectChange, onInputChange }) => {
             onOk={handleOk}
             confirmLoading={confirmLoading}
             onCancel={handleCancel}
-          
           >
             <div>
               <Badge.Ribbon text={inputText} color='volcano'>
-                <TextArea rows={4} value={note} onChange={(e) => setNote(e.target.value)} />
+                <TextArea
+                  rows={4}
+                  value={note}
+                  onChange={(e) => setNote(e.target.value)}
+                />
               </Badge.Ribbon>
               {showErrorMsg && <Alert message='Error' type='error' showIcon />}
             </div>
@@ -168,6 +168,6 @@ const SearchBar = ({ word, select, onSelectChange, onInputChange }) => {
       </Row>
     </>
   );
-}; 
+};
 
 export default SearchBar;

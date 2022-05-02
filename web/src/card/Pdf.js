@@ -6,35 +6,38 @@ import { pdfjs } from 'react-pdf';
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 
 export default function PDF(props) {
-  const [numPages, setNumPages] = useState(null);
-  const [pageNumber, setPageNumber] = useState(1);
+  const [, setNumPages] = useState(null);
+  const [pageNumber] = useState(1);
 
   function onDocumentLoadSuccess({ numPages }) {
     setNumPages(numPages);
   }
 
   function onDocumentLoadError() {
-    console.log("Load pdf failed")
+    console.log('Load pdf failed');
   }
 
-  let f = null
-  let host = null
+  let f = null;
+  let host = null;
+  // eslint-disable-next-line react/prop-types
   if (props.page) {
+    // eslint-disable-next-line react/prop-types
     if (props.page <= 570) {
       // host = "https://protected-eyrie-67539.herokuapp.com"
-      host = "http://d.woohsi.top"
+      host = 'http://d.woohsi.top';
     } else {
       // host = "https://boiling-waters-71343.herokuapp.com"
-      host = "http://d.woohsi.top"
+      host = 'http://d.woohsi.top';
     }
-    f = host + "/pdf/" + props.page + ".pdf"
+    // eslint-disable-next-line react/prop-types
+    f = host + '/pdf/' + props.page + '.pdf';
   }
   
-  let page = null
+  let page = null;
   if (isMobile) {
-    page = <Page renderMode="svg" scale="0.9" pageNumber={pageNumber} />
+    page = <Page renderMode="svg" scale="0.9" pageNumber={pageNumber} />;
   } else {
-    page = <Page pageNumber={pageNumber} />
+    page = <Page pageNumber={pageNumber} />;
   }
   return (
     <div>

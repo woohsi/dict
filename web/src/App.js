@@ -1,11 +1,14 @@
-import LookupWordComponent from './lookup';
-import './App.css';
+import LookupWordComponent from 'Lookup';
+import 'css/App.css';
+import React from 'react';
 
 function App() {
   return (
-    <div className='App'>
-      <LookupWordComponent />
-    </div>
+    <>
+      <div className='App'>
+        <LookupWordComponent />
+      </div>
+    </>
   );
 }
 
