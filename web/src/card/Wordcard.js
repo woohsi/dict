@@ -82,7 +82,7 @@ const WordCard = ({ showLearnMore }) => {
       setDt(null);
       setIsPending(true);
     }
-  }, [select]);
+  }, [select, word]);
 
   const vieviet = (data, classes) => {
     if (data === undefined || data === null) {

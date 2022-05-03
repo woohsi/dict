@@ -83,7 +83,7 @@ func FindHanVietOne(c *gin.Context) {
 		record3 = nil
 	}
 	if err != nil {
-		utils.ErrorLogger.Printf("获取失败：%v\n", title)
+		utils.ErrorLogger.Printf("获取失败：%v, error: %v\n", title, err)
 	}
 	m := map[string]interface{} {
 		"data": record3,
