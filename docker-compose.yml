@@ -11,6 +11,8 @@ services:
     image: dict-api
     ports:
       - 8080:8080
+    volumes:
+      - ./logs:/app/logs
   ng:
     container_name: ng
     image: nginx
@@ -26,5 +28,5 @@ services:
       - /etc/ssl/2lit.cc:/etc/ssl/2lit.cc
       - /home/ubuntu/data:/data
       - /www/data:/www/data
-        #  - ./access.log:/var/log/nginx/access.log
+        #- ./access.log:/logs/access.log
 
