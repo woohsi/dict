@@ -29,15 +29,16 @@ export default function PDF(props) {
       // host = "https://boiling-waters-71343.herokuapp.com"
       host = 'https://d.woohsi.top';
     }
+    //host = 'http://localhost';
     // eslint-disable-next-line react/prop-types
     f = host + '/pdf/' + props.page + '.pdf';
   }
   
   let page = null;
   if (isMobile) {
-    page = <Page renderMode="svg" scale="0.9" pageNumber={pageNumber} />;
+    page = <Page renderMode="svg" renderTextLayer={false} scale="0.9" pageNumber={pageNumber} />;
   } else {
-    page = <Page pageNumber={pageNumber} />;
+    page = <Page renderMode="svg" renderTextLayer={false} width={window.innerWidth*0.9} pageNumber={pageNumber} />;
   }
   return (
     <div>
